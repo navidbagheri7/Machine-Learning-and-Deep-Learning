@@ -1,0 +1,407 @@
+{
+  "rows": [
+    {
+      "protocol": "random",
+      "model": "ridge",
+      "seed": 0,
+      "rmse": 0.7309187643855641,
+      "mae": 0.5335777916088583,
+      "split_conformal": {
+        "coverage": 0.8989825581395349,
+        "mean_width": 2.141883373260498,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.005047705955803394
+    },
+    {
+      "protocol": "random",
+      "model": "bayesian_ridge",
+      "seed": 0,
+      "rmse": 0.7287483386197382,
+      "mae": 0.532605391164667,
+      "split_conformal": {
+        "coverage": 0.8992248062015504,
+        "mean_width": 2.145538806915283,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.0031775720417499542,
+      "gaussian_posterior": {
+        "coverage": 0.9200581395348837,
+        "mean_width": 2.3588316440582275,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "random",
+      "model": "hist_boosting",
+      "seed": 0,
+      "rmse": 0.45579576957178397,
+      "mae": 0.3021142391203477,
+      "split_conformal": {
+        "coverage": 0.8951065891472868,
+        "mean_width": 1.3457128562709657,
+        "empty_rate": 0.0
+      },
+      "seconds": 1.5266854334622622,
+      "cqr": {
+        "coverage": 0.8926841085271318,
+        "mean_width": 1.3727401473965124,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "random",
+      "model": "feature_transformer",
+      "seed": 0,
+      "rmse": 0.5112028352169787,
+      "mae": 0.33798985462274667,
+      "split_conformal": {
+        "coverage": 0.8938953488372093,
+        "mean_width": 1.5357322692871094,
+        "empty_rate": 0.0
+      },
+      "seconds": 9.885546734556556
+    },
+    {
+      "protocol": "random",
+      "model": "ridge",
+      "seed": 1,
+      "rmse": 0.7275043043915149,
+      "mae": 0.5330564233095423,
+      "split_conformal": {
+        "coverage": 0.8989825581395349,
+        "mean_width": 2.129331111907959,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.008201707154512405
+    },
+    {
+      "protocol": "random",
+      "model": "bayesian_ridge",
+      "seed": 1,
+      "rmse": 0.727489947155219,
+      "mae": 0.5330455005832698,
+      "split_conformal": {
+        "coverage": 0.8992248062015504,
+        "mean_width": 2.129610061645508,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.003445378504693508,
+      "gaussian_posterior": {
+        "coverage": 0.9193313953488372,
+        "mean_width": 2.402527332305908,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "random",
+      "model": "hist_boosting",
+      "seed": 1,
+      "rmse": 0.4604837424621877,
+      "mae": 0.30410067631282234,
+      "split_conformal": {
+        "coverage": 0.8965600775193798,
+        "mean_width": 1.3647147073236128,
+        "empty_rate": 0.0
+      },
+      "seconds": 2.267754456959665,
+      "cqr": {
+        "coverage": 0.8934108527131783,
+        "mean_width": 1.382071015858974,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "random",
+      "model": "feature_transformer",
+      "seed": 1,
+      "rmse": 0.5289234253353923,
+      "mae": 0.3530436426986188,
+      "split_conformal": {
+        "coverage": 0.8984980620155039,
+        "mean_width": 1.5743954181671143,
+        "empty_rate": 0.0
+      },
+      "seconds": 4.201638672500849
+    },
+    {
+      "protocol": "random",
+      "model": "ridge",
+      "seed": 2,
+      "rmse": 0.7355212201818941,
+      "mae": 0.5366722480683733,
+      "split_conformal": {
+        "coverage": 0.8958333333333334,
+        "mean_width": 2.1336827278137207,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.00664855819195509
+    },
+    {
+      "protocol": "random",
+      "model": "bayesian_ridge",
+      "seed": 2,
+      "rmse": 0.7353888730583984,
+      "mae": 0.5366520284775985,
+      "split_conformal": {
+        "coverage": 0.8968023255813954,
+        "mean_width": 2.137359380722046,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.002881963737308979,
+      "gaussian_posterior": {
+        "coverage": 0.9183624031007752,
+        "mean_width": 2.3976478576660156,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "random",
+      "model": "hist_boosting",
+      "seed": 2,
+      "rmse": 0.4727557694723913,
+      "mae": 0.30846891136837895,
+      "split_conformal": {
+        "coverage": 0.9031007751937985,
+        "mean_width": 1.4082829213450112,
+        "empty_rate": 0.0
+      },
+      "seconds": 1.5159362414851785,
+      "cqr": {
+        "coverage": 0.9004360465116279,
+        "mean_width": 1.4173949652169189,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "random",
+      "model": "feature_transformer",
+      "seed": 2,
+      "rmse": 0.5225122984672227,
+      "mae": 0.34350559802783553,
+      "split_conformal": {
+        "coverage": 0.908672480620155,
+        "mean_width": 1.6256790161132812,
+        "empty_rate": 0.0
+      },
+      "seconds": 7.510145595297217
+    },
+    {
+      "protocol": "geographic",
+      "model": "ridge",
+      "seed": 0,
+      "rmse": 0.6617092520831347,
+      "mae": 0.4913940523963753,
+      "split_conformal": {
+        "coverage": 0.9277166108185735,
+        "mean_width": 2.090179920196533,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.00613012257963419
+    },
+    {
+      "protocol": "geographic",
+      "model": "bayesian_ridge",
+      "seed": 0,
+      "rmse": 0.6618161387784364,
+      "mae": 0.4915987256514757,
+      "split_conformal": {
+        "coverage": 0.9277166108185735,
+        "mean_width": 2.0900707244873047,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.0029869992285966873,
+      "gaussian_posterior": {
+        "coverage": 0.9528482527525132,
+        "mean_width": 2.4936883449554443,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "geographic",
+      "model": "hist_boosting",
+      "seed": 0,
+      "rmse": 0.8866076195146826,
+      "mae": 0.7361146534195991,
+      "split_conformal": {
+        "coverage": 0.4923408329344184,
+        "mean_width": 1.3219723298998274,
+        "empty_rate": 0.0
+      },
+      "seconds": 2.1816972605884075,
+      "cqr": {
+        "coverage": 0.5122067975107707,
+        "mean_width": 1.6704824567249097,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "geographic",
+      "model": "feature_transformer",
+      "seed": 0,
+      "rmse": 0.8996950690798913,
+      "mae": 0.7312597022818698,
+      "split_conformal": {
+        "coverage": 0.6464815701292485,
+        "mean_width": 1.6067122220993042,
+        "empty_rate": 0.0
+      },
+      "seconds": 2.612118792720139
+    },
+    {
+      "protocol": "geographic",
+      "model": "ridge",
+      "seed": 1,
+      "rmse": 0.6599236115181345,
+      "mae": 0.48856981917371695,
+      "split_conformal": {
+        "coverage": 0.9430349449497367,
+        "mean_width": 2.2514944076538086,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.005796417593955994
+    },
+    {
+      "protocol": "geographic",
+      "model": "bayesian_ridge",
+      "seed": 1,
+      "rmse": 0.6554060786983529,
+      "mae": 0.4796286581515489,
+      "split_conformal": {
+        "coverage": 0.9435136428913355,
+        "mean_width": 2.263237476348877,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.002829141914844513,
+      "gaussian_posterior": {
+        "coverage": 0.9509334609861178,
+        "mean_width": 2.441427230834961,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "geographic",
+      "model": "hist_boosting",
+      "seed": 1,
+      "rmse": 0.8799024740691367,
+      "mae": 0.732686840087417,
+      "split_conformal": {
+        "coverage": 0.5198659645763524,
+        "mean_width": 1.395259708574413,
+        "empty_rate": 0.0
+      },
+      "seconds": 1.9998381435871124,
+      "cqr": {
+        "coverage": 0.578745811393011,
+        "mean_width": 1.7176709165458006,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "geographic",
+      "model": "feature_transformer",
+      "seed": 1,
+      "rmse": 0.7685196831483858,
+      "mae": 0.6074054756218877,
+      "split_conformal": {
+        "coverage": 0.769985639061752,
+        "mean_width": 1.663779616355896,
+        "empty_rate": 0.0
+      },
+      "seconds": 5.504210603423417
+    },
+    {
+      "protocol": "geographic",
+      "model": "ridge",
+      "seed": 2,
+      "rmse": 0.6573530418328338,
+      "mae": 0.48337947878029996,
+      "split_conformal": {
+        "coverage": 0.9411201531833413,
+        "mean_width": 2.23421049118042,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.006641821004450321
+    },
+    {
+      "protocol": "geographic",
+      "model": "bayesian_ridge",
+      "seed": 2,
+      "rmse": 0.6574475118929128,
+      "mae": 0.4835607760268504,
+      "split_conformal": {
+        "coverage": 0.9411201531833413,
+        "mean_width": 2.231177568435669,
+        "empty_rate": 0.0
+      },
+      "seconds": 0.002878352999687195,
+      "gaussian_posterior": {
+        "coverage": 0.9514121589277166,
+        "mean_width": 2.4440555572509766,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "geographic",
+      "model": "hist_boosting",
+      "seed": 2,
+      "rmse": 0.8550146323188335,
+      "mae": 0.7124344158799284,
+      "split_conformal": {
+        "coverage": 0.5268070847295356,
+        "mean_width": 1.4001410713232405,
+        "empty_rate": 0.0
+      },
+      "seconds": 2.005340096540749,
+      "cqr": {
+        "coverage": 0.5315940641455241,
+        "mean_width": 1.7277856685150574,
+        "empty_rate": 0.0
+      }
+    },
+    {
+      "protocol": "geographic",
+      "model": "feature_transformer",
+      "seed": 2,
+      "rmse": 0.7513633835063183,
+      "mae": 0.5916370601648665,
+      "split_conformal": {
+        "coverage": 0.7673528003829584,
+        "mean_width": 1.6142045259475708,
+        "empty_rate": 0.0
+      },
+      "seconds": 5.800496554002166
+    }
+  ],
+  "diagnostics": {
+    "random": {
+      "test_n": 4128,
+      "fit_n": 11558,
+      "capped_target_fraction": 0.04481589147286822,
+      "capped_mae": 0.581774248496508
+    },
+    "geographic": {
+      "test_n": 4178,
+      "fit_n": 11523,
+      "capped_target_fraction": 0.029439923408329346,
+      "capped_mae": 0.8229597565422976
+    }
+  },
+  "data": {
+    "n": 20640,
+    "features": [
+      "MedInc",
+      "HouseAge",
+      "AveRooms",
+      "AveBedrms",
+      "Population",
+      "AveOccup",
+      "Latitude",
+      "Longitude"
+    ],
+    "target_units": "$100,000",
+    "target_hash": "471c9805cf4027b0ebf7f0de8878ca30a71317fccac94f2c4250fd8ea47e1b49"
+  },
+  "alpha": 0.1,
+  "geographic_guarantee": false
+}

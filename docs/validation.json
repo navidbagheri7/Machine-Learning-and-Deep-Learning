@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "studies": {
+    "classification": {
+      "status": "complete",
+      "elapsed_seconds": 19.831431770697236
+    },
+    "regression": {
+      "status": "complete",
+      "elapsed_seconds": 66.48445725347847
+    },
+    "probabilistic": {
+      "status": "complete",
+      "elapsed_seconds": 1.5705705238506198
+    },
+    "generalization": {
+      "status": "complete",
+      "elapsed_seconds": 5.597672098316252
+    },
+    "kernels": {
+      "status": "complete",
+      "elapsed_seconds": 26.89472251664847
+    },
+    "signals": {
+      "status": "complete",
+      "elapsed_seconds": 30.17648969311267
+    },
+    "vision": {
+      "status": "complete",
+      "elapsed_seconds": 273.90979960002005
+    }
+  },
+  "notebooks": [
+    {
+      "name": "01_gaussian_posterior.ipynb",
+      "executed_cells": 4
+    },
+    {
+      "name": "02_tabular_decisions.ipynb",
+      "executed_cells": 6
+    },
+    {
+      "name": "03_intervals_and_shift.ipynb",
+      "executed_cells": 5
+    },
+    {
+      "name": "04_latent_structure.ipynb",
+      "executed_cells": 4
+    },
+    {
+      "name": "05_generalization.ipynb",
+      "executed_cells": 5
+    },
+    {
+      "name": "06_representation_learning.ipynb",
+      "executed_cells": 6
+    },
+    {
+      "name": "07_learned_receivers.ipynb",
+      "executed_cells": 5
+    }
+  ],
+  "publishable_files": 134,
+  "public_bytes": 7555704,
+  "release_source_config_sha256": "aa5b3d742f77e3a14b300ad780fe1461dd4ec1da16375a67302a2a6691112472",
+  "issues": []
+}

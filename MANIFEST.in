@@ -1,0 +1,10 @@
+include LICENSE README.md CHANGELOG.md CONTRIBUTING.md CITATION.cff requirements-tested.txt .gitignore
+recursive-include configs *.json
+recursive-include docs *.md *.json
+recursive-include notebooks *.ipynb *.md
+recursive-include assets *.png *.pdf *.npz *.json *.md
+recursive-include scripts *.py *.sh
+recursive-include tests *.py
+recursive-include results/reference *.json
+include legacy/README.md legacy/manifest.json
+recursive-include .github *.yml

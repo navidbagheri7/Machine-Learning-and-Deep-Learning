@@ -1,0 +1,11 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "data_root": "/data/tii/ML_data",
+  "device": "cuda:1",
+  "epochs": 100,
+  "output": "results/reference/regression"
+}

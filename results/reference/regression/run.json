@@ -1,0 +1,28 @@
+{
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "data_root": "/data/tii/ML_data",
+    "device": "cuda:1",
+    "epochs": 100,
+    "output": "results/reference/regression",
+    "study": "regression"
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "pandas": "2.2.1",
+    "scikit-learn": "1.4.0",
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128"
+  },
+  "python": "3.10.20",
+  "platform": "Linux-5.15.0-91-generic-x86_64-with-glibc2.35",
+  "git_commit": null,
+  "started_utc": "2026-10-06T13:58:54Z",
+  "status": "complete",
+  "elapsed_seconds": 66.48445725347847
+}

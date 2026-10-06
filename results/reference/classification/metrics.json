@@ -1,0 +1,891 @@
+{
+  "rows": [
+    {
+      "model": "logistic",
+      "seed": 0,
+      "accuracy": 0.8517904305632332,
+      "roc_auc": 0.9031614734633616,
+      "average_precision": 0.7576182392680748,
+      "log_loss": 0.3209476620863788,
+      "brier": 0.10291584087731641,
+      "ece": 0.008583160804831092,
+      "raw_log_loss": 0.32086619133344085,
+      "temperature": 0.9805711119772351,
+      "decision_threshold": 0.32999999999999996,
+      "decision_cost": 0.2254775505190099,
+      "set_coverage": 0.9051655303728272,
+      "set_size": 1.1257293778023463,
+      "seconds_including_selection": 0.5952488947659731,
+      "selected": {
+        "C": 1,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 1000,
+        "multi_class": "auto",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    {
+      "model": "hist_boosting",
+      "seed": 0,
+      "accuracy": 0.8713838216325779,
+      "roc_auc": 0.9256741190435716,
+      "average_precision": 0.8227555293502898,
+      "log_loss": 0.27952706626224644,
+      "brier": 0.08887846519700153,
+      "ece": 0.013400223996444407,
+      "raw_log_loss": 0.27933844835627963,
+      "temperature": 0.9632135372218338,
+      "decision_threshold": 0.38999999999999996,
+      "decision_cost": 0.19894355383575948,
+      "set_coverage": 0.8989005589337264,
+      "set_size": 1.0609913395983048,
+      "seconds_including_selection": 2.792582118883729,
+      "selected": {
+        "categorical_features": "warn",
+        "class_weight": null,
+        "early_stopping": "auto",
+        "interaction_cst": null,
+        "l2_regularization": 2,
+        "learning_rate": 0.08,
+        "loss": "log_loss",
+        "max_bins": 255,
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20,
+        "monotonic_cst": null,
+        "n_iter_no_change": 10,
+        "random_state": 0,
+        "scoring": "loss",
+        "tol": 1e-07,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    {
+      "model": "tabular_resnet",
+      "seed": 0,
+      "accuracy": 0.8518518518518519,
+      "roc_auc": 0.9046498787977253,
+      "average_precision": 0.7667768166805712,
+      "log_loss": 0.31768335330672826,
+      "brier": 0.10141033023115477,
+      "ece": 0.009327600210196673,
+      "raw_log_loss": 0.32176586709914823,
+      "temperature": 1.1800668643298162,
+      "decision_threshold": 0.32999999999999996,
+      "decision_cost": 0.22351206928321357,
+      "set_coverage": 0.8942939622873288,
+      "set_size": 1.091579141330385,
+      "seconds_including_selection": 4.517266668379307,
+      "selected": {
+        "best_epoch": 16
+      }
+    },
+    {
+      "model": "logistic",
+      "seed": 1,
+      "accuracy": 0.8531416989128432,
+      "roc_auc": 0.9043875474359546,
+      "average_precision": 0.7609080039224481,
+      "log_loss": 0.3190889789821731,
+      "brier": 0.1022202688794572,
+      "ece": 0.011155665665917473,
+      "raw_log_loss": 0.31915977952231833,
+      "temperature": 0.9678852291932171,
+      "decision_threshold": 0.37999999999999995,
+      "decision_cost": 0.22646029113690805,
+      "set_coverage": 0.8989619802223451,
+      "set_size": 1.106934463485044,
+      "seconds_including_selection": 0.5390402311459184,
+      "selected": {
+        "C": 0.1,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 1000,
+        "multi_class": "auto",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    {
+      "model": "hist_boosting",
+      "seed": 1,
+      "accuracy": 0.8695411829740188,
+      "roc_auc": 0.9251141087058842,
+      "average_precision": 0.8204153616877234,
+      "log_loss": 0.2807237128362157,
+      "brier": 0.08943289470819656,
+      "ece": 0.011958439037222152,
+      "raw_log_loss": 0.2807475719010318,
+      "temperature": 1.0438740901603447,
+      "decision_threshold": 0.36999999999999994,
+      "decision_cost": 0.19851360481542904,
+      "set_coverage": 0.8970579202751674,
+      "set_size": 1.0583502241877034,
+      "seconds_including_selection": 2.43729495909065,
+      "selected": {
+        "categorical_features": "warn",
+        "class_weight": null,
+        "early_stopping": "auto",
+        "interaction_cst": null,
+        "l2_regularization": 2,
+        "learning_rate": 0.08,
+        "loss": "log_loss",
+        "max_bins": 255,
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_iter": 250,
+        "max_leaf_nodes": 63,
+        "min_samples_leaf": 20,
+        "monotonic_cst": null,
+        "n_iter_no_change": 10,
+        "random_state": 1,
+        "scoring": "loss",
+        "tol": 1e-07,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    {
+      "model": "tabular_resnet",
+      "seed": 1,
+      "accuracy": 0.8579325594250967,
+      "roc_auc": 0.9120708599956382,
+      "average_precision": 0.7834165663644267,
+      "log_loss": 0.30581251078721966,
+      "brier": 0.09774287759051835,
+      "ece": 0.010181991655834182,
+      "raw_log_loss": 0.3058851363626063,
+      "temperature": 1.0104551245979032,
+      "decision_threshold": 0.35999999999999993,
+      "decision_cost": 0.2150359314538419,
+      "set_coverage": 0.8940482771328543,
+      "set_size": 1.0791720410294208,
+      "seconds_including_selection": 2.0228143902495503,
+      "selected": {
+        "best_epoch": 5
+      }
+    },
+    {
+      "model": "logistic",
+      "seed": 2,
+      "accuracy": 0.852158958294945,
+      "roc_auc": 0.9029882795633499,
+      "average_precision": 0.7573369323728179,
+      "log_loss": 0.32120351144811127,
+      "brier": 0.10289786747324657,
+      "ece": 0.007834777751878783,
+      "raw_log_loss": 0.3211538362526828,
+      "temperature": 1.0371521946194646,
+      "decision_threshold": 0.32999999999999996,
+      "decision_cost": 0.22437196732387446,
+      "set_coverage": 0.9076838032061912,
+      "set_size": 1.1331613537252012,
+      "seconds_including_selection": 0.4401700459420681,
+      "selected": {
+        "C": 10,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 1000,
+        "multi_class": "auto",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    {
+      "model": "hist_boosting",
+      "seed": 2,
+      "accuracy": 0.8717523493642897,
+      "roc_auc": 0.9262847200659237,
+      "average_precision": 0.824014145107582,
+      "log_loss": 0.2785836879910998,
+      "brier": 0.08844777205336429,
+      "ece": 0.009653625187444509,
+      "raw_log_loss": 0.2785304380037577,
+      "temperature": 1.0221453717511193,
+      "decision_threshold": 0.24999999999999994,
+      "decision_cost": 0.1982679196609545,
+      "set_coverage": 0.9001904059947178,
+      "set_size": 1.0607456544438303,
+      "seconds_including_selection": 2.590986323542893,
+      "selected": {
+        "categorical_features": "warn",
+        "class_weight": null,
+        "early_stopping": "auto",
+        "interaction_cst": null,
+        "l2_regularization": 2,
+        "learning_rate": 0.08,
+        "loss": "log_loss",
+        "max_bins": 255,
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_iter": 250,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20,
+        "monotonic_cst": null,
+        "n_iter_no_change": 10,
+        "random_state": 2,
+        "scoring": "loss",
+        "tol": 1e-07,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    {
+      "model": "tabular_resnet",
+      "seed": 2,
+      "accuracy": 0.8568269762299613,
+      "roc_auc": 0.9102633538393405,
+      "average_precision": 0.7797820514937498,
+      "log_loss": 0.3078267354546196,
+      "brier": 0.09869901963924556,
+      "ece": 0.008669122443079958,
+      "raw_log_loss": 0.30785723779143004,
+      "temperature": 0.9794070323632729,
+      "decision_threshold": 0.25999999999999995,
+      "decision_cost": 0.21859836619372275,
+      "set_coverage": 0.9004360911491923,
+      "set_size": 1.097844112769486,
+      "seconds_including_selection": 1.883116714656353,
+      "selected": {
+        "best_epoch": 4
+      }
+    }
+  ],
+  "diagnostics_seed0": {
+    "logistic": {
+      "groups": [
+        {
+          "feature": "sex",
+          "group": "Female",
+          "n": 5421,
+          "accuracy": 0.9282420217672016,
+          "roc_auc": 0.9284572797855657,
+          "average_precision": 0.6997387172998819,
+          "log_loss": 0.18616749331729116,
+          "brier": 0.05478157917273583,
+          "ece": 0.008654333335054543,
+          "set_coverage": 0.9483490130972145,
+          "tpr": 0.6389830508474577,
+          "fpr": 0.047609190643759056
+        },
+        {
+          "feature": "sex",
+          "group": "Male",
+          "n": 10860,
+          "accuracy": 0.8136279926335175,
+          "roc_auc": 0.8786844939363351,
+          "average_precision": 0.766013118019566,
+          "log_loss": 0.3882260501984621,
+          "brier": 0.12694308145747582,
+          "ece": 0.013186810715919128,
+          "set_coverage": 0.883609576427256,
+          "tpr": 0.7668918918918919,
+          "fpr": 0.1968700683850605
+        },
+        {
+          "feature": "race",
+          "group": "Amer-Indian-Eskimo",
+          "n": 159,
+          "accuracy": 0.9056603773584906,
+          "roc_auc": 0.9545112781954888,
+          "average_precision": 0.6875983760709161,
+          "log_loss": 0.19050391319514914,
+          "brier": 0.060523903108132215,
+          "ece": 0.07018566624569722,
+          "set_coverage": 0.9308176100628931,
+          "tpr": 0.631578947368421,
+          "fpr": 0.05
+        },
+        {
+          "feature": "race",
+          "group": "Asian-Pac-Islander",
+          "n": 480,
+          "accuracy": 0.8354166666666667,
+          "roc_auc": 0.8915516456848172,
+          "average_precision": 0.7769006992832836,
+          "log_loss": 0.3833291952884879,
+          "brier": 0.11462962931974369,
+          "ece": 0.0428347944787311,
+          "set_coverage": 0.8979166666666667,
+          "tpr": 0.7593984962406015,
+          "fpr": 0.15273775216138327
+        },
+        {
+          "feature": "race",
+          "group": "Black",
+          "n": 1561,
+          "accuracy": 0.9128763613068546,
+          "roc_auc": 0.9243425041838805,
+          "average_precision": 0.6702040971398485,
+          "log_loss": 0.2012965550310234,
+          "brier": 0.06106643753060311,
+          "ece": 0.01962975586181174,
+          "set_coverage": 0.9397821909032671,
+          "tpr": 0.6480446927374302,
+          "fpr": 0.06657018813314038
+        },
+        {
+          "feature": "race",
+          "group": "Other",
+          "n": 135,
+          "accuracy": 0.8592592592592593,
+          "roc_auc": 0.9516363636363636,
+          "average_precision": 0.8139395717114785,
+          "log_loss": 0.2508962516752235,
+          "brier": 0.08150870658294986,
+          "ece": 0.08266344643086246,
+          "set_coverage": 0.9037037037037037,
+          "tpr": 0.6,
+          "fpr": 0.02727272727272727
+        },
+        {
+          "feature": "race",
+          "group": "White",
+          "n": 13946,
+          "accuracy": 0.8448300587982217,
+          "roc_auc": 0.8987750140854951,
+          "average_precision": 0.7618521681541255,
+          "log_loss": 0.3343586572574393,
+          "brier": 0.10788748732840592,
+          "ece": 0.00943130746650976,
+          "set_coverage": 0.901262010612362,
+          "tpr": 0.7535816618911175,
+          "fpr": 0.1503442999234889
+        }
+      ],
+      "reliability": {
+        "ece": 0.00858316094756132,
+        "bins": [
+          {
+            "probability": 0.018614668234831325,
+            "frequency": 0.018442622950819672,
+            "count": 7320
+          },
+          {
+            "probability": 0.09715460016393591,
+            "frequency": 0.09538850284270373,
+            "count": 1583
+          },
+          {
+            "probability": 0.1655187374995367,
+            "frequency": 0.18564593301435406,
+            "count": 1045
+          },
+          {
+            "probability": 0.23278173807325128,
+            "frequency": 0.2594871794871795,
+            "count": 975
+          },
+          {
+            "probability": 0.2987718705878685,
+            "frequency": 0.31738035264483627,
+            "count": 794
+          },
+          {
+            "probability": 0.36498788818739214,
+            "frequency": 0.3515151515151515,
+            "count": 660
+          },
+          {
+            "probability": 0.43290210518667605,
+            "frequency": 0.436,
+            "count": 500
+          },
+          {
+            "probability": 0.499972070695562,
+            "frequency": 0.5173745173745173,
+            "count": 518
+          },
+          {
+            "probability": 0.568189925491426,
+            "frequency": 0.5701754385964912,
+            "count": 456
+          },
+          {
+            "probability": 0.632326006783462,
+            "frequency": 0.6056034482758621,
+            "count": 464
+          },
+          {
+            "probability": 0.6977069685404107,
+            "frequency": 0.6568181818181819,
+            "count": 440
+          },
+          {
+            "probability": 0.7677563289794703,
+            "frequency": 0.7441860465116279,
+            "count": 430
+          },
+          {
+            "probability": 0.8315399515260669,
+            "frequency": 0.8157099697885196,
+            "count": 331
+          },
+          {
+            "probability": 0.8995728721470089,
+            "frequency": 0.8811475409836066,
+            "count": 244
+          },
+          {
+            "probability": 0.981227650503928,
+            "frequency": 0.9750479846449136,
+            "count": 521
+          }
+        ]
+      },
+      "permutation_importance": {
+        "age": 0.004733768520728321,
+        "education_num": 0.06276827490639782,
+        "capital_gain": 0.2551632851969234,
+        "capital_loss": 0.008251983113364466,
+        "hours_per_week": 0.014408507652056793,
+        "workclass": 0.00030481937434245765,
+        "marital_status": 0.14351116516619886,
+        "occupation": 0.016090433617652722,
+        "relationship": 0.017599949507582296,
+        "race": -3.819147918954213e-05,
+        "sex": 0.010318207240475866,
+        "native_country": 0.0016319088741822418
+      }
+    },
+    "hist_boosting": {
+      "groups": [
+        {
+          "feature": "sex",
+          "group": "Female",
+          "n": 5421,
+          "accuracy": 0.9356207341818853,
+          "roc_auc": 0.9427523164309597,
+          "average_precision": 0.7700238968009617,
+          "log_loss": 0.163651662262016,
+          "brier": 0.04755099564568218,
+          "ece": 0.011923978762194972,
+          "set_coverage": 0.9494558199594171,
+          "tpr": 0.676271186440678,
+          "fpr": 0.03705237010970813
+        },
+        {
+          "feature": "sex",
+          "group": "Male",
+          "n": 10860,
+          "accuracy": 0.8393186003683242,
+          "roc_auc": 0.9078244210986847,
+          "average_precision": 0.8306599428203074,
+          "log_loss": 0.33736873892202995,
+          "brier": 0.10950795068850262,
+          "ece": 0.017837123767098707,
+          "set_coverage": 0.8736648250460405,
+          "tpr": 0.7481572481572482,
+          "fpr": 0.13650710152551288
+        },
+        {
+          "feature": "race",
+          "group": "Amer-Indian-Eskimo",
+          "n": 159,
+          "accuracy": 0.9245283018867925,
+          "roc_auc": 0.9672932330827068,
+          "average_precision": 0.8321293150746689,
+          "log_loss": 0.15980566996523454,
+          "brier": 0.04737066295217326,
+          "ece": 0.05516672379366134,
+          "set_coverage": 0.949685534591195,
+          "tpr": 0.8421052631578947,
+          "fpr": 0.04285714285714286
+        },
+        {
+          "feature": "race",
+          "group": "Asian-Pac-Islander",
+          "n": 480,
+          "accuracy": 0.8333333333333334,
+          "roc_auc": 0.8995904747459427,
+          "average_precision": 0.8025622326037555,
+          "log_loss": 0.3539269508588273,
+          "brier": 0.11124180912696079,
+          "ece": 0.05091256295144842,
+          "set_coverage": 0.8666666666666667,
+          "tpr": 0.7218045112781954,
+          "fpr": 0.13256484149855907
+        },
+        {
+          "feature": "race",
+          "group": "Black",
+          "n": 1561,
+          "accuracy": 0.9256886611146701,
+          "roc_auc": 0.9469779042598776,
+          "average_precision": 0.7672478415099941,
+          "log_loss": 0.16680624561102725,
+          "brier": 0.050245354923867544,
+          "ece": 0.01659185134471966,
+          "set_coverage": 0.9410634208840487,
+          "tpr": 0.6536312849162011,
+          "fpr": 0.04413892908827786
+        },
+        {
+          "feature": "race",
+          "group": "Other",
+          "n": 135,
+          "accuracy": 0.8962962962962963,
+          "roc_auc": 0.9727272727272728,
+          "average_precision": 0.910733347586695,
+          "log_loss": 0.18503047082436247,
+          "brier": 0.05795490948762673,
+          "ece": 0.07269410726480202,
+          "set_coverage": 0.9481481481481482,
+          "tpr": 0.76,
+          "fpr": 0.00909090909090909
+        },
+        {
+          "feature": "race",
+          "group": "White",
+          "n": 13946,
+          "accuracy": 0.8657679621396817,
+          "roc_auc": 0.9222686882183877,
+          "average_precision": 0.8262849546155121,
+          "log_loss": 0.2918630765035725,
+          "brier": 0.09320560564068968,
+          "ece": 0.015463199348545823,
+          "set_coverage": 0.8942349060662556,
+          "tpr": 0.7412607449856734,
+          "fpr": 0.10548967100229534
+        }
+      ],
+      "reliability": {
+        "ece": 0.013400223996444407,
+        "bins": [
+          {
+            "probability": 0.015618474374457611,
+            "frequency": 0.017306063173181653,
+            "count": 8263
+          },
+          {
+            "probability": 0.09613549972848098,
+            "frequency": 0.11773472429210134,
+            "count": 1342
+          },
+          {
+            "probability": 0.16501726829126112,
+            "frequency": 0.193390452876377,
+            "count": 817
+          },
+          {
+            "probability": 0.23208760156564842,
+            "frequency": 0.25841184387617766,
+            "count": 743
+          },
+          {
+            "probability": 0.29835106992398647,
+            "frequency": 0.2841121495327103,
+            "count": 535
+          },
+          {
+            "probability": 0.3667598209153278,
+            "frequency": 0.4056291390728477,
+            "count": 604
+          },
+          {
+            "probability": 0.4338799682976129,
+            "frequency": 0.38526315789473686,
+            "count": 475
+          },
+          {
+            "probability": 0.49697750205253644,
+            "frequency": 0.4556701030927835,
+            "count": 485
+          },
+          {
+            "probability": 0.565956628863744,
+            "frequency": 0.5612244897959183,
+            "count": 392
+          },
+          {
+            "probability": 0.6345691427550901,
+            "frequency": 0.6419753086419753,
+            "count": 405
+          },
+          {
+            "probability": 0.6998156668990978,
+            "frequency": 0.6320987654320988,
+            "count": 405
+          },
+          {
+            "probability": 0.7645832837531984,
+            "frequency": 0.7468354430379747,
+            "count": 395
+          },
+          {
+            "probability": 0.8314549045388643,
+            "frequency": 0.8533834586466166,
+            "count": 266
+          },
+          {
+            "probability": 0.8920761867086544,
+            "frequency": 0.9157303370786517,
+            "count": 178
+          },
+          {
+            "probability": 0.9877634207091738,
+            "frequency": 0.9969262295081968,
+            "count": 976
+          }
+        ]
+      },
+      "permutation_importance": {
+        "age": 0.08141087690276079,
+        "education_num": 0.04962790106786963,
+        "capital_gain": 0.19247979160079756,
+        "capital_loss": 0.02903155235409936,
+        "hours_per_week": 0.021015461597873136,
+        "workclass": 0.0035795988262047143,
+        "marital_status": 0.1249602680224481,
+        "occupation": 0.014804177562026566,
+        "relationship": 0.006869277572621975,
+        "race": 0.0004257012822947252,
+        "sex": 0.0019528014781270604,
+        "native_country": 0.0009202329947140911
+      }
+    },
+    "tabular_resnet": {
+      "groups": [
+        {
+          "feature": "sex",
+          "group": "Female",
+          "n": 5421,
+          "accuracy": 0.9241837299391257,
+          "roc_auc": 0.927128818471103,
+          "average_precision": 0.6930244456363159,
+          "log_loss": 0.18886864801010003,
+          "brier": 0.055395511200142085,
+          "ece": 0.013061312775460365,
+          "set_coverage": 0.9435528500276702,
+          "tpr": 0.688135593220339,
+          "fpr": 0.062305940799006414
+        },
+        {
+          "feature": "sex",
+          "group": "Male",
+          "n": 10860,
+          "accuracy": 0.8157458563535912,
+          "roc_auc": 0.8821793165888379,
+          "average_precision": 0.7789905698001848,
+          "log_loss": 0.38198395343684083,
+          "brier": 0.12437960591873484,
+          "ece": 0.012843674761251743,
+          "set_coverage": 0.8697053406998159,
+          "tpr": 0.7828624078624079,
+          "fpr": 0.20462914255654918
+        },
+        {
+          "feature": "race",
+          "group": "Amer-Indian-Eskimo",
+          "n": 159,
+          "accuracy": 0.89937106918239,
+          "roc_auc": 0.9360902255639098,
+          "average_precision": 0.663556896791192,
+          "log_loss": 0.20239674092221102,
+          "brier": 0.06429909970717046,
+          "ece": 0.05053097846091919,
+          "set_coverage": 0.9245283018867925,
+          "tpr": 0.7894736842105263,
+          "fpr": 0.07857142857142857
+        },
+        {
+          "feature": "race",
+          "group": "Asian-Pac-Islander",
+          "n": 480,
+          "accuracy": 0.8375,
+          "roc_auc": 0.8805009642261272,
+          "average_precision": 0.7402272006395254,
+          "log_loss": 0.3869648097440816,
+          "brier": 0.12043111588451741,
+          "ece": 0.05109323791693897,
+          "set_coverage": 0.875,
+          "tpr": 0.7969924812030075,
+          "fpr": 0.17002881844380405
+        },
+        {
+          "feature": "race",
+          "group": "Black",
+          "n": 1561,
+          "accuracy": 0.9096732863549007,
+          "roc_auc": 0.9248478037658967,
+          "average_precision": 0.6522135926756586,
+          "log_loss": 0.20862614629164455,
+          "brier": 0.06459445725110215,
+          "ece": 0.025177991932913098,
+          "set_coverage": 0.9282511210762332,
+          "tpr": 0.7150837988826816,
+          "fpr": 0.08683068017366136
+        },
+        {
+          "feature": "race",
+          "group": "Other",
+          "n": 135,
+          "accuracy": 0.8814814814814815,
+          "roc_auc": 0.9520000000000001,
+          "average_precision": 0.8227824127842801,
+          "log_loss": 0.26668967309146,
+          "brier": 0.07960073104154172,
+          "ece": 0.0840511953941098,
+          "set_coverage": 0.9037037037037037,
+          "tpr": 0.64,
+          "fpr": 0.03636363636363636
+        },
+        {
+          "feature": "race",
+          "group": "White",
+          "n": 13946,
+          "accuracy": 0.8450451742435107,
+          "roc_auc": 0.9014569718268174,
+          "average_precision": 0.7760861236071317,
+          "log_loss": 0.3293137791821632,
+          "brier": 0.10551075918226328,
+          "ece": 0.011699140271142284,
+          "set_coverage": 0.8907213537932024,
+          "tpr": 0.7707736389684814,
+          "fpr": 0.15904743687834735
+        }
+      ],
+      "reliability": {
+        "ece": 0.009327600210196673,
+        "bins": [
+          {
+            "probability": 0.014519430696964264,
+            "frequency": 0.01770748851040822,
+            "count": 7398
+          },
+          {
+            "probability": 0.09850941598415375,
+            "frequency": 0.10448859455481972,
+            "count": 1359
+          },
+          {
+            "probability": 0.16512273252010345,
+            "frequency": 0.155053974484789,
+            "count": 1019
+          },
+          {
+            "probability": 0.23252560198307037,
+            "frequency": 0.2349896480331263,
+            "count": 966
+          },
+          {
+            "probability": 0.2997618019580841,
+            "frequency": 0.3173575129533679,
+            "count": 772
+          },
+          {
+            "probability": 0.36664319038391113,
+            "frequency": 0.35014409221902015,
+            "count": 694
+          },
+          {
+            "probability": 0.43227604031562805,
+            "frequency": 0.4231378763866878,
+            "count": 631
+          },
+          {
+            "probability": 0.49978014826774597,
+            "frequency": 0.5065666041275797,
+            "count": 533
+          },
+          {
+            "probability": 0.5676347613334656,
+            "frequency": 0.5297619047619048,
+            "count": 504
+          },
+          {
+            "probability": 0.6327566504478455,
+            "frequency": 0.5833333333333334,
+            "count": 504
+          },
+          {
+            "probability": 0.6978999972343445,
+            "frequency": 0.6956521739130435,
+            "count": 552
+          },
+          {
+            "probability": 0.7643447518348694,
+            "frequency": 0.8149882903981265,
+            "count": 427
+          },
+          {
+            "probability": 0.828996479511261,
+            "frequency": 0.85,
+            "count": 160
+          },
+          {
+            "probability": 0.897954523563385,
+            "frequency": 0.8872180451127819,
+            "count": 133
+          },
+          {
+            "probability": 0.9770391583442688,
+            "frequency": 0.9793322734499205,
+            "count": 629
+          }
+        ]
+      }
+    }
+  },
+  "paired_seed0": [
+    {
+      "comparison": "hist_boosting minus logistic NLL",
+      "difference": -0.041420595824132427,
+      "ci95": [
+        -0.045612887838455934,
+        -0.037052411934888736
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    },
+    {
+      "comparison": "tabular_resnet minus logistic NLL",
+      "difference": -0.0032643080260177865,
+      "ci95": [
+        -0.007104973248045983,
+        0.0012655825491535394
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    }
+  ],
+  "data": {
+    "train": 32561,
+    "test": 16281,
+    "target": "income >50K",
+    "test_y_hash": "11a7236ef14b805e9d5c00c2ef9546561f45eecfaa9b98b905de0f3e9a812b52"
+  },
+  "protocol": "70/10/10/10 training split, plus official test; no survey weighting"
+}

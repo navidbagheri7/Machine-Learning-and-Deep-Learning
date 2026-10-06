@@ -1,0 +1,35 @@
+name: Validate laboratory
+on:
+  push:
+  pull_request:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install CPU scientific environment
+        run: |
+          python -m pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -e '.[notebooks,dev]'
+      - name: Style
+        run: |
+          ruff check src tests scripts
+          ruff format --check src tests scripts
+      - name: Mathematical and interface tests
+        run: python -m pytest -q
+      - name: Offline integration
+        run: |
+          python -m learning_lab.cli probabilistic --quick
+          python -m learning_lab.cli generalization --quick
+          python -m learning_lab.cli kernels --quick
+          python -m learning_lab.cli signals --quick --device cpu
+      - name: Execute documented walkthroughs
+        run: python scripts/execute_notebooks.py
+      - name: Validate release and build package
+        run: |
+          python scripts/validate_release.py
+          python -m build

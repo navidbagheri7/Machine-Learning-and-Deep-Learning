@@ -1,0 +1,122 @@
+[
+  {
+    "original_name": "Clustering.ipynb",
+    "sha256": "29240ab11125ad4d462ba5137974f810ee62d181c872ecfe8a7b82af71179282",
+    "detected_type": "notebook",
+    "bytes": 1372944
+  },
+  {
+    "original_name": "Code.ipynb",
+    "sha256": "d69796c99ca1e28365f4b92cbc92c339c59e7efac09e3a3066987303920d00a5",
+    "detected_type": "pdf",
+    "bytes": 1967153
+  },
+  {
+    "original_name": "Deep double descent.pdf",
+    "sha256": "7ab41f41f793dac7faef8498e5976e10a0cddefa17200c9cc11acf5f5350f2c9",
+    "detected_type": "pdf",
+    "bytes": 532160
+  },
+  {
+    "original_name": "HD analysis of double descent.pdf",
+    "sha256": "f5edade53eb1a5ee1c4868f4ada6aadba4d355dfae3b548a961b97ca23c4b398",
+    "detected_type": "pdf",
+    "bytes": 1788491
+  },
+  {
+    "original_name": "HW_NN_Q1.ipynb",
+    "sha256": "f59f3e498018b0a7ef6bfefe1453f55c1008aa490076955d073e040911315de0",
+    "detected_type": "notebook",
+    "bytes": 313826
+  },
+  {
+    "original_name": "HW_NN_Q2.ipynb",
+    "sha256": "56c5f8bda6fb8e7cbf51f6464e4063272f995d1c37ab4dcf298267bdc95fd8eb",
+    "detected_type": "notebook",
+    "bytes": 264522
+  },
+  {
+    "original_name": "Harmless interpolation of noisy data.pdf",
+    "sha256": "4b19ba59e6debd15dbc9049baa42a9402cd73bc66df2ce6c5b2924246941d45f",
+    "detected_type": "pdf",
+    "bytes": 8528693
+  },
+  {
+    "original_name": "IML_CHW1_Q1.ipynb",
+    "sha256": "fa5524e47b02c06b9eeeec487e6cf1a735f67eeca98a9c4850621e51d36aea17",
+    "detected_type": "notebook",
+    "bytes": 55743
+  },
+  {
+    "original_name": "IML_CWH1_Q2.ipynb",
+    "sha256": "118a0c5ddd72143ed9e685d4a31d1420bc0a469ec3721f214ab027a6fcc4ce9e",
+    "detected_type": "notebook",
+    "bytes": 205332
+  },
+  {
+    "original_name": "Implicit Bias of GD.pdf",
+    "sha256": "995f759a819a29556278bc5a7454d06b4f5b5f02b99fc6f14b4697561e8d03fb",
+    "detected_type": "pdf",
+    "bytes": 579104
+  },
+  {
+    "original_name": "On the bias variance tradeoff.pdf",
+    "sha256": "ba49d915803f9e032063c21edd225798142a85e13370870b3241681b380fc9ac",
+    "detected_type": "pdf",
+    "bytes": 1365173
+  },
+  {
+    "original_name": "Question1.ipynb",
+    "sha256": "61a5bfc888411bd45ab370a7a019e824220801775e8cec103a5ab168924ce681",
+    "detected_type": "notebook",
+    "bytes": 268701
+  },
+  {
+    "original_name": "Question2.ipynb",
+    "sha256": "f6904860d81e11abec319c0933e7910b3c3fee7894b9abbff8e2e1a116622ffe",
+    "detected_type": "notebook",
+    "bytes": 56898
+  },
+  {
+    "original_name": "Question3.ipynb",
+    "sha256": "a6d3fa895b9af4020a39ca643794528efe01bf4cc9913273814916cba3c09185",
+    "detected_type": "notebook",
+    "bytes": 149591
+  },
+  {
+    "original_name": "Reconciling modern ML practice.pdf",
+    "sha256": "ede8ff9aed41ee06f1a91be78abeb5764709c804dee4148309b0532839c7cad9",
+    "detected_type": "pdf",
+    "bytes": 4956165
+  },
+  {
+    "original_name": "Report.pdf",
+    "sha256": "033ae705d2d800be99c8357e538a60341900469e91e66516d5093f80d511fcfe",
+    "detected_type": "notebook",
+    "bytes": 676994
+  },
+  {
+    "original_name": "Support_Vector_Machines_1.ipynb",
+    "sha256": "4670662455c8c7efa358348a59028135357de39c28287643c53e5760421ef0d8",
+    "detected_type": "notebook",
+    "bytes": 1028077
+  },
+  {
+    "original_name": "Support_Vector_Machines_2.ipynb",
+    "sha256": "712abff3d3e4e3aec863bb011ba9ddc7d1a5cfecbd65214cdc7b7dd1d2502229",
+    "detected_type": "notebook",
+    "bytes": 79347
+  },
+  {
+    "original_name": "Suprises in HD.pdf",
+    "sha256": "0ffb8c5f07d18e4a120cd5417fa57ae8be8d719be51b7b80a4e0860726195365",
+    "detected_type": "pdf",
+    "bytes": 1034937
+  },
+  {
+    "original_name": "The generalization error of random features regression.pdf",
+    "sha256": "b671592188609aae4a4b99bfeb6505dcd8fadffb8916126a71570e2d0b658814",
+    "detected_type": "pdf",
+    "bytes": 1673553
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "config": {
+    "samples": 100,
+    "repeats": 30,
+    "gd_steps": 30000,
+    "output": "results/reference/generalization",
+    "study": "generalization"
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "pandas": "2.2.1",
+    "scikit-learn": "1.4.0",
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128"
+  },
+  "python": "3.10.20",
+  "platform": "Linux-5.15.0-91-generic-x86_64-with-glibc2.35",
+  "git_commit": null,
+  "started_utc": "2026-10-06T13:58:08Z",
+  "status": "complete",
+  "elapsed_seconds": 5.597672098316252
+}

@@ -1,0 +1,13 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "data_root": "/data/tii/ML_data",
+  "device": "cuda:1",
+  "train_blocks": 4000,
+  "test_blocks": 2000,
+  "epochs": 40,
+  "output": "results/reference/signals"
+}
