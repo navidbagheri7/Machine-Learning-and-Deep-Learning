@@ -3,6 +3,28 @@
 These primary sources motivate the implementations. The laboratory provides its own
 code and explanations and does not redistribute textbooks or research-paper PDFs.
 
+## Added project methods and images
+
+- Zoran and Weiss (2011), *From Learning Models of Natural Image Patches to Whole
+  Image Restoration*. [Author-hosted paper](https://people.csail.mit.edu/danielzoran/EPLLICCVCameraReady.pdf).
+  Motivates the patch-prior connection; this laboratory's one-pass averaging is not the EPLL optimizer.
+- Zhang et al. (2017), *Beyond a Gaussian Denoiser: Residual Learning of Deep CNN for
+  Image Denoising*. [Paper](https://arxiv.org/abs/1608.03981). Our compact conditioned CNN is a different architecture.
+- Lim et al. (2017), *Enhanced Deep Residual Networks for Single Image Super-Resolution*.
+  [Paper](https://arxiv.org/abs/1707.02921). Motivates residual scaling, no normalization and learned upsampling.
+- Zhang, Isola and Efros (2016), *Colorful Image Colorization*.
+  [Authors' project](https://richzhang.github.io/colorization/). Motivates uncertainty and rebalanced chroma classification.
+- Kang et al. (2023), *DDColor: Towards Photo-Realistic Image Colorization via Dual Decoders*.
+  [Paper](https://arxiv.org/abs/2212.11613), [official source](https://github.com/piddnad/DDColor),
+  [official pretrained release](https://huggingface.co/piddnad/ddcolor_modelscope).
+  Frozen source/model revisions and Apache-2.0 provenance are pinned in the public manifest.
+- COCO 2017 photographs: [official download page](https://cocodataset.org/#download),
+  [project](https://cocodataset.org/). Only CC BY 2.0 images are selected for the local
+  restoration benchmark. Public galleries preserve [verified creator credits](photo_attributions.md).
+- Supplied course numeric examples: two 600-point synthetic coordinate arrays, and
+  five privately preserved corrupted-digit archives. Names/hashes are inventoried;
+  handout and archive contents are excluded from publication.
+
 ## Foundations
 
 - Kevin P. Murphy. *Probabilistic Machine Learning: An Introduction*. MIT Press, 2022.

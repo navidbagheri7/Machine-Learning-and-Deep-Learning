@@ -23,6 +23,14 @@ for the first four chapters.
 6. **An end-to-end domain example.** Read [signal equalization](06_signal_equalization.md).
    Use notebook 07 to verify the simulator, Gray coding and inverse receiver before
    interpreting a neural BER curve.
+7. **Repair an inverse model.** Read [the course-project reconstruction](10_course_projects.md).
+   Use notebooks 08–09 to separate density modeling from group-label recovery and to
+   condition a mixture correctly. Inspect the validation-only correction of the supplied
+   corruption model before interpreting the restored digits.
+8. **Restore and color natural images.** Read [image restoration](11_image_restoration.md).
+   Use notebooks 10–13 to compare PCA, bottlenecks, residual networks, transfer learning,
+   color distributions and a modern frozen model. Explain why PSNR and plausible color
+   can disagree, and why external model exposure changes the comparison.
 
 For an applied data scientist interview, begin with the Adult study: justify the
 split, preprocessing, model selection metric, calibration and operating threshold.

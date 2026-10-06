@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.1.0 — 2026-10-06
+
+- Reviewed the added project briefs, supplied coordinate data and five image archives.
+- Added course-data Gaussian mixture selection and missing-coordinate prediction;
+  implemented categorical EM with missing observations and an identifiable synthetic evaluation.
+- Added stable mixture conditioning, total posterior covariance, six-size controlled patch
+  reconstruction, filename pairing, blur-matrix auditing and validation-only forward calibration.
+- Trained/evaluated MNIST PCA/autoencoder/residual denoising, natural-image 4× SR, and
+  lightness-to-chroma regression/classification with transfer learning and uncertainty diagnostics.
+- Added a pinned, frozen official DDColor reference with external-exposure accounting.
+- Added six executed English walkthroughs, training curves, attributed galleries,
+  compressed paired-image evidence, checkpoint inference and explicit preparation tools.
+- Extended mathematical/interface tests, offline synthetic CI integration and release checks.
+
 ## 1.0.0 — 2026-10-06
 
 - Reconstructed course material as a Python package with seven reproducible studies.

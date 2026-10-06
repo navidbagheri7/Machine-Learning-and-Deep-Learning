@@ -1,0 +1,6 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "output": "results/reference/course_mixtures",
+  "seeds": [0, 1, 2],
+  "components": [1, 2, 3, 4, 5, 6]
+}

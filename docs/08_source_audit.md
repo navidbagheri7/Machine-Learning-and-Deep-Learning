@@ -36,3 +36,29 @@ of unavailable original data.
 The communication reconstruction is a discrete baseband benchmark with circular memory.
 It does not claim to reproduce the original continuous propagation equations. Physical
 model assumptions and knowledge supplied to each receiver are stated in the chapter.
+
+## Added project briefs and data
+
+The later `projects/` folder adds two project PDFs, two coordinate CSVs, five MNIST
+inverse-problem archives, two student solution notebooks, and three empty deep-learning
+templates. These sources are now included in the hash inventory. Their requirements
+are reconstructed in [the mixture/inverse chapter](10_course_projects.md) and
+[the restoration chapter](11_image_restoration.md), with [measured results](project_results.md).
+
+| Added source | Completed work |
+|---|---|
+| Phase 1 PDF and solution notebook | Gaussian/categorical EM derivations, hard-versus-soft assignment distinction, missing-data latent-class EM, model selection and imputation |
+| `Image1` / `Image2` numeric CSVs | Three independent fit/selection/test partitions; recovered parameters, held-out density, ARI and covariance geometry |
+| Phase 2 PDF and solution notebook | Stable linear-Gaussian conditioning, observation evidence, mixture posterior moments, hard heuristic/MMSE and overlap averaging |
+| Five corrupted MNIST archives | Filename pairing, matrix-derived dimensions, unmatched-ID reporting, controlled-versus-supplied separation and validation-only forward calibration |
+| Denoising template | PCA projection/shrinkage, autoencoder and noise-conditioned residual CNN; full official-test evaluation and noise shift |
+| Super-resolution template | Declared natural-image dataset substitution, 4× bicubic/autoencoder/pixel-shuffle comparison and blur stress test |
+| Colorization template | Lab regression, transferred encoder/decoder, balanced chroma bins, uncertainty and frozen DDColor reference |
+
+The reconstruction fixes missing mixture weights, incompatible intensity units,
+incorrect posterior component scoring, unpaired image ordering, imagewise contrast
+rescaling, and random single-image tuning. Archive filenames are inconsistent with
+their matrices, and the supplied observations have positive residual bias; those
+facts are measured and addressed explicitly rather than hidden by favorable plots.
+Natural-image gallery publication uses fixed test ordering and verified CC BY creator
+credits. The raw handouts, partner identifiers, archives and original outputs remain private.

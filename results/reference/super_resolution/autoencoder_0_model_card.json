@@ -1,0 +1,9 @@
+{
+  "task": "super_resolution",
+  "architecture": "autoencoder",
+  "seed": 0,
+  "scale": 4,
+  "best_epoch": 60,
+  "degradation": "PyTorch antialiased bicubic, align_corners=False",
+  "parameters": 426307
+}

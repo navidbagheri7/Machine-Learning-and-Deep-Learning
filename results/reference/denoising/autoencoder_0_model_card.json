@@ -1,0 +1,11 @@
+{
+  "task": "denoising",
+  "architecture": "autoencoder",
+  "seed": 0,
+  "noise_range_255": [
+    10.2,
+    51.0
+  ],
+  "best_epoch": 25,
+  "parameters": 425153
+}

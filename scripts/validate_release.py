@@ -19,6 +19,12 @@ STUDIES = [
     "kernels",
     "signals",
     "vision",
+    "course_mixtures",
+    "inverse",
+    "denoising",
+    "super_resolution",
+    "colorization",
+    "ddcolor",
 ]
 
 
@@ -56,6 +62,29 @@ def main():
                 "status": record["status"],
                 "elapsed_seconds": record["elapsed_seconds"],
             }
+            if study in ["denoising", "super_resolution", "colorization", "ddcolor"]:
+                with np.load(
+                    ROOT / "assets" / "source_data" / f"{study}_per_image_scores.npz",
+                    allow_pickle=False,
+                ) as scores:
+                    for row in metrics["rows"]:
+                        values = scores[row["per_image_psnr_key"]]
+                        assert len(values) == config["test_images"]
+                        assert np.isfinite(values).all()
+                        assert np.isclose(values.mean(), row["psnr"]["mean"], atol=1e-8)
+                for curve in metrics.get("curves", []):
+                    history = curve["history"]
+                    assert len(history) == config["epochs"]
+                    best = min(history, key=lambda r: r["validation_loss"])
+                    assert curve["best_epoch"] == best["epoch"]
+                    assert curve["best_validation_loss"] == best["validation_loss"]
+            if study == "inverse":
+                for row in metrics["supplied"]:
+                    calibration, selection, test = [
+                        set(row[k]) for k in ["calibration_ids", "selection_ids", "test_ids"]
+                    ]
+                    assert not (calibration & selection or calibration & test or selection & test)
+                    assert calibration | selection == set(row["validation_ids"])
         except (OSError, ValueError, AssertionError, KeyError) as exc:
             issues.append(f"{study}: incomplete or inconsistent evidence ({exc})")
     notebooks = []
@@ -79,8 +108,8 @@ def main():
                     if re.search(r"[\u0600-\u06ff]", text):
                         issues.append(f"{path.name}: untranslated output")
         notebooks.append({"name": path.name, "executed_cells": executed})
-    if len(notebooks) != 7:
-        issues.append("Expected seven executed walkthroughs")
+    if len(notebooks) != len(STUDIES):
+        issues.append("Expected thirteen executed walkthroughs")
     public = subprocess.run(
         ["git", "ls-files", "-co", "--exclude-standard"],
         cwd=ROOT,
@@ -116,6 +145,20 @@ def main():
         with np.load(path, allow_pickle=False) as data:
             for key in data.files:
                 assert data[key].dtype.kind != "O"
+    manifest = json.loads((ROOT / "assets" / "project_data_manifest.json").read_text())
+    train_ids = {r["id"] for r in manifest["natural_images"]["train"]}
+    heldout_ids = [r["id"] for r in manifest["natural_images"]["val"]]
+    assert len(train_ids) == 8000 and len(heldout_ids) == len(set(heldout_ids)) == 800
+    assert not train_ids & set(heldout_ids)
+    credits = json.loads((ROOT / "assets" / "photo_credits.json").read_text())
+    assert len(credits) == 4
+    for credit in credits:
+        assert credit["license"] == "CC BY 2.0"
+        assert credit["coco_id"] == heldout_ids[400 + credit["test_index"]]
+        assert credit["author"] and credit["source_url"].startswith("https://www.flickr.com/")
+    external = json.loads((ROOT / "assets" / "pretrained_manifest.json").read_text())
+    ddcolor = json.loads((ROOT / "results" / "reference" / "ddcolor" / "metrics.json").read_text())
+    assert external["weight_sha256"] == ddcolor["weight_sha256"]
     source_hash = hashlib.sha256()
     for path in sorted((ROOT / "src").rglob("*.py")) + sorted((ROOT / "configs").glob("*.json")):
         source_hash.update(str(path.relative_to(ROOT)).encode())

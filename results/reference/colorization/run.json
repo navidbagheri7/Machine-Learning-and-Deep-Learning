@@ -1,0 +1,40 @@
+{
+  "config": {
+    "data_root": "/data/navid.bagheri-shouraki/ML_data",
+    "output": "results/reference/colorization",
+    "device": "cuda:2",
+    "pretrained_weights": "/home/labcmap/navid.bagheri-shouraki/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth",
+    "train_images": 8000,
+    "validation_images": 400,
+    "test_images": 400,
+    "seeds": [
+      0,
+      1
+    ],
+    "epochs": 60,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "transfer_learning_rate": 0.0002,
+    "color_bins": 32,
+    "temperatures": [
+      0.38,
+      0.7,
+      1.0
+    ],
+    "study": "colorization"
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "pandas": "2.2.1",
+    "scikit-learn": "1.4.0",
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128"
+  },
+  "python": "3.10.20",
+  "platform": "Linux-5.15.0-91-generic-x86_64-with-glibc2.35",
+  "git_commit": "e90d85a498e1423a90d2eb8569ea40aefccab055",
+  "started_utc": "2026-10-06T16:52:03Z",
+  "status": "complete",
+  "elapsed_seconds": 1112.7930084969848
+}

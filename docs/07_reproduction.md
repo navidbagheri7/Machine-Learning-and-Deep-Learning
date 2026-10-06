@@ -49,6 +49,37 @@ For portable image runs, copy `configs/vision.json` and edit `image_root`,
 your experiment; it is copied into `run.json`. Set a new output directory when
 changing budgets so reference results are preserved.
 
+### Added course-project cache and modern model
+
+```bash
+python scripts/prepare_projects.py --data-root /data/navid.bagheri-shouraki/ML_data
+python scripts/prepare_ddcolor.py --data-root /data/navid.bagheri-shouraki/ML_data
+python scripts/run_suite.py --studies course_mixtures inverse denoising super_resolution colorization ddcolor
+```
+
+Project preparation reuses `/data/tii/Image_data` read-only and writes resized natural
+images, MNIST, paired course arrays and an audit under the personal cache's `projects/`.
+For a public clone on another machine, `prepare_projects.py --data-root YOUR_CACHE --download`
+fetches official MNIST, COCO metadata and selected CC BY photographs explicitly.
+Private course archives are optional; controlled inverse evaluation still runs without them.
+The preparation tools do not publish the private handouts or student notebooks.
+
+DDColor preparation downloads pinned third-party source and approximately 870 MB weights
+under `YOUR_CACHE/models`; it emits an edited config there for portable inference.
+Use `--config YOUR_CACHE/models/ddcolor_config.json --device YOUR_DEVICE`. Local
+colorization training separately uses the checked torchvision ResNet18 weights declared
+in its config. The two models have different external exposure and should not be conflated.
+
+Offline CI uses explicitly labelled procedural fixtures from `prepare_smoke_data.py` for
+the five trainable/new numerical pipelines. Those fixtures are never reference datasets.
+The frozen external model requires prepared weights and is evaluated in the local full
+reference run; its notebook, provenance and compact evidence remain usable offline.
+
+The CLI imports numerical libraries before applying threadpool limits, and the suite
+sets BLAS/OpenMP limits for subprocesses. This avoids oversubscribing shared CPU resources.
+Run logs are local; configs, complete curves, selected checkpoints' cards, measured metrics,
+exact IDs and source hashes are public. Large checkpoints remain local.
+
 ## Integration versus reference runs
 
 ```bash

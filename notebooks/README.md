@@ -13,6 +13,12 @@ They execute short numerical demonstrations and do not launch the full training 
 | [05 Generalization](05_generalization.ipynb) | Verify exact risk, inspect interpolation and margin dynamics |
 | [06 Representation learning](06_representation_learning.ipynb) | Check contrastive positive pairs and compare information budgets |
 | [07 Learned receivers](07_learned_receivers.ipynb) | Verify Gray coding, channel inversion and measured BER |
+| [08 Course mixtures](08_course_mixtures.ipynb) | Compare overlapping latent groups, density selection and categorical missing-data EM |
+| [09 Mixture inverse](09_mixture_inverse.ipynb) | Verify posterior moments, patch overlap and observation-model calibration |
+| [10 Denoising](10_denoising.ipynb) | Compare PCA, autoencoder and noise-conditioned residual learning |
+| [11 Super-resolution](11_super_resolution.ipynb) | Inspect pixel shuffle, paired-image evidence and degradation mismatch |
+| [12 Colorization](12_colorization.ipynb) | Compare chroma fidelity, uncertainty and L2 desaturation |
+| [13 Pretrained reference](13_pretrained_reference.ipynb) | Audit frozen DDColor provenance, external exposure and paired deployment metrics |
 
 Regenerate all outputs with `python scripts/execute_notebooks.py`. Every public notebook
 has been run from a fresh kernel; output errors fail the release checks.

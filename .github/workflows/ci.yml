@@ -27,6 +27,12 @@ jobs:
           python -m learning_lab.cli generalization --quick
           python -m learning_lab.cli kernels --quick
           python -m learning_lab.cli signals --quick --device cpu
+          python scripts/prepare_smoke_data.py
+          python -m learning_lab.cli course_mixtures --quick --data-root .local/smoke_data
+          python -m learning_lab.cli inverse --quick --data-root .local/smoke_data
+          python -m learning_lab.cli denoising --quick --data-root .local/smoke_data --device cpu
+          python -m learning_lab.cli super_resolution --quick --data-root .local/smoke_data --device cpu
+          python -m learning_lab.cli colorization --quick --config .local/smoke_data/colorization.json --device cpu
       - name: Execute documented walkthroughs
         run: python scripts/execute_notebooks.py
       - name: Validate release and build package

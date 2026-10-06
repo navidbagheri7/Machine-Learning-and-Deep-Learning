@@ -1,0 +1,9 @@
+{
+  "task": "super_resolution",
+  "architecture": "pixelshuffle_residual",
+  "seed": 0,
+  "scale": 4,
+  "best_epoch": 56,
+  "degradation": "PyTorch antialiased bicubic, align_corners=False",
+  "parameters": 926723
+}

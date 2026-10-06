@@ -28,6 +28,30 @@
     "vision": {
       "status": "complete",
       "elapsed_seconds": 273.90979960002005
+    },
+    "course_mixtures": {
+      "status": "complete",
+      "elapsed_seconds": 92.47937471978366
+    },
+    "inverse": {
+      "status": "complete",
+      "elapsed_seconds": 106.3507381407544
+    },
+    "denoising": {
+      "status": "complete",
+      "elapsed_seconds": 135.58171071112156
+    },
+    "super_resolution": {
+      "status": "complete",
+      "elapsed_seconds": 460.92794715147465
+    },
+    "colorization": {
+      "status": "complete",
+      "elapsed_seconds": 1112.7930084969848
+    },
+    "ddcolor": {
+      "status": "complete",
+      "elapsed_seconds": 21.283241165801883
     }
   },
   "notebooks": [
@@ -58,10 +82,34 @@
     {
       "name": "07_learned_receivers.ipynb",
       "executed_cells": 5
+    },
+    {
+      "name": "08_course_mixtures.ipynb",
+      "executed_cells": 5
+    },
+    {
+      "name": "09_mixture_inverse.ipynb",
+      "executed_cells": 5
+    },
+    {
+      "name": "10_denoising.ipynb",
+      "executed_cells": 5
+    },
+    {
+      "name": "11_super_resolution.ipynb",
+      "executed_cells": 5
+    },
+    {
+      "name": "12_colorization.ipynb",
+      "executed_cells": 5
+    },
+    {
+      "name": "13_pretrained_reference.ipynb",
+      "executed_cells": 5
     }
   ],
-  "publishable_files": 135,
-  "public_bytes": 7556972,
-  "release_source_config_sha256": "4b56f0e3c26ac5b58086c6828cc53080daccb7fad7fa2d7186894fd38efdbbcd",
+  "publishable_files": 244,
+  "public_bytes": 29050790,
+  "release_source_config_sha256": "85e5054c06c1c0b77d34e8ebefceb98457b49b428b6fe5608f4f15256fedf18f",
   "issues": []
 }

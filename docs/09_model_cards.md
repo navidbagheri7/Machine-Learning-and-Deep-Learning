@@ -1,5 +1,52 @@
 # Model and dataset cards
 
+## Added mixture and inverse studies
+
+**Purpose/data.** Demonstrate latent-variable density estimation, missing-data inference
+and probabilistic restoration. Two supplied synthetic coordinate datasets are not MRI
+or clinical records. The categorical example is a controlled eight-feature synthetic
+model with 25% missing-at-random entries. Image priors use independent MNIST training
+images after excluding exact matches to supplied course originals.
+
+**Evaluation.** Separate fitting/selection/test partitions; full posterior evidence
+and covariance checks; six patch sizes under a common controlled AWGN observation.
+Supplied archive scores use filename-matched pairs, matrix-derived patch sizes,
+30 calibration/30 selection pairs and the remaining pairs for testing. Forward
+gain/offset calibration uses paired clean data and is not a blind estimator.
+
+**Limits/artifacts.** At most 32 latent PCA directions regularize large image priors.
+Convergence flags are public. One-pass patch averaging is not a whole-image EPLL
+optimizer; Gaussian posterior uncertainty is not empirically calibrated confidence.
+Large priors and raw archives remain local; numerical examples, exact IDs, metrics
+and fixed galleries are public. See [derivations](10_course_projects.md).
+
+## Neural image restoration and frozen colorization
+
+**Purpose/data.** Compare PCA, bottlenecks, residual learning, local transfer and
+pretrained deployment. MNIST uses 20,000 training/2,000 validation images and the
+official 10,000-image test. Natural-image methods share 8,000 CC BY COCO training
+crops and disjoint 400/400 validation/test crops. Public gallery photos preserve
+verified creator credits and licence; the MIT code licence does not replace them.
+
+**Training/evaluation.** Three seeds/25 epochs for neural digit denoising; two seeds/
+60 epochs for local SR and colorization. Validation loss selects checkpoints. Report
+unit-range PSNR/SSIM, noise/degradation shifts, Lab DeltaE76, chroma and palette entropy,
+with complete curves and per-image paired evidence. Image-bootstrap intervals condition
+on a checkpoint; seed SD estimates training variation over the declared seeds only.
+
+**External exposure.** Local transferred colorizers start from ImageNet ResNet18.
+Frozen DDColor-ModelScope is an official externally trained 227.9-million-parameter
+model: it is not trained or proposed here, and its COCO training overlap was not
+audited. Source/model revisions, weight hash, licence and synchronized throughput
+are recorded. Its 512px internal input upsamples the same observed lightness.
+
+**Limits/artifacts.** 96px controlled SR is not a full-resolution DIV2K leaderboard.
+AWGN is not camera noise. Exact color is underdetermined; PSNR, chroma and perceived
+plausibility can disagree. No human preference, clinical or forensic evaluation was
+run. Saved inference scripts load local checkpoints or the explicitly prepared
+frozen model; raw data, large weights and third-party source remain in the personal cache.
+Read [protocols](11_image_restoration.md) and [measured outcomes](project_results.md).
+
 ## Adult probability and decision study
 
 **Purpose.** Demonstrate mixed-data preprocessing, comparative modeling, probability

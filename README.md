@@ -12,7 +12,8 @@ coursework into a reproducible research and applied data science portfolio. The 
 foundation follows [Murphy's Probabilistic Machine Learning](https://probml.github.io/book1)
 and [Goodfellow, Bengio, and Courville's Deep Learning](https://www.deeplearningbook.org/).
 The extensions focus on calibration, conformal inference, distribution shift,
-representation learning, statistical comparisons, and practical decision costs.
+representation learning, statistical comparisons, practical decision costs, and
+image inverse problems with explicit observation models.
 
 ![Measured experiments across the laboratory](assets/overview.png)
 
@@ -27,14 +28,30 @@ representation learning, statistical comparisons, and practical decision costs.
 | [Kernels](docs/04_generalization.md#kernel-learning-curves) | When do nonlinear features pay off with limited data? | Exact RBF SVM, Nyström approximation, logistic regression; validation-selected regularization; repeated label budgets |
 | [Image representations](docs/05_representation_learning.md) | What changes when labels, unlabeled images, or external pretraining are available? | Full CIFAR-10; residual CNN, contrastive pretraining, frozen random features and ImageNet transfer; identical low-label splits, calibrated prediction sets and corruption diagnostics |
 | [Signal equalization](docs/06_signal_equalization.md) | Can a learned receiver remove nonlinear distortion and channel memory? | Gray-coded 16-QAM simulator; linear window equalizer, MLP, temporal CNN, known-channel inversion; BER across SNR and channel shift |
+| [Course mixture geometry](docs/10_course_projects.md) | Can a density model recover overlapping labels or impute missing observations? | Supplied coordinates; custom/library/variational GMMs; categorical EM with missing data |
+| [Bayesian reconstruction](docs/10_course_projects.md#phase-2-the-correct-posterior) | Does the actual corruption match the stated likelihood? | Stable mixture conditioning, MMSE versus hard estimates, six patch sizes, archive audit, validation-only forward calibration |
+| [Denoising](docs/11_image_restoration.md) | When does residual learning beat PCA and an autoencoder? | 10,000 MNIST test images; three seeds; noise-conditioned CNN; PCA shrinkage; noise shift |
+| [Super-resolution](docs/11_image_restoration.md) | What survives a 4× information bottleneck? | CC BY natural images; bicubic/autoencoder/residual pixel shuffle; two seeds; blur mismatch; paired comparisons |
+| [Colorization](docs/11_image_restoration.md) | How do exact-color fidelity and plausible chroma differ? | Lab autoencoder, ImageNet transfer and balanced palette classification; DeltaE, chroma and entropy |
+| [Modern pretrained reference](docs/11_image_restoration.md#frozen-ddcolor-reference) | What changes with a large externally trained color decoder? | Pinned official DDColor-ModelScope; lightness-only inputs, identical test images, checked weights, throughput and explicit exposure limits |
 
 All tables and figures are built from saved experiment records. Compact integration runs
 are separate from reference studies. See the [measured report](docs/results.md) for
 completed budgets, variability, comparisons and limitations.
 
+The [course-project extension report](docs/project_results.md) adds reconstruction
+galleries, complete training curves, paired-image evidence, and an audit of the newly
+provided briefs and corrupted images.
+
 <!-- RESULTS_START -->
 **Completed reference results:** Adult boosting AUROC **0.9257** (three seeds); CIFAR-10 full supervised accuracy **92.79%** (one run); temporal receiver BER **0.000510** at 18 dB (three seeds). The housing study documents pronounced coverage loss under geographic shift. Read the [full report](docs/results.md) for protocols and limitations.
 <!-- RESULTS_END -->
+
+**Added project results:** residual denoising **29.85 dB** versus PCA **23.40 dB**;
+4× residual SR **23.87 dB** versus bicubic **22.14 dB**; supplied m=4 image
+reconstruction **18.86 dB** after validation-only calibration, versus **9.39 dB**
+for the corrupted input. The [extension report](docs/project_results.md) includes
+seed variation, fixed galleries, failure analysis and the frozen DDColor comparison.
 
 ## Run it
 
@@ -68,7 +85,7 @@ data or model weights.
 
 ## Follow an idea into code
 
-Start with the [learning path](docs/00_start_here.md), or open the seven executed
+Start with the [learning path](docs/00_start_here.md), or open the thirteen executed
 [notebooks](notebooks/README.md). Each chapter includes assumptions, equations,
 implementation links, an experiment to inspect, and an exercise with a worked answer.
 
@@ -100,3 +117,4 @@ Methods and datasets are credited in [references](docs/references.md).
 
 MIT license for repository code and original documentation. Dataset and pretrained-model
 terms remain with their respective sources. To cite the laboratory, use [CITATION.cff](CITATION.cff).
+Natural-image figures and their compact source arrays retain [CC BY photo attribution](docs/photo_attributions.md).

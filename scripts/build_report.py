@@ -622,3 +622,6 @@ if __name__ == "__main__":
     figures(data, adult, housing, vision, signal)
     report(data, adult, housing, vision, signal)
     print("Rebuilt measured report and ten figure sets.")
+    from build_project_report import main as projects
+
+    projects()

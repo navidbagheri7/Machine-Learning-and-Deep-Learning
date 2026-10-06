@@ -1,0 +1,15 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "output": "results/reference/ddcolor",
+  "device": "cuda:2",
+  "train_images": 8000,
+  "validation_images": 400,
+  "test_images": 400,
+  "source_root": "/data/navid.bagheri-shouraki/ML_data/models/DDColor",
+  "source_revision": "2adb63f2656ac41cbdf7b894cddd94121a3faf13",
+  "model_root": "/data/navid.bagheri-shouraki/ML_data/models/ddcolor_modelscope",
+  "model_revision": "060f67494e31883a4b13cb27f889f3154847ada4",
+  "input_size": 512,
+  "batch_size": 2,
+  "weight_sha256": "d81711971ec59200da26d5e8a1afae8dd3778d495ea8ad7a7dadc769f403f7e7"
+}

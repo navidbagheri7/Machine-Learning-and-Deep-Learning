@@ -54,6 +54,18 @@ class Run:
             "git_commit": git.stdout.strip() or None,
             "started_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         }
+        source = Path(__file__).resolve().parent
+        self.record["package_source_sha256"] = {
+            path.name: hashlib.sha256(path.read_bytes()).hexdigest()
+            for path in sorted(source.glob("*.py"))
+        }
+        if config.get("device", "").startswith("cuda"):
+            import torch
+
+            self.record["accelerator"] = {
+                "name": torch.cuda.get_device_name(config["device"]),
+                "cuda_runtime": torch.version.cuda,
+            }
         write_json(self.output / "run.json", self.record | {"status": "running"})
 
     def finish(self, results):

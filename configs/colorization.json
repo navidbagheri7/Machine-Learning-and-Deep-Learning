@@ -1,0 +1,16 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "output": "results/reference/colorization",
+  "device": "cuda:2",
+  "pretrained_weights": "/home/labcmap/navid.bagheri-shouraki/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth",
+  "train_images": 8000,
+  "validation_images": 400,
+  "test_images": 400,
+  "seeds": [0, 1],
+  "epochs": 60,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "transfer_learning_rate": 0.0002,
+  "color_bins": 32,
+  "temperatures": [0.38, 0.7, 1.0]
+}

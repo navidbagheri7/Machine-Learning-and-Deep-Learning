@@ -1,0 +1,42 @@
+{
+  "rows": [
+    {
+      "model": "ddcolor_modelscope_frozen",
+      "psnr": {
+        "mean": 22.973744583129882,
+        "image_bootstrap_ci95": [
+          22.611786628484726,
+          23.302000055909154
+        ]
+      },
+      "ssim": {
+        "mean": 0.9088794608414174,
+        "image_bootstrap_ci95": [
+          0.9038425200283527,
+          0.9138984800614417
+        ]
+      },
+      "delta_e76": {
+        "mean": 14.984931945800781,
+        "image_bootstrap_ci95": [
+          14.361281442642213,
+          15.682295536994934
+        ]
+      },
+      "mean_chroma": {
+        "mean": 16.08190155029297,
+        "image_bootstrap_ci95": [
+          15.47841420173645,
+          16.7086389541626
+        ]
+      },
+      "true_mean_chroma": 15.964153289794922,
+      "per_image_psnr_key": "row_0"
+    }
+  ],
+  "weight_sha256": "d81711971ec59200da26d5e8a1afae8dd3778d495ea8ad7a7dadc769f403f7e7",
+  "parameters": 227869328,
+  "evaluation_seconds": 11.78387942072004,
+  "images_per_second": 33.94467863415718,
+  "protocol": "Frozen official DDColor-ModelScope (ICCV2023), ImageNet pretraining with authors' cleaning scheme. No local fitting or test-based selection. Same 400 COCO test crops and lightness-only input as local colorizers; 512px bilinear gray upsampling, nearest chroma downsampling. External training overlap with COCO was not audited; compare exposure explicitly."
+}

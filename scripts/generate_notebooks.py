@@ -535,3 +535,6 @@ axes[1].legend(fontsize=8); plt.show()""",
 
 if __name__ == "__main__":
     main()
+    from generate_project_notebooks import main as projects
+
+    projects()

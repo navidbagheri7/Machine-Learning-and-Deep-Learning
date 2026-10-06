@@ -13,6 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 def group(studies, quick):
     env = os.environ.copy()
     env["PYTHONPATH"] = str(ROOT / "src")
+    for variable in ["OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS"]:
+        env[variable] = "4"
     for name in studies:
         command = [sys.executable, "-m", "learning_lab.cli", name]
         if quick:
@@ -35,9 +37,9 @@ def main():
     parser.add_argument("--studies", nargs="+")
     args = parser.parse_args()
     groups = [
-        ["probabilistic", "generalization", "kernels"],
-        ["classification", "regression", "signals"],
-        ["vision"],
+        ["probabilistic", "generalization", "kernels", "course_mixtures", "inverse"],
+        ["classification", "regression", "signals", "denoising"],
+        ["vision", "super_resolution", "colorization", "ddcolor"],
     ]
     if args.studies:
         groups = [[s for s in g if s in args.studies] for g in groups]

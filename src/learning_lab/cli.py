@@ -19,6 +19,12 @@ def main():
             "kernels",
             "signals",
             "vision",
+            "course_mixtures",
+            "inverse",
+            "denoising",
+            "super_resolution",
+            "colorization",
+            "ddcolor",
         ],
     )
     parser.add_argument("--config", type=Path)
@@ -54,10 +60,34 @@ def main():
         )
         if args.study == "generalization":
             config["samples"] = 40
+        if args.study in ["inverse", "course_mixtures"]:
+            config.update(
+                train_images=100,
+                validation_images=4,
+                test_images=8,
+                patch_sizes=[4, 8],
+                components=[3],
+                patch_samples=1000,
+                em_iterations=10,
+                course_validation=4,
+                course_calibration=2,
+                noise_candidates=[30],
+            )
+        if args.study in ["denoising", "super_resolution", "colorization"]:
+            config.update(train_images=256, validation_images=32, test_images=64)
         config["output"] = f"results/smoke/{args.study}"
     if args.output:
         config["output"] = str(args.output)
-    if args.study in ["classification", "regression", "signals", "vision"]:
+    if args.study in [
+        "classification",
+        "regression",
+        "signals",
+        "vision",
+        "denoising",
+        "super_resolution",
+        "colorization",
+        "ddcolor",
+    ]:
         import torch
 
         torch.set_num_threads(4)
@@ -65,23 +95,31 @@ def main():
             raise RuntimeError(
                 "CUDA requested but unavailable. Use --device cpu or execute with GPU access."
             )
+    # Import first so threadpoolctl sees every dynamically loaded BLAS library.
+    if args.study in ["classification", "regression"]:
+        from learning_lab import tabular
+
+        experiment = getattr(tabular, args.study)
+    elif args.study in ["probabilistic", "generalization", "kernels"]:
+        from learning_lab import studies
+
+        experiment = getattr(studies, args.study)
+    elif args.study == "signals":
+        from learning_lab.signals import experiment
+    elif args.study in ["course_mixtures", "inverse"]:
+        from learning_lab import project_studies
+
+        experiment = getattr(project_studies, args.study)
+    elif args.study in ["denoising", "super_resolution", "colorization"]:
+        from learning_lab import restoration
+
+        experiment = getattr(restoration, args.study)
+    elif args.study == "ddcolor":
+        from learning_lab.pretrained import experiment
+    else:
+        from learning_lab.vision import experiment
     with threadpool_limits(limits=4):
-        if args.study in ["classification", "regression"]:
-            from learning_lab import tabular
-
-            getattr(tabular, args.study)(config)
-        elif args.study in ["probabilistic", "generalization", "kernels"]:
-            from learning_lab import studies
-
-            getattr(studies, args.study)(config)
-        elif args.study == "signals":
-            from learning_lab.signals import experiment
-
-            experiment(config)
-        else:
-            from learning_lab.vision import experiment
-
-            experiment(config)
+        experiment(config)
 
 
 if __name__ == "__main__":

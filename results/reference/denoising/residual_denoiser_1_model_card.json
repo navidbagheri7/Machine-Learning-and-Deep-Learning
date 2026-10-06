@@ -1,0 +1,11 @@
+{
+  "task": "denoising",
+  "architecture": "residual_denoiser",
+  "seed": 1,
+  "noise_range_255": [
+    10.2,
+    51.0
+  ],
+  "best_epoch": 25,
+  "parameters": 126049
+}

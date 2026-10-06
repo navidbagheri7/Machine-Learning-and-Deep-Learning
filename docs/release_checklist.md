@@ -1,39 +1,43 @@
 # Local release validation — 2026-10-06
 
-The repository is prepared for the author to publish. No GitHub repository was created
-and no content was pushed, following the author's explicit preference.
+The repository is prepared locally for the author to publish. No GitHub repository
+was created and no content was pushed, following the author's preference.
 
-- Seven full reference studies completed, with matching configs and strict finite metrics.
-- Seven fresh-kernel notebooks executed successfully; 35 code cells in total.
-- Thirteen mathematical, statistical, neural-interface and inference tests passed.
+- Thirteen full reference studies completed with matching configs and finite metrics.
+- Thirteen fresh-kernel English notebooks executed successfully, containing 65 code cells.
+- Twenty-two mathematical, statistical, neural-interface and inference tests passed.
 - Ruff lint and formatting checks passed.
-- Ten scientific figure sets regenerated as PNG and PDF from measured results.
-- Tabular dataset preparation and CIFAR/weight checksum verification completed.
-- Editable installation and the installed experiment command verified in a separate local environment.
-- Adult batch inference exercised on actual official-test feature rows.
-- Source archive and wheel built successfully with the declared build backend.
-- A clean local checkout regenerated every figure and report using committed inputs;
-  its release validation and tests passed without course originals or checkpoints.
-- Source inventory retained locally; original coursework, paper PDFs, datasets and checkpoints excluded from Git.
-- Public English text, executed outputs, local links and publishable file contents checked by
-  [the release validator](../scripts/validate_release.py); its machine-readable record is
-  [validation.json](validation.json).
+- Twenty-three scientific figure sets regenerated as PNG/PDF from measured evidence.
+- Five new project pipelines passed offline procedural-fixture integration checks;
+  these fixtures are clearly distinguished from actual reference datasets.
+- Denoising, SR, local colorization and frozen DDColor image-inference commands exercised
+  on actual project images; the earlier Adult inference check remains available.
+- Supplied project files inventoried; archive dimensions, missing pairs and corruption
+  bias audited. Calibration and model selection use disjoint held-out identities.
+- Prepared official DDColor source/model revisions checked; weights stored only in
+  `/data/navid.bagheri-shouraki/ML_data/models`, with public SHA-256 provenance.
+- Gallery photographs carry verified creator attribution and CC BY 2.0.
+- Source archive and wheel built, installed command tested, and clean local checkout
+  validated without course originals, raw data or model checkpoints.
+- English text, outputs, local links, paired-score arrays, config consistency and
+  publishable contents checked by [the release validator](../scripts/validate_release.py);
+  its machine-readable record is [validation.json](validation.json).
 
 ## Publish from this directory
 
-Use `learning-generalization-lab` as a suggested GitHub repository name. Suggested description:
-“Probabilistic ML and deep learning experiments with calibration, distribution shift,
-generalization, representation learning and nonlinear signal equalization.”
+Suggested repository name: `learning-generalization-lab`. Suggested description:
+“Probabilistic ML and deep learning with uncertainty, distribution shift, latent-variable
+inference, image restoration and reproducible pretrained-model evaluation.”
 
-Create an empty repository in your GitHub account, then set its URL as the remote:
+Create an empty repository in your account and set its URL as the remote:
 
 ```bash
 git remote add origin YOUR_REPOSITORY_URL
 git push -u origin main
-git push origin v1.0.0
+git push origin v1.1.0
 ```
 
-The code and documentation use MIT licensing. Datasets and external pretrained weights
-remain under their source terms, listed in [references](references.md). The repository
-includes a CI workflow; its hosted status becomes available after you publish. Local
-validation does not claim a GitHub Actions run has already occurred.
+Code and original documentation use MIT licensing. Data and external models retain
+their source terms, listed in [references](references.md) and [photo credits](photo_attributions.md).
+The included CI workflow will run after publication; local validation does not claim
+a hosted GitHub Actions run has already occurred.
