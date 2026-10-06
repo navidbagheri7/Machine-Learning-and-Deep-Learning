@@ -12,6 +12,8 @@ and no content was pushed, following the author's explicit preference.
 - Editable installation and the installed experiment command verified in a separate local environment.
 - Adult batch inference exercised on actual official-test feature rows.
 - Source archive and wheel built successfully with the declared build backend.
+- A clean local checkout regenerated every figure and report using committed inputs;
+  its release validation and tests passed without course originals or checkpoints.
 - Source inventory retained locally; original coursework, paper PDFs, datasets and checkpoints excluded from Git.
 - Public English text, executed outputs, local links and publishable file contents checked by
   [the release validator](../scripts/validate_release.py); its machine-readable record is
