@@ -4,7 +4,7 @@
     1,
     2
   ],
-  "data_root": "/data/navid/ML_data",
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
   "device": "cuda:2",
   "image_root": "/data/tii/Image_data/cifar10/raw",
   "pretrained_weights": "/home/labcmap/navid.bagheri-shouraki/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth",

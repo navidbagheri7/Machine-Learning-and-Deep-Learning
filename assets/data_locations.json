@@ -1,6 +1,7 @@
 {
   "relocations": {
-    "/data/tii/ML_data": "/data/navid/ML_data"
+    "/data/tii/ML_data": "/data/navid.bagheri-shouraki/ML_data",
+    "/data/navid/ML_data": "/data/navid.bagheri-shouraki/ML_data"
   },
-  "reason": "User-requested relocation after the reference experiments; original run configs retain their execution paths."
+  "reason": "User-requested cache relocation to the corrected personal data directory after the reference experiments; original run configs retain their execution paths."
 }
