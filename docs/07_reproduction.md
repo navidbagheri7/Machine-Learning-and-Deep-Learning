@@ -26,7 +26,12 @@ combinations have been validated.
 ## Dataset preparation
 
 On the author's machine, existing CIFAR resides at `/data/tii/Image_data/cifar10/raw`
-and tabular data at `/data/tii/ML_data`. The public commands can use local caches:
+and tabular data at `/data/navid/ML_data`.
+
+The tabular cache was moved after the reference runs. Their recorded execution paths
+are preserved; [data_locations.json](../assets/data_locations.json) records the relocation.
+
+The public commands can use local caches:
 
 ```bash
 python scripts/prepare_data.py --data-root .local/data

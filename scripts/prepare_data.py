@@ -5,6 +5,6 @@ import argparse
 from learning_lab.data import prepare
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--data-root", default="/data/tii/ML_data")
+parser.add_argument("--data-root", default="/data/navid/ML_data")
 args = parser.parse_args()
 print(prepare(args.data_root))

@@ -33,6 +33,7 @@ def finite(value):
 def main():
     issues = []
     results = {}
+    locations = json.loads((ROOT / "assets" / "data_locations.json").read_text())["relocations"]
     for study in STUDIES:
         try:
             directory = ROOT / "results" / "reference" / study
@@ -42,7 +43,15 @@ def main():
             assert record["status"] == "complete"
             assert not record["config"].get("quick", False)
             assert finite(metrics)
-            assert all(record["config"][k] == v for k, v in config.items())
+            assert all(
+                (
+                    locations.get(record["config"][k], record["config"][k])
+                    if k == "data_root"
+                    else record["config"][k]
+                )
+                == v
+                for k, v in config.items()
+            )
             results[study] = {
                 "status": record["status"],
                 "elapsed_seconds": record["elapsed_seconds"],

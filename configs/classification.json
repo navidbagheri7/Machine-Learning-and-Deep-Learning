@@ -4,7 +4,7 @@
     1,
     2
   ],
-  "data_root": "/data/tii/ML_data",
+  "data_root": "/data/navid/ML_data",
   "device": "cuda:1",
   "epochs": 80,
   "output": "results/reference/classification"
