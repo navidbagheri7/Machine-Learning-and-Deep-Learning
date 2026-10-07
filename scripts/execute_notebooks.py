@@ -1,5 +1,6 @@
 """Execute all walkthroughs using this Python, without modifying global Jupyter kernels."""
 
+import argparse
 import json
 import os
 import sys
@@ -12,6 +13,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--notebooks", nargs="+", help="Optional notebook filenames; default executes all"
+    )
+    args = parser.parse_args()
     jupyter = ROOT / ".local" / "jupyter"
     kernel = jupyter / "kernels" / "learning-lab"
     kernel.mkdir(parents=True, exist_ok=True)
@@ -25,7 +31,12 @@ def main():
         )
     )
     os.environ["JUPYTER_PATH"] = str(jupyter) + os.pathsep + os.environ.get("JUPYTER_PATH", "")
-    for path in sorted((ROOT / "notebooks").glob("*.ipynb")):
+    paths = (
+        [ROOT / "notebooks" / name for name in args.notebooks]
+        if args.notebooks
+        else sorted((ROOT / "notebooks").glob("*.ipynb"))
+    )
+    for path in paths:
         nb = nbformat.read(path, as_version=4)
         nb = NotebookClient(
             nb, timeout=180, kernel_name="learning-lab", resources={"metadata": {"path": str(ROOT)}}

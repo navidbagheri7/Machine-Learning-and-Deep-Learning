@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "method": "SR CVAE",
+  "epochs": 2,
+  "checkpoint_and_losses": "bitwise identical after interruption at epoch 1",
+  "device": "cpu",
+  "data": "16 real training images, 8 validation images; integration only",
+  "verified_state_tensors": 110,
+  "prior_attempt_preserved": true,
+  "completed_record_and_selected_epoch_verified": true,
+  "training_source_sha256": "eee73d0bb111b96f205dc60af15d1670142d98d61874fad3b081ee3bec5ba38c",
+  "audit_script_sha256": "f2d9e51de579d55699ff449b0ba663bb6b7f0138cdb46fcd0b65bb390bffa8b5"
+}

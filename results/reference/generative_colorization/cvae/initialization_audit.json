@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "mean_checkpoint_sha256": "d8365e26f498b9f7787bbd32afc94477a79d2220292a2344b711d63eccf11fd9",
+  "mean_selected_epoch": 38,
+  "audit_script_sha256": "6324d4d4d90bec760a553f783feb32d5f8e7fbb78d8816734021e8fa6b6ddea3",
+  "checks": [
+    {
+      "seed": 0,
+      "semantic_tensors_verified": 144,
+      "checkpoint_sha256": "18a72ea78f996edf9b824bde6f3c2825a7db8481daaf3e7ecd7e0c57b7ff8021"
+    },
+    {
+      "seed": 1,
+      "semantic_tensors_verified": 144,
+      "checkpoint_sha256": "01e536a601de296c29361460ec5260500e0266d065252c8941dd53002d507599"
+    }
+  ],
+  "protocol": "Post-fit verification that all saved semantic parameters and BN buffers exactly equal the validation-selected direct predictor. These parameters are frozen during latent fitting. Both latent seeds share this fitted mean; no independent end-to-end seed uncertainty is claimed."
+}

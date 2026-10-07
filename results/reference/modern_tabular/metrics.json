@@ -1,0 +1,416 @@
+{
+  "classification": [
+    {
+      "model": "catboost_native",
+      "seed": 0,
+      "accuracy": 0.8722437196732388,
+      "roc_auc": 0.9263403395001903,
+      "average_precision": 0.8235766628409843,
+      "log_loss": 0.2789591625395208,
+      "brier": 0.08853089600903306,
+      "ece": 0.011664649331077956,
+      "temperature": 0.9416547889014415,
+      "set_coverage": 0.8988391376451078,
+      "set_size": 1.0584730667649407,
+      "decision_threshold": 0.24,
+      "decision_cost": 0.19746944290891222,
+      "selected_depth": 8,
+      "tree_count": 446,
+      "seconds_including_selection": 45.87182025425136
+    },
+    {
+      "model": "catboost_native",
+      "seed": 1,
+      "accuracy": 0.8718137706529083,
+      "roc_auc": 0.9272810084096166,
+      "average_precision": 0.8252644091568565,
+      "log_loss": 0.2767694686935451,
+      "brier": 0.08805215262699254,
+      "ece": 0.007983962673070836,
+      "temperature": 1.0295024915781839,
+      "set_coverage": 0.8968736564093115,
+      "set_size": 1.0504268779558996,
+      "decision_threshold": 0.3999999999999999,
+      "decision_cost": 0.19783797064062403,
+      "selected_depth": 6,
+      "tree_count": 1165,
+      "seconds_including_selection": 61.333206340670586
+    },
+    {
+      "model": "catboost_native",
+      "seed": 2,
+      "accuracy": 0.8731650390025183,
+      "roc_auc": 0.9275342232024626,
+      "average_precision": 0.8257530738919235,
+      "log_loss": 0.2764943096872086,
+      "brier": 0.08783408322968128,
+      "ece": 0.0070234761608941355,
+      "temperature": 1.0358768813188672,
+      "set_coverage": 0.8973036054296419,
+      "set_size": 1.0519009888827469,
+      "decision_threshold": 0.27999999999999997,
+      "decision_cost": 0.1930471101283705,
+      "selected_depth": 6,
+      "tree_count": 1137,
+      "seconds_including_selection": 76.91536020394415
+    }
+  ],
+  "regression": [
+    {
+      "model": "catboost_native",
+      "protocol": "random",
+      "seed": 0,
+      "rmse": 0.4358023959273522,
+      "mae": 0.2869626940555358,
+      "split_conformal": {
+        "coverage": 0.9001937984496124,
+        "mean_width": 1.3062162892760996,
+        "empty_rate": 0.0
+      },
+      "cqr": {
+        "coverage": 0.8832364341085271,
+        "mean_width": 1.4532079999046656,
+        "empty_rate": 0.0
+      },
+      "selected_depth": 8,
+      "tree_count": 1997,
+      "seconds_including_selection": 26.763888745568693
+    },
+    {
+      "model": "catboost_native",
+      "protocol": "random",
+      "seed": 1,
+      "rmse": 0.44437871243475613,
+      "mae": 0.2863705374198776,
+      "split_conformal": {
+        "coverage": 0.8948643410852714,
+        "mean_width": 1.2775517036227044,
+        "empty_rate": 0.0
+      },
+      "cqr": {
+        "coverage": 0.8958333333333334,
+        "mean_width": 1.4532745044156306,
+        "empty_rate": 0.0
+      },
+      "selected_depth": 8,
+      "tree_count": 1995,
+      "seconds_including_selection": 28.29349486809224
+    },
+    {
+      "model": "catboost_native",
+      "protocol": "random",
+      "seed": 2,
+      "rmse": 0.45109798551558755,
+      "mae": 0.2932877772789206,
+      "split_conformal": {
+        "coverage": 0.903827519379845,
+        "mean_width": 1.3473068414663167,
+        "empty_rate": 0.0
+      },
+      "cqr": {
+        "coverage": 0.9079457364341085,
+        "mean_width": 1.524553389140105,
+        "empty_rate": 0.0
+      },
+      "selected_depth": 8,
+      "tree_count": 2000,
+      "seconds_including_selection": 26.564860947430134
+    },
+    {
+      "model": "catboost_native",
+      "protocol": "geographic",
+      "seed": 0,
+      "rmse": 0.9512466136181188,
+      "mae": 0.7963229983877548,
+      "split_conformal": {
+        "coverage": 0.4128769746290091,
+        "mean_width": 1.2503435638831022,
+        "empty_rate": 0.0
+      },
+      "cqr": {
+        "coverage": 0.3089995213020584,
+        "mean_width": 1.0610817663886927,
+        "empty_rate": 0.0
+      },
+      "selected_depth": 6,
+      "tree_count": 2000,
+      "seconds_including_selection": 21.71813374105841
+    },
+    {
+      "model": "catboost_native",
+      "protocol": "geographic",
+      "seed": 1,
+      "rmse": 0.9794923050329922,
+      "mae": 0.8254804668866548,
+      "split_conformal": {
+        "coverage": 0.4159885112494016,
+        "mean_width": 1.3213361675398794,
+        "empty_rate": 0.0
+      },
+      "cqr": {
+        "coverage": 0.45021541407371946,
+        "mean_width": 1.4537781525372648,
+        "empty_rate": 0.0
+      },
+      "selected_depth": 8,
+      "tree_count": 1862,
+      "seconds_including_selection": 21.94924693275243
+    },
+    {
+      "model": "catboost_native",
+      "protocol": "geographic",
+      "seed": 2,
+      "rmse": 0.9892512623949362,
+      "mae": 0.8187172586078967,
+      "split_conformal": {
+        "coverage": 0.43824796553374823,
+        "mean_width": 1.2941324662616929,
+        "empty_rate": 0.0
+      },
+      "cqr": {
+        "coverage": 0.3180947821924366,
+        "mean_width": 1.0956642147539895,
+        "empty_rate": 0.0
+      },
+      "selected_depth": 8,
+      "tree_count": 2000,
+      "seconds_including_selection": 29.05273392703384
+    }
+  ],
+  "selection": [
+    {
+      "task": "classification",
+      "seed": 0,
+      "candidates": [
+        {
+          "depth": 6,
+          "validation_nll": 0.28161407994449283,
+          "trees": 452
+        },
+        {
+          "depth": 8,
+          "validation_nll": 0.2811376490745486,
+          "trees": 446
+        },
+        {
+          "depth": 10,
+          "validation_nll": 0.28413833387411186,
+          "trees": 396
+        }
+      ]
+    },
+    {
+      "task": "classification",
+      "seed": 1,
+      "candidates": [
+        {
+          "depth": 6,
+          "validation_nll": 0.2762344026590828,
+          "trees": 1165
+        },
+        {
+          "depth": 8,
+          "validation_nll": 0.2776122183390844,
+          "trees": 722
+        },
+        {
+          "depth": 10,
+          "validation_nll": 0.28203593519862313,
+          "trees": 325
+        }
+      ]
+    },
+    {
+      "task": "classification",
+      "seed": 2,
+      "candidates": [
+        {
+          "depth": 6,
+          "validation_nll": 0.25995008934283925,
+          "trees": 1137
+        },
+        {
+          "depth": 8,
+          "validation_nll": 0.26138283714974353,
+          "trees": 918
+        },
+        {
+          "depth": 10,
+          "validation_nll": 0.26244696119283545,
+          "trees": 602
+        }
+      ]
+    },
+    {
+      "task": "regression",
+      "protocol": "random",
+      "seed": 0,
+      "candidates": [
+        {
+          "depth": 6,
+          "validation_rmse": 0.46366604056166455,
+          "trees": 1988
+        },
+        {
+          "depth": 8,
+          "validation_rmse": 0.45976614784273173,
+          "trees": 1997
+        },
+        {
+          "depth": 10,
+          "validation_rmse": 0.4678478282466481,
+          "trees": 1702
+        }
+      ]
+    },
+    {
+      "task": "regression",
+      "protocol": "random",
+      "seed": 1,
+      "candidates": [
+        {
+          "depth": 6,
+          "validation_rmse": 0.4441388846696053,
+          "trees": 1663
+        },
+        {
+          "depth": 8,
+          "validation_rmse": 0.44131604771217475,
+          "trees": 1995
+        },
+        {
+          "depth": 10,
+          "validation_rmse": 0.4433827537731526,
+          "trees": 1815
+        }
+      ]
+    },
+    {
+      "task": "regression",
+      "protocol": "random",
+      "seed": 2,
+      "candidates": [
+        {
+          "depth": 6,
+          "validation_rmse": 0.42558275413569313,
+          "trees": 2000
+        },
+        {
+          "depth": 8,
+          "validation_rmse": 0.419853460908837,
+          "trees": 2000
+        },
+        {
+          "depth": 10,
+          "validation_rmse": 0.42378730282447685,
+          "trees": 1761
+        }
+      ]
+    },
+    {
+      "task": "regression",
+      "protocol": "geographic",
+      "seed": 0,
+      "candidates": [
+        {
+          "depth": 6,
+          "validation_rmse": 0.40996548376666136,
+          "trees": 2000
+        },
+        {
+          "depth": 8,
+          "validation_rmse": 0.4143298718465545,
+          "trees": 1009
+        },
+        {
+          "depth": 10,
+          "validation_rmse": 0.41284588028050606,
+          "trees": 1438
+        }
+      ]
+    },
+    {
+      "task": "regression",
+      "protocol": "geographic",
+      "seed": 1,
+      "candidates": [
+        {
+          "depth": 6,
+          "validation_rmse": 0.4405377392935784,
+          "trees": 2000
+        },
+        {
+          "depth": 8,
+          "validation_rmse": 0.4317372392274339,
+          "trees": 1862
+        },
+        {
+          "depth": 10,
+          "validation_rmse": 0.44140070556317174,
+          "trees": 1239
+        }
+      ]
+    },
+    {
+      "task": "regression",
+      "protocol": "geographic",
+      "seed": 2,
+      "candidates": [
+        {
+          "depth": 6,
+          "validation_rmse": 0.42740814602707333,
+          "trees": 1999
+        },
+        {
+          "depth": 8,
+          "validation_rmse": 0.42245987967915016,
+          "trees": 2000
+        },
+        {
+          "depth": 10,
+          "validation_rmse": 0.4257493548183681,
+          "trees": 1907
+        }
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "task": "classification",
+      "seed": 0,
+      "comparison": "native CatBoost minus histogram boosting NLL",
+      "difference": -0.0005679037227256033,
+      "ci95": [
+        -0.00268451893687918,
+        0.0016099906750159103
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    },
+    {
+      "task": "classification",
+      "seed": 1,
+      "comparison": "native CatBoost minus histogram boosting NLL",
+      "difference": -0.003954244142670608,
+      "ci95": [
+        -0.006030301788299657,
+        -0.0018391563795276732
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    },
+    {
+      "task": "classification",
+      "seed": 2,
+      "comparison": "native CatBoost minus histogram boosting NLL",
+      "difference": -0.0020893783038911456,
+      "ci95": [
+        -0.003917374005717987,
+        -0.0003137029025771368
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    }
+  ],
+  "protocol": "Existing official Adult test and exact 70/10/10/10 training splits; native missing/category handling. Identical Housing random/geographic holdouts and fit/selection/calibration partitions. Depth and early stopping validation-only; temperature fit on separate probability partition; conformal cutoff on separate calibration. CPU CatBoost, no external pretraining or test tuning. Frozen historical predictions provide paired Adult NLL comparisons."
+}

@@ -1,0 +1,660 @@
+{
+  "rows": [
+    {
+      "seed": 0,
+      "confusion": [
+        [
+          971,
+          1,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          1
+        ],
+        [
+          2,
+          991,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7
+        ],
+        [
+          6,
+          0,
+          958,
+          8,
+          11,
+          6,
+          9,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          3,
+          932,
+          5,
+          46,
+          10,
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          18,
+          9,
+          948,
+          5,
+          7,
+          11,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          55,
+          7,
+          933,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          4,
+          8,
+          0,
+          1,
+          986,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          1,
+          3,
+          3,
+          14,
+          8,
+          1,
+          964,
+          2,
+          0
+        ],
+        [
+          9,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          987,
+          1
+        ],
+        [
+          10,
+          37,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          8,
+          944
+        ]
+      ],
+      "calibrated_top_label_ece": 0.013523260344569908,
+      "reliability": [
+        {
+          "count": 1,
+          "confidence": 0.24952266967641135,
+          "accuracy": 0.0
+        },
+        {
+          "count": 2,
+          "confidence": 0.3111647702665001,
+          "accuracy": 0.0
+        },
+        {
+          "count": 3,
+          "confidence": 0.3826889882723549,
+          "accuracy": 0.3333333333333333
+        },
+        {
+          "count": 6,
+          "confidence": 0.44717302999142966,
+          "accuracy": 0.5
+        },
+        {
+          "count": 30,
+          "confidence": 0.5100560884445872,
+          "accuracy": 0.6666666666666666
+        },
+        {
+          "count": 56,
+          "confidence": 0.5651516588928344,
+          "accuracy": 0.42857142857142855
+        },
+        {
+          "count": 59,
+          "confidence": 0.6338956164386265,
+          "accuracy": 0.5084745762711864
+        },
+        {
+          "count": 52,
+          "confidence": 0.6989496004752416,
+          "accuracy": 0.4230769230769231
+        },
+        {
+          "count": 84,
+          "confidence": 0.7650250047576153,
+          "accuracy": 0.5952380952380952
+        },
+        {
+          "count": 103,
+          "confidence": 0.8361744839066697,
+          "accuracy": 0.5922330097087378
+        },
+        {
+          "count": 216,
+          "confidence": 0.9034210963782157,
+          "accuracy": 0.7777777777777778
+        },
+        {
+          "count": 9388,
+          "confidence": 0.9872471945623825,
+          "accuracy": 0.9837025990626331
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "confusion": [
+        [
+          975,
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          15,
+          5
+        ],
+        [
+          1,
+          978,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          20
+        ],
+        [
+          6,
+          0,
+          961,
+          4,
+          11,
+          5,
+          11,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          3,
+          915,
+          10,
+          54,
+          10,
+          4,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          4,
+          5,
+          972,
+          2,
+          3,
+          12,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          32,
+          7,
+          951,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          5,
+          2,
+          2,
+          0,
+          990,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          1,
+          10,
+          5,
+          0,
+          979,
+          2,
+          0
+        ],
+        [
+          8,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          988,
+          2
+        ],
+        [
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          981
+        ]
+      ],
+      "calibrated_top_label_ece": 0.01177388796933028,
+      "reliability": [
+        {
+          "count": 1,
+          "confidence": 0.296430683035366,
+          "accuracy": 0.0
+        },
+        {
+          "count": 3,
+          "confidence": 0.367908486209074,
+          "accuracy": 0.6666666666666666
+        },
+        {
+          "count": 4,
+          "confidence": 0.4361759171078418,
+          "accuracy": 0.5
+        },
+        {
+          "count": 30,
+          "confidence": 0.5093528966881837,
+          "accuracy": 0.4666666666666667
+        },
+        {
+          "count": 38,
+          "confidence": 0.5638465796192944,
+          "accuracy": 0.5
+        },
+        {
+          "count": 34,
+          "confidence": 0.6298315172236386,
+          "accuracy": 0.4411764705882353
+        },
+        {
+          "count": 43,
+          "confidence": 0.6980742598732964,
+          "accuracy": 0.3953488372093023
+        },
+        {
+          "count": 55,
+          "confidence": 0.7668143639654991,
+          "accuracy": 0.6363636363636364
+        },
+        {
+          "count": 71,
+          "confidence": 0.8368431954540436,
+          "accuracy": 0.7183098591549296
+        },
+        {
+          "count": 158,
+          "confidence": 0.9056334358483625,
+          "accuracy": 0.7784810126582279
+        },
+        {
+          "count": 9563,
+          "confidence": 0.9902197967888331,
+          "accuracy": 0.98420997594897
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "confusion": [
+        [
+          987,
+          1,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0,
+          8,
+          1
+        ],
+        [
+          1,
+          991,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          7
+        ],
+        [
+          7,
+          0,
+          970,
+          9,
+          5,
+          2,
+          5,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          4,
+          930,
+          13,
+          35,
+          13,
+          3,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          10,
+          9,
+          957,
+          4,
+          2,
+          17,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          47,
+          7,
+          937,
+          1,
+          6,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          5,
+          4,
+          0,
+          1,
+          988,
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          0,
+          5,
+          1,
+          4,
+          3,
+          0,
+          982,
+          0,
+          0
+        ],
+        [
+          11,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          983,
+          1
+        ],
+        [
+          4,
+          26,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2,
+          967
+        ]
+      ],
+      "calibrated_top_label_ece": 0.010246505003010616,
+      "reliability": [
+        {
+          "count": 1,
+          "confidence": 0.26372119368420216,
+          "accuracy": 0.0
+        },
+        {
+          "count": 4,
+          "confidence": 0.39111361675781453,
+          "accuracy": 0.5
+        },
+        {
+          "count": 8,
+          "confidence": 0.43961260260055196,
+          "accuracy": 0.375
+        },
+        {
+          "count": 32,
+          "confidence": 0.5138697537415362,
+          "accuracy": 0.5625
+        },
+        {
+          "count": 35,
+          "confidence": 0.5636392950302715,
+          "accuracy": 0.6
+        },
+        {
+          "count": 40,
+          "confidence": 0.6345884674311018,
+          "accuracy": 0.6
+        },
+        {
+          "count": 44,
+          "confidence": 0.7025118408704754,
+          "accuracy": 0.45454545454545453
+        },
+        {
+          "count": 61,
+          "confidence": 0.7656711218752484,
+          "accuracy": 0.6229508196721312
+        },
+        {
+          "count": 82,
+          "confidence": 0.835755587992544,
+          "accuracy": 0.6707317073170732
+        },
+        {
+          "count": 177,
+          "confidence": 0.9081831465879703,
+          "accuracy": 0.8022598870056498
+        },
+        {
+          "count": 9516,
+          "confidence": 0.9892958928790503,
+          "accuracy": 0.9845523329129886
+        }
+      ]
+    }
+  ],
+  "paired": [
+    {
+      "seed": 0,
+      "comparison": "ConvNeXt fine-tuning minus imagenet_resnet18 NLL",
+      "difference": -0.31956618235502493,
+      "ci95": [
+        -0.3375666815778315,
+        -0.30071894578536273
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    },
+    {
+      "seed": 0,
+      "comparison": "ConvNeXt fine-tuning minus supervised_lowlabel NLL",
+      "difference": -0.5873018080086612,
+      "ci95": [
+        -0.6091984921201793,
+        -0.5624018965918857
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    },
+    {
+      "seed": 0,
+      "comparison": "ConvNeXt fine-tuning minus contrastive_encoder NLL",
+      "difference": -0.8074376773045474,
+      "ci95": [
+        -0.8321268343842988,
+        -0.7838932894816462
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    },
+    {
+      "seed": 1,
+      "comparison": "ConvNeXt fine-tuning minus imagenet_resnet18 NLL",
+      "difference": -0.3459219179080856,
+      "ci95": [
+        -0.36562231940560846,
+        -0.32715937528866124
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    },
+    {
+      "seed": 1,
+      "comparison": "ConvNeXt fine-tuning minus supervised_lowlabel NLL",
+      "difference": -0.6297865250628272,
+      "ci95": [
+        -0.654950778868857,
+        -0.6065305888714637
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    },
+    {
+      "seed": 1,
+      "comparison": "ConvNeXt fine-tuning minus contrastive_encoder NLL",
+      "difference": -0.8357363135644266,
+      "ci95": [
+        -0.8606734205772837,
+        -0.8130765189278522
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    },
+    {
+      "seed": 2,
+      "comparison": "ConvNeXt fine-tuning minus imagenet_resnet18 NLL",
+      "difference": -0.3399903491868777,
+      "ci95": [
+        -0.3584958286902189,
+        -0.3229146595324812
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    },
+    {
+      "seed": 2,
+      "comparison": "ConvNeXt fine-tuning minus supervised_lowlabel NLL",
+      "difference": -0.6165914535999855,
+      "ci95": [
+        -0.6398869362807604,
+        -0.5946547238272897
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    },
+    {
+      "seed": 2,
+      "comparison": "ConvNeXt fine-tuning minus contrastive_encoder NLL",
+      "difference": -0.8196173306912017,
+      "ci95": [
+        -0.8447756759062346,
+        -0.7951893456250351
+      ],
+      "repeats": 1000,
+      "unit": "test example"
+    }
+  ],
+  "protocol": "Post-fit official CIFAR test confusion and calibrated top-label reliability. No test-based changes to models or calibration. External pretraining, architecture and fine-tuning differ from frozen-encoder baselines; this is not an equal-resource algorithm comparison."
+}

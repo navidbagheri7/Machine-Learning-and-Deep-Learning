@@ -1,0 +1,23 @@
+{
+  "checkpoint_sha256": "1b042be5c3903eb8077fa0de9f224ce351a740512460fae6721f564160c9b89c",
+  "class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "evaluation_profile": "cuda_bfloat16",
+  "temperature": 0.6707022498581057,
+  "alpha": 0.1,
+  "conformal_score_cutoff": 0.03747208168666616,
+  "probability_calibration_n": 1500,
+  "conformal_calibration_n": 1500,
+  "split_sha256": "a57a9a30fb322a648448dc1cfbde7c7a5f966d0b3bd338f5e58eb4851a0983bc",
+  "protocol": "Fixed independent probability and conformal partitions. CUDA retains its original temperature; CPU temperature is fitted using only probability-calibration labels. No test selection. Metadata applies only to the declared inference precision profile."
+}

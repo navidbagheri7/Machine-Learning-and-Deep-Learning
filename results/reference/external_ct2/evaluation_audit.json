@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-07T00:08:50.740546+00:00",
+  "device": "cuda:0",
+  "metric_protocol_version": 3,
+  "definition": "Final RGB-derived three-channel DeltaE76 and chroma. Stochastic RGB L1 dispersion from first draw on every test image; sample 0 excluded from dispersion summaries. Other metrics unchanged.",
+  "scoring_source_sha256": "d34d5f04f7b89cf2681ecbba8c9e038e0289e8c750c68003b3ac020030eac604",
+  "adapter_source_sha256": "453c6b775a3730a0e6da5a905fd1fefa44e39ed057b2ea220b906c266e22845e",
+  "evaluation_seeds": [
+    0
+  ],
+  "checkpoint_sha256": {}
+}

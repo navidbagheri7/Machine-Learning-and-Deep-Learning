@@ -1,0 +1,9 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "output": "results/reference/modern_tabular",
+  "device": "cpu",
+  "baseline_root": "results/reference",
+  "seeds": [0, 1, 2],
+  "depths": [6, 8, 10],
+  "iterations": 2000
+}

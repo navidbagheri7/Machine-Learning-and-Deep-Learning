@@ -43,6 +43,12 @@ if __name__ == "__main__":
         != config["weight_sha256"]
     ):
         raise ValueError("Pinned DDColor weight checksum mismatch")
+    manifest = json.loads((ROOT / "assets/pretrained_manifest.json").read_text())
+    if (
+        hashlib.sha256((model / "config.json").read_bytes()).hexdigest()
+        != manifest["model_config_sha256"]
+    ):
+        raise ValueError("Pinned DDColor model configuration checksum mismatch")
     config.update(data_root=str(args.data_root), source_root=str(source), model_root=str(model))
     destination = args.data_root / "models" / "ddcolor_config.json"
     destination.write_text(json.dumps(config, indent=2) + "\n")

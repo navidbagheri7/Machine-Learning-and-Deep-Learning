@@ -1554,6 +1554,27 @@
       0.2932751084626066,
       0.10173822698427638
     ],
+    "majority_protocol": "Per-feature observed-value modes from masked fitting rows only; hidden fitting values are excluded",
+    "majority_modes": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      2,
+      0,
+      1
+    ],
+    "majority_observed_fit_counts": [
+      2260,
+      2268,
+      2249,
+      2233,
+      2246,
+      2263,
+      2276,
+      2250
+    ],
     "history": [
       -5.654826162008069,
       -4.6387492915641,

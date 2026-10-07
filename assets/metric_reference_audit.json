@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "channels": 1,
+      "border": 0,
+      "case": "identity",
+      "psnr": 0.0,
+      "ssim": 1.1920928955078125e-07
+    },
+    {
+      "channels": 1,
+      "border": 0,
+      "case": "perturbed",
+      "psnr": 9.756673939875782e-07,
+      "ssim": 7.375463220382628e-06
+    },
+    {
+      "channels": 1,
+      "border": 4,
+      "case": "identity",
+      "psnr": 0.0,
+      "ssim": 5.960464477539062e-07
+    },
+    {
+      "channels": 1,
+      "border": 4,
+      "case": "perturbed",
+      "psnr": 2.1545046315907257e-06,
+      "ssim": 7.5553539619077625e-06
+    },
+    {
+      "channels": 3,
+      "border": 0,
+      "case": "identity",
+      "psnr": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "channels": 3,
+      "border": 0,
+      "case": "perturbed",
+      "psnr": 1.4324735069237704e-06,
+      "ssim": 7.980948016711453e-06
+    },
+    {
+      "channels": 3,
+      "border": 4,
+      "case": "identity",
+      "psnr": 0.0,
+      "ssim": 0.0
+    },
+    {
+      "channels": 3,
+      "border": 4,
+      "case": "perturbed",
+      "psnr": 1.8580343699170498e-06,
+      "ssim": 7.793237556813493e-06
+    }
+  ],
+  "lab_max_absolute_difference": 0.004862964153289795,
+  "delta_e76_max_image_mean_difference": 0.00017489696480765815,
+  "test_photo_ids": [
+    453040,
+    360393,
+    187513,
+    545407,
+    476770,
+    283520,
+    39956,
+    473237,
+    340894,
+    463690,
+    20247,
+    37751,
+    370375,
+    409475,
+    163117,
+    514376
+  ],
+  "script_sha256": "91a4ef32ee50da41408a8f1ff42a4d141e9c4bc9177759ed0c764bad3306c839",
+  "metric_source_sha256": "6cb6ec91e95146fd5dc05f6d3628e3227cd004496cdc2313e017332e84a0015c",
+  "protocol": "First 16 fixed held-out photographs, identity and seeded RGB perturbations. NumPy float64 PSNR and SciPy float64 valid 7x7 Gaussian convolution SSIM compare with the deployed PyTorch metrics, with and without 4px shaving, for one and three channels. D65/2-degree Lab and final-RGB DeltaE76 compare with scikit-image. Tolerances allow float32 arithmetic and rounded color matrices. The declared 7x7 SSIM window is not scikit-image's default 11x11 Gaussian SSIM. This audit neither changes predictions nor selects a model.",
+  "references": [
+    "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.convolve2d.html",
+    "https://scikit-image.org/docs/0.24.x/api/skimage.color.html#skimage.color.rgb2lab"
+  ]
+}

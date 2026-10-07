@@ -21,6 +21,8 @@ class MixtureInverse:
         self.means = np.asarray(means, dtype=float)
         self.covariances = np.asarray(covariances, dtype=float)
         self.operator = np.asarray(operator, dtype=float)
+        if self.means.ndim != 2 or self.operator.ndim != 2:
+            raise ValueError("Means and operator must be matrices")
         k, d = self.means.shape
         q = self.operator.shape[0]
         if (
@@ -29,11 +31,29 @@ class MixtureInverse:
             or self.weights.shape != (k,)
             or np.any(self.weights <= 0)
             or not np.isclose(self.weights.sum(), 1)
+            or not all(
+                np.isfinite(a).all()
+                for a in [self.weights, self.means, self.covariances, self.operator]
+            )
         ):
             raise ValueError("Invalid mixture or operator dimensions/weights")
         self.offset = np.zeros(q) if offset is None else np.broadcast_to(offset, (q,))
+        if not np.isfinite(self.offset).all():
+            raise ValueError("Observation offset must be finite")
+        for covariance in self.covariances:
+            tolerance = 1e-10 * max(1, np.linalg.norm(covariance, ord=np.inf))
+            if (
+                not np.allclose(covariance, covariance.T, atol=tolerance, rtol=0)
+                or np.linalg.eigvalsh(covariance).min() < -tolerance
+            ):
+                raise ValueError("Prior covariance must be symmetric positive semidefinite")
         r = np.eye(q) * noise if np.ndim(noise) == 0 else np.asarray(noise, float)
-        if r.shape != (q, q) or np.linalg.eigvalsh(r).min() <= 0:
+        if (
+            r.shape != (q, q)
+            or not np.isfinite(r).all()
+            or not np.allclose(r, r.T, atol=1e-12, rtol=1e-10)
+            or np.linalg.eigvalsh(r).min() <= 0
+        ):
             raise ValueError("Noise covariance must be positive definite")
         self.observation_means = self.means @ self.operator.T + self.offset
         self.factors, self.gains, self.posterior_covariances = [], [], []

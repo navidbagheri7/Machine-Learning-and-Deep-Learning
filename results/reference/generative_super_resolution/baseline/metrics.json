@@ -1,0 +1,45 @@
+{
+  "rows": [
+    {
+      "method": "baseline",
+      "metric_protocol_version": 3,
+      "seed": 0,
+      "sample": 0,
+      "inference_seconds_including_metrics": 1.3408406348899007,
+      "psnr": {
+        "mean": 24.256702904701232,
+        "image_bootstrap_ci95": [
+          23.98201696765423,
+          24.554670040726663
+        ]
+      },
+      "ssim": {
+        "mean": 0.6783286683261395,
+        "image_bootstrap_ci95": [
+          0.6674484566003084,
+          0.6890409030560404
+        ]
+      },
+      "lpips": {
+        "mean": 0.4617918239161372,
+        "image_bootstrap_ci95": [
+          0.452308956541121,
+          0.4721592357577756
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.009183710214565509,
+        "image_bootstrap_ci95": [
+          0.00886202399659669,
+          0.009494983875221805
+        ]
+      }
+    }
+  ],
+  "curves": [],
+  "data_sha256": {
+    "train_sha256": "5388e0d5b0eadb7b7eac0a0158ed518d4bf832e68b4c2c768bbe2d4c1a848115",
+    "val_sha256": "4c7deeeeb8069e055a0e1fd8c6b15206ce4df731a68eba8e5f5dfd8d219c86b6"
+  },
+  "protocol": "256px COCO CC BY benchmark, fixed disjoint IDs; train-only random crops and flips. EMA checkpoints selected using validation only. CVAE test uses conditional prior, never target posterior. Diffusion uses cosine v prediction and deterministic DDIM trajectories from distinct initial noise. All samples reported, no best-of-test selection. RGB PSNR/SSIM (4px SR shave), LPIPS-Alex, observation consistency and color DeltaE/chroma. Bootstrap intervals are per-image, not training-seed uncertainty."
+}

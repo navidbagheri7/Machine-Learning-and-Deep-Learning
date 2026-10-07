@@ -17,6 +17,9 @@ enters pretraining, selection or calibration.
 The 5,000-label count describes fitting labels. Every condition additionally uses the
 same 2,000 selection labels and 3,000 calibration labels; these additional labeling costs
 are part of the evaluation protocol.
+Stratified benchmark sampling uses the available class annotations. These counts
+describe each label's fitting, selection or calibration role rather than a procedure
+that acquires only 5,000 annotations from an initially unlabeled population.
 
 The compact encoder has a CIFAR-scale 3x3 stem, three residual stages with widths
 32, 64 and 128, two blocks per stage, and global average pooling. This makes its

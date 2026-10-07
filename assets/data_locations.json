@@ -1,7 +1,10 @@
 {
   "relocations": {
     "/data/tii/ML_data": "/data/navid.bagheri-shouraki/ML_data",
-    "/data/navid/ML_data": "/data/navid.bagheri-shouraki/ML_data"
+    "/data/navid/ML_data": "/data/navid.bagheri-shouraki/ML_data",
+    "/home/navid.bagheri-shouraki/.cache/torch/hub/checkpoints/convnext_tiny-983f1562.pth": "/data/navid.bagheri-shouraki/ML_data/models/torch/hub/checkpoints/convnext_tiny-983f1562.pth",
+    "/home/navid.bagheri-shouraki/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth": "/data/navid.bagheri-shouraki/ML_data/models/torch/hub/checkpoints/resnet50-11ad3fa6.pth",
+    "/home/labcmap/navid.bagheri-shouraki/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth": "/data/navid.bagheri-shouraki/ML_data/models/torch/hub/checkpoints/resnet18-f37072fd.pth"
   },
-  "reason": "User-requested cache relocation to the corrected personal data directory after the reference experiments; original run configs retain their execution paths."
+  "reason": "User-requested personal cache location, including byte-identical copies of existing pretrained weights. Historical run configs retain execution paths; published configs use the verified personal copies."
 }

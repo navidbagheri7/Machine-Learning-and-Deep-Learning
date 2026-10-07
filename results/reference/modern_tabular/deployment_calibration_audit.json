@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "task": "Adult",
+      "seed": 0,
+      "calibration_n": 3257,
+      "test_coverage": 0.8988391376451078,
+      "checkpoint_sha256": "4347c70fc781e95da3665f233acd7748d616f4aa9fabf61d0e1dfbf637c1f146"
+    },
+    {
+      "task": "Adult",
+      "seed": 1,
+      "calibration_n": 3257,
+      "test_coverage": 0.8968736564093115,
+      "checkpoint_sha256": "ee7dd9c0097e7e2b3d4163738aa839c1a49778fd4d22b148715017d2932fe9a0"
+    },
+    {
+      "task": "Adult",
+      "seed": 2,
+      "calibration_n": 3257,
+      "test_coverage": 0.8973036054296419,
+      "checkpoint_sha256": "251c8b0e48372383261797a796fc4692ca8ea9f8ec97fd8c65bdc9076eab29d0"
+    },
+    {
+      "task": "Housing random",
+      "seed": 0,
+      "calibration_n": 3303,
+      "test_n": 4128,
+      "all_test_intervals_verified": true,
+      "checkpoint_sha256": "3e82bd86ea38fda6ef28a1df87f59012330dc4f1d1576b04d9b4f4f80c3a8eef",
+      "quantile_checkpoint_sha256": "1eed54df711a8993def6376009a06f172204c06c80415ebac86e4e1975975a3c"
+    },
+    {
+      "task": "Housing random",
+      "seed": 1,
+      "calibration_n": 3303,
+      "test_n": 4128,
+      "all_test_intervals_verified": true,
+      "checkpoint_sha256": "2c64899184f9cb8a89ee3a0658ee52816de28e86f076c93892b23d1005815b0b",
+      "quantile_checkpoint_sha256": "db20b0e5f828b9f2bfc7410813367f10b5665842d4af32d9821443720306d3f2"
+    },
+    {
+      "task": "Housing random",
+      "seed": 2,
+      "calibration_n": 3303,
+      "test_n": 4128,
+      "all_test_intervals_verified": true,
+      "checkpoint_sha256": "8920c4902c34fcbb65eb7f91bc71e0147a753343ccd93af273ef36f44be5cdca",
+      "quantile_checkpoint_sha256": "a53079cd8f6b42a9fcc89b8f793f337b2baa75dd6eea77c2be38c7cffa6ac5aa"
+    },
+    {
+      "task": "Housing geographic",
+      "seed": 0,
+      "calibration_n": 3293,
+      "test_n": 4178,
+      "all_test_intervals_verified": true,
+      "checkpoint_sha256": "b048391aa60ecc60fa0b6f181e9fc0d492d099d3950fcc16a7a17dc4639f2637",
+      "quantile_checkpoint_sha256": "65cf85597e7e55578cc1e577736270dd3a2a5b007b82741da97edc77ac6ba622"
+    },
+    {
+      "task": "Housing geographic",
+      "seed": 1,
+      "calibration_n": 3293,
+      "test_n": 4178,
+      "all_test_intervals_verified": true,
+      "checkpoint_sha256": "aa1b8d58ef3a5b7caccc679f0588cd5a0ff9be2e98ce80abeddd714cd9068eec",
+      "quantile_checkpoint_sha256": "8d954fd24ace6e81c6d2a888aff9fab801c890b5a36a9d9c5ac4415c992e06f1"
+    },
+    {
+      "task": "Housing geographic",
+      "seed": 2,
+      "calibration_n": 3293,
+      "test_n": 4178,
+      "all_test_intervals_verified": true,
+      "checkpoint_sha256": "90e99ef3d89ca15fdcdebb60af895c8335616d682a0644f24c3565af07a3bdb9",
+      "quantile_checkpoint_sha256": "79f6c3da0261d1822e4dc2b43d3dc13a64f42534321f1d861ec3a97ecf75ddb8"
+    }
+  ],
+  "script_sha256": "cde5060253176b6b14f2e6f16ce66ebd772bbf8e3a9510054ebb3ad1c3f1c82f",
+  "source_sha256": {
+    "scripts/export_uncertainty.py": "cde5060253176b6b14f2e6f16ce66ebd772bbf8e3a9510054ebb3ad1c3f1c82f",
+    "src/learning_lab/modern_inference.py": "ea24b70050d05de8c032994a6ced5c6a35ea30b0cc0bc0bd79760506fd3d53d7"
+  },
+  "protocol": "Fixed training conformal partitions, unchanged fitted models and temperatures. All prior Adult coverage and every previously saved Housing test endpoint reproduced. Test labels do not choose cutoffs. Geographic interval validity is not guaranteed."
+}

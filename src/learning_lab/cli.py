@@ -25,12 +25,26 @@ def main():
             "super_resolution",
             "colorization",
             "ddcolor",
+            "generative_colorization",
+            "generative_super_resolution",
+            "modern_tabular",
+            "modern_vision",
+            "external_ddcolor",
+            "external_ct2",
+            "external_bigcolor",
+            "external_swinir",
+            "external_realesrgan",
+            "natural_denoising",
+            "sr_shift",
         ],
     )
     parser.add_argument("--config", type=Path)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--data-root")
     parser.add_argument("--device")
+    parser.add_argument(
+        "--methods", nargs="+", choices=["baseline", "l1", "gan", "cvae", "diffusion"]
+    )
     parser.add_argument(
         "--quick",
         action="store_true",
@@ -44,6 +58,8 @@ def main():
         config["data_root"] = args.data_root
     if args.device:
         config["device"] = args.device
+    if args.methods:
+        config["methods"] = args.methods
     if args.quick:
         config.update(
             quick=True,
@@ -75,6 +91,25 @@ def main():
             )
         if args.study in ["denoising", "super_resolution", "colorization"]:
             config.update(train_images=256, validation_images=32, test_images=64)
+        if args.study.startswith("generative_"):
+            config.update(
+                train_images=32,
+                validation_images=8,
+                test_images=8,
+                crop=32,
+                batch_size=8,
+                width=16,
+                samples=2,
+                sampling_steps=4,
+            )
+        if args.study == "modern_tabular":
+            config.update(iterations=20, depths=[6])
+        if args.study.startswith("external_"):
+            config.update(test_images=8, samples=2)
+        if args.study == "natural_denoising":
+            config.update(test_images=8, sigmas=[25])
+        if args.study == "sr_shift":
+            config.update(test_images=8)
         config["output"] = f"results/smoke/{args.study}"
     if args.output:
         config["output"] = str(args.output)
@@ -87,6 +122,16 @@ def main():
         "super_resolution",
         "colorization",
         "ddcolor",
+        "generative_colorization",
+        "generative_super_resolution",
+        "modern_vision",
+        "external_ddcolor",
+        "external_ct2",
+        "external_bigcolor",
+        "external_swinir",
+        "external_realesrgan",
+        "natural_denoising",
+        "sr_shift",
     ]:
         import torch
 
@@ -116,6 +161,18 @@ def main():
         experiment = getattr(restoration, args.study)
     elif args.study == "ddcolor":
         from learning_lab.pretrained import experiment
+    elif args.study.startswith("generative_"):
+        from learning_lab.generative import experiment
+    elif args.study == "modern_tabular":
+        from learning_lab.modern_tabular import experiment
+    elif args.study == "modern_vision":
+        from learning_lab.modern_vision import experiment
+    elif args.study.startswith("external_"):
+        from learning_lab.external_restoration import experiment
+    elif args.study == "natural_denoising":
+        from learning_lab.natural_denoising import experiment
+    elif args.study == "sr_shift":
+        from learning_lab.restoration_shift import experiment
     else:
         from learning_lab.vision import experiment
     with threadpool_limits(limits=4):

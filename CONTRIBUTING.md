@@ -4,7 +4,7 @@ Prefer a focused question with a declared evaluation protocol over adding an unt
 model name. New studies should state data exposure, selection/calibration/test boundaries,
 seeds, budget, metrics and the scope of any uncertainty claim.
 
-Install `.[deep,notebooks,dev]` in your own environment, then run:
+Install `.[deep,boosting,notebooks,dev]` in your own environment, then run:
 
 ```bash
 ruff check src tests scripts
@@ -23,3 +23,6 @@ Keep explanations, comments and notebook outputs in English. Credit methods and 
 sources. Do not commit raw datasets, private credentials, local paths in executable defaults
 without a portable alternative, serialized Python models, or third-party paper PDFs.
 The repository's author owns final publication decisions.
+
+Use fenced `math` blocks for display equations in documentation, following
+[GitHub's math syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).

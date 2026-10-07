@@ -9,7 +9,7 @@
     "source_url": "https://www.flickr.com/photos/jonesdlwa/8834178988/",
     "license": "CC BY 2.0",
     "license_url": "https://creativecommons.org/licenses/by/2.0/",
-    "modification": "Center crop, resize to 96x96; restoration/color predictions and entropy maps"
+    "modification": "Center crop and resize to 96x96 or 256x256; restoration/color predictions and uncertainty maps"
   },
   {
     "test_index": 1,
@@ -21,7 +21,7 @@
     "source_url": "https://www.flickr.com/photos/film_fatale/6533098435/",
     "license": "CC BY 2.0",
     "license_url": "https://creativecommons.org/licenses/by/2.0/",
-    "modification": "Center crop, resize to 96x96; restoration/color predictions and entropy maps"
+    "modification": "Center crop and resize to 96x96 or 256x256; restoration/color predictions and uncertainty maps"
   },
   {
     "test_index": 3,
@@ -33,7 +33,7 @@
     "source_url": "https://www.flickr.com/photos/unfinishedportrait/7230915270/",
     "license": "CC BY 2.0",
     "license_url": "https://creativecommons.org/licenses/by/2.0/",
-    "modification": "Center crop, resize to 96x96; restoration/color predictions and entropy maps"
+    "modification": "Center crop and resize to 96x96 or 256x256; restoration/color predictions and uncertainty maps"
   },
   {
     "test_index": 5,
@@ -45,6 +45,6 @@
     "source_url": "https://www.flickr.com/photos/moresheth/4509187424/",
     "license": "CC BY 2.0",
     "license_url": "https://creativecommons.org/licenses/by/2.0/",
-    "modification": "Center crop, resize to 96x96; restoration/color predictions and entropy maps"
+    "modification": "Center crop and resize to 96x96 or 256x256; restoration/color predictions and uncertainty maps"
   }
 ]

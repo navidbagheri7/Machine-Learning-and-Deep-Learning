@@ -1,0 +1,30 @@
+{
+  "temperature": 1.0295024915781839,
+  "threshold": 0.3999999999999999,
+  "features": [
+    "age",
+    "education_num",
+    "capital_gain",
+    "capital_loss",
+    "hours_per_week",
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "categorical": [
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "alpha": 0.1,
+  "conformal_score_cutoff": 0.5580764460801501,
+  "checkpoint_sha256": "ee7dd9c0097e7e2b3d4163738aa839c1a49778fd4d22b148715017d2932fe9a0"
+}

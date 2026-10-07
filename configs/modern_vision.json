@@ -1,0 +1,17 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "image_root": "/data/tii/Image_data/cifar10/raw",
+  "pretrained_weights": "/data/navid.bagheri-shouraki/ML_data/models/torch/hub/checkpoints/convnext_tiny-983f1562.pth",
+  "output": "results/reference/modern_vision",
+  "device": "cuda:0",
+  "label_budget": 5000,
+  "input_size": 128,
+  "batch_size": 64,
+  "learning_rate": 0.0001,
+  "epochs": 40,
+  "seeds": [
+    0,
+    1,
+    2
+  ]
+}

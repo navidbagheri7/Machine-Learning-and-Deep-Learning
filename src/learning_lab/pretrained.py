@@ -5,6 +5,7 @@ import json
 import subprocess
 import sys
 import time
+from importlib.resources import files
 from pathlib import Path
 
 import torch
@@ -31,7 +32,11 @@ def load_ddcolor(config):
     sys.path.insert(0, str(source))
     from ddcolor import DDColor
 
-    metadata = json.loads((Path(config["model_root"]) / "config.json").read_text())
+    metadata_bytes = (Path(config["model_root"]) / "config.json").read_bytes()
+    pins = json.loads((files("learning_lab") / "resources/ddcolor_manifest.json").read_text())
+    if hashlib.sha256(metadata_bytes).hexdigest() != pins["model_config_sha256"]:
+        raise ValueError("DDColor model configuration checksum mismatch")
+    metadata = json.loads(metadata_bytes)
     metadata["input_size"] = [config["input_size"]] * 2
     model = DDColor(**metadata)
     model.load_state_dict(torch.load(path, map_location="cpu", weights_only=True), strict=True)

@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "device": "cuda:2",
+  "tasks": [
+    "colorization"
+  ],
+  "checks": [
+    {
+      "task": "colorization",
+      "method": "l1",
+      "exposure": "local",
+      "samples": 1,
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "input_sha256": "332e38cf0ff82b992aa99ca925d40b2cb3a198ccf9375d6394a42f29a5ae331e",
+      "repeated_output_sha256": [
+        "04c6fcaa3111127c0bf3fb0b267e331686aa5250e391580ddcfc0ad947692a91"
+      ],
+      "checkpoint_sha256": "d8365e26f498b9f7787bbd32afc94477a79d2220292a2344b711d63eccf11fd9"
+    },
+    {
+      "task": "colorization",
+      "method": "gan",
+      "exposure": "local",
+      "samples": 1,
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "input_sha256": "332e38cf0ff82b992aa99ca925d40b2cb3a198ccf9375d6394a42f29a5ae331e",
+      "repeated_output_sha256": [
+        "b4344781cce599713697be4c9f6373e0851db019e494ba2ab6b160feaa46c395"
+      ],
+      "checkpoint_sha256": "ca878e5d43198a57d60113bd87cd4000ccf09b6c869c373f493e7e748be8603a"
+    },
+    {
+      "task": "colorization",
+      "method": "cvae",
+      "exposure": "local",
+      "samples": 2,
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "input_sha256": "332e38cf0ff82b992aa99ca925d40b2cb3a198ccf9375d6394a42f29a5ae331e",
+      "repeated_output_sha256": [
+        "385270727f597fe777e2ef760ebb6ed3662afc720c99bdf017e4fb144c2a736f",
+        "6863ccc6d785563b7bed36807c13b3b5efb762dec6edd7865a9fadf3a0417ba9"
+      ],
+      "checkpoint_sha256": "18a72ea78f996edf9b824bde6f3c2825a7db8481daaf3e7ecd7e0c57b7ff8021"
+    },
+    {
+      "task": "colorization",
+      "method": "diffusion",
+      "exposure": "local",
+      "samples": 2,
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "input_sha256": "332e38cf0ff82b992aa99ca925d40b2cb3a198ccf9375d6394a42f29a5ae331e",
+      "repeated_output_sha256": [
+        "5f32d1f997500465e59c75da113ac8daf3401eb46679a52c483573c302165f31",
+        "d30460fe5489ab59b86c11af10ca245ac8e06866be78d67fe40e7204d037d46c"
+      ],
+      "checkpoint_sha256": "f40b2e701ee105f2bff28f9cf6f5fb607a69a7c7769c183e548f00f27d25d907"
+    },
+    {
+      "task": "colorization",
+      "method": "ddcolor",
+      "exposure": "external",
+      "samples": 1,
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "input_sha256": "332e38cf0ff82b992aa99ca925d40b2cb3a198ccf9375d6394a42f29a5ae331e",
+      "repeated_output_sha256": [
+        "6b3845bf768abd978852573dc9efbc985f80e8679756645a5b8ef13c4a0adcf1"
+      ],
+      "checkpoint_sha256": null
+    },
+    {
+      "task": "colorization",
+      "method": "ct2",
+      "exposure": "external",
+      "samples": 1,
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "input_sha256": "332e38cf0ff82b992aa99ca925d40b2cb3a198ccf9375d6394a42f29a5ae331e",
+      "repeated_output_sha256": [
+        "77d855e1827b4707de65cd50a2fca50fc14ef2fac0301165f5e0271c55553135"
+      ],
+      "checkpoint_sha256": null
+    },
+    {
+      "task": "colorization",
+      "method": "bigcolor",
+      "exposure": "external",
+      "samples": 2,
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "input_sha256": "332e38cf0ff82b992aa99ca925d40b2cb3a198ccf9375d6394a42f29a5ae331e",
+      "repeated_output_sha256": [
+        "58886a63cda757fb3280337489e6c86045b25df216b92d995f8c10e5a31dc267",
+        "a49fd620c9611ab1e7853c089b34811509119567d47738a394ad26bd9b62dec9"
+      ],
+      "checkpoint_sha256": null
+    }
+  ],
+  "test_photo_id": 453040,
+  "script_sha256": "c80bc6a6b14bc5a8623472f60b4f630bc88635d35bf7189abb657774c9053dd4",
+  "source_sha256": {
+    "scripts/restore_generative.py": "1f93e10148f1c0571fdccd93e7061d36650037dd9d362592c064d8cec021dd7c",
+    "scripts/restore_external.py": "7a3e4afa48b68e5ca16fb5fe86b1d2b77552a6db9d01f7fd9037a3eebda968ed",
+    "src/learning_lab/generative.py": "eee73d0bb111b96f205dc60af15d1670142d98d61874fad3b081ee3bec5ba38c",
+    "src/learning_lab/restoration.py": "6cb6ec91e95146fd5dc05f6d3628e3227cd004496cdc2313e017332e84a0015c",
+    "src/learning_lab/pretrained.py": "b17bb26f9c4997995a5870e4e0878e38d920191193ab5c11e9180835a4600c48",
+    "src/learning_lab/external_restoration.py": "33a8605502c60dd42cd8ae54e0c49fd87cc10482597253ca35cfd9f9d7cea4c7"
+  },
+  "protocol": "First fixed test photograph, native colorization crop251x249 and actual bicubic LR crop61x59. Fresh subprocesses reproduce PNG bytes under identical seeds, including two draws for stochastic models. Exact dimensions, RGB encoding and sidecar input hashes checked. Model commands reject nonfinite tensors before quantization. This is a deployment integration, not an additional quality evaluation."
+}

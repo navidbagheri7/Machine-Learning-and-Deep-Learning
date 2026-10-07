@@ -66,6 +66,36 @@ difference. Repeated seeds capture training variation separately. Each condition
 512,000 transmitted bits per seed; zero observed error would not prove zero population
 error, and the report states the actual evaluation count.
 
+## Saved receiver inference
+
+The [receiver command](../scripts/predict_receiver.py) takes floating `N x 2 x 64`
+NumPy observations, with real/imaginary channels in the original unit-energy
+16-QAM convention. It returns symbol classes, Gray bits and **uncalibrated** softmax
+probabilities. Targets, SNR and nonlinearity are not supplied at inference.
+
+```bash
+python scripts/predict_receiver.py \
+  --checkpoint results/reference/signals/checkpoints/cnn_0.pt \
+  --input received_blocks.npy --output .local/decoded.npz
+python scripts/check_receiver_inference.py --results-root results/reference/signals --device cuda:0 --compare-cpu
+```
+
+The numerical input checks reject malformed blocks, nonfinite observations and
+invalid logits before publishing outputs. Circular block boundaries are part of
+this model's contract; passing a physical stream reshaped into blocks does not
+establish equivalent channel conditions. Calibration would require an additional
+held-out protocol before interpreting softmax values as reliable probabilities.
+
+The reference allows CUDA convolution TF32 and disables matrix TF32, matching
+[PyTorch 2.7's numerical defaults](https://docs.pytorch.org/docs/2.7/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices).
+The API preserves the caller's backend flags after inference. `--disable-tf32`
+requests CUDA convolutions without TF32; CPU inference uses its own float32 backend.
+Those settings can change probabilities and occasionally symbol decisions.
+The [deployment audit](../assets/receiver_inference_audit.json) reproduces all 60
+CUDA benchmark conditions and separately records CPU differences, rather than
+claiming that a fixed seed establishes cross-device equality. Both devices' six
+commands agree exactly with their respective Python API outputs on fixed subsets.
+
 ## Worked questions
 
 **Why can a CNN beat a symbol-wise classifier?** FIR memory makes neighboring received

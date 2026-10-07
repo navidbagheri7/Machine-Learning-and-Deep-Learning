@@ -1,0 +1,8 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "output": "results/reference/sr_shift",
+  "device": "cuda:2",
+  "test_images": 400,
+  "batch_size": 1,
+  "degradations": ["bicubic", "blur", "noise_jpeg"]
+}

@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "study": "natural_denoising",
+      "test_images": 400,
+      "errors": {
+        "per_image_scores.npz": 0.0,
+        "gallery.npz": 0.0
+      }
+    },
+    {
+      "study": "sr_shift",
+      "test_images": 400,
+      "errors": {
+        "per_image_scores.npz": 0.0,
+        "gallery.npz": 0.0
+      }
+    }
+  ],
+  "guards": [
+    {
+      "study": "natural_denoising",
+      "case": "positive_infinity",
+      "rejected_before_clipping": true
+    },
+    {
+      "study": "natural_denoising",
+      "case": "negative_infinity",
+      "rejected_before_clipping": true
+    },
+    {
+      "study": "natural_denoising",
+      "case": "nan",
+      "rejected_before_clipping": true
+    },
+    {
+      "study": "sr_shift",
+      "case": "positive_infinity",
+      "rejected_before_clipping": true
+    },
+    {
+      "study": "sr_shift",
+      "case": "negative_infinity",
+      "rejected_before_clipping": true
+    },
+    {
+      "study": "sr_shift",
+      "case": "nan",
+      "rejected_before_clipping": true
+    }
+  ],
+  "original_run_records_preserved": true,
+  "source_sha256": {
+    "scripts/check_stress_evaluation.py": "cf654de58d3235727b0751a35b7ab8afb7b5631cb7408c999a9f550cdf69a4f3",
+    "src/learning_lab/natural_denoising.py": "d6722b6a407f9d89dad74092d9344706ca1c974c1affe74fffffd5b65d2f7f90",
+    "src/learning_lab/restoration_shift.py": "2d1dfe97b54bb4e231173030e215c7d59aacfad715c41062ba68bdb5f0e54cbb"
+  },
+  "protocol": "Separate full re-evaluation of all 400 fixed test images at three noise levels and three SR degradations, using original configs, data and frozen weights. Every saved score and gallery array is compared with the original numerical evidence, allowing atol1e-5/rtol1e-6 across L40S devices. Three injected invalid raw outputs per study use eight real images and a dummy metric only for failure-path testing, never quality evaluation. Invalid outputs must raise before clipping and publishing score files; original evidence is untouched."
+}

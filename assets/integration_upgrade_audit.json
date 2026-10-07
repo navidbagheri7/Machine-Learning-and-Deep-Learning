@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "arguments": [
+        "-m",
+        "learning_lab.cli",
+        "probabilistic",
+        "--quick",
+        "--device",
+        "cpu"
+      ],
+      "status": "passed"
+    },
+    {
+      "arguments": [
+        "-m",
+        "learning_lab.cli",
+        "generalization",
+        "--quick",
+        "--device",
+        "cpu"
+      ],
+      "status": "passed"
+    },
+    {
+      "arguments": [
+        "-m",
+        "learning_lab.cli",
+        "kernels",
+        "--quick",
+        "--device",
+        "cpu"
+      ],
+      "status": "passed"
+    },
+    {
+      "arguments": [
+        "-m",
+        "learning_lab.cli",
+        "signals",
+        "--quick",
+        "--device",
+        "cpu"
+      ],
+      "status": "passed"
+    },
+    {
+      "arguments": [
+        "scripts/prepare_smoke_data.py"
+      ],
+      "status": "passed"
+    },
+    {
+      "arguments": [
+        "-m",
+        "learning_lab.cli",
+        "course_mixtures",
+        "--quick",
+        "--data-root",
+        ".local/smoke_data",
+        "--device",
+        "cpu"
+      ],
+      "status": "passed"
+    },
+    {
+      "arguments": [
+        "-m",
+        "learning_lab.cli",
+        "inverse",
+        "--quick",
+        "--data-root",
+        ".local/smoke_data",
+        "--device",
+        "cpu"
+      ],
+      "status": "passed"
+    },
+    {
+      "arguments": [
+        "-m",
+        "learning_lab.cli",
+        "denoising",
+        "--quick",
+        "--data-root",
+        ".local/smoke_data",
+        "--device",
+        "cpu"
+      ],
+      "status": "passed"
+    },
+    {
+      "arguments": [
+        "-m",
+        "learning_lab.cli",
+        "super_resolution",
+        "--quick",
+        "--data-root",
+        ".local/smoke_data",
+        "--device",
+        "cpu"
+      ],
+      "status": "passed"
+    },
+    {
+      "arguments": [
+        "-m",
+        "learning_lab.cli",
+        "colorization",
+        "--quick",
+        "--config",
+        ".local/smoke_data/colorization.json",
+        "--device",
+        "cpu"
+      ],
+      "status": "passed"
+    },
+    {
+      "arguments": [
+        "-m",
+        "learning_lab.cli",
+        "modern_tabular",
+        "--quick",
+        "--device",
+        "cpu"
+      ],
+      "status": "passed"
+    }
+  ],
+  "protocol": "Offline numerical/procedural CI integrations, plus short-budget native boosting using prepared official tabular data. No reference training outputs modified."
+}

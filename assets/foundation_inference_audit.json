@@ -1,0 +1,171 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "checks": [
+    {
+      "task": "denoising",
+      "checkpoint": "autoencoder_0.pt",
+      "checkpoint_sha256": "591ffc9589fc8313693c227eddfd9453fe4a110421afb5dca62888b6f395e926",
+      "output_dimensions": [
+        25,
+        27
+      ],
+      "repeated_output_sha256": "264621daebb1ba46e0416fabf5be6126af47330eca1f3391ba7ef96561f24ab0"
+    },
+    {
+      "task": "denoising",
+      "checkpoint": "autoencoder_1.pt",
+      "checkpoint_sha256": "421da14549072e732cb8328e742dc534bf9462b1562dd5962a78a012838e64d8",
+      "output_dimensions": [
+        25,
+        27
+      ],
+      "repeated_output_sha256": "20ac5b29e18b611d10c6b0cdf6327911287b03ccfcb89f48df3f5af188572fe7"
+    },
+    {
+      "task": "denoising",
+      "checkpoint": "autoencoder_2.pt",
+      "checkpoint_sha256": "ed60e30a90d4c29ced2210618c2f8048f9faada5ed7e76707fd78ce920708da1",
+      "output_dimensions": [
+        25,
+        27
+      ],
+      "repeated_output_sha256": "fed6869eedf15fc2e919b44684d2a21e6429862ccc5447c1b424321e571ee9d4"
+    },
+    {
+      "task": "denoising",
+      "checkpoint": "residual_denoiser_0.pt",
+      "checkpoint_sha256": "baef56dbdaad54cd61d2c960eb32a2856ac8d717a7bfb57d3916c1fe7f253cb7",
+      "output_dimensions": [
+        25,
+        27
+      ],
+      "repeated_output_sha256": "19540b23f370fee06716befdd1bc41aefe9f09cb2ae5f86a4b865dbecc2c5e17"
+    },
+    {
+      "task": "denoising",
+      "checkpoint": "residual_denoiser_1.pt",
+      "checkpoint_sha256": "257360dd4ccab09374f627261addc8dbb9136dea628313cbb4265e4f80a6c5a4",
+      "output_dimensions": [
+        25,
+        27
+      ],
+      "repeated_output_sha256": "25c7c6e07c0bb7767221c0c22581359993a77d101dc3a5dea7e46f65e1587937"
+    },
+    {
+      "task": "denoising",
+      "checkpoint": "residual_denoiser_2.pt",
+      "checkpoint_sha256": "4cca18c359bd61abddc378c105c0d15d38e427cfe9e3084585e1ee122be5672a",
+      "output_dimensions": [
+        25,
+        27
+      ],
+      "repeated_output_sha256": "37b576e4a4a27c425183709e5b97a9c9062db92b26dd8b821a65498b8598c384"
+    },
+    {
+      "task": "super_resolution",
+      "checkpoint": "autoencoder_0.pt",
+      "checkpoint_sha256": "f32b46669c46928dd1f7ec10e1385aec8ea8c10e35412626499c77f0973726fc",
+      "output_dimensions": [
+        236,
+        244
+      ],
+      "repeated_output_sha256": "2bbb431caeaea44776228d045e910e86daf496a6597b20d941b291574dd922d5"
+    },
+    {
+      "task": "super_resolution",
+      "checkpoint": "autoencoder_1.pt",
+      "checkpoint_sha256": "88939ae49676c5d78ff0f3522e9d609eb4388863ea5642ac36a7b2746239cd2f",
+      "output_dimensions": [
+        236,
+        244
+      ],
+      "repeated_output_sha256": "a9469ada78cc6c713681a1813cf85fd35f0ebbcf8d067dd4727443f3547084ba"
+    },
+    {
+      "task": "super_resolution",
+      "checkpoint": "pixelshuffle_residual_0.pt",
+      "checkpoint_sha256": "9dda3d682f391dbb5cbc36eb99253a16f490004c9b9ad6893d5440cd5d2b9b45",
+      "output_dimensions": [
+        236,
+        244
+      ],
+      "repeated_output_sha256": "94f9f6b636607390aaaad35b665e0faa135c7faff5c253906f99224808b780b6"
+    },
+    {
+      "task": "super_resolution",
+      "checkpoint": "pixelshuffle_residual_1.pt",
+      "checkpoint_sha256": "e99ad1a7f24fd78b2a79a6353d0dc51651697d5684f268af3da096ef4a58eec5",
+      "output_dimensions": [
+        236,
+        244
+      ],
+      "repeated_output_sha256": "04115b727b711a0e427fa17abdc7bd646f307af15b14839f385d64cc53275861"
+    },
+    {
+      "task": "colorization",
+      "checkpoint": "autoencoder_l2_0.pt",
+      "checkpoint_sha256": "04a0841e05c1613280e9acd9cd0c42a948621ef03731f18c16c5807c8694441d",
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "repeated_output_sha256": "28d2804f59c5e76c109fa6fa3dc77eecb9e6e4fa01409e1e0b3de712a3607a20"
+    },
+    {
+      "task": "colorization",
+      "checkpoint": "autoencoder_l2_1.pt",
+      "checkpoint_sha256": "b7752aa3aa6b35de4c6239e99cb5dbb3aed88064556636bae5d5666868fe1f08",
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "repeated_output_sha256": "672cbb8b33fa109afc3a6729cb5b432d6c629661fe3fd97a23512a6f19ee20c9"
+    },
+    {
+      "task": "colorization",
+      "checkpoint": "transfer_balanced_bins_0.pt",
+      "checkpoint_sha256": "ea35edea696ade20784d31a8574fac3fc5b4ff7663172284c82757408adcb29b",
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "repeated_output_sha256": "0a8ed4a2595a87546c277184d869cbd73ec5bdc83e783dfe4e45c3ca9dd75dcb"
+    },
+    {
+      "task": "colorization",
+      "checkpoint": "transfer_balanced_bins_1.pt",
+      "checkpoint_sha256": "863e33b1045923472f6a3b33c3fe98ee4404df08064bcf968e3ae06d91d77e2d",
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "repeated_output_sha256": "e182f69a501f66fed5f46deb70401c6c972a917bc0abdde96ec6c6def6382565"
+    },
+    {
+      "task": "colorization",
+      "checkpoint": "transfer_l2_0.pt",
+      "checkpoint_sha256": "52241ff5f1bb3092a9323c00b51339d8a48aa3d2450afbe8d6d7c41d0e6fe8aa",
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "repeated_output_sha256": "f88eb7b49883ae25c1c0dbb405bfcffd35efa82b139682bd608dd5232dbcb4a8"
+    },
+    {
+      "task": "colorization",
+      "checkpoint": "transfer_l2_1.pt",
+      "checkpoint_sha256": "59425abe8baf923ee47483d6c41a9ff444e69acd35fa9d7d6cd78b443098c27f",
+      "output_dimensions": [
+        249,
+        251
+      ],
+      "repeated_output_sha256": "072daef1f2e7c16304941c0bc36c8d10a40cb7870496654fff660279a6c2dc75"
+    }
+  ],
+  "invalid_noise_settings_rejected": true,
+  "infinite_raw_field_rejected": true,
+  "script_sha256": "b04756296b4472c66284bebb3b12697d82b30aa8126ac9df269e4561b4c3eb43",
+  "inference_source_sha256": "ddc29217516767f127e1fa7c181d8556349af02adb1e1a87ce4f65dedd49acee",
+  "protocol": "All 16 selected foundational restoration checkpoints. Non-square first fixed COCO test photograph and first official MNIST test digit. PNG bytes reproduce in fresh CPU processes. Noise is deliberately quantized/clipped for the image CLI fixture; this is a deployment integration, not a recomputation of benchmark quality scores from unclipped floating observations. Checkpoint/input hashes, exact output dimensions and image modes checked. Invalid noise settings and injected infinite raw field rejected."
+}

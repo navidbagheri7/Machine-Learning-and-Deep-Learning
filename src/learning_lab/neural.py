@@ -99,7 +99,7 @@ def train_tabular(
         with torch.no_grad():
             val = float(criterion(model(vx), vy))
         history.append({"epoch": epoch + 1, "train_loss": np.mean(losses), "validation_loss": val})
-        if val < best - 1e-5:
+        if val < best:
             best, state, stale = val, copy.deepcopy(model.state_dict()), 0
         else:
             stale += 1

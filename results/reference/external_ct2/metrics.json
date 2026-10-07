@@ -1,0 +1,55 @@
+{
+  "rows": [
+    {
+      "method": "ct2",
+      "metric_protocol_version": 3,
+      "seed": 0,
+      "sample": 0,
+      "inference_seconds_including_metrics": 27.59621510002762,
+      "psnr": {
+        "mean": 22.980606439113618,
+        "image_bootstrap_ci95": [
+          22.579645801723004,
+          23.359208633422853
+        ]
+      },
+      "ssim": {
+        "mean": 0.9130039630830288,
+        "image_bootstrap_ci95": [
+          0.9072952764183283,
+          0.9183092490881681
+        ]
+      },
+      "lpips": {
+        "mean": 0.15521409684792162,
+        "image_bootstrap_ci95": [
+          0.14913097067573106,
+          0.162149998025503
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.00022976522919012865,
+        "image_bootstrap_ci95": [
+          0.0001901578054212427,
+          0.0002758931847207542
+        ]
+      },
+      "delta_e76": {
+        "mean": 14.642391269207002,
+        "image_bootstrap_ci95": [
+          13.938122535943984,
+          15.417574675261974
+        ]
+      },
+      "chroma": {
+        "mean": 20.184807561039925,
+        "image_bootstrap_ci95": [
+          19.158868362158536,
+          21.255712724626065
+        ]
+      }
+    }
+  ],
+  "parameter_count": 462977256,
+  "protocol": "Frozen official external reference; same 400 high-resolution COCO test crops and observation. No local fitting or test selection. External training exposure differs and overlap is not audited. BigColor uses a declared fixed ResNet50 class-selection adapter and one fixed random latent; not an exact reproduction of its default classifier."
+}

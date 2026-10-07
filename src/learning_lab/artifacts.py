@@ -3,6 +3,7 @@
 import hashlib
 import importlib.metadata
 import json
+import os
 import platform
 import subprocess
 import time
@@ -31,7 +32,9 @@ def write_json(path, data):
     p = Path(path)
     p.parent.mkdir(parents=True, exist_ok=True)
     # Refuse NaN instead of silently publishing invalid metrics.
-    p.write_text(json.dumps(data, indent=2, default=convert, allow_nan=False) + "\n")
+    temporary = p.with_name(p.name + ".part")
+    temporary.write_text(json.dumps(data, indent=2, default=convert, allow_nan=False) + "\n")
+    temporary.replace(p)
 
 
 class Run:
@@ -40,7 +43,17 @@ class Run:
         self.output.mkdir(parents=True, exist_ok=True)
         self.start = time.monotonic()
         versions = {}
-        for package in ["numpy", "scipy", "pandas", "scikit-learn", "torch", "torchvision"]:
+        for package in [
+            "numpy",
+            "scipy",
+            "pandas",
+            "scikit-learn",
+            "torch",
+            "torchvision",
+            "lpips",
+            "timm",
+            "catboost",
+        ]:
             try:
                 versions[package] = importlib.metadata.version(package)
             except importlib.metadata.PackageNotFoundError:
@@ -56,8 +69,8 @@ class Run:
         }
         source = Path(__file__).resolve().parent
         self.record["package_source_sha256"] = {
-            path.name: hashlib.sha256(path.read_bytes()).hexdigest()
-            for path in sorted(source.glob("*.py"))
+            str(path.relative_to(source)): hashlib.sha256(path.read_bytes()).hexdigest()
+            for path in sorted(source.glob("*.py")) + sorted(source.rglob("*.json"))
         }
         if config.get("device", "").startswith("cuda"):
             import torch
@@ -65,6 +78,7 @@ class Run:
             self.record["accelerator"] = {
                 "name": torch.cuda.get_device_name(config["device"]),
                 "cuda_runtime": torch.version.cuda,
+                "visible_devices": os.environ.get("CUDA_VISIBLE_DEVICES"),
             }
         write_json(self.output / "run.json", self.record | {"status": "running"})
 

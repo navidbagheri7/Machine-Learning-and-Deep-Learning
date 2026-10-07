@@ -1,0 +1,239 @@
+{
+  "rows": [
+    {
+      "model": "noisy",
+      "sigma": 15,
+      "matched_training_noise": true,
+      "psnr": {
+        "mean": 24.887280263900756,
+        "image_bootstrap_ci95": [
+          24.860807736754417,
+          24.912688128113746
+        ]
+      },
+      "ssim": {
+        "mean": 0.5630150580778718,
+        "image_bootstrap_ci95": [
+          0.5522008664980531,
+          0.5735564729301259
+        ]
+      },
+      "lpips": {
+        "mean": 0.22312866386026145,
+        "image_bootstrap_ci95": [
+          0.21274037649086677,
+          0.2336716219196096
+        ]
+      }
+    },
+    {
+      "model": "wavelet",
+      "sigma": 15,
+      "matched_training_noise": true,
+      "psnr": {
+        "mean": 29.889788732528686,
+        "image_bootstrap_ci95": [
+          29.762700889229773,
+          30.026313991904257
+        ]
+      },
+      "ssim": {
+        "mean": 0.80463046297431,
+        "image_bootstrap_ci95": [
+          0.8012817036136985,
+          0.8082014042139054
+        ]
+      },
+      "lpips": {
+        "mean": 0.13423682926222683,
+        "image_bootstrap_ci95": [
+          0.12858450064016508,
+          0.13936837786925024
+        ]
+      }
+    },
+    {
+      "model": "swinir_noise25",
+      "sigma": 15,
+      "matched_training_noise": false,
+      "psnr": {
+        "mean": 32.595050687789914,
+        "image_bootstrap_ci95": [
+          32.36575771868229,
+          32.826632629632954
+        ]
+      },
+      "ssim": {
+        "mean": 0.889430011510849,
+        "image_bootstrap_ci95": [
+          0.8848678487502039,
+          0.8939411273859441
+        ]
+      },
+      "lpips": {
+        "mean": 0.1159477144444827,
+        "image_bootstrap_ci95": [
+          0.10971815006621181,
+          0.12233275131534901
+        ]
+      }
+    },
+    {
+      "model": "noisy",
+      "sigma": 25,
+      "matched_training_noise": true,
+      "psnr": {
+        "mean": 20.627805128097535,
+        "image_bootstrap_ci95": [
+          20.59648668420315,
+          20.65836334955692
+        ]
+      },
+      "ssim": {
+        "mean": 0.3925314748473465,
+        "image_bootstrap_ci95": [
+          0.38207397685199973,
+          0.4031152897882275
+        ]
+      },
+      "lpips": {
+        "mean": 0.41587417766451834,
+        "image_bootstrap_ci95": [
+          0.40155815234268083,
+          0.4307558586364612
+        ]
+      }
+    },
+    {
+      "model": "wavelet",
+      "sigma": 25,
+      "matched_training_noise": true,
+      "psnr": {
+        "mean": 27.182096195220947,
+        "image_bootstrap_ci95": [
+          27.036264281630515,
+          27.33555355143547
+        ]
+      },
+      "ssim": {
+        "mean": 0.7202130270004272,
+        "image_bootstrap_ci95": [
+          0.7164378931224347,
+          0.7240050948075951
+        ]
+      },
+      "lpips": {
+        "mean": 0.21995142723433672,
+        "image_bootstrap_ci95": [
+          0.2132340328039136,
+          0.22591670990688725
+        ]
+      }
+    },
+    {
+      "model": "swinir_noise25",
+      "sigma": 25,
+      "matched_training_noise": true,
+      "psnr": {
+        "mean": 32.208640389442444,
+        "image_bootstrap_ci95": [
+          31.97772539615631,
+          32.445287631750105
+        ]
+      },
+      "ssim": {
+        "mean": 0.9007734076678753,
+        "image_bootstrap_ci95": [
+          0.8972456219494342,
+          0.9044593369141221
+        ]
+      },
+      "lpips": {
+        "mean": 0.06309236608329229,
+        "image_bootstrap_ci95": [
+          0.060205569526413455,
+          0.0662125900145038
+        ]
+      }
+    },
+    {
+      "model": "noisy",
+      "sigma": 50,
+      "matched_training_noise": true,
+      "psnr": {
+        "mean": 15.125587413311004,
+        "image_bootstrap_ci95": [
+          15.089126395404339,
+          15.160624886333943
+        ]
+      },
+      "ssim": {
+        "mean": 0.20592835172079504,
+        "image_bootstrap_ci95": [
+          0.1984558088092599,
+          0.21347515275119805
+        ]
+      },
+      "lpips": {
+        "mean": 0.8122526350617408,
+        "image_bootstrap_ci95": [
+          0.796282099282369,
+          0.8292909530866891
+        ]
+      }
+    },
+    {
+      "model": "wavelet",
+      "sigma": 50,
+      "matched_training_noise": true,
+      "psnr": {
+        "mean": 23.982961502075195,
+        "image_bootstrap_ci95": [
+          23.818844018101693,
+          24.162761805295947
+        ]
+      },
+      "ssim": {
+        "mean": 0.5987400311231613,
+        "image_bootstrap_ci95": [
+          0.5935830964464694,
+          0.6035577430669218
+        ]
+      },
+      "lpips": {
+        "mean": 0.36636703062802556,
+        "image_bootstrap_ci95": [
+          0.3595804011989385,
+          0.373143562508747
+        ]
+      }
+    },
+    {
+      "model": "swinir_noise25",
+      "sigma": 50,
+      "matched_training_noise": false,
+      "psnr": {
+        "mean": 17.586362261772155,
+        "image_bootstrap_ci95": [
+          17.546233850002288,
+          17.62641106545925
+        ]
+      },
+      "ssim": {
+        "mean": 0.2742937370017171,
+        "image_bootstrap_ci95": [
+          0.26564462177315723,
+          0.28276192241208625
+        ]
+      },
+      "lpips": {
+        "mean": 0.6447252855077386,
+        "image_bootstrap_ci95": [
+          0.6288626641519368,
+          0.6614814872164279
+        ]
+      }
+    }
+  ],
+  "protocol": "Same disjoint 400 COCO test images at 256px. Whole-image unclipped additive Gaussian noise, fixed common independent noise draw across methods; sigma in 0..255 intensity units. Wavelet BayesShrink uses known sigma; frozen SwinIR is trained externally at sigma25, so sigma15/50 are unadapted noise shifts. Predictions clipped only for metrics/display. No local fitting or test tuning; external data exposure/overlap not audited."
+}

@@ -1,0 +1,38 @@
+{
+  "pilots": [
+    {
+      "pilot": "cvae_crop128_pilot",
+      "task": "colorization",
+      "seed": 0,
+      "epochs_completed": 8,
+      "training_crop": 128,
+      "semantic_decoder": false,
+      "first_prior_validation_loss": 0.09845619183033705,
+      "best_prior_validation_loss": 0.09845619183033705,
+      "last_prior_validation_loss": 0.11928641609847546,
+      "history_sha256": "f212126a743906d172adc88c11edb30b55201c200eda167283e2f94615e549de",
+      "config_sha256": "af83ce3ac0765717933db36079f763acf09e70a7e1fbf00c92cbb0b924c41fdf",
+      "test_evaluated": false,
+      "decision": "Stopped following weak prior-based validation; no test colors used for refinement.",
+      "architecture_evidence": "saved training checkpoint parameter keys"
+    },
+    {
+      "pilot": "cvae_semantic_pilot",
+      "task": "colorization",
+      "seed": 0,
+      "epochs_completed": 8,
+      "training_crop": 256,
+      "semantic_decoder": true,
+      "first_prior_validation_loss": 0.09968679072335362,
+      "best_prior_validation_loss": 0.09968679072335362,
+      "last_prior_validation_loss": 0.10629393579438329,
+      "history_sha256": "eba5b09e7a187b7b0216a6fff15152f2360f5ee4d77a14799b1f5ef8874ca1c5",
+      "config_sha256": "0f9fe443de6fe81f1d585862d4404532cc39113b23be5dbe8ca63bc6ac148e19",
+      "test_evaluated": false,
+      "decision": "Stopped following weak prior-based validation; no test colors used for refinement.",
+      "architecture_evidence": "saved training checkpoint parameter keys"
+    }
+  ],
+  "final_profile": "configs/generative_colorization_cvae.json",
+  "rationale": "Retain a validation-selected frozen semantic mean and fit a conditional latent residual. Report all prior samples and full-test RGB dispersion, including possible weak diversity."
+}

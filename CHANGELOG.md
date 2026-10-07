@@ -1,5 +1,32 @@
 # Changelog
 
+## 1.2.0 — 2026-10-07
+
+- Added a hashed 16,000/400/400, 256px benchmark from original CC BY photographs,
+  preserving held-out identities and the earlier 8,000 training prefix.
+- Implemented direct, conditional GAN, conditional VAE and cosine velocity-diffusion
+  restoration comparisons, with validation selection, EMA and epoch-level recovery.
+- Added frozen CT2, BigColor, SwinIR and Real-ESRGAN references alongside DDColor;
+  pinned sources, weights, inference metadata and declared adapter differences.
+- Added native categorical/quantile CatBoost, calibrated deployment uncertainty,
+  three-seed ConvNeXt fine-tuning and post-fit subgroup/class-error diagnostics.
+- Added natural-image denoising and SR degradation stress tests, retaining geographic,
+  noise-mismatch, weak latent-use and visual reconstruction limitations.
+- Added full-precision per-image evidence, all fixed stochastic draws, direct-predictor
+  paired comparisons, score distributions and measured resource context.
+- Added six English walkthroughs, portable configs and standalone model commands;
+  expanded mathematical, checkpoint, device, inference and release checks.
+- Fixed inactive color-conversion gradients, strict validation checkpoint selection,
+  resume provenance preservation and external lookup-device placement.
+- Added CVAE latent-use curves, independent scientific-library metric comparisons,
+  all foundational restoration checkpoint checks and saved-receiver deployment.
+- Exported checkpoint-bound ConvNeXt prediction sets for CPU/CUDA precision profiles,
+  independently verifying their calibration cutoffs, coverage and explicit empty sets.
+- Required model identities for native calibration metadata and rejected invalid
+  denoising/SR stress outputs before clipping can hide infinities.
+- Preserved observed categories during imputation and restricted the majority
+  baseline to observed fitting entries, with recorded counts and conditional tests.
+
 ## 1.1.0 — 2026-10-06
 
 - Reviewed the added project briefs, supplied coordinate data and five image archives.

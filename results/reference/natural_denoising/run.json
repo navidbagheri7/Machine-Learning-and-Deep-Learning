@@ -1,0 +1,58 @@
+{
+  "config": {
+    "data_root": "/data/navid.bagheri-shouraki/ML_data",
+    "output": "results/reference/natural_denoising",
+    "device": "cuda:0",
+    "test_images": 400,
+    "batch_size": 1,
+    "sigmas": [
+      15,
+      25,
+      50
+    ]
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "pandas": "2.2.1",
+    "scikit-learn": "1.4.0",
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "lpips": "0.1.4",
+    "timm": "1.0.27",
+    "catboost": "1.2.10"
+  },
+  "python": "3.10.20",
+  "platform": "Linux-5.15.0-91-generic-x86_64-with-glibc2.35",
+  "git_commit": "3445e0e4a526facf8de00d99c036f1389e910e9e",
+  "started_utc": "2026-10-06T23:28:06Z",
+  "package_source_sha256": {
+    "__init__.py": "58de597022c678be332f0eca5e972e255fc9e7b3b2d842f0dabcaae872484707",
+    "artifacts.py": "51bcb585179547ebce9aa7a2f5399ec9e5284b85ae49920b3566043e2777bb36",
+    "categorical.py": "3c84cdca0c48880fd935cf07b78220766c82c780127ef056ca9cafcfe9eebc7d",
+    "cli.py": "8f9965008397584465519488e03bfca13d0486454499710e8574a1291caccfbf",
+    "data.py": "62b75ab00e68266da40ad8e8d8ff68aae97f55faca4d5cd7acf154c640a7fbd8",
+    "external_restoration.py": "0aa910f9bf2ee89cc4e8906ea584cb673b0a1ecd8e9e093121841050aa19f9f5",
+    "generative.py": "1b6d649277868e9c011ae5a761886c1e333f27606a1027679b82a56b3a0633bd",
+    "inverse.py": "40a555e413be54b483103603705f87d7478016c3035cabc2f86a2d9aa3bf958c",
+    "modern_tabular.py": "8a145f49ed88d31fc4de9d008a84fdd40e4bb8a00691132030b3ecd9c93e17e2",
+    "modern_vision.py": "6dcd524c9d3156bb55accc29ac05bb184c8c3db78cdea0ab549a24f696f5a6bc",
+    "natural_denoising.py": "294eaaf7de1d9faf2bcf45bc3f5f4898e9549d97ef8c946d49c1470d9b24e77d",
+    "neural.py": "87fbf8da8830f79b9188873edd9a4842c8dc8688c1d1b8090687754eded4d2ef",
+    "pretrained.py": "21e0e912318cec05fca6beb29166362bb40a801e3f449544ed2b3bb6ba4a00ef",
+    "probabilistic.py": "7b89932976349898c185c383ae01671bea3cd9ee6742799a78e8bb00b861f0cb",
+    "project_studies.py": "6a4ea043381ba9fd74c9a87f279a7236291664949e793c4944d2da2d6431e735",
+    "restoration.py": "15b5dbe5e2c26530b7e22f91a8c2cba87dcf94f6b59cf9e978c682f766e7b513",
+    "signals.py": "c0d9f4d12e3bda20d8465c88cefb33381c75bc9bfb536c7cd26a9065e8e1ff7b",
+    "studies.py": "975957ac71ce075ed19bc414acf2cee5a253992fc363f1cfbd6cca594373e9f4",
+    "tabular.py": "30917b259e77defc714d342975b42d29ddb11538b842e7a5c7843721bbc0ac67",
+    "uncertainty.py": "2cb045da9edb2cd1c733f28887745dc030baf39fc02891d61d914407f169909e",
+    "vision.py": "f96618438fdb584fc4b0fe4c33ae13eb65937f4bf999bc60d9123d28255a7727"
+  },
+  "accelerator": {
+    "name": "NVIDIA L40S",
+    "cuda_runtime": "12.8"
+  },
+  "status": "complete",
+  "elapsed_seconds": 641.1253888346255
+}

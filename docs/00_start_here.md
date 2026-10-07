@@ -58,3 +58,9 @@ before adding another model.
 
 See [reproduction](07_reproduction.md) to rerun studies and [model cards](09_model_cards.md)
 to assess their scope.
+
+The [modern restoration chapter](12_generative_restoration.md) extends the course
+autoencoders into conditional GAN/VAE/diffusion and pretrained-transformer comparisons.
+Then inspect native boosting, ConvNeXt transfer and noise mismatch in the
+[measured modern report](modern_results.md). The [implementation audit](13_implementation_audit.md)
+connects each mathematical/evaluation contract to its code and verification.

@@ -25,7 +25,46 @@ code and explanations and does not redistribute textbooks or research-paper PDFs
   five privately preserved corrupted-digit archives. Names/hashes are inventoried;
   handout and archive contents are excluded from publication.
 
-## Foundations
+## Conditional generation and modern reference methods
+
+- Sohn, Lee and Yan (2015), *Learning Structured Output Representation using Deep
+  Conditional Generative Models*. [Paper](https://proceedings.neurips.cc/paper_files/paper/2015/file/8d55a249e6baa5c06772297520da2051-Paper.pdf).
+  Motivates the learned conditional prior; the local perceptual objective differs from an exact ELBO.
+- Isola et al. (2017), *Image-to-Image Translation with Conditional Adversarial Networks*.
+  [Authors' project](https://phillipi.github.io/pix2pix/). The local hinge/spectral-normalization recipe is a declared adaptation.
+- Song, Meng and Ermon (2021), *Denoising Diffusion Implicit Models*.
+  [Paper](https://arxiv.org/abs/2010.02502). Distinct initial noise drives multiple deterministic DDIM trajectories.
+- Weng et al. (2022), *CT2: Colorization Transformer via Color Tokens*.
+  [Paper](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670001.pdf),
+  [official implementation and noncommercial terms](https://github.com/shuchenweng/CT2).
+- Kim et al. (2022), *BigColor: Colorization using a Generative Color Prior for Natural Images*.
+  [Authors' project](https://kimgeonung.github.io/bigcolor/),
+  [paper](https://arxiv.org/abs/2207.09685). Released encoder/generator and EMA are frozen; class-selection adaptation is declared.
+- Liang et al. (2021), *SwinIR: Image Restoration Using Swin Transformer*.
+  [Paper](https://arxiv.org/abs/2108.10257), [official implementation](https://github.com/JingyunLiang/SwinIR).
+  Classical 4x SR and sigma25 color denoising references retain their published training exposure.
+- Wang et al. (2021), *Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data*.
+  [Official source and model release](https://github.com/xinntao/Real-ESRGAN),
+  [architecture source](https://github.com/XPixelGroup/BasicSR).
+  Its blind-degradation training differs from this controlled bicubic test.
+- Zhang et al. (2018), *The Unreasonable Effectiveness of Deep Features as a Perceptual Metric*.
+  [Authors' project](https://richzhang.github.io/PerceptualSimilarity/).
+  LPIPS is a learned proxy; no human preference study is claimed here.
+- Blau and Michaeli (2018), *The Perception-Distortion Tradeoff*.
+  [Paper](https://arxiv.org/abs/1711.06077). Its distributional notion of perception
+  motivates separating appearance and distortion; our LPIPS comparisons do not
+  independently verify that theorem or measure its distributional distance.
+- He et al. (2019), *Lagging Inference Networks and Posterior Collapse in Variational Autoencoders*.
+  [Paper](https://arxiv.org/abs/1901.05534). Context for latent-use diagnostics;
+  its aggressive inference-training method is not implemented in this laboratory.
+- Prokhorenkova et al. (2018), *CatBoost: unbiased boosting with categorical features*.
+  [Paper](https://proceedings.neurips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html).
+  Native boosting is evaluated through the maintained library, not claimed as a new implementation of its internals.
+- Liu et al. (2022), *A ConvNet for the 2020s*.
+  [Paper](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_A_ConvNet_for_the_2020s_CVPR_2022_paper.html).
+  ConvNeXt-Tiny uses official ImageNet weights and a declared limited-label fine-tuning recipe.
+
+## Textbook foundations
 
 - Kevin P. Murphy. *Probabilistic Machine Learning: An Introduction*. MIT Press, 2022.
   [Author's book page](https://probml.github.io/book1).

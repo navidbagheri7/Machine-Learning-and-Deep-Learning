@@ -31,7 +31,7 @@
     },
     "course_mixtures": {
       "status": "complete",
-      "elapsed_seconds": 92.47937471978366
+      "elapsed_seconds": 7.253855667077005
     },
     "inverse": {
       "status": "complete",
@@ -52,6 +52,82 @@
     "ddcolor": {
       "status": "complete",
       "elapsed_seconds": 21.283241165801883
+    },
+    "modern_tabular": {
+      "status": "complete",
+      "elapsed_seconds": 342.97807587031275
+    },
+    "modern_vision": {
+      "status": "complete",
+      "elapsed_seconds": 523.6693654777482
+    },
+    "natural_denoising": {
+      "status": "complete",
+      "elapsed_seconds": 641.1253888346255
+    },
+    "sr_shift": {
+      "status": "complete",
+      "elapsed_seconds": 94.48751989006996
+    },
+    "external_ddcolor": {
+      "status": "complete",
+      "elapsed_seconds": 33.12434452585876
+    },
+    "external_ct2": {
+      "status": "complete",
+      "elapsed_seconds": 44.16981829702854
+    },
+    "external_bigcolor": {
+      "status": "complete",
+      "elapsed_seconds": 53.33622212614864
+    },
+    "external_swinir": {
+      "status": "complete",
+      "elapsed_seconds": 15.949973369017243
+    },
+    "external_realesrgan": {
+      "status": "complete",
+      "elapsed_seconds": 12.84561970550567
+    },
+    "generative_colorization/baseline": {
+      "status": "complete",
+      "elapsed_seconds": 6.236937083303928
+    },
+    "generative_colorization/l1": {
+      "status": "complete",
+      "elapsed_seconds": 2892.7706557223573
+    },
+    "generative_colorization/gan": {
+      "status": "complete",
+      "elapsed_seconds": 3685.085672828369
+    },
+    "generative_colorization/cvae": {
+      "status": "complete",
+      "elapsed_seconds": 5535.572503565811
+    },
+    "generative_colorization/diffusion": {
+      "status": "complete",
+      "elapsed_seconds": 3548.641627000645
+    },
+    "generative_super_resolution/baseline": {
+      "status": "complete",
+      "elapsed_seconds": 3.6577534889802337
+    },
+    "generative_super_resolution/l1": {
+      "status": "complete",
+      "elapsed_seconds": 6646.73187111225
+    },
+    "generative_super_resolution/gan": {
+      "status": "complete",
+      "elapsed_seconds": 7532.3771845810115
+    },
+    "generative_super_resolution/cvae": {
+      "status": "complete",
+      "elapsed_seconds": 3954.0082229189575
+    },
+    "generative_super_resolution/diffusion": {
+      "status": "complete",
+      "elapsed_seconds": 3558.376300305128
     }
   },
   "notebooks": [
@@ -81,7 +157,7 @@
     },
     {
       "name": "07_learned_receivers.ipynb",
-      "executed_cells": 5
+      "executed_cells": 6
     },
     {
       "name": "08_course_mixtures.ipynb",
@@ -106,10 +182,34 @@
     {
       "name": "13_pretrained_reference.ipynb",
       "executed_cells": 5
+    },
+    {
+      "name": "14_generative_colorization.ipynb",
+      "executed_cells": 11
+    },
+    {
+      "name": "15_generative_super_resolution.ipynb",
+      "executed_cells": 13
+    },
+    {
+      "name": "16_external_restoration.ipynb",
+      "executed_cells": 5
+    },
+    {
+      "name": "17_native_boosting.ipynb",
+      "executed_cells": 7
+    },
+    {
+      "name": "18_modern_transfer.ipynb",
+      "executed_cells": 9
+    },
+    {
+      "name": "19_natural_denoising.ipynb",
+      "executed_cells": 4
     }
   ],
-  "publishable_files": 244,
-  "public_bytes": 29050790,
-  "release_source_config_sha256": "85e5054c06c1c0b77d34e8ebefceb98457b49b428b6fe5608f4f15256fedf18f",
+  "publishable_files": 597,
+  "public_bytes": 169794896,
+  "release_source_config_sha256": "59aba4e39b02667e43ff672e81aa6aa6f0c88b3998dbd0977d04bec3e055f14e",
   "issues": []
 }

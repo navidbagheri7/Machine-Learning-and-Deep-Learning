@@ -1,5 +1,62 @@
 # Model and dataset cards
 
+## Modern restoration, transfer and native boosting extension
+
+**Purpose/data.** Compare practical restoration and prediction pipelines with explicit
+observations, external exposure and failure cases. The new image benchmark uses
+16,000 original-photograph 256px CC BY COCO training crops and the same disjoint
+400/400 held-out identities. Every public gallery retains creator attribution.
+Adult, California Housing and CIFAR keep the earlier evaluation protocols.
+
+**Local restoration.** Direct and conditional-GAN predictors, conditional VAE and
+cosine velocity diffusion share observations and held-out images. Most fit two seeds
+for 60 epochs on 128px training crops. The refined colorization VAE fits two latent
+seeds for 20 full-image epochs after freezing a 60-epoch validation-selected semantic
+mean; the shared initialization is additional computation and limits the interpretation
+of its seed variation. Four prior/DDIM samples per test image are included without
+best-of-target selection. Validation and test use the conditional prior, not the
+target-conditioned VAE posterior.
+
+**External restoration.** DDColor, CT2, BigColor, SwinIR and Real-ESRGAN are frozen,
+officially released models, not newly developed algorithms. Source pins, content
+hashes, licenses and adapter differences are recorded. CT2 is noncommercial and is
+not included in the repository's MIT code grant. BigColor's fixed ResNet50 selector
+differs from its default classifier. Real-ESRGAN's blind-degradation training differs
+from this controlled bicubic SR test. Possible external training overlap is unaudited.
+
+**Natural-image denoising.** Sigma15/25/50 Gaussian observations are generated once
+per test image and shared across methods. BayesShrink knows sigma; frozen SwinIR was
+trained at sigma25. The sigma50 degradation is an observed limitation, not a tuned
+model variant or a discarded outlier. These measurements do not cover real camera noise.
+
+**Modern prediction.** Native categorical CatBoost adds validation-selected boosting
+and quantile uncertainty. Better random-split accuracy does not eliminate geographic
+shift or restore conformal guarantees. Three ConvNeXt-Tiny fine-tuning seeds use
+5,000 CIFAR fitting labels each, ImageNet initialization and 128px interpolation of 32px input.
+Each seed additionally uses 2,000 validation and 3,000 calibration labels, for 10,000
+local labels in disjoint roles. Stratified benchmark sampling uses the available
+class annotations; this is not a total annotation-acquisition claim.
+The substantial pretraining resource differs from scratch and self-supervised controls.
+Noise-corrupted accuracy and per-class errors remain part of the evidence.
+Device-specific ConvNeXt calibration exports also reproduce all 10,000 test prediction
+sets for each seed and precision profile. CPU calibration uses only the reserved
+partitions. Empty class sets remain explicit; singleton accuracy is descriptive.
+
+**Deployment uncertainty.** Native-boosting metadata exports conformal class sets,
+absolute-residual intervals and CQR corrections using the original calibration
+partitions. Every saved housing test interval is reproduced before export. Metadata
+hashes bind calibration to fitted models; empty intervals remain explicit. Post-fit
+subgroup coverage is descriptive and does not establish conditional coverage or fairness.
+
+**Artifacts and limits.** Full-precision score/prediction arrays and exact split IDs
+are public. Gallery source arrays are uint8 display copies and never used for scoring.
+Large checkpoints, original sources and raw data remain outside the release. The
+inference commands rebuild locally fitted models without downloading initialization
+weights. Image fidelity, LPIPS, observation consistency and RGB sample dispersion
+answer different questions; dispersion alone does not establish plausible diversity.
+Read [methods](12_generative_restoration.md), [implementation audit](13_implementation_audit.md)
+and [measured comparisons](modern_results.md).
+
 ## Added mixture and inverse studies
 
 **Purpose/data.** Demonstrate latent-variable density estimation, missing-data inference

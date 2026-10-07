@@ -31,6 +31,8 @@ class CategoricalMixtureEM:
 
     def _joint(self, x):
         x = self._validate(x)
+        if x.shape[1] != self.probabilities_.shape[1]:
+            raise ValueError("Observed feature count differs from fitted categorical model")
         out = np.broadcast_to(np.log(self.weights_), (len(x), self.components)).copy()
         for j in range(x.shape[1]):
             observed = x[:, j] >= 0
@@ -39,7 +41,7 @@ class CategoricalMixtureEM:
 
     def fit(self, x):
         x = self._validate(x)
-        if not len(x):
+        if not len(x) or not x.shape[1]:
             raise ValueError("Empty training matrix")
         rng = np.random.default_rng(self.seed)
         self.weights_ = np.full(self.components, 1 / self.components)
@@ -74,4 +76,9 @@ class CategoricalMixtureEM:
         return np.exp(j - logsumexp(j, axis=1, keepdims=True))
 
     def impute_probabilities(self, x):
-        return np.einsum("nk,kdc->ndc", self.predict_proba(x), self.probabilities_)
+        """Conditional category probabilities; observed entries remain certain."""
+        x = self._validate(x)
+        out = np.einsum("nk,kdc->ndc", self.predict_proba(x), self.probabilities_)
+        rows, features = np.nonzero(x >= 0)
+        out[rows, features] = np.eye(self.categories)[x[rows, features]]
+        return out

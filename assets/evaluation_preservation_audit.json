@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "task": "colorization",
+  "methods": [
+    "cvae"
+  ],
+  "test_images": 8,
+  "score_arrays_verified": 14,
+  "original_fitting_record_preserved": true,
+  "selected_histories_preserved": true,
+  "mismatched_resume_record_preserved": true,
+  "nonfinite_re_evaluation_preserved_evidence": true,
+  "nonfinite_guard_before_gamut_clipping": true,
+  "evaluation_source_sha256": "eee73d0bb111b96f205dc60af15d1670142d98d61874fad3b081ee3bec5ba38c",
+  "script_sha256": "b51c41d6472546ec9d99e64035b02d6369589d0a5ddd8c1d2c0fade46fcca889",
+  "protocol": "Exact score-array equality on a completed quick integration, not a quality benchmark. Evaluation changes neither fitting provenance nor selected curves. A conflicting resume fails before overwriting the fitting record."
+}

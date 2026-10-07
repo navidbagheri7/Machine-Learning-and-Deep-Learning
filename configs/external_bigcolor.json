@@ -1,0 +1,11 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "output": "results/reference/external_bigcolor",
+  "device": "cuda:0",
+  "task": "colorization",
+  "reference": "bigcolor",
+  "test_images": 400,
+  "evaluation_batch_size": 1,
+  "samples": 4,
+  "classifier_weights": "/data/navid.bagheri-shouraki/ML_data/models/torch/hub/checkpoints/resnet50-11ad3fa6.pth"
+}

@@ -240,7 +240,7 @@ def report(data):
     cmm = data["course_mixtures"]["categorical_mixture"]
     lines += [
         "",
-        f"The synthetic categorical mixture imputes **{cmm['missing_accuracy']:.2%}** of missing test entries correctly, versus **{cmm['majority_missing_accuracy']:.2%}** for per-feature majority. Held-out latent ARI is {cmm['latent_test_ari']:.4f}; this is a controlled identifiable model, not an external real-data benchmark.",
+        f"The synthetic categorical mixture imputes **{cmm['missing_accuracy']:.2%}** of missing test entries correctly, versus **{cmm['majority_missing_accuracy']:.2%}** for per-feature majority fitted only on observed training entries. Held-out latent ARI is {cmm['latent_test_ari']:.4f}; this is a controlled identifiable model, not an external real-data benchmark.",
         "",
         "## Bayesian patch reconstruction",
         "",

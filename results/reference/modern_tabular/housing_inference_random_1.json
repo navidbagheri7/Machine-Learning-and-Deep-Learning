@@ -1,0 +1,19 @@
+{
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "alpha": 0.1,
+  "protocol": "random",
+  "target_units": "$100,000",
+  "absolute_residual_cutoff": 0.638775851811352,
+  "cqr_cutoff": 0.07076751177503193,
+  "checkpoint_sha256": "2c64899184f9cb8a89ee3a0658ee52816de28e86f076c93892b23d1005815b0b",
+  "quantile_checkpoint_sha256": "db20b0e5f828b9f2bfc7410813367f10b5665842d4af32d9821443720306d3f2"
+}

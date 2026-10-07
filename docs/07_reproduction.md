@@ -82,6 +82,44 @@ exact IDs and source hashes are public. Large checkpoints remain local.
 
 ## Integration versus reference runs
 
+### Modern extension on another machine
+
+```bash
+python -m pip install -e '.[deep,restoration,pretrained,boosting,notebooks,dev]'
+python scripts/prepare_data.py --data-root /YOUR/CACHE
+python scripts/prepare_vision.py --data-root /YOUR/CACHE/cifar10 --weights /YOUR/CACHE/models/torch/hub/checkpoints/resnet18-f37072fd.pth
+python scripts/prepare_restoration.py --data-root /YOUR/CACHE --download
+python scripts/prepare_external_restoration.py --data-root /YOUR/CACHE
+python scripts/prepare_ddcolor.py --data-root /YOUR/CACHE
+python scripts/make_portable_configs.py --data-root /YOUR/CACHE
+python scripts/run_generative_suite.py --config-dir .local/portable_configs --output-root results/portable --data-root /YOUR/CACHE
+python -m learning_lab.cli modern_tabular --config .local/portable_configs/modern_tabular.json
+python scripts/export_uncertainty.py --data-root /YOUR/CACHE --results-root results/portable/modern_tabular
+python -m learning_lab.cli modern_vision --config .local/portable_configs/modern_vision.json
+python scripts/export_cifar_calibration.py --image-root /YOUR/CACHE/cifar10 --results-root results/portable/modern_vision --device cuda:2
+python -m learning_lab.cli external_ddcolor --config .local/portable_configs/external_ddcolor.json
+python -m learning_lab.cli external_ct2 --config .local/portable_configs/external_ct2.json
+python -m learning_lab.cli external_bigcolor --config .local/portable_configs/external_bigcolor.json
+python -m learning_lab.cli external_swinir --config .local/portable_configs/external_swinir.json
+python -m learning_lab.cli external_realesrgan --config .local/portable_configs/external_realesrgan.json
+python -m learning_lab.cli natural_denoising --config .local/portable_configs/natural_denoising.json
+python -m learning_lab.cli sr_shift --config .local/portable_configs/sr_shift.json
+```
+
+Config generation preserves budgets and writes explicit cache/device/output paths;
+it does not modify the published configs or download data. Use `--devices cpu cpu cpu`
+for a CPU override, or declare other three-GPU assignments. Native boosting's paired
+historical comparison is available when the chosen baseline directory contains its
+earlier predictions. The three-GPU restoration suite resumes per-model epochs,
+waits for the CVAE's semantic mean and refuses mismatched resume configurations.
+The CT2 archive extractor needs a system libarchive library in addition to libarchive-c.
+
+To regenerate the published figures from compact evidence, also run
+`python scripts/build_project_report.py` and `python scripts/build_upgrade_report.py`.
+These reporting commands work without original coursework, raw datasets, weights or
+GPU access. Unit/interface checks and notebook evidence are offline; the new neural
+reference workloads require explicitly prepared pretrained metric/feature weights.
+
 ```bash
 python -m learning_lab.cli classification --quick --data-root .local/data --device cpu
 python -m learning_lab.cli regression --quick --data-root .local/data --device cpu
@@ -130,6 +168,8 @@ and excluded from Git. Compact numerical figure inputs are exported to
 
 ```bash
 python scripts/build_report.py
+python scripts/build_project_report.py
+python scripts/build_upgrade_report.py
 python scripts/execute_notebooks.py
 python scripts/validate_release.py
 python -m build
@@ -140,6 +180,77 @@ do not launch the complete GPU training budget. Their outputs are checked for er
 and all published notebook sources and output text are English.
 
 ## Batch prediction
+
+ConvNeXt exports separate CUDA bfloat16 and CPU float32 calibration profiles from
+the original independent calibration partitions. The command reports probabilities,
+point labels, class membership flags, set sizes and explicit empty sets:
+
+```bash
+python scripts/export_cifar_calibration.py --image-root /YOUR/CACHE/cifar10 --device cuda:0
+python scripts/predict_modern.py cifar \
+  --checkpoint results/reference/modern_vision/checkpoints/convnext_0.pt \
+  --metadata results/reference/modern_vision/cifar_inference_cpu_float32_0.json \
+  --input cifar_images_uint8_nchw.npy --output .local/cifar_with_sets.csv --device cpu
+```
+
+The metadata must match the inference device and precision profile. Omitting metadata
+retains the probabilities-only interface with an optional manual temperature.
+
+The modern native-boosting artifacts also expose calibrated prediction sets and
+regression intervals. `export_uncertainty.py` reconstructs their cutoffs from the
+fixed calibration partitions and verifies saved test evidence without refitting.
+Deployment loads only the model files and exported scalar/schema metadata:
+
+```bash
+python scripts/predict_modern.py adult \
+  --checkpoint results/reference/modern_tabular/checkpoints/adult_0.cbm \
+  --metadata results/reference/modern_tabular/adult_inference_0.json \
+  --input adult_features.csv --output .local/adult_with_sets.csv
+python scripts/predict_modern.py housing \
+  --checkpoint results/reference/modern_tabular/checkpoints/housing_random_0.cbm \
+  --quantile-checkpoint results/reference/modern_tabular/checkpoints/housing_quantile_random_0.cbm \
+  --metadata results/reference/modern_tabular/housing_inference_random_0.json \
+  --input housing_features.csv --output .local/housing_with_intervals.csv
+```
+
+House-value predictions and interval endpoints use the benchmark's $100,000 units.
+Empty CQR intervals remain explicit. The geographic holdout demonstrates that the
+nominal level does not establish coverage under distribution shift. Calibration
+metadata contains checkpoint hashes, so accidentally mixing fitted models is rejected.
+
+Independent deployment and epoch-resumption checks are reproducible after preparing
+the data and fitting the corresponding models:
+
+```bash
+python scripts/check_saved_predictions.py --data-root /YOUR/CACHE --image-root /YOUR/CACHE/cifar10
+python scripts/check_training_resume.py --data-root /YOUR/CACHE
+python scripts/check_restoration_data.py --data-root /YOUR/CACHE
+python scripts/check_image_metrics.py --data-root /YOUR/CACHE
+python scripts/check_vae_precision.py --data-root /YOUR/CACHE --results-root results/portable --device cuda:0
+python scripts/check_stress_evaluation.py --data-root /YOUR/CACHE --results-root results/portable --device cuda:0
+python scripts/check_foundation_inference.py --data-root /YOUR/CACHE --results-root results/portable
+python scripts/check_receiver_inference.py --results-root results/portable/signals --device cuda:0 --compare-cpu
+python scripts/verify_initialization.py --run results/portable/generative_colorization/cvae --mean-checkpoint results/portable/generative_colorization/l1/checkpoints/l1_0.pt
+python scripts/check_restoration_inference.py --data-root /YOUR/CACHE --results-root results/portable --device cuda:0
+```
+
+The prediction check covers all three fitting seeds on fixed test subsets. CUDA
+bfloat16 probabilities and CPU float32 results are reported separately. The resume
+check uses a fresh temporary directory, two CPU epochs and 16 real images; it proves
+resume behavior rather than restoration quality. The CVAE initialization check
+verifies all frozen semantic tensors against its validation-selected mean.
+
+The image-metric audit compares PSNR and the declared valid 7x7 Gaussian SSIM
+against independent float64 SciPy calculations, and D65 Lab/DeltaE76 against
+scikit-image. The foundational inference check covers all 16 saved digit-denoising,
+96px-trained SR and colorization checkpoints on actual non-square observations.
+It also checks rejection of invalid noise settings and injected infinite outputs.
+Image CLI fixtures use quantized pixels; these deployment checks do not replace
+the full-precision benchmark observations or quality scores.
+The standalone restoration audit repeats local and external commands in fresh
+processes on fixed non-square observations, checking seeded PNG bytes and exact
+output dimensions. Each external adapter is isolated because upstream package names
+can collide. CT2's fixed lookup buffers now follow CPU and nondefault GPU placement.
 
 After running the Adult reference study, the saved pipeline includes fitting-only
 preprocessing, the model, a probability temperature and a validation-selected threshold.

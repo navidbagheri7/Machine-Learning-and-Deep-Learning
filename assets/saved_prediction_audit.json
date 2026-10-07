@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "task": "Adult",
+      "seed": 0,
+      "n": 16,
+      "maximum_difference": 0.0,
+      "checkpoint_sha256": "4347c70fc781e95da3665f233acd7748d616f4aa9fabf61d0e1dfbf637c1f146"
+    },
+    {
+      "task": "Housing random",
+      "seed": 0,
+      "n": 16,
+      "maximum_difference": 0.0,
+      "checkpoint_sha256": "3e82bd86ea38fda6ef28a1df87f59012330dc4f1d1576b04d9b4f4f80c3a8eef"
+    },
+    {
+      "task": "Housing geographic",
+      "seed": 0,
+      "n": 16,
+      "maximum_difference": 0.0,
+      "checkpoint_sha256": "b048391aa60ecc60fa0b6f181e9fc0d492d099d3950fcc16a7a17dc4639f2637"
+    },
+    {
+      "task": "CIFAR",
+      "seed": 0,
+      "n": 64,
+      "device": "cuda:2",
+      "maximum_probability_difference": 0.0,
+      "argmax_agreement": 1.0,
+      "checkpoint_sha256": "1b042be5c3903eb8077fa0de9f224ce351a740512460fae6721f564160c9b89c"
+    },
+    {
+      "task": "CIFAR",
+      "seed": 0,
+      "n": 64,
+      "device": "cpu",
+      "maximum_probability_difference": 0.03992963334328703,
+      "argmax_agreement": 1.0,
+      "checkpoint_sha256": "1b042be5c3903eb8077fa0de9f224ce351a740512460fae6721f564160c9b89c"
+    },
+    {
+      "task": "Adult",
+      "seed": 1,
+      "n": 16,
+      "maximum_difference": 0.0,
+      "checkpoint_sha256": "ee7dd9c0097e7e2b3d4163738aa839c1a49778fd4d22b148715017d2932fe9a0"
+    },
+    {
+      "task": "Housing random",
+      "seed": 1,
+      "n": 16,
+      "maximum_difference": 0.0,
+      "checkpoint_sha256": "2c64899184f9cb8a89ee3a0658ee52816de28e86f076c93892b23d1005815b0b"
+    },
+    {
+      "task": "Housing geographic",
+      "seed": 1,
+      "n": 16,
+      "maximum_difference": 0.0,
+      "checkpoint_sha256": "aa1b8d58ef3a5b7caccc679f0588cd5a0ff9be2e98ce80abeddd714cd9068eec"
+    },
+    {
+      "task": "CIFAR",
+      "seed": 1,
+      "n": 64,
+      "device": "cuda:2",
+      "maximum_probability_difference": 0.0,
+      "argmax_agreement": 1.0,
+      "checkpoint_sha256": "65cfeb749c2796836c1ae4bc849fa63df26c6325d1c568d790a73f63a2b7959e"
+    },
+    {
+      "task": "CIFAR",
+      "seed": 1,
+      "n": 64,
+      "device": "cpu",
+      "maximum_probability_difference": 0.00769653624731563,
+      "argmax_agreement": 1.0,
+      "checkpoint_sha256": "65cfeb749c2796836c1ae4bc849fa63df26c6325d1c568d790a73f63a2b7959e"
+    },
+    {
+      "task": "Adult",
+      "seed": 2,
+      "n": 16,
+      "maximum_difference": 0.0,
+      "checkpoint_sha256": "251c8b0e48372383261797a796fc4692ca8ea9f8ec97fd8c65bdc9076eab29d0"
+    },
+    {
+      "task": "Housing random",
+      "seed": 2,
+      "n": 16,
+      "maximum_difference": 0.0,
+      "checkpoint_sha256": "8920c4902c34fcbb65eb7f91bc71e0147a753343ccd93af273ef36f44be5cdca"
+    },
+    {
+      "task": "Housing geographic",
+      "seed": 2,
+      "n": 16,
+      "maximum_difference": 0.0,
+      "checkpoint_sha256": "90e99ef3d89ca15fdcdebb60af895c8335616d682a0644f24c3565af07a3bdb9"
+    },
+    {
+      "task": "CIFAR",
+      "seed": 2,
+      "n": 64,
+      "device": "cuda:2",
+      "maximum_probability_difference": 0.0,
+      "argmax_agreement": 1.0,
+      "checkpoint_sha256": "6f72389f22b81bc372b2591cdf78c2e2198aceca249f1f1d9c5aa44311286d4f"
+    },
+    {
+      "task": "CIFAR",
+      "seed": 2,
+      "n": 64,
+      "device": "cpu",
+      "maximum_probability_difference": 0.01870008660143252,
+      "argmax_agreement": 1.0,
+      "checkpoint_sha256": "6f72389f22b81bc372b2591cdf78c2e2198aceca249f1f1d9c5aa44311286d4f"
+    }
+  ],
+  "protocol": "Independent saved-model inference on fixed first16 Adult and Housing test rows and first64 CIFAR test images for all three seeds. CUDA probability agreement required within1e-6. CPU float32 versus reference CUDA bfloat16 differences are descriptive, not assumed identical. No model or calibration fitting.",
+  "script_sha256": "0845b1121becfd79610a3066a1d0cc5cbd95ed44044db83ec90da6ebc2449231"
+}

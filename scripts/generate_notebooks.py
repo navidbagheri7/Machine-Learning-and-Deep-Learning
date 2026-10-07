@@ -1,5 +1,6 @@
 """Generate the English numerical walkthroughs; execute with execute_notebooks.py."""
 
+import inspect
 import textwrap
 from pathlib import Path
 
@@ -26,7 +27,7 @@ plt.rcParams.update({'figure.figsize': (7, 4), 'axes.spines.top': False, 'axes.s
 def write(name, cells):
     notebook = nbf.v4.new_notebook()
     notebook.cells = [
-        nbf.v4.new_markdown_cell(textwrap.dedent(c).strip())
+        nbf.v4.new_markdown_cell(inspect.cleandoc(c))
         if kind == "m"
         else nbf.v4.new_code_cell(textwrap.dedent(c).strip())
         for kind, c in cells
@@ -104,7 +105,7 @@ print(pd.Series(evidence('probabilistic')['posterior']))""",
             ),
             (
                 "m",
-                """## Exercise and worked answer
+                r"""## Exercise and worked answer
         Would doubling every basis value while keeping the coefficient prior unchanged
         preserve the prior over functions? No. The prior function variance is
         $\tau^2\phi(x)\phi(x)^T$, so doubling the basis multiplies it by four.
@@ -522,6 +523,25 @@ axes[1].legend(fontsize=8); plt.show()""",
             ),
             (
                 "m",
+                """## Saved-model deployment and numerical precision
+The receiver command takes observed circular blocks and uses no target, SNR or
+nonlinearity. Its probabilities are uncalibrated. The audit reproduces every CUDA
+benchmark row and records CPU differences separately: a fixed seed does not fix
+cross-device arithmetic. Reference convolution allows TF32; matrix TF32 is disabled.""",
+            ),
+            (
+                "c",
+                """deployment = json.loads((root/'assets/receiver_inference_audit.json').read_text())
+assert deployment['status'] == 'passed'
+assert len(deployment['checks']) == 60 and len(deployment['commands']) == 12
+numerics = pd.DataFrame(deployment['cpu_numerics'])
+numerics.groupby('model').agg(
+    evaluated_symbol_predictions=('symbols','sum'),
+    changed_cpu_classes=('different_symbol_classes','sum'),
+    maximum_probability_difference=('maximum_probability_difference','max'))""",
+            ),
+            (
+                "m",
                 """## Exercise and worked answer
         Why bootstrap blocks instead of individual bits? Context receivers and channel
         memory correlate errors within a block. Resampling whole independent blocks
@@ -538,3 +558,6 @@ if __name__ == "__main__":
     from generate_project_notebooks import main as projects
 
     projects()
+    from generate_upgrade_notebooks import main as upgrades
+
+    upgrades()

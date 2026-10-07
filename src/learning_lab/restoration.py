@@ -36,7 +36,8 @@ def rgb_to_lab(rgb):
         / rgb.new_tensor([0.95047, 1.0, 1.08883])[None, :, None, None]
     )
     delta = 6 / 29
-    f = torch.where(xyz > delta**3, xyz.clamp_min(0).pow(1 / 3), xyz / (3 * delta**2) + 4 / 29)
+    # The inactive cube-root branch also needs a finite derivative at black.
+    f = torch.where(xyz > delta**3, xyz.clamp_min(1e-8).pow(1 / 3), xyz / (3 * delta**2) + 4 / 29)
     return torch.stack(
         [
             (116 * f[:, 1] - 16) / 100,
@@ -64,7 +65,7 @@ def lab_to_rgb(lab):
     )
     linear = torch.einsum("ij,njhw->nihw", matrix, xyz)
     rgb = torch.where(
-        linear > 0.0031308, 1.055 * linear.clamp_min(0).pow(1 / 2.4) - 0.055, 12.92 * linear
+        linear > 0.0031308, 1.055 * linear.clamp_min(1e-8).pow(1 / 2.4) - 0.055, 12.92 * linear
     )
     return rgb.clamp(0, 1)
 

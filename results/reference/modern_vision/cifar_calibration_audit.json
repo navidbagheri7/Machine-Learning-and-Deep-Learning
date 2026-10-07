@@ -1,0 +1,145 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "seed": 0,
+      "profile": "cuda_bfloat16",
+      "test_images": 10000,
+      "temperature": 0.6707022498581057,
+      "cutoff": 0.03747208168666616,
+      "accuracy": 0.9614,
+      "nll": 0.14586741673309073,
+      "set_coverage": 0.9024,
+      "set_size": 0.9143,
+      "empty_set_rate": 0.0857,
+      "singleton_fraction": 0.9143,
+      "singleton_accuracy": 0.986984578365963,
+      "calibration_n": 1500,
+      "checkpoint_sha256": "1b042be5c3903eb8077fa0de9f224ce351a740512460fae6721f564160c9b89c"
+    },
+    {
+      "seed": 0,
+      "profile": "cpu_float32",
+      "test_images": 10000,
+      "temperature": 0.6709423979367726,
+      "cutoff": 0.038720136903250935,
+      "accuracy": 0.9615,
+      "nll": 0.14587798743695454,
+      "set_coverage": 0.9038,
+      "set_size": 0.9159,
+      "empty_set_rate": 0.0841,
+      "singleton_fraction": 0.9159,
+      "singleton_accuracy": 0.9867889507588165,
+      "calibration_n": 1500,
+      "checkpoint_sha256": "1b042be5c3903eb8077fa0de9f224ce351a740512460fae6721f564160c9b89c"
+    },
+    {
+      "seed": 1,
+      "profile": "cuda_bfloat16",
+      "test_images": 10000,
+      "temperature": 0.6318505766655944,
+      "cutoff": 0.023435080706782574,
+      "accuracy": 0.969,
+      "nll": 0.12436209628643483,
+      "set_coverage": 0.9035,
+      "set_size": 0.912,
+      "empty_set_rate": 0.088,
+      "singleton_fraction": 0.912,
+      "singleton_accuracy": 0.9906798245614035,
+      "calibration_n": 1500,
+      "checkpoint_sha256": "65cfeb749c2796836c1ae4bc849fa63df26c6325d1c568d790a73f63a2b7959e"
+    },
+    {
+      "seed": 1,
+      "profile": "cpu_float32",
+      "test_images": 10000,
+      "temperature": 0.6309473688172655,
+      "cutoff": 0.023204887652757855,
+      "accuracy": 0.9689,
+      "nll": 0.12428359191530249,
+      "set_coverage": 0.9035,
+      "set_size": 0.9121,
+      "empty_set_rate": 0.0879,
+      "singleton_fraction": 0.9121,
+      "singleton_accuracy": 0.9905712092972262,
+      "calibration_n": 1500,
+      "checkpoint_sha256": "65cfeb749c2796836c1ae4bc849fa63df26c6325d1c568d790a73f63a2b7959e"
+    },
+    {
+      "seed": 2,
+      "profile": "cuda_bfloat16",
+      "test_images": 10000,
+      "temperature": 0.624287236908103,
+      "cutoff": 0.0351767668315216,
+      "accuracy": 0.9692,
+      "nll": 0.12602705900185532,
+      "set_coverage": 0.9122,
+      "set_size": 0.9228,
+      "empty_set_rate": 0.0772,
+      "singleton_fraction": 0.9228,
+      "singleton_accuracy": 0.9885132206328565,
+      "calibration_n": 1500,
+      "checkpoint_sha256": "6f72389f22b81bc372b2591cdf78c2e2198aceca249f1f1d9c5aa44311286d4f"
+    },
+    {
+      "seed": 2,
+      "profile": "cpu_float32",
+      "test_images": 10000,
+      "temperature": 0.6243750471584842,
+      "cutoff": 0.03456424501749189,
+      "accuracy": 0.9694,
+      "nll": 0.1260903829555251,
+      "set_coverage": 0.9104,
+      "set_size": 0.921,
+      "empty_set_rate": 0.079,
+      "singleton_fraction": 0.921,
+      "singleton_accuracy": 0.9884907709011943,
+      "calibration_n": 1500,
+      "checkpoint_sha256": "6f72389f22b81bc372b2591cdf78c2e2198aceca249f1f1d9c5aa44311286d4f"
+    }
+  ],
+  "commands": [
+    {
+      "seed": 0,
+      "profile": "cuda_bfloat16",
+      "images": 128,
+      "status": "passed"
+    },
+    {
+      "seed": 0,
+      "profile": "cpu_float32",
+      "images": 128,
+      "status": "passed"
+    },
+    {
+      "seed": 1,
+      "profile": "cuda_bfloat16",
+      "images": 128,
+      "status": "passed"
+    },
+    {
+      "seed": 1,
+      "profile": "cpu_float32",
+      "images": 128,
+      "status": "passed"
+    },
+    {
+      "seed": 2,
+      "profile": "cuda_bfloat16",
+      "images": 128,
+      "status": "passed"
+    },
+    {
+      "seed": 2,
+      "profile": "cpu_float32",
+      "images": 128,
+      "status": "passed"
+    }
+  ],
+  "script_sha256": "1fbe1a9fad21e23eac8925224ae7a4d4cd1c19f79bdab2a8ccdd7130663b2ba7",
+  "source_sha256": {
+    "src/learning_lab/modern_inference.py": "ea24b70050d05de8c032994a6ced5c6a35ea30b0cc0bc0bd79760506fd3d53d7",
+    "scripts/predict_modern.py": "b56501ba5833762f8695ae69ea16d1f4ecc7c0355df736c692c8a666826f2440"
+  },
+  "protocol": "Unchanged three fitted ConvNeXt checkpoints, original disjoint calibration partitions and all10,000 official test images. CUDA float64 scoring reproduces original probabilities within1e-6 and prediction-set coverage/size exactly. CPU uses its own reserved-partition temperature/conformal calibration. All six metadata-bound image commands verified on128 test images. Empty sets and singleton conditional accuracy retained; no claim of guaranteed conditional coverage. No test labels select a temperature, cutoff or model."
+}

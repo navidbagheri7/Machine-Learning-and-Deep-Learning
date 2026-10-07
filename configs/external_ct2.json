@@ -1,0 +1,10 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "output": "results/reference/external_ct2",
+  "device": "cuda:0",
+  "task": "colorization",
+  "reference": "ct2",
+  "test_images": 400,
+  "evaluation_batch_size": 1,
+  "samples": 4
+}

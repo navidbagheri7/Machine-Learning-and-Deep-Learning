@@ -9,19 +9,35 @@ class BayesianLinearRegression:
     """w ~ N(0, prior_variance I), y|w ~ N(Xw, noise_variance I)."""
 
     def __init__(self, prior_variance=1.0, noise_variance=0.1):
-        if prior_variance <= 0 or noise_variance <= 0:
+        if (
+            not np.isfinite([prior_variance, noise_variance]).all()
+            or prior_variance <= 0
+            or noise_variance <= 0
+        ):
             raise ValueError("Variances must be positive")
         self.prior_variance, self.noise_variance = prior_variance, noise_variance
 
     def fit(self, x, y):
-        x, y = np.asarray(x), np.asarray(y)
+        x, y = np.asarray(x, dtype=float), np.asarray(y, dtype=float)
+        if (
+            x.ndim != 2
+            or y.ndim != 1
+            or x.shape[0] != len(y)
+            or not len(y)
+            or not x.shape[1]
+            or not np.isfinite(x).all()
+            or not np.isfinite(y).all()
+        ):
+            raise ValueError("Expected finite nonempty design matrix and matching 1D targets")
         precision = np.eye(x.shape[1]) / self.prior_variance + x.T @ x / self.noise_variance
         self.covariance_ = np.linalg.solve(precision, np.eye(x.shape[1]))
         self.mean_ = np.linalg.solve(precision, x.T @ y / self.noise_variance)
         return self
 
     def predict(self, x, include_noise=True):
-        x = np.asarray(x)
+        x = np.asarray(x, dtype=float)
+        if x.ndim != 2 or x.shape[1] != len(self.mean_) or not np.isfinite(x).all():
+            raise ValueError("Prediction design must match fitted feature dimensions")
         variance = np.einsum("ij,jk,ik->i", x, self.covariance_, x)
         if include_noise:
             variance += self.noise_variance
@@ -34,6 +50,16 @@ class GaussianMixtureEM:
     def __init__(self, components=3, max_iter=200, tol=1e-6, reg=1e-6, seed=0):
         self.components, self.max_iter, self.tol = components, max_iter, tol
         self.reg, self.seed = reg, seed
+        if (
+            components < 1
+            or max_iter < 1
+            or not np.isfinite([tol, reg]).all()
+            or tol < 0
+            or reg <= 0
+        ):
+            raise ValueError(
+                "Positive components, iterations and covariance regularization required"
+            )
 
     def _joint(self, x):
         terms = []
@@ -50,6 +76,8 @@ class GaussianMixtureEM:
 
     def fit(self, x):
         x = np.asarray(x, dtype=float)
+        if x.ndim != 2 or len(x) < 2 or not x.shape[1] or not np.isfinite(x).all():
+            raise ValueError("Expected a finite matrix with at least two observations")
         if not 1 <= self.components <= len(x):
             raise ValueError("Invalid component count")
         self.means_ = (

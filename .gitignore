@@ -13,5 +13,8 @@ results/smoke/
 results/**/checkpoints/
 results/**/*.joblib
 results/**/*.pt
+results/**/*.cbm
 results/**/*.npz
+results/**/partial_metrics.json
 *.log
+*.part

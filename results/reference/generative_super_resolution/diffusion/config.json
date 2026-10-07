@@ -1,0 +1,30 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "output": "results/reference/generative_super_resolution/diffusion",
+  "device": "cuda:2",
+  "task": "super_resolution",
+  "train_images": 16000,
+  "validation_images": 128,
+  "test_images": 400,
+  "crop": 128,
+  "batch_size": 32,
+  "evaluation_batch_size": 4,
+  "epochs": 60,
+  "seeds": [
+    0,
+    1
+  ],
+  "methods": [
+    "diffusion"
+  ],
+  "width": 48,
+  "latent": 32,
+  "learning_rate": 0.0002,
+  "feature_weight": 0.15,
+  "kl_weight": 0.002,
+  "adversarial_weight": 0.02,
+  "ema_decay": 0.995,
+  "samples": 4,
+  "sampling_steps": 50,
+  "pretrained_weights": "/data/navid.bagheri-shouraki/ML_data/models/torch/hub/checkpoints/resnet18-f37072fd.pth"
+}

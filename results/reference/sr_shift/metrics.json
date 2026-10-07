@@ -1,0 +1,293 @@
+{
+  "rows": [
+    {
+      "method": "bicubic",
+      "degradation": "bicubic",
+      "psnr": {
+        "mean": 24.256702575683594,
+        "image_bootstrap_ci95": [
+          23.982016647458078,
+          24.554669739484787
+        ]
+      },
+      "ssim": {
+        "mean": 0.6783283541351557,
+        "image_bootstrap_ci95": [
+          0.6674481218643487,
+          0.6890406411048025
+        ]
+      },
+      "lpips": {
+        "mean": 0.46179170001298186,
+        "image_bootstrap_ci95": [
+          0.4523089147517457,
+          0.4721592654064298
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.009183710575453006,
+        "image_bootstrap_ci95": [
+          0.008862024334099262,
+          0.009494984234290314
+        ]
+      }
+    },
+    {
+      "method": "swinir",
+      "degradation": "bicubic",
+      "psnr": {
+        "mean": 27.13218783378601,
+        "image_bootstrap_ci95": [
+          26.79339068055153,
+          27.491386118888855
+        ]
+      },
+      "ssim": {
+        "mean": 0.7874275907874108,
+        "image_bootstrap_ci95": [
+          0.7772226453963668,
+          0.7968210068568587
+        ]
+      },
+      "lpips": {
+        "mean": 0.22329148123972117,
+        "image_bootstrap_ci95": [
+          0.21322023281338626,
+          0.23321920324326492
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.001920799711951986,
+        "image_bootstrap_ci95": [
+          0.0018077835243675508,
+          0.002055079226051021
+        ]
+      }
+    },
+    {
+      "method": "realesrgan",
+      "degradation": "bicubic",
+      "psnr": {
+        "mean": 23.025241451263426,
+        "image_bootstrap_ci95": [
+          22.764985362887384,
+          23.321308313965798
+        ]
+      },
+      "ssim": {
+        "mean": 0.6534534227848053,
+        "image_bootstrap_ci95": [
+          0.64196562403813,
+          0.6650958966612817
+        ]
+      },
+      "lpips": {
+        "mean": 0.20633911942131816,
+        "image_bootstrap_ci95": [
+          0.20082481320318765,
+          0.2116296047293581
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.022807376475539057,
+        "image_bootstrap_ci95": [
+          0.022088142528489698,
+          0.023548875500215217
+        ]
+      }
+    },
+    {
+      "method": "bicubic",
+      "degradation": "blur",
+      "psnr": {
+        "mean": 23.79971703052521,
+        "image_bootstrap_ci95": [
+          23.53093795490265,
+          24.086966137290002
+        ]
+      },
+      "ssim": {
+        "mean": 0.6561290558055043,
+        "image_bootstrap_ci95": [
+          0.6447224705591798,
+          0.6674426239887252
+        ]
+      },
+      "lpips": {
+        "mean": 0.49436775550246237,
+        "image_bootstrap_ci95": [
+          0.4845063617955893,
+          0.5049498145505786
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.006537889593164437,
+        "image_bootstrap_ci95": [
+          0.006312403762567556,
+          0.006759545641732984
+        ]
+      }
+    },
+    {
+      "method": "swinir",
+      "degradation": "blur",
+      "psnr": {
+        "mean": 25.599212913513185,
+        "image_bootstrap_ci95": [
+          25.302210066437723,
+          25.91637068641186
+        ]
+      },
+      "ssim": {
+        "mean": 0.7365924827754498,
+        "image_bootstrap_ci95": [
+          0.7260359139125795,
+          0.7469056409336626
+        ]
+      },
+      "lpips": {
+        "mean": 0.3610733598843217,
+        "image_bootstrap_ci95": [
+          0.3518421433325857,
+          0.37092655879957603
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.000596913078261423,
+        "image_bootstrap_ci95": [
+          0.0005817105422192981,
+          0.000611359181253647
+        ]
+      }
+    },
+    {
+      "method": "realesrgan",
+      "degradation": "blur",
+      "psnr": {
+        "mean": 23.049092493057252,
+        "image_bootstrap_ci95": [
+          22.784752976238728,
+          23.344552088260652
+        ]
+      },
+      "ssim": {
+        "mean": 0.6498256855085492,
+        "image_bootstrap_ci95": [
+          0.6381807357752696,
+          0.6615047932006419
+        ]
+      },
+      "lpips": {
+        "mean": 0.2070994979608804,
+        "image_bootstrap_ci95": [
+          0.20141594560397788,
+          0.2124599025978241
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.02403991563944146,
+        "image_bootstrap_ci95": [
+          0.023256324357527777,
+          0.0248185604987666
+        ]
+      }
+    },
+    {
+      "method": "bicubic",
+      "degradation": "noise_jpeg",
+      "psnr": {
+        "mean": 22.594650926589967,
+        "image_bootstrap_ci95": [
+          22.353465791106224,
+          22.867070119619367
+        ]
+      },
+      "ssim": {
+        "mean": 0.5864527121186256,
+        "image_bootstrap_ci95": [
+          0.5758392717242241,
+          0.597641951141879
+        ]
+      },
+      "lpips": {
+        "mean": 0.6381469078361988,
+        "image_bootstrap_ci95": [
+          0.6283430024739355,
+          0.6476289302613587
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.008509007160901092,
+        "image_bootstrap_ci95": [
+          0.008182165378544595,
+          0.008830240202718413
+        ]
+      }
+    },
+    {
+      "method": "swinir",
+      "degradation": "noise_jpeg",
+      "psnr": {
+        "mean": 22.4976850938797,
+        "image_bootstrap_ci95": [
+          22.2625262696743,
+          22.757560738325118
+        ]
+      },
+      "ssim": {
+        "mean": 0.5781557873636484,
+        "image_bootstrap_ci95": [
+          0.568107051037252,
+          0.588841748058796
+        ]
+      },
+      "lpips": {
+        "mean": 0.5307818916812539,
+        "image_bootstrap_ci95": [
+          0.5208495390117168,
+          0.5408362143505364
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.0013385954858676995,
+        "image_bootstrap_ci95": [
+          0.0012577329327905318,
+          0.0014228973853896605
+        ]
+      }
+    },
+    {
+      "method": "realesrgan",
+      "degradation": "noise_jpeg",
+      "psnr": {
+        "mean": 21.785415420532228,
+        "image_bootstrap_ci95": [
+          21.525504229784012,
+          22.05676994919777
+        ]
+      },
+      "ssim": {
+        "mean": 0.5901237707585096,
+        "image_bootstrap_ci95": [
+          0.5777107058502734,
+          0.6030429923590273
+        ]
+      },
+      "lpips": {
+        "mean": 0.2582385986391455,
+        "image_bootstrap_ci95": [
+          0.251734526560409,
+          0.2643316980591044
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.03126331546111032,
+        "image_bootstrap_ci95": [
+          0.03039067360991612,
+          0.0321731008150964
+        ]
+      }
+    }
+  ],
+  "protocol": "Same 400 original 256px COCO test crops, no fitting or test selection. Frozen SwinIR and Real-ESRGAN versus bicubic. Matched antialiased bicubic4; HR Gaussian blur sigma1.2, 9px reflect kernel before downsampling; or bicubic LR with Gaussian sigma3/255 then clipping, uint8 conversion and JPEG quality60 chroma subsampling2. Fixed common noise seed810. RGB PSNR/SSIM with 4px shave, full-image LPIPS; consistency is reprojection to actual degraded LR, not a guarantee for mismatched degradation. These are controlled stressors, not a real-camera dataset or exact reproduction of either model's training degradation."
+}

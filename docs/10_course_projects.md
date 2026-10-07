@@ -24,15 +24,15 @@ is independent of notebook execution state and uses English throughout.
 
 For a mixture with probabilities πₖ, means μₖ, covariances Cₖ and observations xᵢ,
 
-\[
+```math
 r_{ik}=\frac{\pi_k\mathcal N(x_i;\mu_k,C_k)}
  {\sum_j\pi_j\mathcal N(x_i;\mu_j,C_j)},\quad
 N_k=\sum_i r_{ik},\quad \pi_k=N_k/N,
-\]
-\[
+```
+```math
 \mu_k=\frac{\sum_i r_{ik}x_i}{N_k},\qquad
 C_k=\frac{\sum_i r_{ik}(x_i-\mu_k)(x_i-\mu_k)^T}{N_k}.
-\]
+```
 
 The complete-data likelihood is the product over observations/components of
 `[πₖ N(xᵢ; μₖ,Cₖ)]` raised to a one-hot latent assignment. EM replaces those
@@ -65,20 +65,21 @@ information; the experiment makes that failure case visible.
 
 For independent categorical features conditional on component k,
 
-\[
+```math
 p(x_i,z_i=k)=\pi_k\prod_{d\in O_i}\theta_{kd,x_{id}},\quad
 r_{ik}\propto\pi_k\prod_{d\in O_i}\theta_{kd,x_{id}},
-\]
-\[
+```
+```math
 \theta_{kdc}=\frac{\sum_{i:d\in O_i}r_{ik}\mathbf 1[x_{id}=c]}
  {\sum_{i:d\in O_i}r_{ik}}.
-\]
+```
 
 Oᵢ is the observed-feature set. Missing entries contribute no observed likelihood
 and no counts. `CategoricalMixtureEM` adds symmetric positive pseudo-counts to these
 counts and mixture counts, avoiding zero probabilities; its implemented estimator is
 the disclosed smoothed update. Feature-imputation probabilities average component
-categorical probabilities under the posterior component weights.
+categorical probabilities under the posterior component weights for missing fields;
+observed fields retain one-hot probabilities at their known category.
 
 A mixture of **one** unconstrained categorical variable cannot identify individual
 components: only the convex combination of their probability vectors is observable.
@@ -86,6 +87,8 @@ The executed extension uses eight conditionally independent three-valued feature
 imbalanced component weights and 25% missing-at-random entries. This provides
 observable dependence and a meaningful imputation evaluation. The latent-class model
 is compared with per-feature majority imputation on 1,000 held-out synthetic rows.
+Both estimators use only observed fitting entries; the majority baseline excludes
+masked fitting values. The reported modes and observed fitting counts document this.
 Bernoulli mixtures are the two-category special case.
 
 For any q(z), the ELBO is `E_q log p(x,z;θ) + H(q)` and the gap to log evidence is
@@ -101,10 +104,10 @@ without treating a local optimum as global certainty.
 Let z∼N(μ,C), y=Az+b+ε and ε∼N(0,R), independently. The joint Gaussian has mean
 `[μ; Aμ+b]` and block covariance `[[C, CAᵀ], [AC, ACAᵀ+R]]`. Define
 
-\[
+```math
 S=ACA^T+R,\quad G=CA^TS^{-1},\quad
 \mu_{z|y}=\mu+G(y-A\mu-b),\quad C_{z|y}=C-GAC.
-\]
+```
 
 This equals the precision-form expression in the handout when C is invertible.
 The implementation solves Cholesky systems in observation space instead of computing
@@ -112,10 +115,10 @@ inverse matrices; it also supports rectangular operators and correlated noise.
 
 A Gaussian-mixture prior gives a **Gaussian-mixture posterior**, with component weights
 
-\[
+```math
 \alpha_k(y)=\frac{\pi_k\mathcal N(y;A\mu_k+b,AC_kA^T+R)}
  {\sum_j\pi_j\mathcal N(y;A\mu_j+b,AC_jA^T+R)}.
-\]
+```
 
 Each component has the Gaussian posterior above. The squared-error optimal estimate
 is the posterior mean `Σₖ αₖ μₖ|y`. The highest-weight component mean is a useful hard

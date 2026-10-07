@@ -1,0 +1,92 @@
+{
+  "sources": {
+    "CT2": {
+      "repository": "https://github.com/shuchenweng/CT2",
+      "revision": "cd40f5a0cee23365b831f25ab5d659674936018b",
+      "license": "CC BY-NC 4.0"
+    },
+    "BigColor": {
+      "repository": "https://github.com/KIMGEONUNG/BigColor",
+      "revision": "5b7687fbedd9af22fef02a82102c6d7708ab1217",
+      "license": "MIT"
+    },
+    "SwinIR": {
+      "repository": "https://github.com/JingyunLiang/SwinIR",
+      "revision": "6545850fbf8df298df73d81f3e8cba638787c8bd",
+      "license": "Apache-2.0"
+    },
+    "BasicSR": {
+      "repository": "https://github.com/XPixelGroup/BasicSR",
+      "revision": "8d56e3a045f9fb3e1d8872f92ee4a4f07f886b0a",
+      "license": "Apache-2.0"
+    }
+  },
+  "weights": {
+    "CT2/release.rar": {
+      "url": "https://drive.google.com/file/d/15LsqvHu1_g6OEEUbir7i1wbLDxIP4LTU",
+      "sha256": "08e2ad96667a6132e2563a99b7753b338bff6a7da16d36b980083dfa97778101",
+      "bytes": 3437688179
+    },
+    "BigColor/ckpts/bigcolor/EG_011.ckpt": {
+      "url": "https://drive.google.com/file/d/1SCrcIxhm2F1SMTUUcNTEtB4fQu6y7RDK",
+      "sha256": "55d759b259a6cb55d5246a2a9e33831ad34b700d1d24b8c180a755436f57d6e7",
+      "bytes": 421038721
+    },
+    "BigColor/ckpts/bigcolor/EG_EMA_011.ckpt": {
+      "url": "https://drive.google.com/file/d/1A6JwWeedJa56_6lDOkkR3hqvJ_aNUghE",
+      "sha256": "13d0421457c30b78f391ba293c99b7a22e6233add7b98df8e3059c0b27e8e337",
+      "bytes": 841647801
+    },
+    "BigColor/ckpts/bigcolor/args.pkl": {
+      "url": "https://drive.google.com/file/d/1iQ2OAnQRAqd-6PDtQCrqh5-L_F_GXpq4",
+      "sha256": "523e05d97c8eeb02fd1755b51703e2cc4e03d01dd5da3c76b96842ac166b5a8c",
+      "bytes": 3917
+    },
+    "BigColor/pretrained/config.pickle": {
+      "url": "https://drive.google.com/file/d/1qvxR2ZK5-gaLgtxem9fdLmfSKKvXF6eW",
+      "sha256": "e860eb9f702ba7a7ddb7446350199fd6eee68e4e0b97aa1ddaea49da7d32c9cd",
+      "bytes": 1899
+    },
+    "CT2/checkpoint.pth": {
+      "url": "https://drive.google.com/file/d/15LsqvHu1_g6OEEUbir7i1wbLDxIP4LTU",
+      "sha256": "48a4f53900d20c0f86d52679ba9d8fc25f1087b78c04752987ee4efc5c7fc895",
+      "bytes": 3700033417
+    },
+    "SwinIR/001_classicalSR_DF2K_s64w8_SwinIR-M_x4.pth": {
+      "url": "https://github.com/JingyunLiang/SwinIR/releases/download/v0.0/001_classicalSR_DF2K_s64w8_SwinIR-M_x4.pth",
+      "sha256": "4e78e33f22c1aa8a773db0cf4a7381bae97c2362c717f155439ebc690cbd9215",
+      "bytes": 67869037
+    },
+    "SwinIR/005_colorDN_DFWB_s128w8_SwinIR-M_noise25.pth": {
+      "url": "https://github.com/JingyunLiang/SwinIR/releases/download/v0.0/005_colorDN_DFWB_s128w8_SwinIR-M_noise25.pth",
+      "sha256": "39e264322ba762682de5acee4705aaeda7077b947204b9ce1899519ebd540724",
+      "bytes": 122905743
+    },
+    "BasicSR/weights/RealESRGAN_x4plus.pth": {
+      "url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth",
+      "sha256": "4fa0d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1",
+      "bytes": 67040989
+    },
+    "torch/hub/checkpoints/alexnet-owt-7be5be79.pth": {
+      "url": "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth",
+      "sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+      "bytes": 244408911
+    },
+    "torch/hub/checkpoints/resnet18-f37072fd.pth": {
+      "url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+      "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+      "bytes": 46830571
+    },
+    "torch/hub/checkpoints/resnet50-11ad3fa6.pth": {
+      "url": "https://download.pytorch.org/models/resnet50-11ad3fa6.pth",
+      "sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca",
+      "bytes": 102540417
+    },
+    "torch/hub/checkpoints/convnext_tiny-983f1562.pth": {
+      "url": "https://download.pytorch.org/models/convnext_tiny-983f1562.pth",
+      "sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+      "bytes": 114419221
+    }
+  },
+  "unavailable": []
+}

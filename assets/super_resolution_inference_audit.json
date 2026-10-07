@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "device": "cuda:2",
+  "tasks": [
+    "super_resolution"
+  ],
+  "checks": [
+    {
+      "task": "super_resolution",
+      "method": "l1",
+      "exposure": "local",
+      "samples": 1,
+      "output_dimensions": [
+        236,
+        244
+      ],
+      "input_sha256": "0ce95e903f719e4ae797e79ceb770964a9ac5b2301656e7db69fc9bd2b169080",
+      "repeated_output_sha256": [
+        "b7f7a4913227b8f922692b3503384282f92e3d7e8b1d4cf02241c1c4131d1b11"
+      ],
+      "checkpoint_sha256": "cbab7666dd4d37a547199976c03dc16b941d20742288c3e408962e34cdcf927f"
+    },
+    {
+      "task": "super_resolution",
+      "method": "gan",
+      "exposure": "local",
+      "samples": 1,
+      "output_dimensions": [
+        236,
+        244
+      ],
+      "input_sha256": "0ce95e903f719e4ae797e79ceb770964a9ac5b2301656e7db69fc9bd2b169080",
+      "repeated_output_sha256": [
+        "65c16d05e25c53565ebb0d906e268339c99dcab3128c9aefe3746123da14943f"
+      ],
+      "checkpoint_sha256": "2980e50e33ef6970d575d676ef0509d1cfc011d7d801da6759b1c21030e1906f"
+    },
+    {
+      "task": "super_resolution",
+      "method": "cvae",
+      "exposure": "local",
+      "samples": 2,
+      "output_dimensions": [
+        236,
+        244
+      ],
+      "input_sha256": "0ce95e903f719e4ae797e79ceb770964a9ac5b2301656e7db69fc9bd2b169080",
+      "repeated_output_sha256": [
+        "c834df16a6e82ff74f7b4e2a43ecb4ba5d34d58d0e6dee67254559bd00837600",
+        "fcd5a0b804c20501ebb61689acfec059aade072e96c77e614d98fdaaa3878c49"
+      ],
+      "checkpoint_sha256": "5b80b3261821a65b23c86259c23e0e69be3a14edeceda666f6b01cdf6ecd8028"
+    },
+    {
+      "task": "super_resolution",
+      "method": "diffusion",
+      "exposure": "local",
+      "samples": 2,
+      "output_dimensions": [
+        236,
+        244
+      ],
+      "input_sha256": "0ce95e903f719e4ae797e79ceb770964a9ac5b2301656e7db69fc9bd2b169080",
+      "repeated_output_sha256": [
+        "e58b79d408c7b35ec61c684542a3a25e9bf2f30de5ee5e76aade6ae4eb0b5499",
+        "45f466d080824cbb71d34285e2d0831a7c9b259e8464ca80a73eaae7075c671a"
+      ],
+      "checkpoint_sha256": "2a6108c4c28a0e9a8848cf081405a506cd9bbdc7e5d2381daacd027c89320899"
+    },
+    {
+      "task": "super_resolution",
+      "method": "swinir",
+      "exposure": "external",
+      "samples": 1,
+      "output_dimensions": [
+        236,
+        244
+      ],
+      "input_sha256": "0ce95e903f719e4ae797e79ceb770964a9ac5b2301656e7db69fc9bd2b169080",
+      "repeated_output_sha256": [
+        "ded5d5d04cb2240aba9ec589e36b1207e69fb2e5cf57b97357f1a4719593c32f"
+      ],
+      "checkpoint_sha256": null
+    },
+    {
+      "task": "super_resolution",
+      "method": "realesrgan",
+      "exposure": "external",
+      "samples": 1,
+      "output_dimensions": [
+        236,
+        244
+      ],
+      "input_sha256": "0ce95e903f719e4ae797e79ceb770964a9ac5b2301656e7db69fc9bd2b169080",
+      "repeated_output_sha256": [
+        "7f3dba11a7b68b603899095063069bb452d3577d9196f91a09ebb3bd14f5b7f5"
+      ],
+      "checkpoint_sha256": null
+    }
+  ],
+  "test_photo_id": 453040,
+  "script_sha256": "c80bc6a6b14bc5a8623472f60b4f630bc88635d35bf7189abb657774c9053dd4",
+  "source_sha256": {
+    "scripts/restore_generative.py": "1f93e10148f1c0571fdccd93e7061d36650037dd9d362592c064d8cec021dd7c",
+    "scripts/restore_external.py": "7a3e4afa48b68e5ca16fb5fe86b1d2b77552a6db9d01f7fd9037a3eebda968ed",
+    "src/learning_lab/generative.py": "eee73d0bb111b96f205dc60af15d1670142d98d61874fad3b081ee3bec5ba38c",
+    "src/learning_lab/restoration.py": "6cb6ec91e95146fd5dc05f6d3628e3227cd004496cdc2313e017332e84a0015c",
+    "src/learning_lab/pretrained.py": "b17bb26f9c4997995a5870e4e0878e38d920191193ab5c11e9180835a4600c48",
+    "src/learning_lab/external_restoration.py": "33a8605502c60dd42cd8ae54e0c49fd87cc10482597253ca35cfd9f9d7cea4c7"
+  },
+  "protocol": "First fixed test photograph, native colorization crop251x249 and actual bicubic LR crop61x59. Fresh subprocesses reproduce PNG bytes under identical seeds, including two draws for stochastic models. Exact dimensions, RGB encoding and sidecar input hashes checked. Model commands reject nonfinite tensors before quantization. This is a deployment integration, not an additional quality evaluation."
+}

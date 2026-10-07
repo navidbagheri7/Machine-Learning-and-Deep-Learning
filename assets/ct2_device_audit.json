@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "devices": [
+    "cpu",
+    "cuda:2"
+  ],
+  "dimensions": [
+    249,
+    251
+  ],
+  "maximum_uint8_channel_difference": 1,
+  "fraction_identical_rgb_pixels": 0.9962719403510456,
+  "input_sha256": "332e38cf0ff82b992aa99ca925d40b2cb3a198ccf9375d6394a42f29a5ae331e",
+  "adapter_source_sha256": "7742ce676319205e7dc8c45d7555a7ffd108a35be51fb5821ea8ce766cefd040",
+  "protocol": "Standalone CT2 commands completed on CPU and nondefault GPU2 using the same fixed non-square lightness observation and released weights. Pixel differences describe float32 device effects after PNG quantization, not restoration quality or a requirement of cross-device bitwise identity. CPU command executed without CUDA access; upstream tracked files unchanged."
+}

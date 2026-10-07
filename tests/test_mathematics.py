@@ -83,3 +83,14 @@ def test_selection_and_calibration_partitions_are_disjoint():
     partitions = _split(np.arange(len(y)), y, 0)
     assert len(np.concatenate(partitions)) == len(y)
     assert len(np.unique(np.concatenate(partitions))) == len(y)
+
+
+def test_probabilistic_interfaces_reject_invalid_shapes_and_nonfinite_parameters():
+    with pytest.raises(ValueError, match="Variances"):
+        BayesianLinearRegression(np.nan, 1.0)
+    with pytest.raises(ValueError, match="matching 1D"):
+        BayesianLinearRegression().fit(np.ones((4, 2)), np.ones((4, 1)))
+    with pytest.raises(ValueError, match="finite matrix"):
+        GaussianMixtureEM().fit([[np.nan, 0.0], [1.0, 2.0]])
+    with pytest.raises(ValueError, match="regularization"):
+        GaussianMixtureEM(reg=0.0)

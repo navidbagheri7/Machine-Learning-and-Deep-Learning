@@ -26,7 +26,7 @@ Image 2 centers nearly coincide: overlapping component labels cannot be recovere
 | Image 1 | 1.3510 | 1.9896 |
 | Image 2 | 0.9594 | 0.9719 |
 
-The synthetic categorical mixture imputes **90.14%** of missing test entries correctly, versus **56.77%** for per-feature majority. Held-out latent ARI is 0.9928; this is a controlled identifiable model, not an external real-data benchmark.
+The synthetic categorical mixture imputes **90.14%** of missing test entries correctly, versus **56.77%** for per-feature majority fitted only on observed training entries. Held-out latent ARI is 0.9928; this is a controlled identifiable model, not an external real-data benchmark.
 
 ## Bayesian patch reconstruction
 
@@ -119,7 +119,7 @@ The frozen official DDColor-ModelScope model has 227,869,328 parameters and eval
 
 | Study | Complete run time (s) | Evidence |
 |---|---:|---|
-| course_mixtures | 92.5 | [metrics](../results/reference/course_mixtures/metrics.json), [run](../results/reference/course_mixtures/run.json) |
+| course_mixtures | 7.3 | [metrics](../results/reference/course_mixtures/metrics.json), [run](../results/reference/course_mixtures/run.json) |
 | inverse | 106.4 | [metrics](../results/reference/inverse/metrics.json), [run](../results/reference/inverse/run.json) |
 | denoising | 135.6 | [metrics](../results/reference/denoising/metrics.json), [run](../results/reference/denoising/run.json) |
 | super_resolution | 460.9 | [metrics](../results/reference/super_resolution/metrics.json), [run](../results/reference/super_resolution/run.json) |

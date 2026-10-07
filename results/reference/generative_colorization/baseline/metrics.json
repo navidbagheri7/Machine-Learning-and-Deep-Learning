@@ -1,0 +1,59 @@
+{
+  "rows": [
+    {
+      "method": "baseline",
+      "metric_protocol_version": 3,
+      "seed": 0,
+      "sample": 0,
+      "inference_seconds_including_metrics": 1.491156411357224,
+      "psnr": {
+        "mean": 25.07831927537918,
+        "image_bootstrap_ci95": [
+          23.55490155303478,
+          26.755214046716688
+        ]
+      },
+      "ssim": {
+        "mean": 0.9197750216722489,
+        "image_bootstrap_ci95": [
+          0.9139025068692863,
+          0.9257079091481865
+        ]
+      },
+      "lpips": {
+        "mean": 0.2216063284385018,
+        "image_bootstrap_ci95": [
+          0.21217556601692922,
+          0.23080323055759072
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 1.7070778710603918e-08,
+        "image_bootstrap_ci95": [
+          1.6789950167961363e-08,
+          1.7377079641889283e-08
+        ]
+      },
+      "delta_e76": {
+        "mean": 16.18689277172739,
+        "image_bootstrap_ci95": [
+          15.285549835195157,
+          17.225185872131526
+        ]
+      },
+      "chroma": {
+        "mean": 8.027095989859846e-06,
+        "image_bootstrap_ci95": [
+          7.874017436307668e-06,
+          8.180362471378545e-06
+        ]
+      }
+    }
+  ],
+  "curves": [],
+  "data_sha256": {
+    "train_sha256": "5388e0d5b0eadb7b7eac0a0158ed518d4bf832e68b4c2c768bbe2d4c1a848115",
+    "val_sha256": "4c7deeeeb8069e055a0e1fd8c6b15206ce4df731a68eba8e5f5dfd8d219c86b6"
+  },
+  "protocol": "256px COCO CC BY benchmark, fixed disjoint IDs; train-only random crops and flips. EMA checkpoints selected using validation only. CVAE test uses conditional prior, never target posterior. Diffusion uses cosine v prediction and deterministic DDIM trajectories from distinct initial noise. All samples reported, no best-of-test selection. RGB PSNR/SSIM (4px SR shave), LPIPS-Alex, observation consistency and color DeltaE/chroma. Bootstrap intervals are per-image, not training-seed uncertainty."
+}

@@ -76,3 +76,12 @@ def test_singular_prior_and_extreme_observation_remain_finite():
     np.testing.assert_allclose(result["mmse"], [[1.0, 1.0]])
     with pytest.raises(ValueError):
         MixtureInverse([1.0], [[0.0]], [[[1.0]]], [[1.0]], 0.0)
+
+
+def test_invalid_prior_and_nonsymmetric_noise_are_rejected():
+    with pytest.raises(ValueError, match="positive semidefinite"):
+        MixtureInverse([1.0], [[0.0]], [[[-1.0]]], [[1.0]], 10.0)
+    with pytest.raises(ValueError, match="Noise covariance"):
+        MixtureInverse([1.0], [[0.0, 0.0]], [np.eye(2)], np.eye(2), [[1.0, 0.8], [0.0, 1.0]])
+    with pytest.raises(ValueError, match="offset"):
+        MixtureInverse([1.0], [[0.0]], [[[1.0]]], [[1.0]], 1.0, offset=np.nan)

@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "prepared_arrays": [
+    {
+      "split_file": "train.npy",
+      "sha256": "5388e0d5b0eadb7b7eac0a0158ed518d4bf832e68b4c2c768bbe2d4c1a848115",
+      "shape": [
+        16000,
+        256,
+        256,
+        3
+      ]
+    },
+    {
+      "split_file": "val.npy",
+      "sha256": "4c7deeeeb8069e055a0e1fd8c6b15206ce4df731a68eba8e5f5dfd8d219c86b6",
+      "shape": [
+        800,
+        256,
+        256,
+        3
+      ]
+    }
+  ],
+  "splits": {
+    "train": {
+      "n": 16000,
+      "source_short_side_min": 119,
+      "source_short_side_median": 428.0,
+      "source_short_side_q25": 425.0,
+      "source_short_side_below256": 124
+    },
+    "validation": {
+      "n": 400,
+      "source_short_side_min": 238,
+      "source_short_side_median": 454.0,
+      "source_short_side_q25": 426.0,
+      "source_short_side_below256": 4
+    },
+    "test": {
+      "n": 400,
+      "source_short_side_min": 174,
+      "source_short_side_median": 435.0,
+      "source_short_side_q25": 425.0,
+      "source_short_side_below256": 6
+    }
+  },
+  "script_sha256": "c6f815a66919c861d4f62255c1dd9fc1a8703b2ee528aed6244be6678d900fe1",
+  "protocol": "Every prepared-array and original-photograph SHA256 matches the published manifest. Dimensions read from actual image headers. Center-crop/resize to256 enlarges originals with shorter sides below256; no identities or pixels were changed by this descriptive verification."
+}

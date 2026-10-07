@@ -1,0 +1,230 @@
+{
+  "rows": [
+    {
+      "method": "bigcolor",
+      "metric_protocol_version": 3,
+      "seed": 0,
+      "sample": 0,
+      "inference_seconds_including_metrics": 12.173096540383995,
+      "psnr": {
+        "mean": 21.225463378429414,
+        "image_bootstrap_ci95": [
+          20.83675775748491,
+          21.592121979773044
+        ]
+      },
+      "ssim": {
+        "mean": 0.8645628276467323,
+        "image_bootstrap_ci95": [
+          0.856644320063293,
+          0.8725318358130754
+        ]
+      },
+      "lpips": {
+        "mean": 0.17862288990989328,
+        "image_bootstrap_ci95": [
+          0.1714268341464922,
+          0.18637864222796632
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.000404143516021378,
+        "image_bootstrap_ci95": [
+          0.0003207021055889392,
+          0.0004955004072318285
+        ]
+      },
+      "delta_e76": {
+        "mean": 17.49850376188755,
+        "image_bootstrap_ci95": [
+          16.67237618972361,
+          18.401157452583313
+        ]
+      },
+      "chroma": {
+        "mean": 19.42596281528473,
+        "image_bootstrap_ci95": [
+          18.45339848908782,
+          20.49114141061902
+        ]
+      },
+      "sample_rgb_l1_from_first": {
+        "mean": 0.0,
+        "image_bootstrap_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "method": "bigcolor",
+      "metric_protocol_version": 3,
+      "seed": 0,
+      "sample": 1,
+      "inference_seconds_including_metrics": 17.77862986829132,
+      "psnr": {
+        "mean": 21.2117822265625,
+        "image_bootstrap_ci95": [
+          20.830671595036986,
+          21.560783144414422
+        ]
+      },
+      "ssim": {
+        "mean": 0.8642547782510519,
+        "image_bootstrap_ci95": [
+          0.8563107528816909,
+          0.8720293369442225
+        ]
+      },
+      "lpips": {
+        "mean": 0.17877045389730484,
+        "image_bootstrap_ci95": [
+          0.17140534635609947,
+          0.18621838395611848
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.0004209341939214539,
+        "image_bootstrap_ci95": [
+          0.0003344090996905109,
+          0.0005196074147221914
+        ]
+      },
+      "delta_e76": {
+        "mean": 17.544106595516205,
+        "image_bootstrap_ci95": [
+          16.74188700070977,
+          18.395861628115178
+        ]
+      },
+      "chroma": {
+        "mean": 19.61621501982212,
+        "image_bootstrap_ci95": [
+          18.632098216593267,
+          20.703379538342354
+        ]
+      },
+      "sample_rgb_l1_from_first": {
+        "mean": 0.013131344864668791,
+        "image_bootstrap_ci95": [
+          0.01209003318817122,
+          0.014213001355579763
+        ]
+      }
+    },
+    {
+      "method": "bigcolor",
+      "metric_protocol_version": 3,
+      "seed": 0,
+      "sample": 2,
+      "inference_seconds_including_metrics": 22.664603148587048,
+      "psnr": {
+        "mean": 21.188142256736754,
+        "image_bootstrap_ci95": [
+          20.79840651422739,
+          21.558598603725432
+        ]
+      },
+      "ssim": {
+        "mean": 0.864196272790432,
+        "image_bootstrap_ci95": [
+          0.8568011080101132,
+          0.8719228011257947
+        ]
+      },
+      "lpips": {
+        "mean": 0.17909976617433132,
+        "image_bootstrap_ci95": [
+          0.1718088876369875,
+          0.18677121349307707
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.00040929848217004407,
+        "image_bootstrap_ci95": [
+          0.0003316822146182368,
+          0.0004949667099171541
+        ]
+      },
+      "delta_e76": {
+        "mean": 17.588478395938875,
+        "image_bootstrap_ci95": [
+          16.78182797241211,
+          18.46620786473155
+        ]
+      },
+      "chroma": {
+        "mean": 19.46940886616707,
+        "image_bootstrap_ci95": [
+          18.49344450891018,
+          20.564831494718792
+        ]
+      },
+      "sample_rgb_l1_from_first": {
+        "mean": 0.013493527367827482,
+        "image_bootstrap_ci95": [
+          0.012460151333405521,
+          0.014689646533384802
+        ]
+      }
+    },
+    {
+      "method": "bigcolor",
+      "metric_protocol_version": 3,
+      "seed": 0,
+      "sample": 3,
+      "inference_seconds_including_metrics": 10.643973350524902,
+      "psnr": {
+        "mean": 21.163168637752534,
+        "image_bootstrap_ci95": [
+          20.76272789335251,
+          21.53019930446148
+        ]
+      },
+      "ssim": {
+        "mean": 0.8638529895246029,
+        "image_bootstrap_ci95": [
+          0.856322148423642,
+          0.8717639379613101
+        ]
+      },
+      "lpips": {
+        "mean": 0.1795780344121158,
+        "image_bootstrap_ci95": [
+          0.17232805930357425,
+          0.18728968984028324
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.00041897108227345825,
+        "image_bootstrap_ci95": [
+          0.00033657977325519186,
+          0.0005088675895844297
+        ]
+      },
+      "delta_e76": {
+        "mean": 17.72227413773537,
+        "image_bootstrap_ci95": [
+          16.88742463681102,
+          18.615662023305894
+        ]
+      },
+      "chroma": {
+        "mean": 19.526467745900153,
+        "image_bootstrap_ci95": [
+          18.529180642843247,
+          20.63721168471873
+        ]
+      },
+      "sample_rgb_l1_from_first": {
+        "mean": 0.013812030315166339,
+        "image_bootstrap_ci95": [
+          0.01273078814134351,
+          0.014990327488878392
+        ]
+      }
+    }
+  ],
+  "parameter_count": 130752780,
+  "protocol": "Frozen official external reference; same 400 high-resolution COCO test crops and observation. No local fitting or test selection. External training exposure differs and overlap is not audited. BigColor uses a declared fixed ResNet50 class-selection adapter and one fixed random latent; not an exact reproduction of its default classifier."
+}

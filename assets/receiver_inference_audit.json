@@ -1,0 +1,1361 @@
+{
+  "status": "passed",
+  "device": "cuda:2",
+  "checks": [
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "blocks": 2000,
+      "bits": 512000,
+      "ber_absolute_difference": 0.0,
+      "ser_absolute_difference": 0.0
+    }
+  ],
+  "commands": [
+    {
+      "model": "mlp",
+      "seed": 0,
+      "checkpoint_sha256": "87f37f05a3e8a015f078a93b70314821aac13dc59c4076d752e7605fff7d7956",
+      "probabilities_match_api_exactly": true,
+      "device": "cuda:2"
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "device": "cpu",
+      "probabilities_match_api_exactly": true
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "checkpoint_sha256": "ef0e2ee42e8e68821f82955a46ac43c6cd76de310ba8f634ec41f93ab8e02ae9",
+      "probabilities_match_api_exactly": true,
+      "device": "cuda:2"
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "device": "cpu",
+      "probabilities_match_api_exactly": true
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "checkpoint_sha256": "b5b7175b0a4ca023f7dd5e289308037c0d98e2faf33904832911e81c0f9ba007",
+      "probabilities_match_api_exactly": true,
+      "device": "cuda:2"
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "device": "cpu",
+      "probabilities_match_api_exactly": true
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "checkpoint_sha256": "e1076031d9b3dee45f7a7b07c4e241ac1336e44aefcf8ad4b1e99f242575909b",
+      "probabilities_match_api_exactly": true,
+      "device": "cuda:2"
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "device": "cpu",
+      "probabilities_match_api_exactly": true
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "checkpoint_sha256": "456369926399caf1911d3fa4f8563172aabe80000c91fb3491a0a3cab11d3802",
+      "probabilities_match_api_exactly": true,
+      "device": "cuda:2"
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "device": "cpu",
+      "probabilities_match_api_exactly": true
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "checkpoint_sha256": "fe08fb5c8990afd022582b920924b101eb529aec50dd9c013ed6209915e6544f",
+      "probabilities_match_api_exactly": true,
+      "device": "cuda:2"
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "device": "cpu",
+      "probabilities_match_api_exactly": true
+    }
+  ],
+  "cpu_numerics": [
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 5.662441253662109e-06,
+      "cpu_ber": 0.05505078125,
+      "cuda_ber": 0.05505078125
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 4.76837158203125e-06,
+      "cpu_ber": 0.011869140625,
+      "cuda_ber": 0.011869140625
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 2.86102294921875e-06,
+      "cpu_ber": 0.000896484375,
+      "cuda_ber": 0.000896484375
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 1.4901161193847656e-06,
+      "cpu_ber": 1.3671875e-05,
+      "cuda_ber": 1.3671875e-05
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 1.296401023864746e-06,
+      "cpu_ber": 0.0,
+      "cuda_ber": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 5.245208740234375e-06,
+      "cpu_ber": 0.04486328125,
+      "cuda_ber": 0.04486328125
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.844499588012695e-06,
+      "cpu_ber": 0.011990234375,
+      "cuda_ber": 0.011990234375
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.546476364135742e-06,
+      "cpu_ber": 0.002181640625,
+      "cuda_ber": 0.002181640625
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.874301910400391e-06,
+      "cpu_ber": 0.000533203125,
+      "cuda_ber": 0.000533203125
+    },
+    {
+      "model": "mlp",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.635883331298828e-06,
+      "cpu_ber": 0.0002421875,
+      "cuda_ber": 0.0002421875
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 8,
+      "maximum_probability_difference": 0.003083646297454834,
+      "cpu_ber": 0.054486328125,
+      "cuda_ber": 0.054494140625
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 3,
+      "maximum_probability_difference": 0.0028845667839050293,
+      "cpu_ber": 0.01025,
+      "cuda_ber": 0.010255859375
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.002341717481613159,
+      "cpu_ber": 0.000505859375,
+      "cuda_ber": 0.000505859375
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.00174027681350708,
+      "cpu_ber": 1.953125e-06,
+      "cuda_ber": 1.953125e-06
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.00014847517013549805,
+      "cpu_ber": 0.0,
+      "cuda_ber": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 7,
+      "maximum_probability_difference": 0.004223346710205078,
+      "cpu_ber": 0.04387890625,
+      "cuda_ber": 0.043880859375
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 2,
+      "maximum_probability_difference": 0.0035626888275146484,
+      "cpu_ber": 0.0104296875,
+      "cuda_ber": 0.01042578125
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.0032013654708862305,
+      "cpu_ber": 0.001818359375,
+      "cuda_ber": 0.001818359375
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.0032938718795776367,
+      "cpu_ber": 0.000443359375,
+      "cuda_ber": 0.000443359375
+    },
+    {
+      "model": "cnn",
+      "seed": 0,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.0028271377086639404,
+      "cpu_ber": 0.000236328125,
+      "cuda_ber": 0.000236328125
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 5.543231964111328e-06,
+      "cpu_ber": 0.054798828125,
+      "cuda_ber": 0.054798828125
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.7848949432373047e-06,
+      "cpu_ber": 0.01176953125,
+      "cuda_ber": 0.01176953125
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 2.86102294921875e-06,
+      "cpu_ber": 0.000880859375,
+      "cuda_ber": 0.000880859375
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 2.0563602447509766e-06,
+      "cpu_ber": 2.1484375e-05,
+      "cuda_ber": 2.1484375e-05
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 4.246830940246582e-07,
+      "cpu_ber": 0.0,
+      "cuda_ber": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 5.4836273193359375e-06,
+      "cpu_ber": 0.045685546875,
+      "cuda_ber": 0.045685546875
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 5.0067901611328125e-06,
+      "cpu_ber": 0.01272265625,
+      "cuda_ber": 0.01272265625
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.844499588012695e-06,
+      "cpu_ber": 0.00255078125,
+      "cuda_ber": 0.00255078125
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.814697265625e-06,
+      "cpu_ber": 0.00076953125,
+      "cuda_ber": 0.00076953125
+    },
+    {
+      "model": "mlp",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.7848949432373047e-06,
+      "cpu_ber": 0.00041796875,
+      "cuda_ber": 0.00041796875
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 3,
+      "maximum_probability_difference": 0.003064393997192383,
+      "cpu_ber": 0.053759765625,
+      "cuda_ber": 0.05376171875
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 6,
+      "maximum_probability_difference": 0.002994537353515625,
+      "cpu_ber": 0.010099609375,
+      "cuda_ber": 0.010103515625
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 1,
+      "maximum_probability_difference": 0.002085864543914795,
+      "cpu_ber": 0.000490234375,
+      "cuda_ber": 0.0004921875
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.0019477009773254395,
+      "cpu_ber": 7.8125e-06,
+      "cuda_ber": 7.8125e-06
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.0003743171691894531,
+      "cpu_ber": 0.0,
+      "cuda_ber": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 4,
+      "maximum_probability_difference": 0.004994094371795654,
+      "cpu_ber": 0.042333984375,
+      "cuda_ber": 0.042330078125
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 3,
+      "maximum_probability_difference": 0.003191232681274414,
+      "cpu_ber": 0.009994140625,
+      "cuda_ber": 0.00999609375
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 4,
+      "maximum_probability_difference": 0.0030691027641296387,
+      "cpu_ber": 0.001490234375,
+      "cuda_ber": 0.001490234375
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.0026386380195617676,
+      "cpu_ber": 0.00042578125,
+      "cuda_ber": 0.00042578125
+    },
+    {
+      "model": "cnn",
+      "seed": 1,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 1,
+      "maximum_probability_difference": 0.003183692693710327,
+      "cpu_ber": 0.000212890625,
+      "cuda_ber": 0.0002109375
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 4.708766937255859e-06,
+      "cpu_ber": 0.055048828125,
+      "cuda_ber": 0.055048828125
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.814697265625e-06,
+      "cpu_ber": 0.011587890625,
+      "cuda_ber": 0.011587890625
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.814697265625e-06,
+      "cpu_ber": 0.0008359375,
+      "cuda_ber": 0.0008359375
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 1.9669532775878906e-06,
+      "cpu_ber": 9.765625e-06,
+      "cuda_ber": 9.765625e-06
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 5.513429641723633e-07,
+      "cpu_ber": 0.0,
+      "cuda_ber": 0.0
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 5.692243576049805e-06,
+      "cpu_ber": 0.04472265625,
+      "cuda_ber": 0.04472265625
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 5.7220458984375e-06,
+      "cpu_ber": 0.01162890625,
+      "cuda_ber": 0.01162890625
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.814697265625e-06,
+      "cpu_ber": 0.002087890625,
+      "cuda_ber": 0.002087890625
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.814697265625e-06,
+      "cpu_ber": 0.000494140625,
+      "cuda_ber": 0.000494140625
+    },
+    {
+      "model": "mlp",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 3.635883331298828e-06,
+      "cpu_ber": 0.000244140625,
+      "cuda_ber": 0.000244140625
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 8,
+      "maximum_probability_difference": 0.003407299518585205,
+      "cpu_ber": 0.05423828125,
+      "cuda_ber": 0.05423828125
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 2,
+      "maximum_probability_difference": 0.003302633762359619,
+      "cpu_ber": 0.01052734375,
+      "cuda_ber": 0.01052734375
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 1,
+      "maximum_probability_difference": 0.002588629722595215,
+      "cpu_ber": 0.00053125,
+      "cuda_ber": 0.000533203125
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.0010020732879638672,
+      "cpu_ber": 7.8125e-06,
+      "cuda_ber": 7.8125e-06
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.2,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.0006458163261413574,
+      "cpu_ber": 0.0,
+      "cuda_ber": 0.0
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 10,
+      "symbols": 128000,
+      "different_symbol_classes": 9,
+      "maximum_probability_difference": 0.004277914762496948,
+      "cpu_ber": 0.04333203125,
+      "cuda_ber": 0.043330078125
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 14,
+      "symbols": 128000,
+      "different_symbol_classes": 1,
+      "maximum_probability_difference": 0.00431978702545166,
+      "cpu_ber": 0.010455078125,
+      "cuda_ber": 0.010453125
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 18,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.003283977508544922,
+      "cpu_ber": 0.0016796875,
+      "cuda_ber": 0.0016796875
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 22,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.0029180049896240234,
+      "cpu_ber": 0.000462890625,
+      "cuda_ber": 0.000462890625
+    },
+    {
+      "model": "cnn",
+      "seed": 2,
+      "gamma": 0.4,
+      "snr_db": 26,
+      "symbols": 128000,
+      "different_symbol_classes": 0,
+      "maximum_probability_difference": 0.0039504170417785645,
+      "cpu_ber": 0.000236328125,
+      "cuda_ber": 0.000236328125
+    }
+  ],
+  "numerical_settings": {
+    "cuda_convolution_tf32_allowed": true,
+    "cuda_matmul_tf32_allowed": false,
+    "cpu_max_symbol_disagreement_fraction": 0.001,
+    "cpu_max_probability_difference": 0.02
+  },
+  "script_sha256": "24e90e1f9325c339b9ab6a0371c46f44eea67fb74748ad50dc24f02952fc1865",
+  "source_sha256": {
+    "scripts/predict_receiver.py": "836f696a92b51e3fe24c1c45cdfd3a5a15700a685804482ca310bc07cbf41b01",
+    "src/learning_lab/receiver_inference.py": "23bb8b7f4b693b6a2f07c9ddc6b32583a9c99585dfa3e2cf953bcdc74ad52f1d",
+    "src/learning_lab/signals.py": "c0d9f4d12e3bda20d8465c88cefb33381c75bc9bfb536c7cd26a9065e8e1ff7b"
+  },
+  "protocol": "Every neural benchmark row: MLP/CNN, three fitting seeds, two nonlinearities and five SNRs, with the original 2,000 independent blocks and generation seeds. Primary CUDA predictions use deterministic convolution with TF32 allowed and matrix TF32 disabled, matching the original runtime defaults; integer errors reproduce BER/SER to1e-12. Optional CPU comparison retains every class/probability/BER difference under declared acceptance bounds, rather than claiming bitwise cross-device equivalence. Fresh-process commands reproduce their device-specific API outputs exactly on8-block subsets. Neither targets nor channel settings enter inference. Probabilities are uncalibrated; no physical-link performance claim."
+}

@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "method": "realesrgan",
+      "metric_protocol_version": 3,
+      "seed": 0,
+      "sample": 0,
+      "inference_seconds_including_metrics": 10.999435714446008,
+      "psnr": {
+        "mean": 23.026612443923952,
+        "image_bootstrap_ci95": [
+          22.76629183983803,
+          23.32255654501915
+        ]
+      },
+      "ssim": {
+        "mean": 0.6534720721468329,
+        "image_bootstrap_ci95": [
+          0.6419812911199406,
+          0.6651118110734969
+        ]
+      },
+      "lpips": {
+        "mean": 0.20636095918715,
+        "image_bootstrap_ci95": [
+          0.20084379879012704,
+          0.21164979533059522
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.022797757730586454,
+        "image_bootstrap_ci95": [
+          0.022078563566494267,
+          0.023538469072809678
+        ]
+      }
+    }
+  ],
+  "parameter_count": 16697987,
+  "protocol": "Frozen official external reference; same 400 high-resolution COCO test crops and observation. No local fitting or test selection. External training exposure differs and overlap is not audited. BigColor uses a declared fixed ResNet50 class-selection adapter and one fixed random latent; not an exact reproduction of its default classifier."
+}

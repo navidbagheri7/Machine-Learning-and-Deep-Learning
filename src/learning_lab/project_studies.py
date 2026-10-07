@@ -164,7 +164,10 @@ def course_mixtures(config):
     )
     predictions = categorical_model.impute_probabilities(masked[3000:]).argmax(2)
     majority = np.array(
-        [np.bincount(categorical[:3000, j], minlength=3).argmax() for j in range(8)]
+        [
+            np.bincount(masked[:3000, j][masked[:3000, j] >= 0], minlength=3).argmax()
+            for j in range(8)
+        ]
     )
     cmm_results = {
         "test_nll_observed": -categorical_model.score_samples(masked[3000:]).mean(),
@@ -179,6 +182,9 @@ def course_mixtures(config):
             == categorical[3000:][missing[3000:]]
         ),
         "learned_weights": categorical_model.weights_,
+        "majority_protocol": "Per-feature observed-value modes from masked fitting rows only; hidden fitting values are excluded",
+        "majority_modes": majority,
+        "majority_observed_fit_counts": (masked[:3000] >= 0).sum(0),
         "history": categorical_model.history_,
         "protocol": "Synthetic identifiable 8-feature categorical mixture; 25% MCAR entries; first 3000 fit, last 1000 test, training-likelihood-only initialization selection",
     }

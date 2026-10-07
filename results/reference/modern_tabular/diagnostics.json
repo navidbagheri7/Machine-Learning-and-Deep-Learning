@@ -1,0 +1,253 @@
+{
+  "groups_seed0": [
+    {
+      "feature": "sex",
+      "group": "Female",
+      "n": 5421,
+      "metrics_supported": true,
+      "accuracy": 0.9343294595093157,
+      "roc_auc": 0.9442616365352297,
+      "average_precision": 0.766879192543962,
+      "log_loss": 0.16341812700866287,
+      "brier": 0.04780637297777306,
+      "ece": 0.009544858107781232,
+      "set_coverage": 0.9461353993728094,
+      "tpr": 0.7610169491525424,
+      "fpr": 0.06375491616642517
+    },
+    {
+      "feature": "sex",
+      "group": "Male",
+      "n": 10860,
+      "metrics_supported": true,
+      "accuracy": 0.8412523020257827,
+      "roc_auc": 0.9086784669454976,
+      "average_precision": 0.832384033801699,
+      "log_loss": 0.33663392806555953,
+      "brier": 0.10885940791994105,
+      "ece": 0.01421011967147472,
+      "set_coverage": 0.8752302025782689,
+      "tpr": 0.871007371007371,
+      "fpr": 0.2347448711204629
+    },
+    {
+      "feature": "race",
+      "group": "Amer-Indian-Eskimo",
+      "n": 159,
+      "metrics_supported": true,
+      "accuracy": 0.9182389937106918,
+      "roc_auc": 0.9612781954887218,
+      "average_precision": 0.7901500894007829,
+      "log_loss": 0.16584617179824576,
+      "brier": 0.05104346750658352,
+      "ece": 0.05052533801224449,
+      "set_coverage": 0.9433962264150944,
+      "tpr": 0.8947368421052632,
+      "fpr": 0.09285714285714286
+    },
+    {
+      "feature": "race",
+      "group": "Asian-Pac-Islander",
+      "n": 480,
+      "metrics_supported": true,
+      "accuracy": 0.84375,
+      "roc_auc": 0.9080193278585513,
+      "average_precision": 0.8224430074847985,
+      "log_loss": 0.3386121757908692,
+      "brier": 0.10580698302386987,
+      "ece": 0.060151435112031956,
+      "set_coverage": 0.8729166666666667,
+      "tpr": 0.849624060150376,
+      "fpr": 0.1988472622478386
+    },
+    {
+      "feature": "race",
+      "group": "Black",
+      "n": 1561,
+      "metrics_supported": true,
+      "accuracy": 0.9269698910954516,
+      "roc_auc": 0.947208320869277,
+      "average_precision": 0.7697609009034058,
+      "log_loss": 0.16669789858041145,
+      "brier": 0.04994237881239899,
+      "ece": 0.015047256664456778,
+      "set_coverage": 0.9410634208840487,
+      "tpr": 0.7932960893854749,
+      "fpr": 0.07091172214182344
+    },
+    {
+      "feature": "race",
+      "group": "Other",
+      "n": 135,
+      "metrics_supported": true,
+      "accuracy": 0.8888888888888888,
+      "roc_auc": 0.972,
+      "average_precision": 0.8998962231057603,
+      "log_loss": 0.21712544538233222,
+      "brier": 0.07190591592134513,
+      "ece": 0.06753231113876354,
+      "set_coverage": 0.9037037037037037,
+      "tpr": 0.72,
+      "fpr": 0.02727272727272727
+    },
+    {
+      "feature": "race",
+      "group": "White",
+      "n": 13946,
+      "metrics_supported": true,
+      "accuracy": 0.8664133084755485,
+      "roc_auc": 0.9228642799516819,
+      "average_precision": 0.8267508413167346,
+      "log_loss": 0.2913597723217957,
+      "brier": 0.09284389091944117,
+      "ece": 0.011685560255518078,
+      "set_coverage": 0.8944500215115445,
+      "tpr": 0.8581661891117478,
+      "fpr": 0.18267023718439174
+    }
+  ],
+  "reliability_seed0": {
+    "ece": 0.011664649331077956,
+    "bins": [
+      {
+        "probability": 0.013839871696005902,
+        "frequency": 0.01629961428393679,
+        "count": 8037
+      },
+      {
+        "probability": 0.09647054142274025,
+        "frequency": 0.1038135593220339,
+        "count": 1416
+      },
+      {
+        "probability": 0.16673238134051563,
+        "frequency": 0.19713993871297242,
+        "count": 979
+      },
+      {
+        "probability": 0.23220589019509397,
+        "frequency": 0.2190721649484536,
+        "count": 776
+      },
+      {
+        "probability": 0.2996231068371848,
+        "frequency": 0.3443396226415094,
+        "count": 636
+      },
+      {
+        "probability": 0.3629229743345971,
+        "frequency": 0.37988826815642457,
+        "count": 537
+      },
+      {
+        "probability": 0.4320042123994603,
+        "frequency": 0.4359504132231405,
+        "count": 484
+      },
+      {
+        "probability": 0.5005405659818316,
+        "frequency": 0.42326732673267325,
+        "count": 404
+      },
+      {
+        "probability": 0.5662253071725287,
+        "frequency": 0.5848623853211009,
+        "count": 436
+      },
+      {
+        "probability": 0.6322005114389809,
+        "frequency": 0.571830985915493,
+        "count": 355
+      },
+      {
+        "probability": 0.7000740886293746,
+        "frequency": 0.6951566951566952,
+        "count": 351
+      },
+      {
+        "probability": 0.7661493096923259,
+        "frequency": 0.7577937649880095,
+        "count": 417
+      },
+      {
+        "probability": 0.832333372235742,
+        "frequency": 0.8421052631578947,
+        "count": 304
+      },
+      {
+        "probability": 0.8988802618561016,
+        "frequency": 0.9212962962962963,
+        "count": 216
+      },
+      {
+        "probability": 0.9865738778962313,
+        "frequency": 0.9935691318327974,
+        "count": 933
+      }
+    ]
+  },
+  "permutation_seed0": [
+    {
+      "feature": "age",
+      "NLL increase": 0.04195219739278303,
+      "repeat SD": 0.00539056567206682
+    },
+    {
+      "feature": "education_num",
+      "NLL increase": 0.033834716841429004,
+      "repeat SD": 0.007362700981592579
+    },
+    {
+      "feature": "capital_gain",
+      "NLL increase": 0.1332547721159981,
+      "repeat SD": 0.007964258421555476
+    },
+    {
+      "feature": "capital_loss",
+      "NLL increase": 0.02824541694385437,
+      "repeat SD": 0.0037200283178807215
+    },
+    {
+      "feature": "hours_per_week",
+      "NLL increase": 0.01718517092678627,
+      "repeat SD": 0.004232896513718489
+    },
+    {
+      "feature": "workclass",
+      "NLL increase": 0.0035692914512267713,
+      "repeat SD": 0.002072023722158083
+    },
+    {
+      "feature": "marital_status",
+      "NLL increase": 0.03358431343574773,
+      "repeat SD": 0.0007272342782037553
+    },
+    {
+      "feature": "occupation",
+      "NLL increase": 0.020375425394209463,
+      "repeat SD": 0.004860179924521636
+    },
+    {
+      "feature": "relationship",
+      "NLL increase": 0.045116572594707936,
+      "repeat SD": 0.0021325728404694238
+    },
+    {
+      "feature": "race",
+      "NLL increase": -0.0003988322219204421,
+      "repeat SD": 0.0007062555132108118
+    },
+    {
+      "feature": "sex",
+      "NLL increase": -0.0006784063102847071,
+      "repeat SD": 0.00020135745589042547
+    },
+    {
+      "feature": "native_country",
+      "NLL increase": 0.0011455411592804683,
+      "repeat SD": 0.001195742514451867
+    }
+  ],
+  "checkpoint_sha256": "4347c70fc781e95da3665f233acd7748d616f4aa9fabf61d0e1dfbf637c1f146",
+  "protocol": "Post-fit official Adult test error analysis, never tuning. Groups with fewer than100 examples or a single observed class retain counts but omit unstable AUROC/TPR/FPR. Three feature permutations on the fixed first2500 test rows use calibrated NLL; importances are associative, not causal. Threshold, temperature and conformal cutoff remain training/validation/calibration selected."
+}
