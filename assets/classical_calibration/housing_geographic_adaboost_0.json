@@ -1,0 +1,21 @@
+{
+  "task": "regression",
+  "dataset": "housing_geographic",
+  "family": "adaboost",
+  "seed": 0,
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "3602bf00ec0564521e12c9e35963d67fe8c773ab9d883efa7c78f33ec54bf32b",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/housing_geographic/0/metrics.json",
+  "absolute_residual_cutoff": 1.0589689846297148
+}

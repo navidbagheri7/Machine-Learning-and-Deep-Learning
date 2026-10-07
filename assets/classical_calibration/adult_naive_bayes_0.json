@@ -1,0 +1,42 @@
+{
+  "task": "classification",
+  "dataset": "adult",
+  "family": "naive_bayes",
+  "seed": 0,
+  "features": [
+    "age",
+    "education_num",
+    "capital_gain",
+    "capital_loss",
+    "hours_per_week",
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "categorical": [
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "checkpoint_sha256": "cea1a4545dec3928ad5476f03cba74c8628736eccfa5f1ffb0fc8a889920a485",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/adult/0/metrics.json",
+  "temperature": 9.13170907566962,
+  "conformal_cutoff": 0.6933682434560319,
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": [
+    "at most $50,000",
+    "above $50,000"
+  ]
+}

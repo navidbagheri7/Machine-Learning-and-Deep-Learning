@@ -1,0 +1,52 @@
+{
+  "task": "classification",
+  "dataset": "breast_cancer",
+  "family": "catboost",
+  "seed": 2,
+  "features": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "da31bf91593271170a56f3a500413e4839fb04d4c08a287a124b36fb91ecaf09",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/breast_cancer/2/metrics.json",
+  "temperature": 1.6908336304683436,
+  "conformal_cutoff": 0.22043744685966715,
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": [
+    "malignant",
+    "benign"
+  ]
+}

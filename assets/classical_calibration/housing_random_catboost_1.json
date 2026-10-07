@@ -1,0 +1,21 @@
+{
+  "task": "regression",
+  "dataset": "housing_random",
+  "family": "catboost",
+  "seed": 1,
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "a1e6884079714d69a068754bc635d5e805edf813f58f836256cb4c466e3dcfb5",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/housing_random/1/metrics.json",
+  "absolute_residual_cutoff": 0.6721981449496512
+}

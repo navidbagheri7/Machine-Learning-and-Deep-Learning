@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "sections": 8,
+  "checked_presets": 207,
+  "bayesian_python_agreement_absolute_tolerance": 1e-09,
+  "mobile_width": 390,
+  "javascript_errors": []
+}

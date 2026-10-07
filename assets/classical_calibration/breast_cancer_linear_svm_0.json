@@ -1,0 +1,52 @@
+{
+  "task": "classification",
+  "dataset": "breast_cancer",
+  "family": "linear_svm",
+  "seed": 0,
+  "features": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "03121e0a811eb11d947d86cc0e1420cc62381e816a82085e892b7a40c8e9167d",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/breast_cancer/0/metrics.json",
+  "temperature": 0.2017259314026048,
+  "conformal_cutoff": 0.05262543082306281,
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": [
+    "malignant",
+    "benign"
+  ]
+}

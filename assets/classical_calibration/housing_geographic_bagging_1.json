@@ -1,0 +1,21 @@
+{
+  "task": "regression",
+  "dataset": "housing_geographic",
+  "family": "bagging",
+  "seed": 1,
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "6ac436002d81f434f188ecfbfcda7a6e16ec285749f0fb9d3e1b957d4f9130d5",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/housing_geographic/1/metrics.json",
+  "absolute_residual_cutoff": 0.7809156197230633
+}

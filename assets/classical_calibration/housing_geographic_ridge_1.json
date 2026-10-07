@@ -1,0 +1,21 @@
+{
+  "task": "regression",
+  "dataset": "housing_geographic",
+  "family": "ridge",
+  "seed": 1,
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "dbe6f1f41f93257d2f5cf3d6fb385ec938899e3de7993f9d103797792320857c",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/housing_geographic/1/metrics.json",
+  "absolute_residual_cutoff": 1.1257472273626903
+}

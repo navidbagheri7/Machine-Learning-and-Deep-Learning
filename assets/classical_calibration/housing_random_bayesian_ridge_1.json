@@ -1,0 +1,21 @@
+{
+  "task": "regression",
+  "dataset": "housing_random",
+  "family": "bayesian_ridge",
+  "seed": 1,
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "403c9de2d9a59e26c79510e46cab64bc0f439efce7399970abb89f509f76eaca",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/housing_random/1/metrics.json",
+  "absolute_residual_cutoff": 1.064805309221832
+}

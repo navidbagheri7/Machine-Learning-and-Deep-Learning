@@ -1,0 +1,52 @@
+{
+  "task": "classification",
+  "dataset": "breast_cancer",
+  "family": "random_forest",
+  "seed": 0,
+  "features": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "8148cb8986eed6714864c61b7aac41df898c56a1c6ae1ea86e30252b24902b6f",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/breast_cancer/0/metrics.json",
+  "temperature": 0.23366100585384375,
+  "conformal_cutoff": 0.12901983711329212,
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": [
+    "malignant",
+    "benign"
+  ]
+}

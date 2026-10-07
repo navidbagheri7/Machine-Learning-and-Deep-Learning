@@ -1,0 +1,21 @@
+{
+  "task": "regression",
+  "dataset": "housing_geographic",
+  "family": "huber",
+  "seed": 2,
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "7205e229647800d8a8fdb44b59fc4098c922a670a5165618d7aa3958a8d4b3da",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/housing_geographic/2/metrics.json",
+  "absolute_residual_cutoff": 1.1068517541406908
+}

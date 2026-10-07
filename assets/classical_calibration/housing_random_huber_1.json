@@ -1,0 +1,21 @@
+{
+  "task": "regression",
+  "dataset": "housing_random",
+  "family": "huber",
+  "seed": 1,
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "1946b85d8af3c23e203e430c7c23a4a7242bfb4c4eb0c36bbc21719c10142380",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/housing_random/1/metrics.json",
+  "absolute_residual_cutoff": 1.0609743772399858
+}

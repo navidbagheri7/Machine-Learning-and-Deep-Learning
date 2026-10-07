@@ -1,0 +1,21 @@
+{
+  "task": "regression",
+  "dataset": "housing_random",
+  "family": "elastic_net",
+  "seed": 0,
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "ab99732770eb5e15d7c92abf222f083f65554b8b88f8e9759746d1216590a1bd",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/housing_random/0/metrics.json",
+  "absolute_residual_cutoff": 1.0688940519259673
+}

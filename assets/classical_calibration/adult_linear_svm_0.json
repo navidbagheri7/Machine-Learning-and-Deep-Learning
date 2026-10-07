@@ -1,0 +1,42 @@
+{
+  "task": "classification",
+  "dataset": "adult",
+  "family": "linear_svm",
+  "seed": 0,
+  "features": [
+    "age",
+    "education_num",
+    "capital_gain",
+    "capital_loss",
+    "hours_per_week",
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "categorical": [
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "checkpoint_sha256": "c18c4f8c9333c19671f07b35bd9d26f974b8e26797e3c8fe70529dd9045262a6",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/adult/0/metrics.json",
+  "temperature": 0.32768490595654476,
+  "conformal_cutoff": 0.6416129196681881,
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": [
+    "at most $50,000",
+    "above $50,000"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "task": "regression",
+  "dataset": "housing_random",
+  "family": "random_forest",
+  "seed": 2,
+  "features": [
+    "MedInc",
+    "HouseAge",
+    "AveRooms",
+    "AveBedrms",
+    "Population",
+    "AveOccup",
+    "Latitude",
+    "Longitude"
+  ],
+  "categorical": [],
+  "checkpoint_sha256": "64a26b148857d9ea892820771b4ad837bc1b5df8a6fc4a1a5823d49fbb67682b",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/housing_random/2/metrics.json",
+  "absolute_residual_cutoff": 0.8178587518253972
+}

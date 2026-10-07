@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "method": "non_saturating_r1_final_epoch",
+      "metric_protocol_version": 3,
+      "seed": 0,
+      "sample": 0,
+      "inference_seconds_including_metrics": 0.8797650299966335,
+      "psnr": {
+        "mean": 23.65328582048416,
+        "image_bootstrap_ci95": [
+          23.27071480369568,
+          24.019726084053513
+        ]
+      },
+      "ssim": {
+        "mean": 0.9254082272946834,
+        "image_bootstrap_ci95": [
+          0.9199794865697623,
+          0.930332312054932
+        ]
+      },
+      "lpips": {
+        "mean": 0.1570276107499376,
+        "image_bootstrap_ci95": [
+          0.15042639149422757,
+          0.16401834627694917
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 1.3432131766273336e-05,
+        "image_bootstrap_ci95": [
+          7.35500002769629e-06,
+          2.1971086542024178e-05
+        ]
+      },
+      "delta_e76": {
+        "mean": 13.36210313796997,
+        "image_bootstrap_ci95": [
+          12.746745892077683,
+          14.031798436507582
+        ]
+      },
+      "chroma": {
+        "mean": 11.867123179286718,
+        "image_bootstrap_ci95": [
+          11.02423618426174,
+          12.696762093149125
+        ]
+      }
+    }
+  ],
+  "final_epoch": 20,
+  "validation_loss": 0.086455496144481,
+  "selected_epoch_in_training": 0,
+  "checkpoint_sha256": "55e92916a5f53a0463a6a444fe277ac4d5186129ab0e3e92a31133cabfc03bd9",
+  "training_state_sha256": "42a377e07a4c9a04a74ef3df6667242cdf05fbbdc9d09a3edb39e7b9f5b715d1",
+  "training_metrics_sha256": "f0eee350fea4a1a11e93219015de85e104191b06a20da058cd058fcaed2ccecc",
+  "warm_start_sha256": "d8365e26f498b9f7787bbd32afc94477a79d2220292a2344b711d63eccf11fd9",
+  "numeric_sha256": {
+    "_scores": "907c41770daef25dd610eebd09b377a174afd03b1c9817799a7ea2df11f8b1c1",
+    "_gallery": "c82240a18a4d40e341671e0515909c1836714a0bb3c3f0ab5a5cb2ee8562cc88"
+  },
+  "protocol": "Follow-up designed after validation retained many initial models: score every final epoch20 EMA without test-based selection. Metrics use float images; galleries are uint8 display arrays. These are diagnostic endpoints, separate from validation-selected deployment checkpoints."
+}

@@ -2,6 +2,7 @@
 
 import argparse
 import json
+from importlib.resources import files
 from pathlib import Path
 
 from threadpoolctl import threadpool_limits
@@ -28,6 +29,7 @@ def main():
             "generative_colorization",
             "generative_super_resolution",
             "modern_tabular",
+            "classical",
             "modern_vision",
             "external_ddcolor",
             "external_ct2",
@@ -52,7 +54,12 @@ def main():
     )
     args = parser.parse_args()
     path = args.config or Path("configs") / (args.study + ".json")
-    config = json.loads(path.read_text())
+    if args.config is None and not path.exists():
+        config = json.loads(
+            files("learning_lab").joinpath("resources/configs", path.name).read_text()
+        )
+    else:
+        config = json.loads(path.read_text())
     config["study"] = args.study
     if args.data_root:
         config["data_root"] = args.data_root
@@ -104,6 +111,8 @@ def main():
             )
         if args.study == "modern_tabular":
             config.update(iterations=20, depths=[6])
+        if args.study == "classical":
+            config.update(trees=8, stacking_folds=2)
         if args.study.startswith("external_"):
             config.update(test_images=8, samples=2)
         if args.study == "natural_denoising":
@@ -165,6 +174,8 @@ def main():
         from learning_lab.generative import experiment
     elif args.study == "modern_tabular":
         from learning_lab.modern_tabular import experiment
+    elif args.study == "classical":
+        from learning_lab.classical import experiment
     elif args.study == "modern_vision":
         from learning_lab.modern_vision import experiment
     elif args.study.startswith("external_"):

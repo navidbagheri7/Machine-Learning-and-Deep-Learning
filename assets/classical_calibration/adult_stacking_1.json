@@ -1,0 +1,42 @@
+{
+  "task": "classification",
+  "dataset": "adult",
+  "family": "stacking",
+  "seed": 1,
+  "features": [
+    "age",
+    "education_num",
+    "capital_gain",
+    "capital_loss",
+    "hours_per_week",
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "categorical": [
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "checkpoint_sha256": "5fa52f8e3301efa9c8f7640779244ce7c034571328931c20e29cd66b462def25",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/adult/1/metrics.json",
+  "temperature": 0.9665320579140965,
+  "conformal_cutoff": 0.5995705307718022,
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": [
+    "at most $50,000",
+    "above $50,000"
+  ]
+}

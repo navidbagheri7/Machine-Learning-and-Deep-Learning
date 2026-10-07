@@ -25,5 +25,8 @@ They execute short numerical demonstrations and do not launch the full training 
 | [17 Native boosting](17_native_boosting.ipynb) | Compare categorical learning, calibrated decisions and geographic interval failure |
 | [18 Modern transfer](18_modern_transfer.ipynb) | Inspect limited-label ConvNeXt selection, calibration and corruption |
 | [19 Natural denoising](19_natural_denoising.ipynb) | Compare wavelets and a frozen transformer under noise mismatch |
+| [20 Classical prediction](20_classical_prediction.ipynb) | Compare 243 selected classifiers/regressors, nested stacking and shifted intervals |
+| [21 Clustering geometry](21_clustering_geometry.ipynb) | Contrast centroid/mixture/graph/adaptive density with rejected-point coverage |
+| [22 Adversarial objectives](22_adversarial_objectives.ipynb) | Check critic signs, RGB penalties, shared warm starts and retained initial models |
 
 Regenerate all outputs with `python scripts/execute_notebooks.py`. Fresh-kernel execution is required for every public notebook; output errors fail the release checks.

@@ -32,6 +32,19 @@ def main():
     torch.set_num_threads(4)
     state = torch.load(args.checkpoint, map_location="cpu", weights_only=True)
     method, config = state["method"], state["config"]
+    supported = {
+        "l1",
+        "gan",
+        "cvae",
+        "diffusion",
+        "direct_finetune",
+        "hinge_sn",
+        "non_saturating_r1",
+        "least_squares",
+        "wasserstein_gp",
+    }
+    if method not in supported or config["task"] not in {"colorization", "super_resolution"}:
+        parser.error("Checkpoint identity is not a supported restoration model")
     if method not in ["cvae", "diffusion"] and args.samples != 1:
         parser.error("Deterministic checkpoints produce one output; use --samples 1")
     model = (
@@ -80,6 +93,8 @@ def main():
         {
             "method": method,
             "task": config["task"],
+            "checkpoint_policy": state.get("checkpoint_policy", "validation_selected"),
+            "selected_epoch": state.get("best_epoch"),
             "seed": args.seed,
             "diffusion_steps": args.steps if method == "diffusion" else None,
             "checkpoint_sha256": hashlib.sha256(args.checkpoint.read_bytes()).hexdigest(),

@@ -28,6 +28,34 @@ experiments with measurable limitations and explicit resource differences.
 | External adapters | Source revision and clean tracked content checked; released checkpoint hashes checked; strict state loading | DDColor, CT2, BigColor, SwinIR and Real-ESRGAN references stay outside the repository; package carries expected pins; adapters and differing licenses stated |
 | Checkpoint deployment | Architecture rebuilt from saved metadata; initial pretrained encoder unnecessary | Saved restoration, native boosting and ConvNeXt inference commands; schema and numerical checks separate from training |
 | Scientific artifacts | Figures generated from numerical evidence; fixed attributed gallery identities | Full-precision public score arrays; uint8 gallery arrays used only for display, never scoring; report regenerates without raw data or models |
+| Classical method coverage | Common held-out roles; each base learner owns preprocessing, including stacking's inner CV | 243 selected models spanning linear/discriminant/neighbor/kernel/tree/bagging/boosting/voting/stacking families; warnings, candidate costs and deployment identities retained |
+| Clustering coverage | Labels withheld from fitting/selection; count priors and full-data scaling explicit | 63 centroid/mixture/Ward/spectral/DBSCAN/HDBSCAN fits; all-points ARI and accepted-point silhouette read alongside coverage |
+| Controlled GAN objectives | Seed-specific shared warm starts, identical generator budgets, direct fine-tuning control; validation includes epoch0 | Hinge/SN, logistic/R1, least-squares/SN and WGAN-GP; fixed-condition RGB penalties and unsuccessful updates preserved |
+| Interactive evidence | Saved results identified by source/measurement hash; live Bayesian calculation checked independently | Eight browser concepts; mobile and default/range checks; every display PNG compared to source pixels; no test-based deployment selection |
+
+## Coverage extension review
+
+The extension preserves fitting modules and historical evidence where their mathematical
+contracts remain sound. Classical methods contribute useful assumptions and controls;
+modern practice adds native boosting, calibrated decisions, uncertainty, transfer,
+contrastive representations and transformer/generative references. Publication readiness
+does not follow from a method's age or from the number of included algorithms.
+
+The review inspected numerical primitives, fitting/evaluation roles, model selection,
+precision conventions, external adapters, checkpoint inference and artifact packaging.
+The substantive additions are described in [classical comparisons](classical_results.md),
+[density/coverage comparisons](clustering_results.md), [GAN objectives](adversarial_results.md)
+and [the concept explorer](14_interactive_explorer.md). Review findings include missing
+installed-config defaults, omitted HTML/templates in source archives, dependency on
+matching device assignment when resuming queued GAN fits, and browser range rounding
+that made labels disagree with numerical controls. Each has a specific correction and
+verification path. Training records bind the actual fitting components; later inference
+and display extensions do not rewrite those historical source identities.
+
+Clustering preserves exact fitted-space representations alongside display coordinates.
+The validator compares reconstructed data numerically across library/BLAS environments,
+then checks recorded fingerprints against the preserved bytes. This avoids treating
+platform-dependent last-bit SVD differences as different scientific data.
 
 ## Validation refinements and metric versioning
 
@@ -193,3 +221,13 @@ default Gaussian window, rather than silently asserting equality to another metr
 
 Professional readiness requires all requested reference experiments and validation
 to complete. The [work log](upgrade_worklog.md) tracks that acceptance boundary.
+
+### Recovery precision scope
+
+[CPU epoch recovery](../assets/adversarial_resume_audit.json) compares complete
+trainable and EMA weights, critic, optimizer/scheduler state, independent RNG streams
+and post-resume losses bitwise for both R1 and WGAN-GP. Timings are excluded.
+The [GPU probe](../assets/adversarial_gpu_precision_probe.json) failed bitwise
+comparison: variation was already present in the first epoch, before interruption,
+despite equal final RNG streams. This supports the documented CPU recovery check
+and preserves the GPU limitation; it does not establish GPU bitwise recovery.

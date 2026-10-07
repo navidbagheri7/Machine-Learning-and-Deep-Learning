@@ -130,6 +130,51 @@
       "elapsed_seconds": 3558.376300305128
     }
   },
+  "extensions": {
+    "validate_classical.py": {
+      "status": "passed",
+      "protocols": 15,
+      "selected_models": 243,
+      "independent_metrics": true,
+      "isolated_roles": true,
+      "private_models_required": false
+    },
+    "report_clustering.py": {
+      "status": "passed",
+      "fitted_models": 63,
+      "independently_recomputed_metrics": true,
+      "source_and_data_hashes": true
+    },
+    "validate_adversarial.py": {
+      "status": "passed",
+      "protocols": 20,
+      "independently_recomputed_image_means": true,
+      "all_epochs_completed": true,
+      "selection_includes_initial_model": true,
+      "shared_seed_specific_warm_starts": true,
+      "source_and_numeric_hashes": true,
+      "private_checkpoints_required": false
+    },
+    "report_adversarial_endpoints.py": {
+      "status": "passed",
+      "endpoint_evaluations": 20,
+      "fixed_epoch": 20,
+      "independent_image_means": true,
+      "original_training_preserved": true,
+      "source_and_numeric_hashes": true,
+      "new_training_updates": 0
+    },
+    "validate_explorer.py": {
+      "status": "passed",
+      "source_bound": true,
+      "measured_models": 243,
+      "clustering_fits": 63,
+      "restoration_views": 396,
+      "image_array_checks": 1188,
+      "browser_presets": 207,
+      "html_sha256": "8a91d1716aa1a29b1ea11dce41569ba1d22267f4c399ab8b96125dee04ea9773"
+    }
+  },
   "notebooks": [
     {
       "name": "01_gaussian_posterior.ipynb",
@@ -206,10 +251,22 @@
     {
       "name": "19_natural_denoising.ipynb",
       "executed_cells": 4
+    },
+    {
+      "name": "20_classical_prediction.ipynb",
+      "executed_cells": 5
+    },
+    {
+      "name": "21_clustering_geometry.ipynb",
+      "executed_cells": 5
+    },
+    {
+      "name": "22_adversarial_objectives.ipynb",
+      "executed_cells": 5
     }
   ],
-  "publishable_files": 597,
-  "public_bytes": 169794896,
-  "release_source_config_sha256": "59aba4e39b02667e43ff672e81aa6aa6f0c88b3998dbd0977d04bec3e055f14e",
+  "publishable_files": 1642,
+  "public_bytes": 401099762,
+  "release_source_config_sha256": "b68e913d78cf6cf0d51911da79aa56ee097c3768acd62964419e211ee8d4981c",
   "issues": []
 }

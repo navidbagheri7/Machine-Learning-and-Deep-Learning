@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "device": "cuda:2",
+  "device": "cuda:1",
   "tasks": [
     "colorization"
   ],
@@ -117,7 +117,7 @@
   "test_photo_id": 453040,
   "script_sha256": "c80bc6a6b14bc5a8623472f60b4f630bc88635d35bf7189abb657774c9053dd4",
   "source_sha256": {
-    "scripts/restore_generative.py": "1f93e10148f1c0571fdccd93e7061d36650037dd9d362592c064d8cec021dd7c",
+    "scripts/restore_generative.py": "68aa9ba92e5fcd568733387e062621735b8ec6fd2a0a5ae78f1d6ef1de4e8d64",
     "scripts/restore_external.py": "7a3e4afa48b68e5ca16fb5fe86b1d2b77552a6db9d01f7fd9037a3eebda968ed",
     "src/learning_lab/generative.py": "eee73d0bb111b96f205dc60af15d1670142d98d61874fad3b081ee3bec5ba38c",
     "src/learning_lab/restoration.py": "6cb6ec91e95146fd5dc05f6d3628e3227cd004496cdc2313e017332e84a0015c",

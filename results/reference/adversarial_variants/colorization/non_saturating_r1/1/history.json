@@ -1,0 +1,328 @@
+[
+  {
+    "epoch": 0,
+    "validation_loss": 0.08354681252967566,
+    "train": {},
+    "elapsed_seconds": 0
+  },
+  {
+    "epoch": 1,
+    "train": {
+      "objective": 0.09929235243797302,
+      "generator_gradient_norm": 0.1851795620918274,
+      "pixel_l1": 0.07211073128134013,
+      "feature_l1": 0.08000170332193375,
+      "real_score": 0.1472582674678415,
+      "fake_score": -0.10082407587673516,
+      "lazy_r1_penalty": 0.0003480240536518977,
+      "critic_objective": 1.334216492652893,
+      "generator_adversarial": 0.7590682744979859
+    },
+    "validation_loss": 0.08488757465966046,
+    "elapsed_seconds": 22.009253587573767
+  },
+  {
+    "epoch": 2,
+    "train": {
+      "objective": 0.10045717473328114,
+      "generator_gradient_norm": 0.18945212745666504,
+      "pixel_l1": 0.07244961108267307,
+      "feature_l1": 0.08022790741920471,
+      "real_score": 0.21019266445375978,
+      "fake_score": -0.16441459772922098,
+      "critic_objective": 1.3112026059627533,
+      "generator_adversarial": 0.7986688644886016,
+      "lazy_r1_penalty": 0.000567068899050355
+    },
+    "validation_loss": 0.08537579444237053,
+    "elapsed_seconds": 22.13626715261489
+  },
+  {
+    "epoch": 3,
+    "train": {
+      "objective": 0.1006644506752491,
+      "generator_gradient_norm": 0.18965806286036968,
+      "pixel_l1": 0.07234248760342597,
+      "feature_l1": 0.08048881973326207,
+      "real_score": 0.2330552790965885,
+      "fake_score": -0.1888918891735375,
+      "critic_objective": 1.2971254992485046,
+      "generator_adversarial": 0.8124319938421249,
+      "lazy_r1_penalty": 0.0006347189731895923
+    },
+    "validation_loss": 0.08508586650714278,
+    "elapsed_seconds": 22.030410937964916
+  },
+  {
+    "epoch": 4,
+    "train": {
+      "objective": 0.10103491735458374,
+      "generator_gradient_norm": 0.19172547879815102,
+      "pixel_l1": 0.07238961338251829,
+      "feature_l1": 0.08076520492136478,
+      "real_score": 0.26164242655038833,
+      "fake_score": -0.21547947975061835,
+      "critic_objective": 1.2808337504863738,
+      "generator_adversarial": 0.8265261611938477,
+      "lazy_r1_penalty": 0.0007398989610373973
+    },
+    "validation_loss": 0.08751841471530497,
+    "elapsed_seconds": 21.710071775130928
+  },
+  {
+    "epoch": 5,
+    "train": {
+      "objective": 0.10082463760674,
+      "generator_gradient_norm": 0.1889462280869484,
+      "pixel_l1": 0.07200083166360854,
+      "feature_l1": 0.08078276008367538,
+      "real_score": 0.27820476253703236,
+      "fake_score": -0.2315601953137666,
+      "lazy_r1_penalty": 0.0009213391076773405,
+      "critic_objective": 1.2834626972675323,
+      "generator_adversarial": 0.8353196066617966
+    },
+    "validation_loss": 0.08626677619758993,
+    "elapsed_seconds": 21.268539680168033
+  },
+  {
+    "epoch": 6,
+    "train": {
+      "objective": 0.10056356149911881,
+      "generator_gradient_norm": 0.18889043332636357,
+      "pixel_l1": 0.07170363489538431,
+      "feature_l1": 0.08096520729362965,
+      "real_score": 0.2779884639903903,
+      "fake_score": -0.23247176516195758,
+      "critic_objective": 1.2811860237121582,
+      "generator_adversarial": 0.8357572646141053,
+      "lazy_r1_penalty": 0.0009033135641366243
+    },
+    "validation_loss": 0.08678494323976338,
+    "elapsed_seconds": 22.268964492715895
+  },
+  {
+    "epoch": 7,
+    "train": {
+      "objective": 0.1007226829379797,
+      "generator_gradient_norm": 0.1883487419784069,
+      "pixel_l1": 0.07177728928625583,
+      "feature_l1": 0.08121231943368912,
+      "real_score": 0.28366664483770726,
+      "fake_score": -0.23873508187010883,
+      "critic_objective": 1.2790250704288482,
+      "generator_adversarial": 0.8381772946119308,
+      "lazy_r1_penalty": 0.0009139130376279354
+    },
+    "validation_loss": 0.0867441016016528,
+    "elapsed_seconds": 21.72657206840813
+  },
+  {
+    "epoch": 8,
+    "train": {
+      "objective": 0.10024316382408142,
+      "generator_gradient_norm": 0.18716106349229814,
+      "pixel_l1": 0.07133728204667568,
+      "feature_l1": 0.08101041269302368,
+      "real_score": 0.2819368458278477,
+      "fake_score": -0.23665699023380876,
+      "critic_objective": 1.2811424894332886,
+      "generator_adversarial": 0.837715993642807,
+      "lazy_r1_penalty": 0.0009321338050067425
+    },
+    "validation_loss": 0.08661657432094216,
+    "elapsed_seconds": 21.588123036548495
+  },
+  {
+    "epoch": 9,
+    "train": {
+      "objective": 0.09980471952259541,
+      "generator_gradient_norm": 0.1916094877719879,
+      "pixel_l1": 0.07092319797724485,
+      "feature_l1": 0.08099264535307885,
+      "real_score": 0.2808761862926185,
+      "fake_score": -0.23492014609277248,
+      "lazy_r1_penalty": 0.0009427801370620728,
+      "critic_objective": 1.2832091636657714,
+      "generator_adversarial": 0.8366312334537506
+    },
+    "validation_loss": 0.0850181687856093,
+    "elapsed_seconds": 22.145779732614756
+  },
+  {
+    "epoch": 10,
+    "train": {
+      "objective": 0.09947650669515133,
+      "generator_gradient_norm": 0.18857804928719998,
+      "pixel_l1": 0.07056530024111271,
+      "feature_l1": 0.08091259022057057,
+      "real_score": 0.28401744317635896,
+      "fake_score": -0.23881018735934048,
+      "critic_objective": 1.278717945098877,
+      "generator_adversarial": 0.8387158763408661,
+      "lazy_r1_penalty": 0.0009190498832613229
+    },
+    "validation_loss": 0.0871202361304313,
+    "elapsed_seconds": 22.012971753254533
+  },
+  {
+    "epoch": 11,
+    "train": {
+      "objective": 0.099023257791996,
+      "generator_gradient_norm": 0.1924569172114134,
+      "pixel_l1": 0.07016388063132763,
+      "feature_l1": 0.08080519795417786,
+      "real_score": 0.2810572839099914,
+      "fake_score": -0.2351876711025834,
+      "critic_objective": 1.2800985863208771,
+      "generator_adversarial": 0.8369298760890961,
+      "lazy_r1_penalty": 0.0009124203734099865
+    },
+    "validation_loss": 0.08542485488578677,
+    "elapsed_seconds": 21.72761050797999
+  },
+  {
+    "epoch": 12,
+    "train": {
+      "objective": 0.09855317367613316,
+      "generator_gradient_norm": 0.18976775260269643,
+      "pixel_l1": 0.06975145521014929,
+      "feature_l1": 0.08067039977014065,
+      "real_score": 0.2777949145603925,
+      "fake_score": -0.23336554550938307,
+      "critic_objective": 1.2807155654430389,
+      "generator_adversarial": 0.8350579133033752,
+      "lazy_r1_penalty": 0.000902405759319663
+    },
+    "validation_loss": 0.08637959056068212,
+    "elapsed_seconds": 22.029556101188064
+  },
+  {
+    "epoch": 13,
+    "train": {
+      "objective": 0.09811138153076172,
+      "generator_gradient_norm": 0.18551594607532024,
+      "pixel_l1": 0.06934156785905361,
+      "feature_l1": 0.08052555555105209,
+      "real_score": 0.2759010190218687,
+      "fake_score": -0.23411333834938705,
+      "lazy_r1_penalty": 0.0009310039673000575,
+      "critic_objective": 1.2836785633563996,
+      "generator_adversarial": 0.8345489853620529
+    },
+    "validation_loss": 0.08541677868925035,
+    "elapsed_seconds": 21.802853430621326
+  },
+  {
+    "epoch": 14,
+    "train": {
+      "objective": 0.09789218479394912,
+      "generator_gradient_norm": 0.18712020047008993,
+      "pixel_l1": 0.06905414659529924,
+      "feature_l1": 0.08063279278576374,
+      "real_score": 0.2794191834665835,
+      "fake_score": -0.23654977625003085,
+      "critic_objective": 1.2788999574184419,
+      "generator_adversarial": 0.8371559432744979,
+      "lazy_r1_penalty": 0.000898272616788745
+    },
+    "validation_loss": 0.08714385307393968,
+    "elapsed_seconds": 21.367973960004747
+  },
+  {
+    "epoch": 15,
+    "train": {
+      "objective": 0.09787242355942725,
+      "generator_gradient_norm": 0.18642114350199698,
+      "pixel_l1": 0.06901220043003559,
+      "feature_l1": 0.08061008702218532,
+      "real_score": 0.28174333819933234,
+      "fake_score": -0.2397340089250356,
+      "critic_objective": 1.2769311735630036,
+      "generator_adversarial": 0.8384354927539825,
+      "lazy_r1_penalty": 0.0008976548630744218
+    },
+    "validation_loss": 0.08603972475975752,
+    "elapsed_seconds": 21.660278348252177
+  },
+  {
+    "epoch": 16,
+    "train": {
+      "objective": 0.0973469877243042,
+      "generator_gradient_norm": 0.18878221368789672,
+      "pixel_l1": 0.06855567563325167,
+      "feature_l1": 0.0803947032392025,
+      "real_score": 0.27940915966033936,
+      "fake_score": -0.23504188312217594,
+      "critic_objective": 1.278479602575302,
+      "generator_adversarial": 0.8366053171157837,
+      "lazy_r1_penalty": 0.0008915213216096163
+    },
+    "validation_loss": 0.08689902815967798,
+    "elapsed_seconds": 21.369528327137232
+  },
+  {
+    "epoch": 17,
+    "train": {
+      "objective": 0.09698028245568276,
+      "generator_gradient_norm": 0.19151717431843282,
+      "pixel_l1": 0.06818143309652805,
+      "feature_l1": 0.08038210137188434,
+      "real_score": 0.279327781137079,
+      "fake_score": -0.23738355891406537,
+      "lazy_r1_penalty": 0.0009366434346884489,
+      "critic_objective": 1.280182453393936,
+      "generator_adversarial": 0.837076678276062
+    },
+    "validation_loss": 0.08648206479847431,
+    "elapsed_seconds": 21.735071460716426
+  },
+  {
+    "epoch": 18,
+    "train": {
+      "objective": 0.09699097681045532,
+      "generator_gradient_norm": 0.18914081013202666,
+      "pixel_l1": 0.06824359778314829,
+      "feature_l1": 0.08046509057283402,
+      "real_score": 0.27662769671157,
+      "fake_score": -0.234446130361408,
+      "critic_objective": 1.2797584075927735,
+      "generator_adversarial": 0.8338807619810105,
+      "lazy_r1_penalty": 0.0009113099928945303
+    },
+    "validation_loss": 0.08662389125674963,
+    "elapsed_seconds": 20.06788469851017
+  },
+  {
+    "epoch": 19,
+    "train": {
+      "objective": 0.09681157848238944,
+      "generator_gradient_norm": 0.18614468847215176,
+      "pixel_l1": 0.06795578285306692,
+      "feature_l1": 0.08029322431981564,
+      "real_score": 0.2884468251056969,
+      "fake_score": -0.24512825857289136,
+      "critic_objective": 1.2761312556266784,
+      "generator_adversarial": 0.8405905967950821,
+      "lazy_r1_penalty": 0.000954321114346385
+    },
+    "validation_loss": 0.08662269648630172,
+    "elapsed_seconds": 20.779165675863624
+  },
+  {
+    "epoch": 20,
+    "train": {
+      "objective": 0.09667457485198974,
+      "generator_gradient_norm": 0.1877496027201414,
+      "pixel_l1": 0.06786487633734942,
+      "feature_l1": 0.08030021588504314,
+      "real_score": 0.2815472792647779,
+      "fake_score": -0.24054410386271774,
+      "critic_objective": 1.2770234580039979,
+      "generator_adversarial": 0.838233292222023,
+      "lazy_r1_penalty": 0.0009189909566193819
+    },
+    "validation_loss": 0.08669128618203104,
+    "elapsed_seconds": 21.508760035969317
+  }
+]

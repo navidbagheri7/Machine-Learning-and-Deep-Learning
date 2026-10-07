@@ -1,3 +1,50 @@
+# Version 1.3 validation — 2026-10-07
+
+The comparison and interactive extension adds 36 complete reference protocols to
+the preserved 32-protocol release, plus 20 separate fixed-endpoint evaluations.
+Preparation remains local; the author publishes the repositories.
+
+- 243 classical classifiers/regressors across three fitting seeds; isolated fitting,
+  selection and probability/conformal roles; every saved prediction and interval
+  reproduced by deployment inference.
+- 63 transductive clustering fits, including adaptive density/noise handling and
+  full/variational mixture models, with independently reconstructed diagnostics.
+- 20 full controlled restoration fits, each completing 20 fine-tuning epochs;
+  17 retained their warm start under validation. All 20 fixed final-epoch EMA
+  endpoints are scored separately, preserving unsuccessful updates.
+- All 40 selected/final generator checkpoints pass real non-square observations,
+  repeated fresh-process PNG output, identity/dimension checks and fixed galleries.
+  The thirteen earlier local/external deployment commands also pass with current code.
+- 22 English walkthroughs, 130 code cells, execute in fresh kernels. All 44 tests
+  pass in the source environment and from the installed wheel outside the checkout.
+- Eight interactive concepts, 207 browser presets, 390px mobile checks and live
+  Bayesian numerical agreement; 1,188 PNG/array pairs independently verified.
+- CPU R1/WGAN-GP interrupted recovery reproduces the complete final train state
+  bitwise. The unsuccessful GPU bitwise probe is preserved with pre-interruption
+  variation; GPU bitwise recovery is not claimed.
+- Defaults are bundled in the wheel; the source archive includes examples, templates,
+  HTML, figures and public numerical evidence. Source-archive notebooks, installed
+  tests, bundled CLI and offline classical integration pass; [distribution evidence](../assets/distribution_import_audit.json) records their scope.
+
+Read [classical results](classical_results.md), [clustering](clustering_results.md),
+[adversarial comparisons](adversarial_results.md), [fixed endpoints](adversarial_endpoints.md),
+[the demo guide](14_interactive_explorer.md) and [validation](validation.json).
+Local checks do not claim that hosted GitHub Actions has run.
+
+## Publish locally prepared version 1.3
+
+Create an empty `learning-generalization-lab` repository:
+
+```bash
+git remote add origin YOUR_REPOSITORY_URL
+git push -u origin main
+git push origin v1.3.0
+```
+
+The browser preview can be enabled manually with GitHub Pages; see the demo guide.
+
+---
+
 # Version 1.2 local validation — 2026-10-07
 
 All requested ML/DL reference protocols and local release checks completed. The

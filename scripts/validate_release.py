@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 from pathlib import Path
 from urllib.parse import unquote
 
@@ -439,6 +440,60 @@ def main():
             )
             for name, expected_hash in audit["source_sha256"].items():
                 assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == expected_hash
+        for filename, count in [
+            ("adversarial_inference_audit.json", 40),
+            ("adversarial_resume_audit.json", 2),
+        ]:
+            audit = json.loads((ROOT / "assets" / filename).read_text())
+            assert audit["status"] == "passed" and len(audit["checks"]) == count
+            for name, expected_hash in audit["source_sha256"].items():
+                assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == expected_hash
+            if count == 40:
+                config = json.loads((ROOT / "configs/adversarial_variants.json").read_text())
+                assert {
+                    (r["task"], r["method"], r["seed"], r["policy"]) for r in audit["checks"]
+                } == {
+                    (task, method, seed, policy)
+                    for task in config["tasks"]
+                    for method in config["methods"]
+                    for seed in config["seeds"]
+                    for policy in ["validation_selected", "fixed_final_epoch_ema"]
+                }
+                for row in audit["checks"]:
+                    family = (
+                        "adversarial_endpoints"
+                        if row["policy"] == "fixed_final_epoch_ema"
+                        else "adversarial_variants"
+                    )
+                    metrics = json.loads(
+                        (
+                            ROOT
+                            / "results/reference"
+                            / family
+                            / row["task"]
+                            / row["method"]
+                            / str(row["seed"])
+                            / "metrics.json"
+                        ).read_text()
+                    )
+                    assert row["checkpoint_sha256"] == metrics["checkpoint_sha256"]
+                    assert row["fixed_gallery_max_absolute_error"] <= (
+                        1 if family == "adversarial_endpoints" else 1e-5
+                    )
+            else:
+                assert audit["device"] == "cpu" and all(
+                    r["final_train_state_and_rng_bitwise_equal"] and r["losses_bitwise_equal"]
+                    for r in audit["checks"]
+                )
+        probe = json.loads((ROOT / "assets/adversarial_gpu_precision_probe.json").read_text())
+        assert (
+            probe["status"] == "bitwise_check_failed"
+            and probe["first_epoch"][0] != probe["first_epoch"][1]
+        )
+        assert (
+            hashlib.sha256((ROOT / "scripts/report_resume_precision.py").read_bytes()).hexdigest()
+            == probe["reporting_script_sha256"]
+        )
         foundation = json.loads((ROOT / "assets/foundation_inference_audit.json").read_text())
         assert len(foundation["checks"]) == 16
         assert foundation["invalid_noise_settings_rejected"]
@@ -490,8 +545,25 @@ def main():
                     if re.search(r"[\u0600-\u06ff]", text):
                         issues.append(f"{path.name}: untranslated output")
         notebooks.append({"name": path.name, "executed_cells": executed})
-    if len(notebooks) != 19:
-        issues.append("Expected nineteen executed walkthroughs")
+    if len(notebooks) != 22:
+        issues.append("Expected twenty-two executed walkthroughs")
+    extensions = {}
+    for script, evidence in [
+        ("sync_packaged_configs.py", None),
+        ("validate_classical.py", "classical_validation.json"),
+        ("report_clustering.py", "clustering_validation.json"),
+        ("validate_adversarial.py", "adversarial_validation.json"),
+        ("report_adversarial_endpoints.py", "adversarial_endpoints_validation.json"),
+        ("validate_explorer.py", "explorer_validation.json"),
+    ]:
+        command = [sys.executable, str(ROOT / "scripts" / script)]
+        if evidence is None:
+            command.append("--check")
+        completed = subprocess.run(command, cwd=ROOT, text=True, capture_output=True)
+        if completed.returncode:
+            issues.append(f"Extension validation failed: {script}: {completed.stderr[-1200:]}")
+        elif evidence:
+            extensions[script] = json.loads((ROOT / "docs" / evidence).read_text())
     public = subprocess.run(
         ["git", "ls-files", "-co", "--exclude-standard"],
         cwd=ROOT,
@@ -570,6 +642,7 @@ def main():
     report = {
         "status": "passed" if not issues else "failed",
         "studies": results,
+        "extensions": extensions,
         "notebooks": notebooks,
         "publishable_files": len(public),
         "public_bytes": sum((ROOT / n).stat().st_size for n in public),

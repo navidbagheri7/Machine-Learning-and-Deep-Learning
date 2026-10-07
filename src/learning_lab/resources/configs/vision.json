@@ -1,0 +1,16 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "device": "cuda:2",
+  "image_root": "/data/tii/Image_data/cifar10/raw",
+  "pretrained_weights": "/data/navid.bagheri-shouraki/ML_data/models/torch/hub/checkpoints/resnet18-f37072fd.pth",
+  "label_budget": 5000,
+  "epochs": 50,
+  "ssl_epochs": 40,
+  "full_epochs": 80,
+  "output": "results/reference/vision"
+}

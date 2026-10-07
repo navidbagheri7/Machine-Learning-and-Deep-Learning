@@ -1,0 +1,64 @@
+{
+  "status": "bitwise_check_failed",
+  "method": "non_saturating_r1",
+  "scope": "Two-epoch, eight-image, worker-zero CUDA probe. First-epoch differences occur before the injected interruption; this does not establish a recovery defect or GPU bitwise reproducibility.",
+  "first_epoch": [
+    {
+      "epoch": 1,
+      "train": {
+        "objective": 0.09530240297317505,
+        "generator_gradient_norm": 0.49049384891986847,
+        "pixel_l1": 0.06300022825598717,
+        "feature_l1": 0.12500005215406418,
+        "real_score": 0.009838395519182086,
+        "fake_score": 0.009498207829892635,
+        "lazy_r1_penalty": 0.0002660286263562739,
+        "critic_objective": 1.3888729810714722,
+        "generator_adversarial": 0.6776084005832672
+      },
+      "validation_loss": 0.07914497330784798
+    },
+    {
+      "epoch": 1,
+      "train": {
+        "objective": 0.09530240297317505,
+        "generator_gradient_norm": 0.4905010759830475,
+        "pixel_l1": 0.06300022825598717,
+        "feature_l1": 0.12500005215406418,
+        "real_score": 0.009838394587859511,
+        "fake_score": 0.009498200379312038,
+        "lazy_r1_penalty": 0.0002660286263562739,
+        "critic_objective": 1.3888729810714722,
+        "generator_adversarial": 0.6776083707809448
+      },
+      "validation_loss": 0.07914498820900917
+    }
+  ],
+  "final_weight_differences": {
+    "model": {
+      "changed_tensors": 83,
+      "maximum_absolute_difference": 0.0002466673031449318
+    },
+    "ema": {
+      "changed_tensors": 83,
+      "maximum_absolute_difference": 2.468004822731018e-06
+    },
+    "critic": {
+      "changed_tensors": 19,
+      "maximum_absolute_difference": 0.00021665007807314396
+    }
+  },
+  "final_rng_equal": {
+    "rng": true,
+    "loader_rng": true,
+    "penalty_rng": true,
+    "cuda_rng": true
+  },
+  "private_checkpoint_sha256": [
+    "8c4c6fb151b035d5505235c83892ea8bb7ba64fc649021fa6a794501ff6137bf",
+    "a9fb8569a6cb594d6d09d1cfbf25766aef2ba82ad1abe6ff4e2129d29dde4695"
+  ],
+  "reporting_script_sha256": "b683b602d3e5ca016cd4bd1c1c567b150c7d38f48850626496558a72077e6528",
+  "successful_recovery_evidence": "assets/adversarial_resume_audit.json",
+  "claim": "CPU recovery is bitwise verified for R1 and WGAN-GP; GPU bitwise recovery is not claimed."
+}

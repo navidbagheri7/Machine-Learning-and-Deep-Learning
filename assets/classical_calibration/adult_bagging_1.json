@@ -1,0 +1,42 @@
+{
+  "task": "classification",
+  "dataset": "adult",
+  "family": "bagging",
+  "seed": 1,
+  "features": [
+    "age",
+    "education_num",
+    "capital_gain",
+    "capital_loss",
+    "hours_per_week",
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "categorical": [
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "checkpoint_sha256": "ba0d51abc19aec3827f09f94e1257479d66167ee6c655571b36bf2c62f553fac",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/adult/1/metrics.json",
+  "temperature": 1.1405242582708697,
+  "conformal_cutoff": 0.5706841041017128,
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": [
+    "at most $50,000",
+    "above $50,000"
+  ]
+}

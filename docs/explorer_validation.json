@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "source_bound": true,
+  "measured_models": 243,
+  "clustering_fits": 63,
+  "restoration_views": 396,
+  "image_array_checks": 1188,
+  "browser_presets": 207,
+  "html_sha256": "8a91d1716aa1a29b1ea11dce41569ba1d22267f4c399ab8b96125dee04ea9773"
+}

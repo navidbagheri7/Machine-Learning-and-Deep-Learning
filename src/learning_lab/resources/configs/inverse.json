@@ -1,0 +1,15 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "output": "results/reference/inverse",
+  "train_images": 1000,
+  "validation_images": 40,
+  "test_images": 150,
+  "patch_samples": 12000,
+  "patch_sizes": [4, 8, 12, 16, 20, 28],
+  "components": [4, 12],
+  "em_iterations": 300,
+  "controlled_sigma": 30,
+  "noise_candidates": [5, 10, 20, 30, 50],
+  "course_validation": 60,
+  "course_calibration": 30
+}

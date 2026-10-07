@@ -18,7 +18,18 @@ Requested on 2026-10-07. Publication remains local; the owner will publish.
 - After RL is completed and validated, rebuild the Convex optimization project around
   its original theory, examples and assignments with executed solver comparisons.
 
-## Current state
+## Version 1.3 extension completed locally
+
+All 15 classical protocols (243 selected models), the 63-fit clustering study,
+20 controlled restoration fits and 20 fixed-endpoint evaluations are complete.
+The eight-concept local browser explorer includes every fitted seed and fixed
+restoration photograph. Independent scientific checks, forty new checkpoint inference
+checks, thirteen refreshed legacy commands, 44 source/installed tests, 22 fresh-kernel
+walkthroughs and 207 browser presets pass. Distributable imports and archive notebook
+execution are checked independently of the development checkout.
+The preserved version 1.2 status below describes the prior release.
+
+## Prior release state
 
 The ML/DL upgrade is complete locally as version 1.2.0. All 32 reference protocols,
 19 fresh-kernel notebooks (115 code cells), 38 tests, saved-model inference,

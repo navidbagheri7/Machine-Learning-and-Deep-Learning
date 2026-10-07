@@ -1,0 +1,7 @@
+{
+  "output": "results/reference/unsupervised",
+  "seeds": [0, 1, 2],
+  "cases": ["variable_density", "wine", "digits"],
+  "methods": ["kmeans", "gmm", "variational_gmm", "agglomerative", "spectral", "dbscan", "hdbscan"],
+  "scope": "Transductive unsupervised benchmarks. Class labels are diagnostic only. Known cluster counts are declared priors for count-constrained families; density families determine count and noise. Full-data PCA/scaling is explicit, with no held-out-generalization claim."
+}

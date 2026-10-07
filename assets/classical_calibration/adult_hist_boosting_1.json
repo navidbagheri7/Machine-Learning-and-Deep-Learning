@@ -1,0 +1,42 @@
+{
+  "task": "classification",
+  "dataset": "adult",
+  "family": "hist_boosting",
+  "seed": 1,
+  "features": [
+    "age",
+    "education_num",
+    "capital_gain",
+    "capital_loss",
+    "hours_per_week",
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "categorical": [
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "checkpoint_sha256": "77249ad3de10212682427780c07ac775975be2369a13fbd9375961fef81f43e4",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/adult/1/metrics.json",
+  "temperature": 0.9878493923709876,
+  "conformal_cutoff": 0.5650087164692112,
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": [
+    "at most $50,000",
+    "above $50,000"
+  ]
+}

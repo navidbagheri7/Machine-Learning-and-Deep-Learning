@@ -1,0 +1,42 @@
+{
+  "task": "classification",
+  "dataset": "adult",
+  "family": "adaboost",
+  "seed": 0,
+  "features": [
+    "age",
+    "education_num",
+    "capital_gain",
+    "capital_loss",
+    "hours_per_week",
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "categorical": [
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "checkpoint_sha256": "7e242762d5b0a9a83187999c134f3cc957b2d5f8a4ec6711fca12352365a9338",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/adult/0/metrics.json",
+  "temperature": 0.13220120204116995,
+  "conformal_cutoff": 0.6105940698092047,
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": [
+    "at most $50,000",
+    "above $50,000"
+  ]
+}

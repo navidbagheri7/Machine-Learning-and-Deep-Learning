@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.3.0 — 2026-10-07
+
+- Added 243 validation-selected classical classifiers/regressors across three seeds,
+  including discriminant, neighbor, kernel, regularized, bagging, boosting and ensemble families.
+- Kept preprocessing inside stacking folds; exported calibration and verified saved-model
+  predictions and uncertainty against every held-out observation.
+- Added 63 centroid/mixture/graph/adaptive-density fits with count priors, full-data ARI,
+  accepted-point silhouette, coverage and explicit transductive preprocessing.
+- Added controlled conditional GAN objective comparisons with shared seed-specific starts,
+  direct fine-tuning controls, R1 and Wasserstein penalties, and validation retaining epoch0.
+- Scored all twenty fixed final EMA endpoints separately, exposing changes hidden
+  by validation retaining the warm start; deployment selection remains independent.
+- Added eight interactive concepts, source-bound galleries, analytic browser calculations,
+  mobile checks and repository preview screenshots, plus three executed walkthroughs.
+- Bundled installed default configs, complete source-archive templates/HTML/CSV examples,
+  public numerical validators and a detailed component inventory.
+
 ## 1.2.0 — 2026-10-07
 
 - Added a hashed 16,000/400/400, 256px benchmark from original CC BY photographs,

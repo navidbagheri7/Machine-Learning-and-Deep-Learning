@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "method": "non_saturating_r1_final_epoch",
+      "metric_protocol_version": 3,
+      "seed": 1,
+      "sample": 0,
+      "inference_seconds_including_metrics": 0.8754466073587537,
+      "psnr": {
+        "mean": 23.679861032962798,
+        "image_bootstrap_ci95": [
+          23.289811638116838,
+          24.061987193644047
+        ]
+      },
+      "ssim": {
+        "mean": 0.9253973507881165,
+        "image_bootstrap_ci95": [
+          0.9202687306441366,
+          0.9301770373694599
+        ]
+      },
+      "lpips": {
+        "mean": 0.1574134445609525,
+        "image_bootstrap_ci95": [
+          0.15112496818520596,
+          0.1645786151814973
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 8.36809332605437e-06,
+        "image_bootstrap_ci95": [
+          5.210090050188798e-06,
+          1.2081945803193881e-05
+        ]
+      },
+      "delta_e76": {
+        "mean": 13.30440463244915,
+        "image_bootstrap_ci95": [
+          12.675615137398244,
+          13.98740283858776
+        ]
+      },
+      "chroma": {
+        "mean": 12.00793401747942,
+        "image_bootstrap_ci95": [
+          11.234366163261235,
+          12.789667971976101
+        ]
+      }
+    }
+  ],
+  "final_epoch": 20,
+  "validation_loss": 0.08669128618203104,
+  "selected_epoch_in_training": 0,
+  "checkpoint_sha256": "de5f21f60b16c82c125978974ec6f8b7e14935d0166b135bd2b6f4641b64a361",
+  "training_state_sha256": "308106e0eb76acea69ce07d97875b45e38fd89ed6818289d755e924705e519db",
+  "training_metrics_sha256": "dd78bb633d4496caa6f767384100ffb35eeeb14daaedc36dbcfb4aaf0c7580f7",
+  "warm_start_sha256": "b743fa73157933731d3235c25733a2f164b4cfbb9b1ec694638af2579e574cf9",
+  "numeric_sha256": {
+    "_scores": "91fa862f401f88490878b59ae35620b471cf650567fbccad9db688b9320c7977",
+    "_gallery": "474ac7940c3ab95786651e2f2ac1f9c3c656582d3167fb161daca9e494d30f1e"
+  },
+  "protocol": "Follow-up designed after validation retained many initial models: score every final epoch20 EMA without test-based selection. Metrics use float images; galleries are uint8 display arrays. These are diagnostic endpoints, separate from validation-selected deployment checkpoints."
+}

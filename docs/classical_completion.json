@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "protocols": 15,
+  "fitted_models": 243,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "scope": "Three classical classification datasets, two Housing evaluation protocols; modern native boosting and deep studies preserved separately"
+}

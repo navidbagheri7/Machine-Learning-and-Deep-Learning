@@ -20,6 +20,21 @@ natural-image denoising under noise mismatch. [Measured comparisons](docs/modern
 [implementation audit](docs/13_implementation_audit.md) separate practical gains from
 remaining failures. The [upgrade work log](docs/upgrade_worklog.md) records current completion.
 
+Open the [interactive explorer](docs/explorer.html) locally by double-clicking it, or
+serve the repository with `python -m http.server 8000` and visit
+`http://localhost:8000/docs/explorer.html`. It runs entirely in your browser.
+The [demo guide](docs/14_interactive_explorer.md) explains all eight concepts,
+controls, evidence and optional GitHub Pages setup.
+
+![Interactive restoration comparison](assets/previews/restoration_desktop.png)
+
+The completed comparison extension adds **243 classical prediction models** across
+five dataset/split cases and three seeds, **63 clustering fits**, and **20 controlled
+restoration fits** spanning hinge, logistic/R1, least-squares and WGAN-GP objectives.
+[Validation-selected comparisons](docs/adversarial_results.md) and
+[20 fixed final-epoch diagnostics](docs/adversarial_endpoints.md) expose unsuccessful
+updates as well as useful changes. These are separate deployment and diagnostic policies.
+
 ![Measured outcomes across restoration and prediction](assets/modern_overview.png)
 
 The [modern report](docs/modern_results.md) includes every stochastic draw, paired
@@ -30,6 +45,9 @@ why a grayscale baseline's mean PSNR can misrepresent typical color recovery.
 
 | Study | Substantial question | Implementations and evidence |
 |---|---|---|
+| [Classical prediction](docs/classical_results.md) | Which modeling assumptions and ensembles work on each split? | LDA/QDA, logistic/linear models, KNN, SVM/SVR, bagging, forests, boosting, voting and leakage-aware stacking; separate selection/calibration; saved-model prediction sets and intervals |
+| [Clustering geometry](docs/clustering_results.md) | When do density, connectivity and Gaussian assumptions recover structure? | KMeans, full/variational GMM, Ward, spectral, DBSCAN and HDBSCAN; Wine, Digits and unequal-density mixtures; noise coverage and external diagnostics |
+| [Adversarial objectives](docs/adversarial_results.md) | What do objective and regularization changes actually change? | Matched warm starts, five controlled families, both tasks and seeds; validation includes epoch zero; fixed final endpoints reveal effects hidden by selection |
 | [Conditional colorization](docs/12_generative_restoration.md) | Does a generative model improve appearance, exact color, or diversity? | Direct predictor, conditional GAN, CVAE and velocity diffusion; frozen DDColor, CT2 and BigColor; 256px source photographs, prior-only sampling, LPIPS, DeltaE and dispersion |
 | [Modern 4× super-resolution](docs/12_generative_restoration.md) | Which details are reconstructed, and which depend on a learned prior? | Matched local direct/GAN/CVAE/diffusion models, frozen SwinIR and Real-ESRGAN; actual LR observations, fidelity/perception comparisons and blur/noise/JPEG stress tests |
 | [Native boosting](docs/modern_results.md#native-categorical-boosting) | Do categorical and quantile models improve practical decisions? | CatBoost with isolated selection and calibration; subgroup reliability, permutation diagnostics, deployable prediction sets and intervals; random/geographic housing protocols |
@@ -59,7 +77,7 @@ galleries, complete training curves, paired-image evidence, and an audit of the 
 provided briefs and corrupted images.
 
 <!-- MODERN_RESULTS_START -->
-**Completed modern measurements:** ConvNeXt fine-tuning reaches **96.65%** CIFAR-10 accuracy with 5,000 fitting labels, 5,000 selection/calibration labels and ImageNet initialization (three seeds); native CatBoost reaches Adult AUROC **0.9271** (three seeds). SwinIR achieves SR PSNR **27.13 dB**; local diffusion achieves LPIPS **0.1486** with PSNR **23.88 dB**, showing a fidelity/perception tradeoff. Geographic interval failure, noise mismatch, ambiguous colors and weak CVAE diversity remain visible in the [modern report](docs/modern_results.md). The laboratory contains 32 completed reference protocols and 19 English walkthroughs.
+**Completed modern measurements:** ConvNeXt fine-tuning reaches **96.65%** CIFAR-10 accuracy with 5,000 fitting labels, 5,000 selection/calibration labels and ImageNet initialization (three seeds); native CatBoost reaches Adult AUROC **0.9271** (three seeds). SwinIR achieves SR PSNR **27.13 dB**; local diffusion achieves LPIPS **0.1486** with PSNR **23.88 dB**, showing a fidelity/perception tradeoff. Geographic interval failure, noise mismatch, ambiguous colors and weak CVAE diversity remain visible in the [modern report](docs/modern_results.md). The laboratory contains 68 completed reference protocols, 20 additional fixed-endpoint evaluations and 22 English walkthroughs.
 <!-- MODERN_RESULTS_END -->
 
 <!-- RESTORATION_PREVIEW_START -->
@@ -107,6 +125,7 @@ python scripts/make_portable_configs.py --help
 python scripts/restore_generative.py --help
 python scripts/restore_external.py --help
 python scripts/predict_modern.py --help
+python scripts/predict_classical.py --help
 ```
 
 Saved-model inference does not require training data. Model checkpoints and downloaded
@@ -123,6 +142,8 @@ python -m learning_lab.cli classification --data-root .local/data --device cpu -
 python -m learning_lab.cli regression --data-root .local/data --device cpu
 python -m learning_lab.cli generalization
 python -m learning_lab.cli kernels
+python scripts/run_classical.py --dataset breast_cancer --seed 0 --quick
+python scripts/run_clustering.py --help
 ```
 
 Image training requires the official CIFAR-10 Python archive and ResNet18 ImageNet weights.

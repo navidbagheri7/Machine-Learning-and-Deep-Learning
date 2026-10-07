@@ -1,0 +1,16 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "output": "results/reference/external_ddcolor",
+  "device": "cuda:0",
+  "task": "colorization",
+  "reference": "ddcolor",
+  "test_images": 400,
+  "evaluation_batch_size": 1,
+  "samples": 4,
+  "source_root": "/data/navid.bagheri-shouraki/ML_data/models/DDColor",
+  "source_revision": "2adb63f2656ac41cbdf7b894cddd94121a3faf13",
+  "model_root": "/data/navid.bagheri-shouraki/ML_data/models/ddcolor_modelscope",
+  "model_revision": "060f67494e31883a4b13cb27f889f3154847ada4",
+  "weight_sha256": "d81711971ec59200da26d5e8a1afae8dd3778d495ea8ad7a7dadc769f403f7e7",
+  "input_size": 512
+}

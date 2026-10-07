@@ -1,0 +1,42 @@
+{
+  "task": "classification",
+  "dataset": "adult",
+  "family": "catboost",
+  "seed": 1,
+  "features": [
+    "age",
+    "education_num",
+    "capital_gain",
+    "capital_loss",
+    "hours_per_week",
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "categorical": [
+    "workclass",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "checkpoint_sha256": "06827e4c78e2d90bd59adc3620085ba7361c6dfbdba3aa5ec21284a14bf4652d",
+  "alpha": 0.1,
+  "metrics_path": "results/reference/classical/adult/1/metrics.json",
+  "temperature": 0.9692111256105107,
+  "conformal_cutoff": 0.5609958713968092,
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": [
+    "at most $50,000",
+    "above $50,000"
+  ]
+}

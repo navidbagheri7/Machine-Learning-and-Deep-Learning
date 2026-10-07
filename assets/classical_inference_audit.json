@@ -1,0 +1,2201 @@
+{
+  "status": "passed",
+  "selected_models": 243,
+  "all_test_predictions_and_uncertainty_exact": true,
+  "checks": [
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "logistic",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_logistic_0.json",
+      "metadata_sha256": "bb798855111cdc30c3a266a5e7e1cc88667f92580bc496c00e740da7493a257e",
+      "checkpoint_sha256": "b687d06879b3068e149f187d4889105bf648dfd5119fd0d0335b0b45aedb8fd5"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "lda",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_lda_0.json",
+      "metadata_sha256": "c6f70f27b20082390b52bc7624e6a94a443709014d2abdfa0c44e911b72ea07f",
+      "checkpoint_sha256": "fe58ed689c8c5c61a9524770726e699725c93002fae271a709aec4a20d58b2b7"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "qda",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_qda_0.json",
+      "metadata_sha256": "3dfaf78903ef5cf04c3b34906231b306e4952261ab90a8595eb25751cf3e43fc",
+      "checkpoint_sha256": "9b361497b7409b1b0a3956def2b076e1574c418283fdea4cf205f6df9655795a"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "naive_bayes",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_naive_bayes_0.json",
+      "metadata_sha256": "9229ecca8f5ad282e81ed570ca18045f1dcbefc3386d759a6818af0cf084d043",
+      "checkpoint_sha256": "cea1a4545dec3928ad5476f03cba74c8628736eccfa5f1ffb0fc8a889920a485"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "knn",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_knn_0.json",
+      "metadata_sha256": "229226d0d558d773528cee7d33804cb72d889fde10d3edbd3ade64fd92c3f511",
+      "checkpoint_sha256": "f618b318435512c1f994c6fec0cdde4e7c6446b6477378158e9f3bd80daf2449"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "tree",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_tree_0.json",
+      "metadata_sha256": "e415b04f7a0268d71342aeccd3bdf4b9037534a79b4979ecf34a4d47f9b3a20a",
+      "checkpoint_sha256": "456c8a4d3bdf88cad5d930eef2463843ee303c2928077fe27bc10abe02dcef72"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "bagging",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_bagging_0.json",
+      "metadata_sha256": "b8552a0cfa311250dc0741d5cba3af2a0728a6e228dac9dedca44a828251f6e7",
+      "checkpoint_sha256": "dab351bd535b597b86a8d3dff86b1d6002fd46d7cbc44db52181465402703a2c"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "random_forest",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_random_forest_0.json",
+      "metadata_sha256": "672a94d24a4c03dad3c47fe809bcf21fdaa3bd6ddb8a031a89934f3cad7ae1b4",
+      "checkpoint_sha256": "d0bb2a7c40e92421672d073886c5d1727748e304172d0bfe0e45e4a69c6cf2a7"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "extra_trees",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_extra_trees_0.json",
+      "metadata_sha256": "0b0455399bc1d91ce71a157e287b7b71e9fe843265ee59e70c9fc8395b45a1c0",
+      "checkpoint_sha256": "960fb9d43981a82707dec5c940e54610b007270753efdfbe74e59330116e41ec"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "adaboost",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_adaboost_0.json",
+      "metadata_sha256": "6bec731efdafdc982ca4bcdb156e31d40a9060cf27770e777251acbd0bcbe7b0",
+      "checkpoint_sha256": "7e242762d5b0a9a83187999c134f3cc957b2d5f8a4ec6711fca12352365a9338"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "hist_boosting",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_hist_boosting_0.json",
+      "metadata_sha256": "3a7e3afce602c5e322df74a90afe4b60cf538d30ceb534cf9655d8473372849b",
+      "checkpoint_sha256": "3a08fc0536332f881d42973e625bce28fe64353cddb36e5c413aaf8d93f540aa"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "catboost",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_catboost_0.json",
+      "metadata_sha256": "0e4928a6e46e1b7064cac6bb58ef56d240eb9614b8e45e2a5bd57bd35fdca159",
+      "checkpoint_sha256": "0d0382ebbf3ccb17ca89a75dbd7c43dfaa560f573a3cf2f4743ab74235e19192"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "linear_svm",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_linear_svm_0.json",
+      "metadata_sha256": "a8fa8f4511b2dd68773367bc78045f202137fe4ab0a8561d83654793fded3612",
+      "checkpoint_sha256": "c18c4f8c9333c19671f07b35bd9d26f974b8e26797e3c8fe70529dd9045262a6"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "voting",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_voting_0.json",
+      "metadata_sha256": "93f4db9a73cb527010f0d568aa101a9acfb32fdd868d4912cb98e3b7bc4c829c",
+      "checkpoint_sha256": "6f8b2b48f9d9ec7cd53f340b46f04f660d35654803e072cdc94cbf570bcade1a"
+    },
+    {
+      "dataset": "adult",
+      "seed": 0,
+      "family": "stacking",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_stacking_0.json",
+      "metadata_sha256": "c94cfb7718b56f13f6cd72cc0e7a679308cc535c86ee5c7941ad4756bf47bb27",
+      "checkpoint_sha256": "6cadf3dab92a4dc28101d32810b56eb4503301db866d1ff53b244ed8eeb7a037"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "logistic",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_logistic_1.json",
+      "metadata_sha256": "f528999ce85ec416610528e9cc7e163059ea69344f31a33a03856a2ad65e8d5a",
+      "checkpoint_sha256": "1b7fadba70a477820dee6918889383ba21c7776f9472b07994b8cdfc4bab5c12"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "lda",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_lda_1.json",
+      "metadata_sha256": "4a61ba51604ae41660aa38f87ad9a3435da724393c53d4d05c2b44b7a2f8dca7",
+      "checkpoint_sha256": "35e5ff561765f82d576be11aa8ce3aed08a9be6f4e8e426f4007388d543d9da0"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "qda",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_qda_1.json",
+      "metadata_sha256": "e00f8fa70a04848b47f25b6599ef5bfd43307eb387d09704bc9be3ff84713eaf",
+      "checkpoint_sha256": "47dea2e590dd180a6377ffd06ed8758d0c77ce13a939914dd01745a98941188e"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "naive_bayes",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_naive_bayes_1.json",
+      "metadata_sha256": "96d0363b21c37abe09894e110c94f54f2f8eb968d800af0230c6ad971b049d64",
+      "checkpoint_sha256": "c77e611e0a4fc7ed1d8bd64d6c296421d0389214fcaed2173f3fe2e2357834f2"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "knn",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_knn_1.json",
+      "metadata_sha256": "9eafce184224be9a3148ae635ef8aa1b29b85b301e0a11daa683ff98cbb96fc5",
+      "checkpoint_sha256": "e612a5585efcd8d8fb84800f08ba7e7126e554c6fa4568ce95b44d77bdc7c625"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "tree",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_tree_1.json",
+      "metadata_sha256": "1a83f57ff6415bc6509cfab46e9223b2288849b8fa8ff09e0bdb01f011eac949",
+      "checkpoint_sha256": "ced4c2081f1b6a8b4e350c48d4bd81bbe76e941ac5d7ffa2715f93fede27532e"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "bagging",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_bagging_1.json",
+      "metadata_sha256": "ca097637912ace14bdd52f8b293a8e3457288af32fadb92c84b554eb4e35b188",
+      "checkpoint_sha256": "ba0d51abc19aec3827f09f94e1257479d66167ee6c655571b36bf2c62f553fac"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "random_forest",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_random_forest_1.json",
+      "metadata_sha256": "0d1531e5261ab22e6f51427103fceba4de7edfa0f3400084cb8e716ab197d727",
+      "checkpoint_sha256": "1cfc4ac2963d5fd68c555ccc1e4ce620ac8a532a75844f4e56d7ebdaa184d769"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "extra_trees",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_extra_trees_1.json",
+      "metadata_sha256": "c38fd8d35bd538beed3c50b9299109cf6f493eff721a60bd4ddddf93fcd3df3f",
+      "checkpoint_sha256": "c4689796fb6c11ea82b1f249fa1c607231d7e0194db8f48d0f05f6c3108d6b9b"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "adaboost",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_adaboost_1.json",
+      "metadata_sha256": "7326f99bc78f26fbf881897c4b32a2f5e74726df20e8196deeac2c943ce1c6c1",
+      "checkpoint_sha256": "b27fef2acbf2385c51e851c6fe4341a4a4db9cfede4db8162dc89bec06944332"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "hist_boosting",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_hist_boosting_1.json",
+      "metadata_sha256": "b3b4a1ddd565ca731dc3f8c144df472197168c2cf0880060e661d74af77e0dc7",
+      "checkpoint_sha256": "77249ad3de10212682427780c07ac775975be2369a13fbd9375961fef81f43e4"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "catboost",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_catboost_1.json",
+      "metadata_sha256": "265cbb43addc949546019df44a218dbd35f62b24dbf9748ab695ebd0bca0c159",
+      "checkpoint_sha256": "06827e4c78e2d90bd59adc3620085ba7361c6dfbdba3aa5ec21284a14bf4652d"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "linear_svm",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_linear_svm_1.json",
+      "metadata_sha256": "99a4d189bc57ee5919d9748497b092ce038df6833c552df133f1c872d210d1be",
+      "checkpoint_sha256": "286206c807f88d6442028e926ec4e79a2ba34e9168241f4b5c293052f87e06e7"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "voting",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_voting_1.json",
+      "metadata_sha256": "eb21954f824a146a209a41f529b276d69c7f5bc48e54bba0c98e5ce0e24c5764",
+      "checkpoint_sha256": "b84ebe45cb14c76afa669951ef232bf4409aee7801ef4ec5bb6a7be7f73c01c3"
+    },
+    {
+      "dataset": "adult",
+      "seed": 1,
+      "family": "stacking",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_stacking_1.json",
+      "metadata_sha256": "082d0e29b58ec9eb16fb586e196c206790b08a5bc6fe24e58baed737eb90853b",
+      "checkpoint_sha256": "5fa52f8e3301efa9c8f7640779244ce7c034571328931c20e29cd66b462def25"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "logistic",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_logistic_2.json",
+      "metadata_sha256": "f0ee0c7020c5cb942772206f889db803e931c5b930a519c661fbc0185e42c638",
+      "checkpoint_sha256": "b8d004d6914a57b328952dd6bde9d14ed6d5302aefa8b4ed41092010c406a3b8"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "lda",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_lda_2.json",
+      "metadata_sha256": "ae5ad1ee7bdb2dfb4d0ff80d98d46ff332d32042a5edaf5b19949e85e492e842",
+      "checkpoint_sha256": "282c30deec21bd053a8afbfcf588d8be75a90307dcefcfc44b219143d6e7a1a9"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "qda",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_qda_2.json",
+      "metadata_sha256": "ddbb4eef296806934ff1b6167738c644c4fab6939998295e8c4816d0cf5e57f7",
+      "checkpoint_sha256": "f85a6fee6c45453e11c31a004bbcb5313195683fec0af82f49f0c0013682b02a"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "naive_bayes",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_naive_bayes_2.json",
+      "metadata_sha256": "b32fe27d2e66c41f9a6aed873374389f0c1e5b6b3c6b6696ce516a66998b0f35",
+      "checkpoint_sha256": "9dfba13e72fb729e5d602facb7efdcf85f587a1c57a5ba3179d3e2fcf8697121"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "knn",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_knn_2.json",
+      "metadata_sha256": "c9c811561d9c7b57d5bd899a5ec8e7d1f24acc4176a3bfc677176cfe5f7597ce",
+      "checkpoint_sha256": "4158ba58e9d75e4389de831dfc032f2d4ce49c6f68938ea239539724e0dbffa0"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "tree",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_tree_2.json",
+      "metadata_sha256": "d667c4fd78267c93180f5a7f174b34af40ce6fb3a6d2b88fb0ce4b8158ed42b1",
+      "checkpoint_sha256": "5f571218df225482a5b6d5ec77fa5d12e07f8406a82eb0cce43dce18a037777f"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "bagging",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_bagging_2.json",
+      "metadata_sha256": "a50bea745a5676cc49a167238d87358dbae9347d70b2ca50ea5a19b8cd2a3693",
+      "checkpoint_sha256": "275d5953ffb0b59796d5a83d84c03bbd08cca79d1e4915281bd5b4ce4d29dc28"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "random_forest",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_random_forest_2.json",
+      "metadata_sha256": "45fafdc3caed98ac364e5bfe3d4de71a4f1bd150908b1ae5a2bdfa57361f0162",
+      "checkpoint_sha256": "ec0b5ec9256870ddf069afdec09c7405822114085f907661d6a35c55d17f6c24"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "extra_trees",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_extra_trees_2.json",
+      "metadata_sha256": "a2cbf5c70f422289999eee6156b091463976aa5a0baf09286dd14515667fceec",
+      "checkpoint_sha256": "ff5d7e593bd95acaac5891fc97833237de7d88288d06f491637ec7697b094d23"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "adaboost",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_adaboost_2.json",
+      "metadata_sha256": "ed41117e7c7d90f84a2177a7e0e2b85d57c983b203b5f4aca061bc7f5941c45e",
+      "checkpoint_sha256": "7e18ffdc83b55d561426f235afc7561a950d7756dee959673b33725c58ebfd44"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "hist_boosting",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_hist_boosting_2.json",
+      "metadata_sha256": "7b90d837a5f190fb99d6f2ae7c6728a95611b42e901e395493ab7f79f91fb456",
+      "checkpoint_sha256": "11aff45012000b3ae8c0e169a5c73ee80d10b7da7897baa259aa8cf4bece6ef0"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "catboost",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_catboost_2.json",
+      "metadata_sha256": "94b47b79882ad0b6b5047ad7bad64df2ca9935b00146e3af0ff2858b1dc79026",
+      "checkpoint_sha256": "24caf28bfcf3d03f9c306f16ff627d6371e78ba00c3c1ce21ebdeb5e437132d6"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "linear_svm",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_linear_svm_2.json",
+      "metadata_sha256": "4e5c82d6c13349256405aec9cb48fa0942e28252e58ebd65b4f8b526373f9f02",
+      "checkpoint_sha256": "af7a31f17d1febe60bff32e7425b601a266c5e1a18e174ddf72b557f4093306e"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "voting",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_voting_2.json",
+      "metadata_sha256": "4cdefcef4007df27f57b4627f7ca84fb2ff7f9fcbdc44191ee9c5e6e6528e469",
+      "checkpoint_sha256": "b48c87bf5a17699185beeaf009dd89294a4f0deb8efc9adaf6e52ae77143b8f7"
+    },
+    {
+      "dataset": "adult",
+      "seed": 2,
+      "family": "stacking",
+      "predictions": 16281,
+      "metadata_path": "assets/classical_calibration/adult_stacking_2.json",
+      "metadata_sha256": "a45f04f355255c8c52d4959b7407d51353df529ca6670396d479bdda6c791afb",
+      "checkpoint_sha256": "db727de58de6ba5d7fa2b15002b732024ff50990d4eb8043a329655f7977fde1"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "logistic",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_logistic_0.json",
+      "metadata_sha256": "90a68eeaca53ff6276516ec6f998bd767c936b2147acf77e43e783bbb46d26e7",
+      "checkpoint_sha256": "240384c9acc5e2126c6726defb5a135fc1365c06c92053b42ab17360675ab0e4"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "lda",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_lda_0.json",
+      "metadata_sha256": "f80a9922ea999d137d0781eb4d0da59e08215dbd27477ab2673b77de280d516b",
+      "checkpoint_sha256": "4e9eac1f7203583b628e67bbc2c2b1918158b7b365b546e9419cb349412389d1"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "qda",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_qda_0.json",
+      "metadata_sha256": "6ff7dbccbb0f8e1e2189ad67128bb702b07465b36daa2a49e1247f811158a2b5",
+      "checkpoint_sha256": "7040b34db40293b8ac2472a362ed3154896bc7a399508048191e45af144b1a58"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "naive_bayes",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_naive_bayes_0.json",
+      "metadata_sha256": "8946cb649d3c238116bef4cd25c0c29df81473c25323beafc45a311f07a0dd3b",
+      "checkpoint_sha256": "b74b5ed3d84aa33587054173f215353184b7d0b338416cc1cd5095595540b5c4"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "knn",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_knn_0.json",
+      "metadata_sha256": "44bbfb636f289e2301b5fac6bddb6f6f47ff07a43b10f9ae2bd4bb9d0a38fe65",
+      "checkpoint_sha256": "d275ca4d4aa01af29b0de51e14d06ed150a578849136172cf46d9b68cd23f3ed"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "tree",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_tree_0.json",
+      "metadata_sha256": "fe2ffc3562428391f85935fd79162f7a9d5b43b71784d580ecd5be9a923ff31b",
+      "checkpoint_sha256": "be18623c1e4872c1c5d0a366281e0dc45f2d5183da7a31229d81593bec402dee"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "bagging",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_bagging_0.json",
+      "metadata_sha256": "d5d4d21e46f947b02adf6b3ffc850f135a9e68f7c3027c6d7082837666870379",
+      "checkpoint_sha256": "4df733a0f2054350d2f7b1d6fd09df7ec7a85676cffc0cd5f44e385c020eb41d"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "random_forest",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_random_forest_0.json",
+      "metadata_sha256": "b8d0da76f99925693cb9b0618bd7156197af346784986f9ca1c4901a6b6e0b9e",
+      "checkpoint_sha256": "8148cb8986eed6714864c61b7aac41df898c56a1c6ae1ea86e30252b24902b6f"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "extra_trees",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_extra_trees_0.json",
+      "metadata_sha256": "11aa096ed4f346141fba84a4eb2c4f88df516afac174085b724f86c1742b7e96",
+      "checkpoint_sha256": "00418d62341eab3e452a0462a36031f26d60bf552fe3714ed15a6a0f278eb43b"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "adaboost",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_adaboost_0.json",
+      "metadata_sha256": "911fcfe420110febca3e3296ee2d42ebb7cad92d15be8f45e14e3a7d39075957",
+      "checkpoint_sha256": "2c9bdcdb3f62bad1995cc9bcba6bc5eb755dc33fb0d7fc00e36a7c041bbec4c1"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "hist_boosting",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_hist_boosting_0.json",
+      "metadata_sha256": "3060a1386fce9d7817f83a41e5137f5d780cf3fafe2e6af75189c2c359adb9b0",
+      "checkpoint_sha256": "7b2fd26f97ee028e0e65084e94ffa25afac2fa1184bb5b5af4f83479e627d971"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "catboost",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_catboost_0.json",
+      "metadata_sha256": "65e541d261ee447a2e070bad8d5481e3ec821212ad7e47ef414e32dadcf1c55a",
+      "checkpoint_sha256": "222312924715227c4bbfe593c4c46484fc96740705cb09051ac9fa1b8fa189f0"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "linear_svm",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_linear_svm_0.json",
+      "metadata_sha256": "913b37574b92fa76e90c84e560d24860f548db880560020d46bee59b24b10f99",
+      "checkpoint_sha256": "03121e0a811eb11d947d86cc0e1420cc62381e816a82085e892b7a40c8e9167d"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "rbf_svm",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_rbf_svm_0.json",
+      "metadata_sha256": "99c59b194a66fbe40d91928d42d0f35c536b935d2c25b3441eab275fabc79a11",
+      "checkpoint_sha256": "ada5111826581298a1400e6038cdee4c7af825dd5117b5ff00383521906789da"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "voting",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_voting_0.json",
+      "metadata_sha256": "fcc5e276e6d583a29d46ed3717c23fb0312864acd23cd1e08fdf3dc349928d43",
+      "checkpoint_sha256": "373d06e4289d3659128be8a606458f067c9bc2e9eddc6ea8bf8106b333866b8e"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 0,
+      "family": "stacking",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_stacking_0.json",
+      "metadata_sha256": "871145c2b221a08ab9a091922e7bc65ffdcc20b4576eaa6e9dd4eeea778777b3",
+      "checkpoint_sha256": "c948af4e5d753995d32e0c8607ead5c73429db76e7a98c700bea8d3b05d98bd5"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "logistic",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_logistic_1.json",
+      "metadata_sha256": "65ce45d97517370d3b2cc3da6e4f2ee4ef0f252099b118756cee0d34cd735244",
+      "checkpoint_sha256": "07ff177fb546a6f75ba31fd6b7e77c1cdcf1f4c7eac0a0195f73df697638b0a9"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "lda",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_lda_1.json",
+      "metadata_sha256": "bbd300fc8d2dbdc2144c1f39b95669ad465d187c385db874354df624b1271e04",
+      "checkpoint_sha256": "0c429d5e26bbef291b0df7efe5130965cfb640792e2c45fcd6516b3b8a00091e"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "qda",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_qda_1.json",
+      "metadata_sha256": "8cebca5ff141d78acf64af73c6ce59b812cb05e5ac18a3b47c37655c07f8507e",
+      "checkpoint_sha256": "1bf3eefd82516cac352af0c41641d50b52b34ec738780580d89aa69b1cd8d905"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "naive_bayes",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_naive_bayes_1.json",
+      "metadata_sha256": "00956a5671437097405d38bb3d095ec4fad7b570b28c0dbd42c2fd0e3b426b02",
+      "checkpoint_sha256": "333cf04c0c8bd080fff71c30dc2cd9b4f1f9624fd54ee3d208e485ad1e6ae6e3"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "knn",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_knn_1.json",
+      "metadata_sha256": "8a826f848bc66d5bb90e05c283ebb91cb14d9025e54cd70183b1255c31c34b3b",
+      "checkpoint_sha256": "b29a72f62aafd4c5a5cf104870008070078137064d60e683e1a15b305f92c451"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "tree",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_tree_1.json",
+      "metadata_sha256": "2bbc4ea3520f645f0351157d7cb018e43e6ab2f7ec8a361383f436f08e2f88e1",
+      "checkpoint_sha256": "c5a45670f47428e5cfe40e5994b992e18673494c18ea10537969fb3349d139c2"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "bagging",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_bagging_1.json",
+      "metadata_sha256": "696c032ce9a95ce0de83b2a805b2086d64689277dc046e048194f389c4ba47db",
+      "checkpoint_sha256": "3dde2f1d1a8384921dc052c11a2c19b1defd082f344e8bff0c3cd376e98a747b"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "random_forest",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_random_forest_1.json",
+      "metadata_sha256": "b30c28c0c3a667303cc3861df4c5e4f5b89e91ff796356ef27cc6b429a0a4103",
+      "checkpoint_sha256": "b8d2f556017260554238581c8fd31d19f55c8a82a1fe4feec841d2e5544475c6"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "extra_trees",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_extra_trees_1.json",
+      "metadata_sha256": "1c84abe0a3125526fb74ee74f20064f0a8fa971943349a67e091f67f1e17d772",
+      "checkpoint_sha256": "0a6cd87df6e66a15ef9bce1a92173f5a6da09be37def7968cca610bc4ab864ca"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "adaboost",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_adaboost_1.json",
+      "metadata_sha256": "c3fc13d367ab6a316ce55efc7e4a5792ed0b992f4e69c453521074a7cb759500",
+      "checkpoint_sha256": "f2b7d73c6d5863ae04b59cdf1f5374efc3acd3898628a12b51bfa35a2b97f6f2"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "hist_boosting",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_hist_boosting_1.json",
+      "metadata_sha256": "229ca4844b611da53a1b900ccfe7d4ffd7e6ef6510f38eb094b1455fb0b98cab",
+      "checkpoint_sha256": "5e5b5bda9b9493e5f8dbb495e585cc68704703371da9f4698b954bb235dc1597"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "catboost",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_catboost_1.json",
+      "metadata_sha256": "24cd2519450bbb8b5ba525c7a987a45e0a0f5c13f9047ea22b3a12837dd85c6e",
+      "checkpoint_sha256": "4bf0e0ef6ba40825f9430af184e9674e17154b6d17652c1c65a5aedb51026c28"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "linear_svm",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_linear_svm_1.json",
+      "metadata_sha256": "193a18a3c8d9364bc6c0f260a2c5e32f0dfd9f51c20ff3caa13e8a16ab0111ca",
+      "checkpoint_sha256": "9422f7d7688353b3469d086b11f7da0e5d663a87f70abef1d49c65df7bda656d"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "rbf_svm",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_rbf_svm_1.json",
+      "metadata_sha256": "f3e9f26cf2e1da740dd5ceca5e7d107902091badfeb524c4d574fff494c02b93",
+      "checkpoint_sha256": "47b7ff77f3663c594e984b3bc7097e56f14718df1407e07838387c14f631aa08"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "voting",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_voting_1.json",
+      "metadata_sha256": "d2f4661ace71e6e05f94c8e548e629bb0b2cea38f863fb56bc659c9dba141c65",
+      "checkpoint_sha256": "d8c14ee828ca5f477a91c9a70a7222c4ea4455bca9c5ee5ef6c5bafd6ee1e518"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 1,
+      "family": "stacking",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_stacking_1.json",
+      "metadata_sha256": "cb9defc98d3d69ea2ae5d4cc42d93597e9ffd2149fce481e4a9b8786774b96ab",
+      "checkpoint_sha256": "af2928377c156134897676e0eeb96f9c1983440e95302a143c56d86e8b65c398"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "logistic",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_logistic_2.json",
+      "metadata_sha256": "c2dd64aaddf0ba02773d30f39ee3c18cc9dd16432eed454367b5a6143d34ef1f",
+      "checkpoint_sha256": "eb183bb0892454df639d6691bcc8d6db83fee831f5be501763f04bf96b8ec7c2"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "lda",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_lda_2.json",
+      "metadata_sha256": "40800013a1a7e0a0453bc46b1b795763b0b6d5a362caa8fc56287e8447c843ea",
+      "checkpoint_sha256": "cd91dcb7eaa8311f935c3d96ba08382893840a614ab1010276913f97d92a0f8f"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "qda",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_qda_2.json",
+      "metadata_sha256": "eb5428f4baa2db61739822efa4a3f6769edf201ae8dd8cc01294dcd090252383",
+      "checkpoint_sha256": "4b1c8ea4cadd3c71f592a788eccb5c4191671f755c8c4999b53bb0df0a93f37f"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "naive_bayes",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_naive_bayes_2.json",
+      "metadata_sha256": "ca4b87a52eac8b9527f64c79c50f3518b1a5be5baf166b6b221cbf42de706033",
+      "checkpoint_sha256": "33d6a512e1f3e65df4265bb218b3a97aeeaf000f89e4b55fde4f8304413251fb"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "knn",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_knn_2.json",
+      "metadata_sha256": "535d81fb7a0af502796d4e1a5a02756e44c0855037df90243e8224eb68074bdb",
+      "checkpoint_sha256": "c4a7102a9f4b73a4b6f9c946d12b6adc60518fdab34757c2edfbfeb11221d5f5"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "tree",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_tree_2.json",
+      "metadata_sha256": "ebf009209240e3982b4fb2dfbc9a333e45b57390adc1632fde3094a095dc7ef4",
+      "checkpoint_sha256": "0e5aa6232584d77f892c906b9ec13c3ca6659105977f1afa6fd730c9cf4afbc8"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "bagging",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_bagging_2.json",
+      "metadata_sha256": "5ff7037e1e6d4e4592fd911356c757be6497a29f8274a7a72527128edc382c21",
+      "checkpoint_sha256": "704caf4ddcbbac9b3655a028c9d6864a9136b858879379fd0561e49cf6fa7e90"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "random_forest",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_random_forest_2.json",
+      "metadata_sha256": "c0e30e17b69c7a412b5949d6eb252ec06f456390c15700d7c76147df4cd052f5",
+      "checkpoint_sha256": "d12ecc4093b3d7aa3432e9973c814c7a961d9623a74ecbbcb4e5beea63e3cecd"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "extra_trees",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_extra_trees_2.json",
+      "metadata_sha256": "0fe42a2bb37d60a0039cb957a57468d19e72cbecef49654b94bed616ded64e6a",
+      "checkpoint_sha256": "c2e659dce1ef0a385662b38558eb02f580032d0f346274cd7cb39274dee2dd35"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "adaboost",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_adaboost_2.json",
+      "metadata_sha256": "54e3a02c94eea3dd2a028b19973c103b67f630d082123dc5c03becdf4e2e5c09",
+      "checkpoint_sha256": "6b07f45f6ac4b4a4c4c26a083f4dd97143e2fdddca49f55a7cb9b0e1c6bd3e73"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "hist_boosting",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_hist_boosting_2.json",
+      "metadata_sha256": "61c17a636375cd26bb23b2aa975e1b2cf22ff577da6eb6320c2abb876b863f41",
+      "checkpoint_sha256": "81c28ad07f265759f87bb14ab50cc1a5e30e557d901562ae9b23a34cda5051da"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "catboost",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_catboost_2.json",
+      "metadata_sha256": "0872403da1ba2bc369a93dc74ae29b16b0953e73f9479d076b3f871383177da8",
+      "checkpoint_sha256": "da31bf91593271170a56f3a500413e4839fb04d4c08a287a124b36fb91ecaf09"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "linear_svm",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_linear_svm_2.json",
+      "metadata_sha256": "44f42012ab8a202cfb034ed956ca8017607f9ab0fbc43323e7390836896dd8f2",
+      "checkpoint_sha256": "a3ee23aa1ed1fd0f4b9447eddba31a2ea7dd94129d1edcdd45523e50c53f5d2c"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "rbf_svm",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_rbf_svm_2.json",
+      "metadata_sha256": "54f503d2f2eef26398c0eddc09091992b923c606063cd551a4ac25ca587ee378",
+      "checkpoint_sha256": "6e3d2629282cf3a20ab6584ebd54e46fbe84acc5fb51dbfa5d9c57e25e443281"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "voting",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_voting_2.json",
+      "metadata_sha256": "90d014a7263ed50b054456d524bab7aff9125c3769c0d6356e738c590cf6a51f",
+      "checkpoint_sha256": "6ee987c0b41b93d7f2da36a8b36d0378cc159dff23bf550c8f74938f28a67cff"
+    },
+    {
+      "dataset": "breast_cancer",
+      "seed": 2,
+      "family": "stacking",
+      "predictions": 114,
+      "metadata_path": "assets/classical_calibration/breast_cancer_stacking_2.json",
+      "metadata_sha256": "9478f49badacae33cb50161c1c588873c611ca7739273812e23ea195ae66e258",
+      "checkpoint_sha256": "9f1ab2e7a79544e8e8a5b48933634e190dfde4e2748726ff87a683299470fa21"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "logistic",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_logistic_0.json",
+      "metadata_sha256": "1e683bf6e3ceb9b45a86044b91b500d858c72b12964dc74563bbe4cf986349b8",
+      "checkpoint_sha256": "89c5c800e01851395e5b2cb889c26b8e13796f89389e210a388bbd143862e094"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "lda",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_lda_0.json",
+      "metadata_sha256": "a51df648150b956f53544e2ee6dddccf249907e5f0bf1fd6d4c88df930243c0f",
+      "checkpoint_sha256": "ccfec9fabae7e5c125a033e2f7ec547f24c0f22cf2e258c619218c5ed7c3c2d4"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "qda",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_qda_0.json",
+      "metadata_sha256": "f1cd9f0479b3a9be75006d2ae338e10d7065cb91263a6d5d5f28ad0ed2b7d4ac",
+      "checkpoint_sha256": "eae826d46329283f7d67934e2e4aeb17963ac9da49c522ce28d9c242e60ae599"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "naive_bayes",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_naive_bayes_0.json",
+      "metadata_sha256": "172ade03e6962028a7badf10ec4ba954b35bfc64c58829f93885ea129ba9b7e9",
+      "checkpoint_sha256": "39d907ba60741ffc0b99eeb27c16e176159d3f56bf3956ea3e00c060b4500c74"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "knn",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_knn_0.json",
+      "metadata_sha256": "68422ca49e30315fa021240879e57fa428b9b72600799b047b47731fe0ffad41",
+      "checkpoint_sha256": "a4ab7c6e767895a6485f5af1835c3e9e9e60bb0a8802664db8ccd8f8a054674a"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "tree",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_tree_0.json",
+      "metadata_sha256": "b584da3e6b63a909de18763a25b5c128e1df41f75581ad628f239e41b20d1e1c",
+      "checkpoint_sha256": "cf69331543a5b4737144e421a63b853976bf84bb27b8bcf209fadf7e169b2de5"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "bagging",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_bagging_0.json",
+      "metadata_sha256": "7e482be37b5d0443778ccb3440cfe45cecced550815b5cfac41334fdedbbc64f",
+      "checkpoint_sha256": "f1e9e391f76f1ac9b93850bbab1d7b2d03f5cb38f28578d8b30ae0678774631d"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "random_forest",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_random_forest_0.json",
+      "metadata_sha256": "6106d4f15cf5fd61e8db00804f2c642f409abb1c1a6004ad0e38a4973620bb12",
+      "checkpoint_sha256": "8755d8494aec7a639d43e9503590274ab4d25aaeb45529c687a44a4b485421cf"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "extra_trees",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_extra_trees_0.json",
+      "metadata_sha256": "73280e9e4d384fe14740fe6b39e5425eb6e2c9ec4b428f007e21b0b3887a7bfb",
+      "checkpoint_sha256": "efae3d7862b1218c5972611069606607ee04fd9a7665679f556a56f1f6bd7f0a"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "adaboost",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_adaboost_0.json",
+      "metadata_sha256": "971833353216ed5cb51de08113d9a6c1c1215d37eba458ef7fe71e8c0be0396e",
+      "checkpoint_sha256": "b5f375947fbb2ef99212ea1c2f164f0ab8fc88463750bcf8938db2dfef6d3b74"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "hist_boosting",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_hist_boosting_0.json",
+      "metadata_sha256": "95a209d6c29650a415294bd87e57bd7fd0cc3a373975bcfb3614e433ad53b756",
+      "checkpoint_sha256": "d090ade1063e6562110edd2ac492cfca0dc6ca67882d0995ed90e42ec09343e6"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "catboost",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_catboost_0.json",
+      "metadata_sha256": "a8b9f25e935957511f904883c36576cb922fb2d247225b65b8ca09bd7ba5cec1",
+      "checkpoint_sha256": "9f71eb75aea3d47a8db3992bb79ebc74235a07f77ce87e051ef5954c86e0fa13"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "linear_svm",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_linear_svm_0.json",
+      "metadata_sha256": "2ad79adce3c73238ab55495cd341882039a66f884f29c4fa3a23996eeadae471",
+      "checkpoint_sha256": "5b8821566198254fa3b69a91a369754dc5cfe5f092f7561a8da1fb6c8c3bb687"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "rbf_svm",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_rbf_svm_0.json",
+      "metadata_sha256": "da4c0d17d0d62b151c1c6889e55d3b5c83727d4863943866edcef20ba9ac44ac",
+      "checkpoint_sha256": "c9844a2ed052ff84a5ab85a0fd95e030172650077c8fd6de0673c645c6a332b8"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "voting",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_voting_0.json",
+      "metadata_sha256": "824fb6468460319cda9408fcf4c9255ae11ffaeb5c8a9ab16e652f628da2c510",
+      "checkpoint_sha256": "861be6a1ee41021ba64998d68b1f4f6adce295a9247927d7e3f8bfdb1ea44d47"
+    },
+    {
+      "dataset": "digits",
+      "seed": 0,
+      "family": "stacking",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_stacking_0.json",
+      "metadata_sha256": "fff5f7597ef71eb05c824d34346161ddd6b8d719c51251afbefb4fe9b4a5d4b4",
+      "checkpoint_sha256": "e1554c6f393bffe7c9ade2bb847338f48793d362ef3c82a61f6fb9c16506aa89"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "logistic",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_logistic_1.json",
+      "metadata_sha256": "b5ab0ff6f729d0249db8a10e9f1a03d0c56f91cf4ba932ca6fee19264dddcf6e",
+      "checkpoint_sha256": "64bcd8338eef4f075c07ab0c2b61ddabba64431ab9cf36a4a473578519e15345"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "lda",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_lda_1.json",
+      "metadata_sha256": "4957f087488d37df458a2b1d56b3a68fe28625087786e49f5c50eab6dc7a7d16",
+      "checkpoint_sha256": "135ccb9088cfa1806a04ec90b5e1ef1d8135598c49ec23d44fcd43ce4fe95a44"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "qda",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_qda_1.json",
+      "metadata_sha256": "009e578ec5910e4ef6e0da271f593c391200f284397662f4710deb8a61739822",
+      "checkpoint_sha256": "b6d9e34bae697c222597d1837e8bd9e222166087c61eaf30435f2c491ff59d11"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "naive_bayes",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_naive_bayes_1.json",
+      "metadata_sha256": "9c380e1956951fbdafe02e89b6910e1eee85cb1504402f63814ed3a02dc2a1e4",
+      "checkpoint_sha256": "d3a5ced23e812e7107135c6885ebe4dde3b6b95abedc0803a21cad3b9f49776d"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "knn",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_knn_1.json",
+      "metadata_sha256": "b79220c6572791ebd02befadca1412627e4ae50886c03a1a3c5c5372663c3fd3",
+      "checkpoint_sha256": "ce934f1f4f67e531a3a1375f4189818fdee6c274482f055968a108d868269e67"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "tree",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_tree_1.json",
+      "metadata_sha256": "1862376cd0040b9c317e29a4e432eb8cad52cca1a6557b99c07bee247a9d594e",
+      "checkpoint_sha256": "88f694fa26440bb318d3424d77ab648ea6712a7fda5b58232509a65696116e49"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "bagging",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_bagging_1.json",
+      "metadata_sha256": "1be51812f8e58d761d5592133dc1a98ab4564634aa57d7cfc0d5d6b0bfc60728",
+      "checkpoint_sha256": "315120d0c1a82bb6e947d3345d276ddb7fd1a59cd418b4f707f23df8811d6bfc"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "random_forest",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_random_forest_1.json",
+      "metadata_sha256": "417c018c85f6c0bb1c268532e5de82a236dad5659106b6b468988995f8ffec13",
+      "checkpoint_sha256": "6b453bb52ef5204ebdea06e65b936fb13ca174c774e4163892a8d595e3ddcc4b"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "extra_trees",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_extra_trees_1.json",
+      "metadata_sha256": "067de45134206be87262739f41c934dacff229e024d009d2a2b8baa18b5ad11f",
+      "checkpoint_sha256": "430a88064328d012670d558cebdb7d818fc5ac1bc7e8e9ac025d81da6c9e43b8"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "adaboost",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_adaboost_1.json",
+      "metadata_sha256": "77eda4ef734e6e7fbb5c97d2c26d58c19069a43b3b03add69be43ba6fc141075",
+      "checkpoint_sha256": "b7e26d3da67d1ae2fa140dbcbc9aed0e8c354ceeb03342b17612e83faf18698c"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "hist_boosting",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_hist_boosting_1.json",
+      "metadata_sha256": "ee884a76b12f71781675c304a4f6a4587c13682ec1a5d54fdf5cdfe39c747987",
+      "checkpoint_sha256": "1d837531efa5f41bcbb2c1d0accde789a7f77095eb44440e340512534c983a64"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "catboost",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_catboost_1.json",
+      "metadata_sha256": "c880eecb17b2daaa3c610b7c5f8ea383f9256ce147608264e8c287650fde4fd4",
+      "checkpoint_sha256": "5894ef920216e146d28dfbad043a6d7a9252c142e1d90d906961c08b2478f6b2"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "linear_svm",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_linear_svm_1.json",
+      "metadata_sha256": "d166b622c430d5f1a70aab5ca97d60ddc7226362a49829ba44c465d85928f07f",
+      "checkpoint_sha256": "8e7b9b25a4e6348d10577f92b7de855c2021925fabb8cadada4af7c427183e5b"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "rbf_svm",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_rbf_svm_1.json",
+      "metadata_sha256": "f24b661577904c5500d4eba7526ce010470f625591a31ad2f03f896ec448990e",
+      "checkpoint_sha256": "d4d36d777949fff9800b5c211bc2ab0b800cbaceb573885b465db56223a3b221"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "voting",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_voting_1.json",
+      "metadata_sha256": "6317cbcb8fc8ea388d9033db34c65e8f78ba93c937f3da06f09f275f5275b581",
+      "checkpoint_sha256": "dc05051a5632deb963e283dfff8bf0daf5af1b25783d62005c189cff766b6afd"
+    },
+    {
+      "dataset": "digits",
+      "seed": 1,
+      "family": "stacking",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_stacking_1.json",
+      "metadata_sha256": "dcd8380931172290746e69b7fc6f3490bc89521cdf940c7e54df3413604f0c66",
+      "checkpoint_sha256": "f3b20d1864774ced61018da1b2b31b3d8a102edbf00b7f224a16811bea04eb46"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "logistic",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_logistic_2.json",
+      "metadata_sha256": "43e534fd2cc2ebf77af0f6346de9444d9880ad12a915f538dbdb0decd0bbede1",
+      "checkpoint_sha256": "f8ed38c80478ef313fda0aee6e0b1ad0e7a65ceb345e25346101a992659d5c44"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "lda",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_lda_2.json",
+      "metadata_sha256": "d544b378a075e96876d8184633e53e995b641ade8250f6b5515bb0fcb2f78823",
+      "checkpoint_sha256": "348d0cd59dda7f17ff184c7ac72b3a3506a93bddbb0200eb36c850f5589b01c5"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "qda",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_qda_2.json",
+      "metadata_sha256": "abd6188d7ec3c621c2892b841e3efa9ff9c974fe2192b53df4db24990ec0d174",
+      "checkpoint_sha256": "b5bac7310c9dea70bf7819dd3b052a570e204e653765b96c1e21bc9cac219563"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "naive_bayes",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_naive_bayes_2.json",
+      "metadata_sha256": "d824ab5d0d6f723307af41e05c711664c8b438a7e3c4345283ab2fe39a87143e",
+      "checkpoint_sha256": "60c812bb2554ed6ba99887df8f6e0c959d066ff723009d9a848d31bddbedbb79"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "knn",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_knn_2.json",
+      "metadata_sha256": "aa17498de90ffc6e084496816ef075585f874c58f4104c86eea6a29dc74f9693",
+      "checkpoint_sha256": "52cffd86a9282578ecbb4e53008931fe722f0b2df8c0acc493570118c0433df8"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "tree",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_tree_2.json",
+      "metadata_sha256": "146d1792a38d6e8883697d3ff6e79032817a30d77aabc75233b1ca3f36d85e5e",
+      "checkpoint_sha256": "f54ac77e97fa6208a5942c574a8ba6827447a489b7711e6c454eafadd9e3c00e"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "bagging",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_bagging_2.json",
+      "metadata_sha256": "a4bc332a33313c93837875457b8ddf13dac7a8f5f8fd5c4f4e9b9a1e1245d962",
+      "checkpoint_sha256": "80ee62c893d6269275309af0ff0f13dd952e5b094fb2c7b34ab3725d65808028"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "random_forest",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_random_forest_2.json",
+      "metadata_sha256": "73d7899afae1e2c72be4dc12acea117847417d4441362d5b3c76d904d20e4d72",
+      "checkpoint_sha256": "8b2782611542020986dd08f862f27b70fb7bb2ec8d44126de7e688da9c4327bc"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "extra_trees",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_extra_trees_2.json",
+      "metadata_sha256": "fdbbe7b5500a348489e5fa3e9b3b04025cea8c6d7e5fe55010b3ec6d03b1ba1f",
+      "checkpoint_sha256": "0ffb641203873820eca53947ce57aae863817e1172644681c8b203f7f7956043"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "adaboost",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_adaboost_2.json",
+      "metadata_sha256": "ce1a203eb3fddf747643a369e4eeeb0f1565b4fbfe39428e2ecf15efcb3a7d7c",
+      "checkpoint_sha256": "c690eeffa557314c09b5d36306610f4171b99faf5e3097154237c4b19993a890"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "hist_boosting",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_hist_boosting_2.json",
+      "metadata_sha256": "efce16130c3480179356c4efd5ae58dbdd2a22fd267a5f48f88b33ceba973ce5",
+      "checkpoint_sha256": "3f543ad8a34e44c34add49b03f146eb02145ab613b4f6524fae67c20167a4b83"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "catboost",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_catboost_2.json",
+      "metadata_sha256": "d2a547159ccf143457c5c15d2da35eba93a406236cecd11efd64f03b54219b74",
+      "checkpoint_sha256": "59864f1d930ee0944e31d6e68d6e67e41ad8ee94fb964d2d33c275152cc17980"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "linear_svm",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_linear_svm_2.json",
+      "metadata_sha256": "491c97fc8493ebac2bf85eed2c94d55c55b7cb829b483e70f74615eea777efa5",
+      "checkpoint_sha256": "077c953c78e5cbe2fb425d3a34b727cbc03f05b62775ce24121ca2dbb17b218e"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "rbf_svm",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_rbf_svm_2.json",
+      "metadata_sha256": "6ccfe692c932e576b4776b7c13b73e720fc5dd26624edecc827663bd16f43e47",
+      "checkpoint_sha256": "63c909b50c330dcf4b1cfa7d785740854b839fbb47b2d71f023e31106e39b984"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "voting",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_voting_2.json",
+      "metadata_sha256": "c48a8d443562f68f252fb1dbfc36b23972f18802f895afb3dc4db327ccd71d9a",
+      "checkpoint_sha256": "a8818c70c91c275a44ee2ef5038d3b3b2e49dda77b5c962fea9f30916f85e312"
+    },
+    {
+      "dataset": "digits",
+      "seed": 2,
+      "family": "stacking",
+      "predictions": 360,
+      "metadata_path": "assets/classical_calibration/digits_stacking_2.json",
+      "metadata_sha256": "01ebce506848a0e717fad4bad612f9bce83d097062d99af35277224d52d91cea",
+      "checkpoint_sha256": "e1c11db526f4eddc3045d6ada7a0bdff60bef7bdeb1dd9e7faac7776540027c8"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "ols",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_ols_0.json",
+      "metadata_sha256": "d55dad1414f37b99a0dc8fb24fa44668ee8e1fde1effe96ac8c6674842cd5ae6",
+      "checkpoint_sha256": "34f6fbee35e44960c103248ab27b3b735288de4931edb80b915775e08dfacbce"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "ridge",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_ridge_0.json",
+      "metadata_sha256": "9cd688e352bc725c1b004e626a0e0c08d6a0bbc0e3f3896a2568d0a8cbf5ed7d",
+      "checkpoint_sha256": "86dfe1d733c9a439df12d306134d9e83be9267e8046f18bad642ed2029f73470"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "lasso",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_lasso_0.json",
+      "metadata_sha256": "2b4abe0115240a176d59c28fafa4d0310950ce8e9aaaf5f6a1f6c8de5b6ec54e",
+      "checkpoint_sha256": "67501f7193a9aea154875a3ec236816d6cbf5850095a0b1917e5eae49a1d7e76"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "elastic_net",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_elastic_net_0.json",
+      "metadata_sha256": "1d0f430e2e13c5933cd28bf85067ee40e12c7d5ac2ae5453d7e572dd9067e316",
+      "checkpoint_sha256": "ab99732770eb5e15d7c92abf222f083f65554b8b88f8e9759746d1216590a1bd"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "bayesian_ridge",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_bayesian_ridge_0.json",
+      "metadata_sha256": "a6ca8650dc0037f0610fe6cb037f964341b458fbce9cf09b61c50c3bbaca89ed",
+      "checkpoint_sha256": "1933c2f99cf0bddf2bee8b0d7e6ea568b342286a033acb6821edd6962927fc63"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "huber",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_huber_0.json",
+      "metadata_sha256": "e670321ace8e1aacf0e8c7051763499c5f79ec47ffd67ba8f9fa26aa8aa7982e",
+      "checkpoint_sha256": "8eb1de3ba6eb70fe9408b47abb766869c34876087679e60b456c822a7db3318e"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "knn",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_knn_0.json",
+      "metadata_sha256": "006e5fc1b1cb467fa7d0b80a7dc35680b28cd74cfd9aba30c0913d452d7a2d60",
+      "checkpoint_sha256": "2f73de5867de0c944f5d4a868e2726648e69a78c87c20ad2bd39de2b928d7093"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "tree",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_tree_0.json",
+      "metadata_sha256": "6fb026a8862c50e83e8ab4c00911cd06946368cce3d217c9ef7d7359a3eb44c0",
+      "checkpoint_sha256": "edbf01cbebbd6824a744e524526db769d13aacef3b5301f5a63ab8858b9f1147"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "bagging",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_bagging_0.json",
+      "metadata_sha256": "4acc0d44258c911c4ef4b5c1bff87d2a14d15d41d57cab2a46bd6cde2c6a9224",
+      "checkpoint_sha256": "0f4c31ba11280f928585ee4a6a686c20dbdba1d5e9b346e794e2dfdeb298954b"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "random_forest",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_random_forest_0.json",
+      "metadata_sha256": "98ff8120db545e8804978863f43553a49f43feac06f02f3e325827663b519887",
+      "checkpoint_sha256": "390967ece376156580ddd27d97102a31a736ee607d956bb0d5c7b36284c5a0ec"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "extra_trees",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_extra_trees_0.json",
+      "metadata_sha256": "7524bfbc16e61cd0e09b3ca052d88b7a6848bbada5eff73f0e60f01f61e84401",
+      "checkpoint_sha256": "61cc573d9a4c1c68f11b3436d74030d8afcebe2de2d6f5bff819e9eb2f4a3a9a"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "adaboost",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_adaboost_0.json",
+      "metadata_sha256": "a6e79954dc5af25d6f7bbc3df6483b5e46b8a0ef56029cb87f3b85dd52c2549a",
+      "checkpoint_sha256": "3f1329afb104e430f564ef46510e3881eec810e8564fc89937bf55af5020599b"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "hist_boosting",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_hist_boosting_0.json",
+      "metadata_sha256": "ae2131f34ea8d8da4d6551100352c001a4245ca77c7bfb3c62e9d66a033dc373",
+      "checkpoint_sha256": "4c872a7ad7fea6a602cc195798547d011792fdaf6f71b4d2612f7ec6a3d113e2"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "catboost",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_catboost_0.json",
+      "metadata_sha256": "807401f860665a49fa4421807dce7773449c8e06a38606ac2827234f5d197466",
+      "checkpoint_sha256": "1382b093df57cbd049f8d238c1aba5b2e1f9c72c1e10854d219477a17a973000"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "rbf_svr",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_rbf_svr_0.json",
+      "metadata_sha256": "041a128d95b444070a79cbe58d62f8363f820ac885b5e606fc7e2ff133ec3af2",
+      "checkpoint_sha256": "f2b3683d9d0f1f430c8752ef990cba5c0e23bedd98fa76147e85dfddccc07e9a"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "voting",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_voting_0.json",
+      "metadata_sha256": "aa19647969f42a25f32a39fbbe2533edb551dabf6e6e21a1239fbd4b573c3e48",
+      "checkpoint_sha256": "4e4ff26b9286de9d79415ec13c65edc20813b377b8923acf98c526c91bd47548"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 0,
+      "family": "stacking",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_stacking_0.json",
+      "metadata_sha256": "5f8fc2758d3281988bbe67dfcfae21c5b1a72a87eeaa8d13a09978e3a03366e8",
+      "checkpoint_sha256": "5417e8a7e3bc9a6cbdcdc2b3fb3967c9fd7fc27bb663da92768f48c06457b7aa"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "ols",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_ols_1.json",
+      "metadata_sha256": "71b682cdeb95f449beeb6ba6e5b5e715587456d83036eefbb6146efba3cb725e",
+      "checkpoint_sha256": "b17fc503b45d8f28bd5b0168716a31dc79e8e63795fa7d595bdfa04868591f89"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "ridge",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_ridge_1.json",
+      "metadata_sha256": "de67a5ed506cc845a30ef3965e84c04395440c97d8844279143674cdfbfc99e7",
+      "checkpoint_sha256": "4cf0338f0a828fc1b776817b79fa6dd60acd6e37737e23dc57757e13a47a19ef"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "lasso",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_lasso_1.json",
+      "metadata_sha256": "c1abbd0b3ed83427a0fa4efd5235517863590a7a98dfe1b70e7585219f84dd2b",
+      "checkpoint_sha256": "3e40ab387f6a437f13f8f601c36acd7542d59e8dfefb7467e5e7d9fbe64e6ee2"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "elastic_net",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_elastic_net_1.json",
+      "metadata_sha256": "c8bbb5520a1acd96fbfe5955adac61d06cc8834ae0abc828b23d80ff94d518c3",
+      "checkpoint_sha256": "e86a5fab303062d131d105118f90243ae96ff654aefc92a742ecc1b7ed7917f5"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "bayesian_ridge",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_bayesian_ridge_1.json",
+      "metadata_sha256": "559cb30177a94841fa90eac3de4f656075db3e032719ea6d1eb6fa2cd31c5ff0",
+      "checkpoint_sha256": "403c9de2d9a59e26c79510e46cab64bc0f439efce7399970abb89f509f76eaca"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "huber",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_huber_1.json",
+      "metadata_sha256": "637a3e4524706c7cf063e3be69697c72fd0869567d7ed75f5b098e17b410e875",
+      "checkpoint_sha256": "1946b85d8af3c23e203e430c7c23a4a7242bfb4c4eb0c36bbc21719c10142380"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "knn",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_knn_1.json",
+      "metadata_sha256": "d824cf3e502923848c22acfaf3dd844f3d9bdd0dc08c9949f72256e77530529c",
+      "checkpoint_sha256": "9905f99377c12556c559b17dd154069f36d3b97d4cde2c1362926d87ff93dae8"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "tree",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_tree_1.json",
+      "metadata_sha256": "34c72fad5ab380521d3a2fc663a4a718bdc9afc7a7ad8a2cb562826fb1adaedc",
+      "checkpoint_sha256": "2cd307010039e47008630da0822d40548f2ec576b1ec9b1d12f37fe10635ac4a"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "bagging",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_bagging_1.json",
+      "metadata_sha256": "3ec1da0f6023d576e6ce8d3ec935104d65d08d4bd1a631a18997644d6c12d23d",
+      "checkpoint_sha256": "350f1ac9a71ad5b09c27e16fa534aa717f6d919d9cf2d541bc543c2fb70e8136"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "random_forest",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_random_forest_1.json",
+      "metadata_sha256": "d2c153e95d9ea88bd37924c2f3e6cb71a0cf0b266e3d6024a1a3b2926c9c0194",
+      "checkpoint_sha256": "25321289265977898fb468ec1daed1e8e0183a1bf5ea0a92a308aedd832ae74f"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "extra_trees",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_extra_trees_1.json",
+      "metadata_sha256": "1ac158d33012aa76405dd7b364316875c3ca1c4d88107e7ee8150bb7a950c614",
+      "checkpoint_sha256": "42894086c0a54d1aef2714e7202b46d343852ed1938a8df0e8ead3ed9880363a"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "adaboost",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_adaboost_1.json",
+      "metadata_sha256": "9ca5e33ab62a249dc2c59e16014f62227594549010c8ab1a78fb3129339fd322",
+      "checkpoint_sha256": "31b36803bbc62032a18f1fb1dd239a6f1e3842263a512391df469cb14e57feee"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "hist_boosting",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_hist_boosting_1.json",
+      "metadata_sha256": "f5470a156d3d0b3252028d595ec52f259e2e382e6b5ad49920cbeaf2de3ba789",
+      "checkpoint_sha256": "0464bd20c427525a80f388241c2c4ad2a43446a94473c1963d65234a0f99bae1"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "catboost",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_catboost_1.json",
+      "metadata_sha256": "02f6b97b51817d2dca958752ec0afb9a450b54de247ea4ba6d63e63f911dcb14",
+      "checkpoint_sha256": "a1e6884079714d69a068754bc635d5e805edf813f58f836256cb4c466e3dcfb5"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "rbf_svr",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_rbf_svr_1.json",
+      "metadata_sha256": "ee7dee26ef1f096e556f91231b9c4e1dc7411207afc2341ec3d49a2a1f381a7d",
+      "checkpoint_sha256": "1a245b18ee9f3555108a40c7c68d8282d424c4a5bf8b3c797f4b9b3eb1e6864f"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "voting",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_voting_1.json",
+      "metadata_sha256": "c0284df974d87e99775075e5d1265551774cd1065619b264f5e297aa6cefac00",
+      "checkpoint_sha256": "73e576d6f95f140c450e4d225dea882caec87f3d1ea258fa1b72da33e698dd45"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 1,
+      "family": "stacking",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_stacking_1.json",
+      "metadata_sha256": "dd044cb018c6ad305ae6abcdcb113827c6413930a05eddb610ce546d8b636fee",
+      "checkpoint_sha256": "cd02c6d910dbdece9f3ac3ef10cc2c1aefdbd3c8f367ee4b142b3131aeabdf1a"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "ols",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_ols_2.json",
+      "metadata_sha256": "73c86d84ee673b54c227c5693833d31aa9767c25f4b87f2e2a006b988487bcc1",
+      "checkpoint_sha256": "47845811c35ebd370497c83c1b4ba62576f29c0350975405b0dd2c7fc43b2d4c"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "ridge",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_ridge_2.json",
+      "metadata_sha256": "af8d2ccbc4e99472b41957123c43cc1f4aecc183a93e2a32645c7cdb6f72366e",
+      "checkpoint_sha256": "e26c4edacc6f3fd39d4fa5f11b8fdc3148feb4470aa46de2249a2baf96e57404"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "lasso",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_lasso_2.json",
+      "metadata_sha256": "f223bdac30aff10a5cb4c18c19eb25775393bb6ca807585a8ce478f4d1dadc98",
+      "checkpoint_sha256": "4519d4a0cba57986351baaafe4dc249eb1667f70ae8c2fea483e380c4dddd4f5"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "elastic_net",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_elastic_net_2.json",
+      "metadata_sha256": "da2c985685af17f9cc99c6a468da1950aa684fcdfb233bed7bebc28f43ff58fc",
+      "checkpoint_sha256": "a66acfd19e0388fdc2bae1fb1d7e16d6a3ec88551e4b7bece86ede634238f2a4"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "bayesian_ridge",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_bayesian_ridge_2.json",
+      "metadata_sha256": "bf39e096388267179a67f38754cf7d6516e514922e3d3e237b9243ebf1276cf0",
+      "checkpoint_sha256": "40af543b99fba1a20f7f0f14bcf2bbcc21ca79031e302dfa24995dc07aaae373"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "huber",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_huber_2.json",
+      "metadata_sha256": "2c44dbacda476da523d9ff1fd03a0f361d3df1df39bad3f26896b9a2e80e24d9",
+      "checkpoint_sha256": "35ccfb5e95e1e5b6686c340b31963805a28659596718cab8ae510055052f5266"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "knn",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_knn_2.json",
+      "metadata_sha256": "8fd88b2a3ae2248dad0b0da539c53b1c99134266792d44b49b03240b16d6983c",
+      "checkpoint_sha256": "8b59ede349612c75f4faf7d893073848f18447ba72c2737ff525b287538903f1"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "tree",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_tree_2.json",
+      "metadata_sha256": "7c7414bccd5db3026215bc1b9f47a9dfa5b935ef9ff35228c8b38274ace61591",
+      "checkpoint_sha256": "c958298f285af5c1e899e50ce2cdd7cf16c51f2e7008035939cb019ac56df9ff"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "bagging",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_bagging_2.json",
+      "metadata_sha256": "674f1fbc012f011ce86f4015a81783ab841160b9c485cb2ae4fc95808cc40d5b",
+      "checkpoint_sha256": "500e9a9f71214d6bd6c1c782b7a3244e15975d913ea4eeb4ba3b1b4016c8e40a"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "random_forest",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_random_forest_2.json",
+      "metadata_sha256": "fd17c8c577f771e9f899cc2dbfcb456936ba651a66e81477076a1364c6aec514",
+      "checkpoint_sha256": "64a26b148857d9ea892820771b4ad837bc1b5df8a6fc4a1a5823d49fbb67682b"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "extra_trees",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_extra_trees_2.json",
+      "metadata_sha256": "e8323e68b2ccbb8503ed270cc059efaac92dce5186e2d3752efb917a7c36008f",
+      "checkpoint_sha256": "3a54593ac1788f9f480361ab86fdbd488330397e2316fb9d6ff8f05691c8c738"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "adaboost",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_adaboost_2.json",
+      "metadata_sha256": "297b7993a8884523dbaa17901c963595735e579c6e1cbf2081c5566045244315",
+      "checkpoint_sha256": "cfd1ffc157cc12c5674c0f202335a17156dc68a44a7885f7337e8a382dd53d7f"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "hist_boosting",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_hist_boosting_2.json",
+      "metadata_sha256": "cdac36ada8aab983073a837949103b492748cc03feb7d407a37f95da3c07ff60",
+      "checkpoint_sha256": "92bc4bbbd7e2197246adf8a7e00d93cb69e94bf9ea4d5046b1496d13dbdae3ef"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "catboost",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_catboost_2.json",
+      "metadata_sha256": "3d05ae914434cb16b04b8f649176d9d4bff65bbab8158a8ab3b9851889d1c7f0",
+      "checkpoint_sha256": "6f0c0cc262060ff92e875ba0fb8c7898a772c10a710557633baac05bafb37c08"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "rbf_svr",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_rbf_svr_2.json",
+      "metadata_sha256": "a681fe0cc2ea5bd4a6a767048d049492b308f7b2c156e7efd6da3b480a54824d",
+      "checkpoint_sha256": "39accae7f16ef7f12baa31a36b58ba762aa10aea23a50eb586aa29440d4dc0bf"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "voting",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_voting_2.json",
+      "metadata_sha256": "83a128420cf45257db30c0efd4677ba77301a10a15c00c006d16bc1e14fa6795",
+      "checkpoint_sha256": "6d9aa6240c860d510571003e7959d3f3c0beb19d2682cf46a8f4c383c65006f5"
+    },
+    {
+      "dataset": "housing_random",
+      "seed": 2,
+      "family": "stacking",
+      "predictions": 4128,
+      "metadata_path": "assets/classical_calibration/housing_random_stacking_2.json",
+      "metadata_sha256": "ee4694f6851aaf0f26d47f29c6dba261b9cd4be84733c3c734192b788b133f96",
+      "checkpoint_sha256": "a9d880d2cd543f55b3cf520010c157c17064f05802acb18537de9d5599d73ce6"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "ols",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_ols_0.json",
+      "metadata_sha256": "48689801818462afdcada1b027ebee3cdb510389450625f30248f6b2b10bf481",
+      "checkpoint_sha256": "78bad8123bd73b2f8d5452da9cebf8736e21207dbf68e37cd68de13900f2b4de"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "ridge",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_ridge_0.json",
+      "metadata_sha256": "499c12faab4b4be1eca4b43efe92f8cfeed7946326b250efeb184390d8bdc3d9",
+      "checkpoint_sha256": "817c51f7e0fe364f656dcb2db93ba4f092b56fd79839a1cddcecf28c08ddbb4d"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "lasso",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_lasso_0.json",
+      "metadata_sha256": "30baa963b043b374157a2552c33ae9fbbe7f93cc27a8e3de35d034bc121873c1",
+      "checkpoint_sha256": "e73d49be7698d7f7d4b0ceaf112f7047859abb90ce16831e1742f4796a8764b5"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "elastic_net",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_elastic_net_0.json",
+      "metadata_sha256": "6b9d9533a7e3f854d7c1a5095cfa9b9be413f1dde93d45d002d153d96b365b01",
+      "checkpoint_sha256": "8896b2d14bb4d804c7aa8f98c555428786ad4a742c7e65dbccd54fbdfe002b6c"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "bayesian_ridge",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_bayesian_ridge_0.json",
+      "metadata_sha256": "96be1d5f3cf185e07bc8d2d350cf8d042e55d15f02fcb4d2ca55292b19fec4d3",
+      "checkpoint_sha256": "6e21709d3d0efa67a5a02560f37e468c18b82ea8fc1a32f257e43b65e7642615"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "huber",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_huber_0.json",
+      "metadata_sha256": "e0972c77dfafd4411dd03fb7624f2673a5626e4906b8c3a0f5efa149288af6a7",
+      "checkpoint_sha256": "e58df543af5e4cfdf8cf65f6a85dbb7bcb1973d8f73be6a39c348376338aa136"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "knn",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_knn_0.json",
+      "metadata_sha256": "833b7f4d483473d0896b58dcafb992b2b9035b72579924df6aa145681d45d4f2",
+      "checkpoint_sha256": "7b180f24223d33cabb8ae40b3e32da4044a7ace2f0e724d9cc3fbacdc3ffc245"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "tree",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_tree_0.json",
+      "metadata_sha256": "028fd12e74f0ee9697d732253cd1f37469deacb5a7ec0ff0bfb2b26e829596a2",
+      "checkpoint_sha256": "86b3d2d2747331de6d44b1943e15096821223641590264ada116f434ac7aa28f"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "bagging",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_bagging_0.json",
+      "metadata_sha256": "8dde5dda327d2cc000df5dc234dbf8dc299cfea133da1bf920f7173c286d759e",
+      "checkpoint_sha256": "8de9fddc0da9cef95e0630d0eb627a1513ae56270ee9be0253505e903accc5cb"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "random_forest",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_random_forest_0.json",
+      "metadata_sha256": "5d17a0909e6d8a38366fa574d82088de1744ec257ccf8ca192b5a37b002b04fb",
+      "checkpoint_sha256": "042a52f181619689315f02937d35845fac54fb8df867978448002e8c50fe5d3b"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "extra_trees",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_extra_trees_0.json",
+      "metadata_sha256": "8b06b0f3111ef01b06098216e1c2abc37e643db6257462dc0463956a0ef9cfaa",
+      "checkpoint_sha256": "bcb7da24c7f16edd8e72e36c09c5672ca5086f3f562dc72500f0181383588f4d"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "adaboost",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_adaboost_0.json",
+      "metadata_sha256": "08fb7bd995fc6849cf9c68851cd144d3572845330c697f63cc0a3dde90a8973e",
+      "checkpoint_sha256": "3602bf00ec0564521e12c9e35963d67fe8c773ab9d883efa7c78f33ec54bf32b"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "hist_boosting",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_hist_boosting_0.json",
+      "metadata_sha256": "6497ed9e3b77aeb88c7514730ecb95f6fea8017b59e751a6512f42817b8fbc8a",
+      "checkpoint_sha256": "9fc54543cc89476d27865f647552743489710b095379b392963d76792e97ef75"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "catboost",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_catboost_0.json",
+      "metadata_sha256": "42eab33383b4e5e65c6f20781d34a801df8d912baff58816d07ccef571ddf0ac",
+      "checkpoint_sha256": "d1e5cd6285980c89eede4040b64072e23b934994e6d5a2bf98ac3af19fedafa2"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "rbf_svr",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_rbf_svr_0.json",
+      "metadata_sha256": "2cdc560fc4c845668ba560746a75a6b5df15dfcd2210d9bb78697ea5561dc1f6",
+      "checkpoint_sha256": "03370b1e8e0f232ba4f78095f78bef91fa058fe0d6125a539be90e3a4ea0f35e"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "voting",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_voting_0.json",
+      "metadata_sha256": "5d2f8a44ca61030a34a38e09b9449db1e72b3a932a7c15ece46199c810904d21",
+      "checkpoint_sha256": "14438eb6e9fa86909b79e13e1ccee16b686b317de2283df2659b9495b49dffce"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 0,
+      "family": "stacking",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_stacking_0.json",
+      "metadata_sha256": "4fd02b63602f797f08d2f986b971a7a97eb4ab86c536282e399adb9856551a83",
+      "checkpoint_sha256": "84bc0803afb36521506bb5e206a648d4c2ce28995bcb687ae09a847c67342e71"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "ols",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_ols_1.json",
+      "metadata_sha256": "8d8fb829f87e843fa653d7da0c77d2403a34eb3f501d825af894c0b8346a6596",
+      "checkpoint_sha256": "54ab6134c00f1600250447a4c80380bcefa7a09538279a2ce536c630a79e2a0c"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "ridge",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_ridge_1.json",
+      "metadata_sha256": "9c6ade26abbaa1f4ab4e6df549ce85fdfd7d50851fe85d9a0720600b43423b8a",
+      "checkpoint_sha256": "dbe6f1f41f93257d2f5cf3d6fb385ec938899e3de7993f9d103797792320857c"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "lasso",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_lasso_1.json",
+      "metadata_sha256": "e4a67ba6867052103e528a0f95edbcb0f51e8b81f89d4962acf578a489b401ea",
+      "checkpoint_sha256": "11d09ea796fb811e8672c73770850e171df57dbb586f869da873ec1059031dcc"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "elastic_net",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_elastic_net_1.json",
+      "metadata_sha256": "8ffe1d2060399e015c42e84d723210d283c1cef8cbf0a262768308d715899037",
+      "checkpoint_sha256": "17905b1747cb8f8f99f63408f2f7e981102c01eaa9a86fdaf5aefee24bbfad98"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "bayesian_ridge",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_bayesian_ridge_1.json",
+      "metadata_sha256": "09e6344224d03647ea9c1089b505023a73b2cb1bdb7c01638341f14343cd0c98",
+      "checkpoint_sha256": "abb4cf00c14389d553b507ab15d386e08526f4a1316949c7728bab603e7d04e4"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "huber",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_huber_1.json",
+      "metadata_sha256": "c5988dc6c02593af1c048d4b6f92ecf5bedebf721be58d6f9f8715a184e4e371",
+      "checkpoint_sha256": "db09044bda79f5bb6bac958b6542ed8e79a0924f9f7fedb0e2dbb5e0dc222a7e"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "knn",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_knn_1.json",
+      "metadata_sha256": "6aef7938eea93ef9a6f3fdcbe9735b3bbe2a20a1ae492f478aa35adce179fd22",
+      "checkpoint_sha256": "088077a39367fd6ee7ac148be076a9d4ba4a4fe520db16084947988a55b13ac5"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "tree",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_tree_1.json",
+      "metadata_sha256": "8dbace4e0eef3a81ff890db7ec9e605693a601bc8c7e887d19ffac1ac3b3a451",
+      "checkpoint_sha256": "957b2cd3a20dfeee7f5811fedf7737e3af057eee5c60a83fd680e030c629d9c2"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "bagging",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_bagging_1.json",
+      "metadata_sha256": "28ac70bc0dbf6def5333014418c333b3cc953f1397f426ea9d2d65b65395378f",
+      "checkpoint_sha256": "6ac436002d81f434f188ecfbfcda7a6e16ec285749f0fb9d3e1b957d4f9130d5"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "random_forest",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_random_forest_1.json",
+      "metadata_sha256": "c1372dae59285a21919cddbc995a962bfd3ad8cb808a119440335bdc098f985d",
+      "checkpoint_sha256": "838bfa4c067e771fe0d0458ad91a0b28c19b7944e891b611f7cfc81ff601d8ed"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "extra_trees",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_extra_trees_1.json",
+      "metadata_sha256": "2e1017a226035c835fbb607bf635ed33f9afe179bd68b74c0feb16a4c35b93cd",
+      "checkpoint_sha256": "a3d2cbaf3e604a83ecd8f1384cbafcdd2a0053eea9e55790a1f6b35c1e2b1ad4"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "adaboost",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_adaboost_1.json",
+      "metadata_sha256": "ee7cda0ac1dbee1d7c7cea47aaea9ffc74e810b8183b2a7b764257eed87854fd",
+      "checkpoint_sha256": "599b97c330618c36ec13183aa33e88063c3e4d262e5e675225894c11e7702ee3"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "hist_boosting",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_hist_boosting_1.json",
+      "metadata_sha256": "68c5ab9dffe9f5837aee57e77f3dbf544b14a956d909767aed267b36d36fdabd",
+      "checkpoint_sha256": "49b71d028b4098000d1e3a6e05f7e5b3d8785e1daee8d3facb5ad23d8c83865b"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "catboost",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_catboost_1.json",
+      "metadata_sha256": "707847c25b370dcff01f697ef34d992b28cef4410f664edbdca68ab16d0a3ed4",
+      "checkpoint_sha256": "2c0f73e61afab45de79c84199551afa7dbaa868074bf8d277d4cd8f2ae4fd03c"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "rbf_svr",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_rbf_svr_1.json",
+      "metadata_sha256": "fa412e7277bdde9a3609e5db0391fb6d0a2a4dc7f1e2402a611c0f64247a8529",
+      "checkpoint_sha256": "acc492233cccdfc9557613930d10f5ab06d100439b71f801bfe9dc3f0099980d"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "voting",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_voting_1.json",
+      "metadata_sha256": "3eb2a2878cba5e5ff3fb3bda10f69b4a36200bf7d3f901f4f3ad9ec33b522aa6",
+      "checkpoint_sha256": "33fbe0756efc99b56caa8666733d74d1168a619e83432bc8a44179ca7366f902"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 1,
+      "family": "stacking",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_stacking_1.json",
+      "metadata_sha256": "fc376d9c46fec3c38165ae6f208fc489b3dc32e15af406496306e2006e97f80d",
+      "checkpoint_sha256": "36a4e9c59fd7680bb99bfcb08d7fd61849c3a400111dc0e92b919870308fac29"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "ols",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_ols_2.json",
+      "metadata_sha256": "ee9d35745babcb25ea1c38ee1bb361947c44a352c3577d4fbee08485946e2fef",
+      "checkpoint_sha256": "e703b0aa37f87aab2a0c2fd6b5ad217660e72998479d590245e6ab5c5d7e8d7c"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "ridge",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_ridge_2.json",
+      "metadata_sha256": "67a9f35b889231a1456305ce2d4ca5c4b54466abf26f32d5c3b6a1bfa362e0b2",
+      "checkpoint_sha256": "0519bfa50325e40e891de476173c2aa2f22fbd722fe6f8e88461d5f94a3ed6a9"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "lasso",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_lasso_2.json",
+      "metadata_sha256": "eb0a39839503c51fd6bf9f073cf70a6763d1450ff421f12e379ace24fc6f8c80",
+      "checkpoint_sha256": "608001d1d3cce96952fef15613f11210e5670ea12c781c8e7325e870d69b9028"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "elastic_net",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_elastic_net_2.json",
+      "metadata_sha256": "67fb29591b8bf45a0f33f22d1489d222ef99d8cca5d95804dd23648c66532f2c",
+      "checkpoint_sha256": "ca46d0bc52d17ec9548995c729b4a3e74e73e0a0c3c1bb9aacfe10ebb27f7f5b"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "bayesian_ridge",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_bayesian_ridge_2.json",
+      "metadata_sha256": "90633b71c8d03d5c949dc057bc755b164edbbb2fbd0596aa8cd24747bb3e9275",
+      "checkpoint_sha256": "5a86187d59b063021dcd8ed02d96c13c4d343db11bcb05d801aa317bc59269f0"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "huber",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_huber_2.json",
+      "metadata_sha256": "06ab8d44eaf0d09f5eccb368536baca5411d7097b96ae78d239911f35bf1cc33",
+      "checkpoint_sha256": "7205e229647800d8a8fdb44b59fc4098c922a670a5165618d7aa3958a8d4b3da"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "knn",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_knn_2.json",
+      "metadata_sha256": "838780f8fb8fdafa2f7b224af5db9761dcbad06eef8a98053d582e55b98ad865",
+      "checkpoint_sha256": "a2f1a853ac960056787718d9f297e9e57e09016a8ab8cee1badb90f2d039240e"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "tree",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_tree_2.json",
+      "metadata_sha256": "ed9e85dc49a03206aab44010ffed3d45c481fb12784cae5f2c0a46b538f820c7",
+      "checkpoint_sha256": "804bbce568faca725da380f7cd4b3b51028fde80b4fee0a1370fe03fb516465e"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "bagging",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_bagging_2.json",
+      "metadata_sha256": "36a1686c0cd9304416b2053995f48570069d0fbb8d8a452de0c29eebdc3f5f6f",
+      "checkpoint_sha256": "e657ea85c310c4ccba4d29a887cee4188bb3500b2356095ee50c05e1a815f5ec"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "random_forest",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_random_forest_2.json",
+      "metadata_sha256": "0ec17305992b2292cd6e390835ba1ef3ada38bb6ebc74f11362b106e8444014e",
+      "checkpoint_sha256": "1c94571a3255ab2e956a949fe940cb07add5e04ca3cb4828d1370244647ecf68"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "extra_trees",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_extra_trees_2.json",
+      "metadata_sha256": "f2d9a9cb995805909f9ed30010fa3c39d7abca63aca366a5c485f3863490b698",
+      "checkpoint_sha256": "62ba6d3bd0adf37874b374a5d851b88b8dfe0aa8e4ea8c23ccb09d0ded929793"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "adaboost",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_adaboost_2.json",
+      "metadata_sha256": "1ca6e053e64d0181db885bc2ab2350fa16eedeacaad7f57faafa8a5ef4794abe",
+      "checkpoint_sha256": "110425a8329b78b29f1ea5c95716e83d16ba751a297150debe9199b851b1f229"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "hist_boosting",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_hist_boosting_2.json",
+      "metadata_sha256": "c8b99c4ec55e0f6bb7dbc8dbb319edeb5f49e28e6d685e86adc6099b53f1a3c5",
+      "checkpoint_sha256": "6229b281ba9e5d90783dffef1e3a0df8ac50c8dbb3848fc798f21fb207ab7724"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "catboost",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_catboost_2.json",
+      "metadata_sha256": "91c9f7489a45b4bca98919efa915ac4a30e9dffceb4c3f1dab8a72e0797beeb0",
+      "checkpoint_sha256": "ada56c43a612822eef95923e87e33d9fbba9779a38c1fb4fb43780925e5ff546"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "rbf_svr",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_rbf_svr_2.json",
+      "metadata_sha256": "0dc13257a175e74b3982f9f244f6d2a4775830dd241b9f5ad93b8d04057c5139",
+      "checkpoint_sha256": "08378c796181f25e31e9191a63fde22e092ef90234165c8b08c6402a1d4cc49d"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "voting",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_voting_2.json",
+      "metadata_sha256": "4dea443ce5affc888ced85790b1e89674aaacfc35c617416a94249f3954f7094",
+      "checkpoint_sha256": "e5e8d691ab1d2e5f7aac8e7cada14c20416eec4851b418bebbf15533c17ece76"
+    },
+    {
+      "dataset": "housing_geographic",
+      "seed": 2,
+      "family": "stacking",
+      "predictions": 4178,
+      "metadata_path": "assets/classical_calibration/housing_geographic_stacking_2.json",
+      "metadata_sha256": "56681a8983764716f34f20f9684d992021b777b2e9ecd14696f3fa2e5169dd98",
+      "checkpoint_sha256": "fd7e2559d6e3e8506f3c77c4c720f67d70e7db2e8937847ac81566fad5315249"
+    }
+  ],
+  "source_sha256": {
+    "src/learning_lab/classical_inference.py": "01d09c965be48a4f5712b210eafb212da5433789e7aee8924bd79c40461d75fd",
+    "src/learning_lab/classical.py": "b09e81653f87684147bae3b5fcff384604120b8b854c45d610df66c28a037fc5",
+    "src/learning_lab/uncertainty.py": "2cb045da9edb2cd1c733f28887745dc030baf39fc02891d61d914407f169909e",
+    "scripts/predict_classical.py": "d28a852331076628334865514cda59f49ab0f60018b2fb134c12900d44e0b1d2",
+    "scripts/export_classical_inference.py": "d6e46e794127b14a2b7b7ee7ea9b18f4953c0589dea8477db503345872e169ad"
+  }
+}

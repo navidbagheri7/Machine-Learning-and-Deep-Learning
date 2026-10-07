@@ -1,0 +1,292 @@
+{
+  "rows": [
+    {
+      "task": "colorization",
+      "method": "hinge_sn",
+      "metric": "psnr",
+      "mean_delta": 0.0348963725566864,
+      "image_bootstrap_ci95": [
+        -0.01582052177190781,
+        0.08264586192369455
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "colorization",
+      "method": "hinge_sn",
+      "metric": "ssim",
+      "mean_delta": -0.0002018294483423233,
+      "image_bootstrap_ci95": [
+        -0.0005703274998813867,
+        0.0001674909312278032
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "colorization",
+      "method": "hinge_sn",
+      "metric": "lpips",
+      "mean_delta": -0.00019013992336113005,
+      "image_bootstrap_ci95": [
+        -0.0009942168219276937,
+        0.0006540229319798525
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "colorization",
+      "method": "non_saturating_r1",
+      "metric": "psnr",
+      "mean_delta": 0.0348963725566864,
+      "image_bootstrap_ci95": [
+        -0.01582052177190781,
+        0.08264586192369455
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "colorization",
+      "method": "non_saturating_r1",
+      "metric": "ssim",
+      "mean_delta": -0.0002018294483423233,
+      "image_bootstrap_ci95": [
+        -0.0005703274998813867,
+        0.0001674909312278032
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "colorization",
+      "method": "non_saturating_r1",
+      "metric": "lpips",
+      "mean_delta": -0.00019013992336113005,
+      "image_bootstrap_ci95": [
+        -0.0009942168219276937,
+        0.0006540229319798525
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "colorization",
+      "method": "least_squares",
+      "metric": "psnr",
+      "mean_delta": 0.0348963725566864,
+      "image_bootstrap_ci95": [
+        -0.01582052177190781,
+        0.08264586192369455
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "colorization",
+      "method": "least_squares",
+      "metric": "ssim",
+      "mean_delta": -0.0002018294483423233,
+      "image_bootstrap_ci95": [
+        -0.0005703274998813867,
+        0.0001674909312278032
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "colorization",
+      "method": "least_squares",
+      "metric": "lpips",
+      "mean_delta": -0.00019013992336113005,
+      "image_bootstrap_ci95": [
+        -0.0009942168219276937,
+        0.0006540229319798525
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "colorization",
+      "method": "wasserstein_gp",
+      "metric": "psnr",
+      "mean_delta": 0.0348963725566864,
+      "image_bootstrap_ci95": [
+        -0.01582052177190781,
+        0.08264586192369455
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "colorization",
+      "method": "wasserstein_gp",
+      "metric": "ssim",
+      "mean_delta": -0.0002018294483423233,
+      "image_bootstrap_ci95": [
+        -0.0005703274998813867,
+        0.0001674909312278032
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "colorization",
+      "method": "wasserstein_gp",
+      "metric": "lpips",
+      "mean_delta": -0.00019013992336113005,
+      "image_bootstrap_ci95": [
+        -0.0009942168219276937,
+        0.0006540229319798525
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "hinge_sn",
+      "metric": "psnr",
+      "mean_delta": -0.015122315883636474,
+      "image_bootstrap_ci95": [
+        -0.01706392216682434,
+        -0.013308093667030335
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "hinge_sn",
+      "metric": "ssim",
+      "mean_delta": -0.0006269553303718567,
+      "image_bootstrap_ci95": [
+        -0.0006741615096107125,
+        -0.0005792204272001982
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "hinge_sn",
+      "metric": "lpips",
+      "mean_delta": 0.0008249276573769748,
+      "image_bootstrap_ci95": [
+        0.0007242099245777354,
+        0.0009301479973364621
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "non_saturating_r1",
+      "metric": "psnr",
+      "mean_delta": -0.015122315883636474,
+      "image_bootstrap_ci95": [
+        -0.01706392216682434,
+        -0.013308093667030335
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "non_saturating_r1",
+      "metric": "ssim",
+      "mean_delta": -0.0006269553303718567,
+      "image_bootstrap_ci95": [
+        -0.0006741615096107125,
+        -0.0005792204272001982
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "non_saturating_r1",
+      "metric": "lpips",
+      "mean_delta": 0.0008249276573769748,
+      "image_bootstrap_ci95": [
+        0.0007242099245777354,
+        0.0009301479973364621
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "least_squares",
+      "metric": "psnr",
+      "mean_delta": -0.015122315883636474,
+      "image_bootstrap_ci95": [
+        -0.01706392216682434,
+        -0.013308093667030335
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "least_squares",
+      "metric": "ssim",
+      "mean_delta": -0.0006269553303718567,
+      "image_bootstrap_ci95": [
+        -0.0006741615096107125,
+        -0.0005792204272001982
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "least_squares",
+      "metric": "lpips",
+      "mean_delta": 0.0008249276573769748,
+      "image_bootstrap_ci95": [
+        0.0007242099245777354,
+        0.0009301479973364621
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "wasserstein_gp",
+      "metric": "psnr",
+      "mean_delta": -0.015122315883636474,
+      "image_bootstrap_ci95": [
+        -0.01706392216682434,
+        -0.013308093667030335
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "wasserstein_gp",
+      "metric": "ssim",
+      "mean_delta": -0.0006269553303718567,
+      "image_bootstrap_ci95": [
+        -0.0006741615096107125,
+        -0.0005792204272001982
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    },
+    {
+      "task": "super_resolution",
+      "method": "wasserstein_gp",
+      "metric": "lpips",
+      "mean_delta": 0.0008249276573769748,
+      "image_bootstrap_ci95": [
+        0.0007242099245777354,
+        0.0009301479973364621
+      ],
+      "paired_images": 400,
+      "scope": "Paired image resampling after averaging two fitted seeds; conditional on those fits, not seed uncertainty"
+    }
+  ]
+}

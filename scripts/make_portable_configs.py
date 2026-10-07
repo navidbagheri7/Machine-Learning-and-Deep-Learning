@@ -21,6 +21,8 @@ def main():
     args.config_output.mkdir(parents=True, exist_ok=True)
     for path in sorted((ROOT / "configs").glob("*.json")):
         config = json.loads(path.read_text())
+        if "source_config" in config:
+            config["source_config"] = str(args.config_output / Path(config["source_config"]).name)
         if "data_root" in config:
             config["data_root"] = str(cache)
         for key in ["pretrained_weights", "classifier_weights"]:
@@ -37,6 +39,10 @@ def main():
             )
         if "baseline_root" in config:
             config["baseline_root"] = str(args.results_output)
+        if "warm_start" in config:
+            config["warm_start"] = str(
+                args.results_output / "generative_{task}/l1/checkpoints/l1_{seed}.pt"
+            )
         if "device" in config:
             index = (
                 int(config["device"].split(":")[-1]) if config["device"].startswith("cuda:") else 0

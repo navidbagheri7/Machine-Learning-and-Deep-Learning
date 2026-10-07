@@ -1,0 +1,51 @@
+{
+  "rows": [
+    {
+      "method": "least_squares_final_epoch",
+      "metric_protocol_version": 3,
+      "seed": 1,
+      "sample": 0,
+      "inference_seconds_including_metrics": 1.2123088194057345,
+      "psnr": {
+        "mean": 25.759582614898683,
+        "image_bootstrap_ci95": [
+          25.44483030021191,
+          26.11130179810524
+        ]
+      },
+      "ssim": {
+        "mean": 0.7432696421444416,
+        "image_bootstrap_ci95": [
+          0.7320186046846211,
+          0.7536081740874797
+        ]
+      },
+      "lpips": {
+        "mean": 0.13318499356042593,
+        "image_bootstrap_ci95": [
+          0.12796304556867108,
+          0.13837936149921734
+        ]
+      },
+      "data_consistency_l1": {
+        "mean": 0.0032363807258661836,
+        "image_bootstrap_ci95": [
+          0.003113907411927357,
+          0.003365010961097141
+        ]
+      }
+    }
+  ],
+  "final_epoch": 20,
+  "validation_loss": 0.08339368691667914,
+  "selected_epoch_in_training": 0,
+  "checkpoint_sha256": "123fb986fea840f418a460b908046a6356054409bded1c539afe9a10d9f9c2af",
+  "training_state_sha256": "95d4fd711064b661d1ae3350350664908585b956e823ef519eb8e7211f8e230c",
+  "training_metrics_sha256": "800c0afbede3cdabb981bb1313323ee2c25101facc68fa4257add4acdc7902bd",
+  "warm_start_sha256": "7efd037acc608098ba43623d071052e5abf8000982a968b5cd9682006f23591b",
+  "numeric_sha256": {
+    "_scores": "be55320f3a9283888652a8488a347470f104720cf974ff50ae7c8f603db48fe0",
+    "_gallery": "dd521e3f3c660e8364ff2326c305cb7fb2ba3e1e09486422801b7501db061fa9"
+  },
+  "protocol": "Follow-up designed after validation retained many initial models: score every final epoch20 EMA without test-based selection. Metrics use float images; galleries are uint8 display arrays. These are diagnostic endpoints, separate from validation-selected deployment checkpoints."
+}

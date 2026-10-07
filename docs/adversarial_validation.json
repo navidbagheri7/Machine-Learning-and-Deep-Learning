@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "protocols": 20,
+  "independently_recomputed_image_means": true,
+  "all_epochs_completed": true,
+  "selection_includes_initial_model": true,
+  "shared_seed_specific_warm_starts": true,
+  "source_and_numeric_hashes": true,
+  "private_checkpoints_required": false
+}

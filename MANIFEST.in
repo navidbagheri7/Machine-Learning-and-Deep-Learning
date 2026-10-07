@@ -1,10 +1,11 @@
 include LICENSE README.md CHANGELOG.md CONTRIBUTING.md CITATION.cff requirements-tested.txt .gitignore
 recursive-include configs *.json
-recursive-include docs *.md *.json
+recursive-include docs *.md *.json *.csv *.html
 recursive-include notebooks *.ipynb *.md
 recursive-include assets *.png *.pdf *.npz *.json *.md
-recursive-include scripts *.py *.sh
+recursive-include scripts *.py *.sh *.html *.js
 recursive-include tests *.py
+recursive-include examples *.csv *.md
 recursive-include results/reference *.json
 global-exclude partial_metrics.json
 include legacy/README.md legacy/manifest.json

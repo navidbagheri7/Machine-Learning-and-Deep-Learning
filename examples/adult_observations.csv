@@ -1,0 +1,3 @@
+age,education_num,capital_gain,capital_loss,hours_per_week,workclass,education,marital_status,occupation,relationship,race,sex,native_country
+35,13,0,0,40,Private,Bachelors,Never-married,Tech-support,Not-in-family,White,Male,United-States
+48,9,0,0,35,Private,HS-grad,Married-civ-spouse,Sales,Wife,Black,Female,United-States

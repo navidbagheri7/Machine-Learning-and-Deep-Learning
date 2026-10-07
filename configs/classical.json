@@ -1,0 +1,17 @@
+{
+  "data_root": "/data/navid.bagheri-shouraki/ML_data",
+  "output": "results/reference/classical",
+  "seeds": [0, 1, 2],
+  "classification_datasets": ["adult", "breast_cancer", "digits"],
+  "regression_protocols": ["random", "geographic"],
+  "test_seed": 9183,
+  "trees": 200,
+  "stacking_folds": 3,
+  "conformal_alpha": 0.1,
+  "threads": 1,
+  "adult_excluded_methods": ["rbf_svm"],
+  "housing_excluded_methods": [],
+  "selection": "classification validation macro F1; regression validation RMSE; first tie",
+  "split_roles": "70% fitting, 10% selection, 10% probability calibration, 10% conformal calibration within training; regression merges calibration halves",
+  "scope": "Declared practical presets; candidate counts and compute vary by family. RBF SVM is evaluated on numeric datasets and the existing label-budget study, not on full Adult."
+}

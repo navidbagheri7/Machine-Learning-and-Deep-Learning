@@ -30,6 +30,7 @@ jobs:
           python -m learning_lab.cli probabilistic --quick
           python -m learning_lab.cli generalization --quick
           python -m learning_lab.cli kernels --quick
+          python scripts/run_classical.py --dataset breast_cancer --seed 0 --quick
           python -m learning_lab.cli signals --quick --device cpu
           python scripts/prepare_smoke_data.py
           python -m learning_lab.cli course_mixtures --quick --data-root .local/smoke_data

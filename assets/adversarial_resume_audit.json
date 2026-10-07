@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "method": "non_saturating_r1",
+      "seed": 0,
+      "epochs": 2,
+      "updates": 4,
+      "compared_fields": [
+        "model",
+        "ema",
+        "critic",
+        "optimizer",
+        "dopt",
+        "scheduler",
+        "updates",
+        "rng",
+        "loader_rng",
+        "penalty_rng",
+        "cuda_rng",
+        "best_state",
+        "best_epoch",
+        "best"
+      ],
+      "final_train_state_and_rng_bitwise_equal": true,
+      "losses_bitwise_equal": true
+    },
+    {
+      "method": "wasserstein_gp",
+      "seed": 0,
+      "epochs": 2,
+      "updates": 4,
+      "compared_fields": [
+        "model",
+        "ema",
+        "critic",
+        "optimizer",
+        "dopt",
+        "scheduler",
+        "updates",
+        "rng",
+        "loader_rng",
+        "penalty_rng",
+        "cuda_rng",
+        "best_state",
+        "best_epoch",
+        "best"
+      ],
+      "final_train_state_and_rng_bitwise_equal": true,
+      "losses_bitwise_equal": true
+    }
+  ],
+  "device": "cpu",
+  "workers": 0,
+  "scope": "Small real-image integration on the declared device; final trainable weights, EMA, critic, Adam states, schedule and independent RNG streams compared, including a post-resume R1 update. Epoch timings excluded. This checks the declared device and worker0 path, not GPU bitwise or cross-device/worker-count identity.",
+  "source_sha256": {
+    "scripts/check_adversarial_resume.py": "9d3a4326b6d94f8b949deb80ca5e0022ac748bae7e7e587a3ad70fb497d1ccb8",
+    "src/learning_lab/adversarial.py": "f0284c89bf1fdf70bd6ba1c208151cd831f3c94e8caa38369a41b5331db1c93f",
+    "src/learning_lab/generative.py": "eee73d0bb111b96f205dc60af15d1670142d98d61874fad3b081ee3bec5ba38c",
+    "src/learning_lab/artifacts.py": "3882c27d90c1dd8ba97204117fd8212f1a4d45ee8a58c5d8442c4174f7abd5d7"
+  }
+}

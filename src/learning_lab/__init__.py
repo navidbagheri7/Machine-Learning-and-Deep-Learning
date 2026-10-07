@@ -1,3 +1,3 @@
 """Learning and Generalization Lab: explicit methods and auditable experiments."""
 
-__version__ = "1.2.0"
+__version__ = "1.3.0"

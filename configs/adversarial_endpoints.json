@@ -1,0 +1,6 @@
+{
+  "source_config": "configs/adversarial_variants.json",
+  "output": "results/reference/adversarial_endpoints",
+  "checkpoint_policy": "fixed_final_epoch_ema",
+  "scope": "Follow-up designed after validation retained many initial models: score every final epoch20 EMA without test-based selection. Metrics use float images; galleries are uint8 display arrays. These are diagnostic endpoints, separate from validation-selected deployment checkpoints."
+}

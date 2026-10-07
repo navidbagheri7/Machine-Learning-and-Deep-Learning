@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "endpoint_evaluations": 20,
+  "fixed_epoch": 20,
+  "independent_image_means": true,
+  "original_training_preserved": true,
+  "source_and_numeric_hashes": true,
+  "new_training_updates": 0
+}

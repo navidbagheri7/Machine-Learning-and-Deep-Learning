@@ -1,0 +1,1152 @@
+{
+  "status": "passed",
+  "scope": "AST inventory and release-identity checks; mathematical and empirical checks are separate in validation.json and implementation audit",
+  "version": "1.3.0",
+  "authored_python_components": 103,
+  "source_modules": 28,
+  "components": [
+    {
+      "path": "src/learning_lab/__init__.py",
+      "sha256": "d7523e6e0ed8407f87ebf3fd3c4b1f9d4dd2c8bc3dcb35c5822008bb9402fa91",
+      "lines": 3,
+      "module_docstring": "Learning and Generalization Lab: explicit methods and auditable experiments.",
+      "public_definitions": []
+    },
+    {
+      "path": "src/learning_lab/adversarial.py",
+      "sha256": "f0284c89bf1fdf70bd6ba1c208151cd831f3c94e8caa38369a41b5331db1c93f",
+      "lines": 369,
+      "module_docstring": "Controlled restoration GAN objectives, including Wasserstein-GP and lazy R1.\n\nEvery variant starts from the same seed-specific, validation-selected direct model.\nThe direct fine-tuning control separates additional fitting from adversarial effects.\nRGB-interpolant gradient penalties keep the observed condition fixed. All critic\nderivatives and penalties are computed in float32, including second derivatives.",
+      "public_definitions": [
+        "sha256",
+        "Critic",
+        "critic_objective",
+        "generator_objective",
+        "gradient_penalty",
+        "r1_penalty",
+        "train"
+      ]
+    },
+    {
+      "path": "src/learning_lab/artifacts.py",
+      "sha256": "3882c27d90c1dd8ba97204117fd8212f1a4d45ee8a58c5d8442c4174f7abd5d7",
+      "lines": 90,
+      "module_docstring": "Experiment records with configs, versions, elapsed time and dataset fingerprints.",
+      "public_definitions": [
+        "fingerprint",
+        "write_json",
+        "Run"
+      ]
+    },
+    {
+      "path": "src/learning_lab/categorical.py",
+      "sha256": "88ad15ae97b0d1ee845d531eec3c2f452607fe782e8f860add99c72be1ec4f89",
+      "lines": 84,
+      "module_docstring": "Latent-class EM for conditionally independent categorical observations.",
+      "public_definitions": [
+        "CategoricalMixtureEM"
+      ]
+    },
+    {
+      "path": "src/learning_lab/classical.py",
+      "sha256": "b09e81653f87684147bae3b5fcff384604120b8b854c45d610df66c28a037fc5",
+      "lines": 636,
+      "module_docstring": "Classical prediction families with isolated selection/calibration and nested stacking.\n\nThe extension uses existing Adult/Housing splits and bundled numeric datasets.\nEvery ensemble base learner owns its preprocessing, including within stacking CV.\nValidation chooses a declared preset; subsequent probability and conformal partitions\nhave distinct roles. Test data never enter fitting or model selection.",
+      "public_definitions": [
+        "digest",
+        "take",
+        "preprocessing",
+        "classifier_candidates",
+        "regressor_candidates",
+        "logits",
+        "classify_metrics",
+        "dataset_split",
+        "source_bound",
+        "fit_classification",
+        "fit_regression",
+        "experiment"
+      ]
+    },
+    {
+      "path": "src/learning_lab/classical_inference.py",
+      "sha256": "01d09c965be48a4f5712b210eafb212da5433789e7aee8924bd79c40461d75fd",
+      "lines": 75,
+      "module_docstring": "Prediction from source-bound classical checkpoints and saved calibration metadata.",
+      "public_definitions": [
+        "predict"
+      ]
+    },
+    {
+      "path": "src/learning_lab/cli.py",
+      "sha256": "a32d8bbe9ab321b9635544d9606141cabde1aeb4a90295db6383b813f52b1bfb",
+      "lines": 194,
+      "module_docstring": "Single experiment entry point; JSON configs are copied into every run record.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "src/learning_lab/clustering.py",
+      "sha256": "90fe35efbb97774a73962cafea8fd9a87684e13f0a42cf7d40e52f2a145af6b7",
+      "lines": 129,
+      "module_docstring": "Compare centroid, mixture, graph and adaptive-density clustering with noise coverage.",
+      "public_definitions": [
+        "experiment"
+      ]
+    },
+    {
+      "path": "src/learning_lab/data.py",
+      "sha256": "62b75ab00e68266da40ad8e8d8ff68aae97f55faca4d5cd7acf154c640a7fbd8",
+      "lines": 87,
+      "module_docstring": "Dataset loaders. Downloads are explicit; training never downloads implicitly.",
+      "public_definitions": [
+        "prepare",
+        "adult",
+        "housing"
+      ]
+    },
+    {
+      "path": "src/learning_lab/external_restoration.py",
+      "sha256": "33a8605502c60dd42cd8ae54e0c49fd87cc10482597253ca35cfd9f9d7cea4c7",
+      "lines": 374,
+      "module_docstring": "Adapters for pinned, externally trained restoration references.\n\nOfficial source remains in the personal cache. Every reference verifies its source\nrevision and checkpoint hash before inference. Each adapter runs in its own process,\navoiding collisions between upstream packages named models/utils.",
+      "public_definitions": [
+        "MetadataReader",
+        "metadata",
+        "verified_source",
+        "DDColorReference",
+        "SwinIRReference",
+        "RealESRGANReference",
+        "BigColorReference",
+        "edge_operator",
+        "CT2Reference",
+        "experiment"
+      ]
+    },
+    {
+      "path": "src/learning_lab/generative.py",
+      "sha256": "eee73d0bb111b96f205dc60af15d1670142d98d61874fad3b081ee3bec5ba38c",
+      "lines": 827,
+      "module_docstring": "Conditional image generation with explicit training, sampling and evaluation contracts.\n\nLocal models are controlled research baselines, not reproductions of large published\ntraining budgets. Colorization predicts Lab chroma; SR predicts an RGB residual to a\n4x bicubic observation. Test-time VAE inference uses the learned conditional prior.",
+      "public_definitions": [
+        "observation",
+        "reconstruct",
+        "Images",
+        "Residual",
+        "ConditionalUNet",
+        "Generator",
+        "GaussianEncoder",
+        "gaussian_kl",
+        "ConditionalVAE",
+        "PatchDiscriminator",
+        "FeatureLoss",
+        "alpha_schedule",
+        "ConditionalDiffusion",
+        "build_model",
+        "save_checkpoint",
+        "validate_config",
+        "train_model",
+        "evaluate",
+        "save_arrays",
+        "experiment"
+      ]
+    },
+    {
+      "path": "src/learning_lab/inverse.py",
+      "sha256": "ed79db66b33ee1d10ee583f4803e5e45c708567081143ddbd044f834784a253c",
+      "lines": 135,
+      "module_docstring": "Stable Gaussian-mixture conditioning for linear inverse problems.\n\nThis module computes observation evidence, posterior component means and MMSE.\nChoosing the most probable component mean is explicitly a heuristic, not mixture MAP.",
+      "public_definitions": [
+        "MixtureInverse",
+        "extract_patches",
+        "overlap_average",
+        "restore_images"
+      ]
+    },
+    {
+      "path": "src/learning_lab/modern_inference.py",
+      "sha256": "ea24b70050d05de8c032994a6ced5c6a35ea30b0cc0bc0bd79760506fd3d53d7",
+      "lines": 161,
+      "module_docstring": "Inference from native boosting and ConvNeXt artifacts, without training data.",
+      "public_definitions": [
+        "verify_checkpoint",
+        "adult_predictions",
+        "housing_predictions",
+        "cifar_probabilities",
+        "cifar_predictions"
+      ]
+    },
+    {
+      "path": "src/learning_lab/modern_tabular.py",
+      "sha256": "345ef864511483ca6e091697d15e5e09d9dc1ca8f7ac2883974a3568070480f5",
+      "lines": 280,
+      "module_docstring": "Native categorical boosting and quantile uncertainty on the existing held-out protocols.",
+      "public_definitions": [
+        "categorical_frame",
+        "experiment"
+      ]
+    },
+    {
+      "path": "src/learning_lab/modern_vision.py",
+      "sha256": "6dcd524c9d3156bb55accc29ac05bb184c8c3db78cdea0ab549a24f696f5a6bc",
+      "lines": 175,
+      "module_docstring": "Fine-tune a modern pretrained encoder on the existing limited-label CIFAR protocol.",
+      "public_definitions": [
+        "input_images",
+        "logits",
+        "experiment"
+      ]
+    },
+    {
+      "path": "src/learning_lab/natural_denoising.py",
+      "sha256": "d6722b6a407f9d89dad74092d9344706ca1c974c1affe74fffffd5b65d2f7f90",
+      "lines": 140,
+      "module_docstring": "Natural-image Gaussian denoising: wavelet baseline versus frozen SwinIR.",
+      "public_definitions": [
+        "load_model",
+        "experiment"
+      ]
+    },
+    {
+      "path": "src/learning_lab/neural.py",
+      "sha256": "a0aa908c0134fb51e22929f9e7a970cde412a8b6b073280fca61abf207c58265",
+      "lines": 120,
+      "module_docstring": "Residual tabular networks, feature-token attention, and explicit validation selection.",
+      "public_definitions": [
+        "seed_everything",
+        "ResidualBlock",
+        "TabularResNet",
+        "FeatureTransformer",
+        "train_tabular",
+        "neural_predict"
+      ]
+    },
+    {
+      "path": "src/learning_lab/pretrained.py",
+      "sha256": "b17bb26f9c4997995a5870e4e0878e38d920191193ab5c11e9180835a4600c48",
+      "lines": 100,
+      "module_docstring": "Frozen modern colorization reference with pinned external source and weights.",
+      "public_definitions": [
+        "load_ddcolor",
+        "colorize_ddcolor",
+        "experiment"
+      ]
+    },
+    {
+      "path": "src/learning_lab/probabilistic.py",
+      "sha256": "8ad53af80c0de9daa8a529b5b06ad8be4c69126185b6bed6e2658eaf9e0308ce",
+      "lines": 119,
+      "module_docstring": "Gaussian posterior regression and full-covariance Gaussian mixture EM.",
+      "public_definitions": [
+        "BayesianLinearRegression",
+        "GaussianMixtureEM"
+      ]
+    },
+    {
+      "path": "src/learning_lab/project_studies.py",
+      "sha256": "dcdbbd2306b2358db9a579ba3f4577eec9688686feb90d64740a7455c1eea8f3",
+      "lines": 471,
+      "module_docstring": "Assignment-grounded mixture selection and Bayesian image reconstruction studies.",
+      "public_definitions": [
+        "cache",
+        "mixture_parameters",
+        "course_mixtures",
+        "fit_patch_prior",
+        "psnr",
+        "inverse"
+      ]
+    },
+    {
+      "path": "src/learning_lab/receiver_inference.py",
+      "sha256": "23bb8b7f4b693b6a2f07c9ddc6b32583a9c99585dfa3e2cf953bcdc74ad52f1d",
+      "lines": 62,
+      "module_docstring": "Saved receiver inference for the declared independent, circular 64-symbol blocks.",
+      "public_definitions": [
+        "receive"
+      ]
+    },
+    {
+      "path": "src/learning_lab/restoration.py",
+      "sha256": "6cb6ec91e95146fd5dc05f6d3628e3227cd004496cdc2313e017332e84a0015c",
+      "lines": 770,
+      "module_docstring": "Evaluated image restoration: denoising, super-resolution and uncertain colorization.\n\nSmall research baselines are implemented locally. They are inspired by residual\ndenoising/EDSR/color classification; they do not reproduce the original papers' budgets.",
+      "public_definitions": [
+        "rgb_to_lab",
+        "lab_to_rgb",
+        "per_image_metrics",
+        "summarize",
+        "measured",
+        "pack_scores",
+        "block",
+        "Autoencoder",
+        "ResidualDenoiser",
+        "ResidualBlock",
+        "PixelShuffleSR",
+        "TransferColorizer",
+        "train",
+        "predict",
+        "save_model",
+        "denoising",
+        "natural_data",
+        "degrade",
+        "super_resolution",
+        "colorization"
+      ]
+    },
+    {
+      "path": "src/learning_lab/restoration_shift.py",
+      "sha256": "2d1dfe97b54bb4e231173030e215c7d59aacfad715c41062ba68bdb5f0e54cbb",
+      "lines": 143,
+      "module_docstring": "Test frozen SR references under controlled blur/noise/compression mismatch.",
+      "public_definitions": [
+        "degradation",
+        "experiment"
+      ]
+    },
+    {
+      "path": "src/learning_lab/signals.py",
+      "sha256": "c0d9f4d12e3bda20d8465c88cefb33381c75bc9bfb536c7cd26a9065e8e1ff7b",
+      "lines": 198,
+      "module_docstring": "Gray-coded 16-QAM through a controlled nonlinear channel with circular memory.\n\nThis is a discrete baseband benchmark, not an optical-fiber propagation simulator.",
+      "public_definitions": [
+        "constellation",
+        "channel",
+        "generate",
+        "physics_inverse",
+        "windows",
+        "Equalizer",
+        "error_metrics",
+        "experiment"
+      ]
+    },
+    {
+      "path": "src/learning_lab/studies.py",
+      "sha256": "975957ac71ce075ed19bc414acf2cee5a253992fc363f1cfbd6cca594373e9f4",
+      "lines": 219,
+      "module_docstring": "Controlled generalization, kernel learning curves, and probabilistic clustering.",
+      "public_definitions": [
+        "generalization",
+        "probabilistic",
+        "kernels"
+      ]
+    },
+    {
+      "path": "src/learning_lab/tabular.py",
+      "sha256": "30917b259e77defc714d342975b42d29ddb11538b842e7a5c7843721bbc0ac67",
+      "lines": 389,
+      "module_docstring": "Adult decision study and California Housing uncertainty under geographic shift.",
+      "public_definitions": [
+        "classification",
+        "regression"
+      ]
+    },
+    {
+      "path": "src/learning_lab/uncertainty.py",
+      "sha256": "2cb045da9edb2cd1c733f28887745dc030baf39fc02891d61d914407f169909e",
+      "lines": 89,
+      "module_docstring": "Finite-sample split conformal inference, calibration, and paired uncertainty.",
+      "public_definitions": [
+        "conformal_quantile",
+        "regression_interval",
+        "cqr_interval",
+        "prediction_sets",
+        "fit_temperature",
+        "binary_temperature",
+        "binary_metrics",
+        "reliability",
+        "paired_bootstrap"
+      ]
+    },
+    {
+      "path": "src/learning_lab/vision.py",
+      "sha256": "f96618438fdb584fc4b0fe4c33ae13eb65937f4bf999bc60d9123d28255a7727",
+      "lines": 373,
+      "module_docstring": "CIFAR-10 supervision, contrastive representations, and pretrained transfer.\n\nAll augmentation is batched on the selected device. Test images never enter pretraining.",
+      "public_definitions": [
+        "load_cifar",
+        "normalize",
+        "augment",
+        "ImageBlock",
+        "ImageEncoder",
+        "contrastive_loss",
+        "train_encoder",
+        "image_logits",
+        "features",
+        "experiment"
+      ]
+    },
+    {
+      "path": "scripts/analyze_modern_models.py",
+      "sha256": "94f96b76cb5d12ea092e3207716b8bb617322b96c1d55f4021e3b89d1ee9938a",
+      "lines": 165,
+      "module_docstring": "Post-fit error and calibration diagnostics; no model selection or refitting.",
+      "public_definitions": [
+        "classification",
+        "vision",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/build_project_report.py",
+      "sha256": "1e61df8e1ddd700fa79380535e6f06dc3d21a553bfb825613f4a0a54a38e9de6",
+      "lines": 382,
+      "module_docstring": "Build assignment-grounded figures and a measured report from saved evidence.",
+      "public_definitions": [
+        "save",
+        "array",
+        "gallery",
+        "curves",
+        "figures",
+        "report",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/build_report.py",
+      "sha256": "ec32b9833a806ede144100aa3dc8f2ddd7e28800fcfa93547aaab8ead2f1b444",
+      "lines": 627,
+      "module_docstring": "Regenerate publication figures and the measured report from completed reference records.",
+      "public_definitions": [
+        "load",
+        "source",
+        "save",
+        "summarize",
+        "bar",
+        "tables",
+        "figures",
+        "format_stat",
+        "report"
+      ]
+    },
+    {
+      "path": "scripts/build_upgrade_report.py",
+      "sha256": "b1f5ca2a94ffe8c68cfab26be6c3a21f0044e475e045307304be78a5cb057021",
+      "lines": 929,
+      "module_docstring": "Regenerate modern-method comparisons from saved, auditable experiment evidence.\n\nScores retain full precision. Gallery-only arrays are quantized to uint8 to keep\nthe public repository small; these images never enter metric computation.",
+      "public_definitions": [
+        "table",
+        "save",
+        "evidence",
+        "arrays",
+        "gallery",
+        "image_interval",
+        "diagnostics",
+        "reliability_plot",
+        "restoration_scatter",
+        "restoration_panel",
+        "restoration",
+        "comparison_table",
+        "overview",
+        "update_readme",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_adversarial_inference.py",
+      "sha256": "2057f4ef1a6b990d82594db933bab4aba1fd7a39bd8549af0d32188662af5d37",
+      "lines": 173,
+      "module_docstring": "Check selected and fixed-final GAN generators on real standalone observations.",
+      "public_definitions": [
+        "digest",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_adversarial_resume.py",
+      "sha256": "9d3a4326b6d94f8b949deb80ca5e0022ac748bae7e7e587a3ad70fb497d1ccb8",
+      "lines": 139,
+      "module_docstring": "Interrupt saved GAN epochs and compare complete resumed optimizer/RNG state.",
+      "public_definitions": [
+        "InterruptedEpoch",
+        "equal",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_evaluation_only.py",
+      "sha256": "b51c41d6472546ec9d99e64035b02d6369589d0a5ddd8c1d2c0fade46fcca889",
+      "lines": 102,
+      "module_docstring": "Verify evaluation and resume guards on a completed integration checkpoint.\n\nNo model fitting occurs. This checks exact scoring reproduction and preservation\nof the original fitting record and histories. Use a small real-data integration.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_explorer_browser.py",
+      "sha256": "798394d825aef204fe7177f3028b47539d36ed57efb3822902a56087607ac416",
+      "lines": 160,
+      "module_docstring": "Exercise all concept sections and measured presets in a real local browser.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_foundation_inference.py",
+      "sha256": "b04756296b4472c66284bebb3b12697d82b30aa8126ac9df269e4561b4c3eb43",
+      "lines": 141,
+      "module_docstring": "Check every selected foundational restoration checkpoint through its image CLI.",
+      "public_definitions": [
+        "digest",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_image_metrics.py",
+      "sha256": "91a4ef32ee50da41408a8f1ff42a4d141e9c4bc9177759ed0c764bad3306c839",
+      "lines": 119,
+      "module_docstring": "Compare restoration metrics with independent scientific-library calculations.",
+      "public_definitions": [
+        "reference_scores",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_receiver_inference.py",
+      "sha256": "24e90e1f9325c339b9ab6a0371c46f44eea67fb74748ad50dc24f02952fc1865",
+      "lines": 199,
+      "module_docstring": "Reproduce every saved neural-receiver benchmark condition and exercise its CLI.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_restoration_data.py",
+      "sha256": "c6f815a66919c861d4f62255c1dd9fc1a8703b2ee528aed6244be6678d900fe1",
+      "lines": 81,
+      "module_docstring": "Verify prepared benchmark bytes and describe actual original-photo resolution.",
+      "public_definitions": [
+        "digest",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_restoration_inference.py",
+      "sha256": "c80bc6a6b14bc5a8623472f60b4f630bc88635d35bf7189abb657774c9053dd4",
+      "lines": 150,
+      "module_docstring": "Exercise standalone restoration commands with real, non-square observations.\n\nRun each model in a separate process, then repeat identical seeded inference.\nThis checks deployment plumbing and reproducibility, not restoration quality.",
+      "public_definitions": [
+        "digest",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_saved_predictions.py",
+      "sha256": "0845b1121becfd79610a3066a1d0cc5cbd95ed44044db83ec90da6ebc2449231",
+      "lines": 120,
+      "module_docstring": "Independently reproduce saved predictions from all modern fitted checkpoints.\n\nChecks fixed test subsets without fitting, calibrating or selecting anything.\nCPU ConvNeXt probabilities are reported separately from reference CUDA bfloat16.",
+      "public_definitions": [
+        "sha256",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_stress_evaluation.py",
+      "sha256": "cf654de58d3235727b0751a35b7ab8afb7b5631cb7408c999a9f550cdf69a4f3",
+      "lines": 128,
+      "module_docstring": "Reproduce complete noise/degradation studies and reject invalid outputs before clipping.",
+      "public_definitions": [
+        "ZeroMetric",
+        "InvalidOutput",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_training_resume.py",
+      "sha256": "f2d9e51de579d55699ff449b0ba663bb6b7f0138cdb46fcd0b65bb390bffa8b5",
+      "lines": 128,
+      "module_docstring": "Compare interrupted and uninterrupted training on prepared real images.\n\nThis is a CPU integration check, not a quality benchmark. It deliberately stops\nafter the first completed epoch, then verifies the final weights and losses.",
+      "public_definitions": [
+        "ControlledStop",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/check_vae_precision.py",
+      "sha256": "0053c8874bdf47f50410b9a4bda73a5915b8c41e5451a54ec01b5398b8876e9b",
+      "lines": 100,
+      "module_docstring": "Audit the trained VAE KL arithmetic against independent float64 calculations.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/colorize_ddcolor.py",
+      "sha256": "1f784dd8d03ad3fcf15a1e5a1b0e31d6db1df4d0b4790487703a72b1d95875d7",
+      "lines": 43,
+      "module_docstring": "Colorize a user photograph using the pinned, explicitly prepared DDColor model.",
+      "public_definitions": []
+    },
+    {
+      "path": "scripts/create_explorer.py",
+      "sha256": "fc7efc569e264da4408642f33817ef7a10059d3d89baffa809292bef5dd5dedb",
+      "lines": 408,
+      "module_docstring": "Build a portable concept explorer from completed, hash-bound numerical evidence.",
+      "public_definitions": [
+        "sha",
+        "load",
+        "pixels",
+        "picture",
+        "probability_view",
+        "classical",
+        "restoration",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/evaluate_adversarial_endpoints.py",
+      "sha256": "17d62962632788462d2058dcc10d0cc852c6c077efdd5492da1830e1ba5589af",
+      "lines": 137,
+      "module_docstring": "Score all fixed final EMA endpoints to expose adversarial changes without test selection.",
+      "public_definitions": [
+        "digest",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/execute_notebooks.py",
+      "sha256": "2780c07f8bffde1267fd363c9f7937fe5c7700cfcb3e9c05bee620f40c340cb7",
+      "lines": 55,
+      "module_docstring": "Execute all walkthroughs using this Python, without modifying global Jupyter kernels.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/export_cifar_calibration.py",
+      "sha256": "1fbe1a9fad21e23eac8925224ae7a4d4cd1c19f79bdab2a8ccdd7130663b2ba7",
+      "lines": 200,
+      "module_docstring": "Export device-specific ConvNeXt temperature and conformal calibration.\n\nWeights, partitions and original CUDA results remain unchanged. CPU calibration\nuses the same reserved probability/conformal partitions with its float32 predictor.\nOfficial test labels only verify outcomes and never choose a cutoff.",
+      "public_definitions": [
+        "digest",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/export_classical_inference.py",
+      "sha256": "d6e46e794127b14a2b7b7ee7ea9b18f4953c0589dea8477db503345872e169ad",
+      "lines": 149,
+      "module_docstring": "Reconstruct calibration from its isolated role and audit every deployed prediction.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/export_clustering_representations.py",
+      "sha256": "4a8d6a215245328967072e56184ec5576db59f40c2ea46f60606197b2580b506",
+      "lines": 45,
+      "module_docstring": "Export fitted-space reference bytes only after matching the recorded fingerprints.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/export_uncertainty.py",
+      "sha256": "cde5060253176b6b14f2e6f16ce66ebd772bbf8e3a9510054ebb3ad1c3f1c82f",
+      "lines": 148,
+      "module_docstring": "Export deployment calibration from existing fitting/calibration partitions.\n\nNo models are fitted. The fixed conformal partitions reproduce previously measured\ncoverage exactly; official test labels only verify exported results.",
+      "public_definitions": [
+        "sha256",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/generate_comparison_notebooks.py",
+      "sha256": "6ff1c7654b2e6ffb939663432fa593992586e1a6b02a5a8b72138f18b8dd6f92",
+      "lines": 165,
+      "module_docstring": "Generate focused English walkthroughs for prediction, density and GAN comparisons.",
+      "public_definitions": [
+        "save",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/generate_notebooks.py",
+      "sha256": "ea5fd29edf05af174bda9f3f5e4f501b13159501de20b86993e6ebfe80ebd4f2",
+      "lines": 563,
+      "module_docstring": "Generate the English numerical walkthroughs; execute with execute_notebooks.py.",
+      "public_definitions": [
+        "write",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/generate_project_notebooks.py",
+      "sha256": "0493a06642afb457ea4220fd3372ac1604ab889a7d8740446ca4be5893816718",
+      "lines": 364,
+      "module_docstring": "Generate the five English project walkthroughs, then execute in fresh kernels.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/generate_upgrade_notebooks.py",
+      "sha256": "1c0151993566f040a35bee1290dda3c1a7fa9beba34cd86d78df763b80964eea",
+      "lines": 443,
+      "module_docstring": "Generate six English walkthroughs for the executed modern-method extension.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/make_portable_configs.py",
+      "sha256": "f0c7c135b94477793bd72c9f440015152e68ce69ebc654da7066a29c7baec470",
+      "lines": 62,
+      "module_docstring": "Write complete run configs for another cache/device without editing tracked files.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/predict.py",
+      "sha256": "e94b3785f235f09537d4a179907fe422ad2185243345e05d2b4207d7e623fd97",
+      "lines": 48,
+      "module_docstring": "Batch inference from a locally trained Adult artifact and a feature CSV.",
+      "public_definitions": [
+        "predict",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/predict_classical.py",
+      "sha256": "d28a852331076628334865514cda59f49ab0f60018b2fb134c12900d44e0b1d2",
+      "lines": 25,
+      "module_docstring": "Predict CSV observations using any selected classical model and its calibration.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/predict_modern.py",
+      "sha256": "b56501ba5833762f8695ae69ea16d1f4ecc7c0355df736c692c8a666826f2440",
+      "lines": 84,
+      "module_docstring": "Batch inference from locally fitted CatBoost or ConvNeXt checkpoints.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/predict_receiver.py",
+      "sha256": "836f696a92b51e3fe24c1c45cdfd3a5a15700a685804482ca310bc07cbf41b01",
+      "lines": 57,
+      "module_docstring": "Decode received 16-QAM blocks from a saved local MLP/CNN receiver checkpoint.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/prepare_data.py",
+      "sha256": "893e1fff80605838d4a6ee2537870b7af4646a18dc5a5477d115dc46fcdfe473",
+      "lines": 10,
+      "module_docstring": "Download tabular reference data to an explicitly selected cache.",
+      "public_definitions": []
+    },
+    {
+      "path": "scripts/prepare_ddcolor.py",
+      "sha256": "850038e8510a3a189c907c1656dbb0113b68a2ba564af39ab29555e29b6bb563",
+      "lines": 55,
+      "module_docstring": "Explicitly prepare the pinned Apache-2.0 DDColor source and official model weights.",
+      "public_definitions": []
+    },
+    {
+      "path": "scripts/prepare_external_restoration.py",
+      "sha256": "05ec0459b4007268ed889d87eb1ae872691b1201e4ad9002500217c6317b8136",
+      "lines": 188,
+      "module_docstring": "Fetch official external references into a personal cache; record actual content hashes.",
+      "public_definitions": [
+        "digest",
+        "fetch",
+        "prepare"
+      ]
+    },
+    {
+      "path": "scripts/prepare_projects.py",
+      "sha256": "4799f980e2d7fa25aa849ce73e91cf5290c44ae5ec3a7c9b68c0f19d1a355fbf",
+      "lines": 202,
+      "module_docstring": "Audit private coursework and cache deterministic, attributed image benchmarks.\n\nRun with --data-root pointing to a writable personal cache. No shared data is modified.\nThe private handouts are never copied into the public repository.",
+      "public_definitions": [
+        "sha",
+        "retrieve",
+        "download_sources",
+        "prepare"
+      ]
+    },
+    {
+      "path": "scripts/prepare_restoration.py",
+      "sha256": "938c882891ad532bba461419f24e2861b902427b017744231a5202f674a42d0b",
+      "lines": 115,
+      "module_docstring": "Prepare a disjoint, higher-resolution CC BY COCO benchmark without touching shared data.",
+      "public_definitions": [
+        "annotation_file",
+        "prepare"
+      ]
+    },
+    {
+      "path": "scripts/prepare_smoke_data.py",
+      "sha256": "3dc3dd4090229ef270451a8db3a4e19cdc403158334ab0738db2d35237e85189",
+      "lines": 56,
+      "module_docstring": "Make offline procedural fixtures for CI integration, never scientific reference data.",
+      "public_definitions": [
+        "prepare"
+      ]
+    },
+    {
+      "path": "scripts/prepare_vision.py",
+      "sha256": "5916655be7862f0d2f182decb729f148a6e4d28b821d5fb5ee77794e7b0cc4a2",
+      "lines": 58,
+      "module_docstring": "Explicitly prepare official CIFAR and ImageNet ResNet18 assets for a portable run.",
+      "public_definitions": [
+        "download",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/report_adversarial.py",
+      "sha256": "f654ea2042a1486375479f84702921bc0356e87e9de2ff86d4858694b66cd1dc",
+      "lines": 180,
+      "module_docstring": "Regenerate controlled GAN-variant comparisons, including validation-retained starts.",
+      "public_definitions": [
+        "paired_interval",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/report_adversarial_endpoints.py",
+      "sha256": "9c3b509dca41abfe12d8e691e2cfca6de52f81d8e0de2a0569bac83fa1efda3a",
+      "lines": 188,
+      "module_docstring": "Validate and report all fixed final-epoch adversarial diagnostics.",
+      "public_definitions": [
+        "digest",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/report_classical.py",
+      "sha256": "6c94a17b76fc0abd74942ccafa2935c3f792b37c4b9b3625736db9fc80697dbd",
+      "lines": 198,
+      "module_docstring": "Regenerate comparative classical figures and tables from complete numeric evidence.",
+      "public_definitions": [
+        "records",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/report_clustering.py",
+      "sha256": "7fc49345435ed8c75ceabb5e040e87b5c6ed595c2e8b98dc1c00eb50cab84b74",
+      "lines": 166,
+      "module_docstring": "Validate public clustering evidence and regenerate density/coverage comparisons.",
+      "public_definitions": [
+        "digest",
+        "validate",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/report_resume_precision.py",
+      "sha256": "b683b602d3e5ca016cd4bd1c1c567b150c7d38f48850626496558a72077e6528",
+      "lines": 65,
+      "module_docstring": "Preserve the unsuccessful GPU bitwise probe separately from CPU recovery evidence.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/rescore_restoration.py",
+      "sha256": "eb6ec62f3b123bde791f389b93219e675553726e3a8a8d5bc960bbd85b66bb0e",
+      "lines": 140,
+      "module_docstring": "Refresh final-output color metrics without retraining or changing checkpoints.\n\nThe training record and validation curves are preserved. A separate evaluation\naudit records the scoring source hash and timestamp. Only completed runs enter.",
+      "public_definitions": [
+        "score",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/restore_external.py",
+      "sha256": "7a3e4afa48b68e5ca16fb5fe86b1d2b77552a6db9d01f7fd9037a3eebda968ed",
+      "lines": 129,
+      "module_docstring": "Colorize a photograph or upscale actual LR using a pinned external reference.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/restore_generative.py",
+      "sha256": "68aa9ba92e5fcd568733387e062621735b8ec6fd2a0a5ae78f1d6ef1de4e8d64",
+      "lines": 109,
+      "module_docstring": "Use a local trained GAN, CVAE or diffusion checkpoint without downloading weights.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/restore_image.py",
+      "sha256": "ddc29217516767f127e1fa7c181d8556349af02adb1e1a87ce4f65dedd49acee",
+      "lines": 121,
+      "module_docstring": "Apply a locally trained restoration checkpoint to a user image.\n\nExample: python scripts/restore_image.py --checkpoint results/reference/colorization/\ncheckpoints/transfer_l2_0.pt --input photo.png --output .local/colorized.png",
+      "public_definitions": [
+        "restore"
+      ]
+    },
+    {
+      "path": "scripts/review_components.py",
+      "sha256": "2b9f146b81fa2afa56b7815b076621d6d9d32fc5938a9229e6c158bcdcd0462a",
+      "lines": 48,
+      "module_docstring": "Inventory authored source, parse every component and check documented release identities.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/run_adversarial_suite.py",
+      "sha256": "b8a6eff49e52d0d492a0e8425bba5dc9925e717b3f06511cca3ca224ac69a547",
+      "lines": 107,
+      "module_docstring": "Run the complete GAN objective study on three explicitly selected devices.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/run_classical.py",
+      "sha256": "0d4cf44df5b96b30ffafa02b19a752a22478d2b729122e4211ee9fe5372790c7",
+      "lines": 36,
+      "module_docstring": "Run a declared classical benchmark case without modifying the frozen studies.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/run_clustering.py",
+      "sha256": "8879511e105acd55f0d4abc6ce71bade9476dc4194f8a74c577e13c8b82c3b01",
+      "lines": 14,
+      "module_docstring": "Run the full declared clustering comparison (no class-label selection).",
+      "public_definitions": []
+    },
+    {
+      "path": "scripts/run_generative_suite.py",
+      "sha256": "dfb32afd3a7c396e8b42cbff89d9da508158cba7f9c71cdc0884bdc7790fe279",
+      "lines": 96,
+      "module_docstring": "Run independent restoration comparisons on three GPUs, with epoch-level resume.",
+      "public_definitions": [
+        "worker"
+      ]
+    },
+    {
+      "path": "scripts/run_suite.py",
+      "sha256": "7cd80878c178ee198a94ba88ae5844291e6f4c61987946cb73791ba29e17580f",
+      "lines": 62,
+      "module_docstring": "Run the thirteen foundational studies with bounded CPU/GPU resource use.",
+      "public_definitions": [
+        "group",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/sync_packaged_configs.py",
+      "sha256": "a28ff9fdf99867d9eda4fe931a731d674d025fdde7ffca19cf4bbbf0d7e30669",
+      "lines": 28,
+      "module_docstring": "Keep installed-command defaults identical to declared repository protocols.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/train_adversarial.py",
+      "sha256": "ab0949e48831d7689a357690c4286ee07553def9b2b12e8c408c22789b41efa0",
+      "lines": 65,
+      "module_docstring": "Train one controlled GAN restoration variant with epoch-level resume.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/validate_adversarial.py",
+      "sha256": "2d432927c5275936874d233cc1c100a26c7802d7f9ce46afb6d8abf213d4ffad",
+      "lines": 106,
+      "module_docstring": "Validate full budgets, selection and image-wise GAN-variant evidence without weights.",
+      "public_definitions": [
+        "digest",
+        "records"
+      ]
+    },
+    {
+      "path": "scripts/validate_classical.py",
+      "sha256": "c0491da70ac4ccc7767483a4c73a510169d09ebb6d7b221ae6ade3b215a836c2",
+      "lines": 94,
+      "module_docstring": "Independently recompute classical metrics and check every data role and source binding.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/validate_explorer.py",
+      "sha256": "b7f71035f2b7a3c8f6cda9a026afe2d639cd2960ff7fdd425def88bf87749b93",
+      "lines": 125,
+      "module_docstring": "Validate published demo images and embedded measurements against public source arrays.",
+      "public_definitions": [
+        "digest",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/validate_release.py",
+      "sha256": "a79fe1aeca68ac4b041f31bf7fba49ecbc6218a61552b05b9e0cde076ca15c76",
+      "lines": 659,
+      "module_docstring": "Check evidence completion, English notebooks, local links and release contents.",
+      "public_definitions": [
+        "expected_config",
+        "disjoint_splits",
+        "finite",
+        "main"
+      ]
+    },
+    {
+      "path": "scripts/verify_initialization.py",
+      "sha256": "6324d4d4d90bec760a553f783feb32d5f8e7fbb78d8816734021e8fa6b6ddea3",
+      "lines": 61,
+      "module_docstring": "Verify that every refined CVAE checkpoint retains the selected frozen semantic mean.",
+      "public_definitions": [
+        "main"
+      ]
+    },
+    {
+      "path": "tests/test_adversarial.py",
+      "sha256": "66fe373d2db8605859fc835e24f17dfd7446dc10c8067b30a5b80823080e499d",
+      "lines": 31,
+      "module_docstring": "Independent objective and gradient-regularization identities.",
+      "public_definitions": [
+        "test_wasserstein_penalty_uses_scalar_critic_gradient_with_fixed_condition",
+        "test_objective_signs_reward_high_real_and_low_fake_scores"
+      ]
+    },
+    {
+      "path": "tests/test_categorical.py",
+      "sha256": "d173af451f87300a759b2659b4587811bad2bb6ba53a83e435bf140ad874f17e",
+      "lines": 36,
+      "module_docstring": null,
+      "public_definitions": [
+        "test_categorical_missing_data_normalization_and_imputation",
+        "test_single_component_m_step_matches_observed_counts",
+        "test_imputation_conditions_on_known_values_and_preserves_them"
+      ]
+    },
+    {
+      "path": "tests/test_classical.py",
+      "sha256": "43f00364ae3c6f946148d7f3bb5259070e38cb99079f0c57efe738700a251a95",
+      "lines": 38,
+      "module_docstring": "Check the extension's data roles and probability/decision contracts.",
+      "public_definitions": [
+        "test_fixed_numeric_test_is_separate_from_every_fitting_partition",
+        "test_binary_margin_and_probability_paths_keep_class_order_and_calibration"
+      ]
+    },
+    {
+      "path": "tests/test_classical_inference.py",
+      "sha256": "4c7d057bc7fc2179cfbcd9c1fa81a348e8716ba76ea4fbc0fd9bf5cdf83c9244",
+      "lines": 58,
+      "module_docstring": "Check calibration identity, input schemas and uncertainty on deployed models.",
+      "public_definitions": [
+        "bundle",
+        "test_reordered_columns_and_prediction_sets_preserve_class_semantics",
+        "test_checkpoint_identity_and_invalid_inputs_are_rejected"
+      ]
+    },
+    {
+      "path": "tests/test_deep.py",
+      "sha256": "b6e0b0cc42aa48bc20ee412d04d9fb13fc67b063221a376000562a0edc685e2d",
+      "lines": 60,
+      "module_docstring": null,
+      "public_definitions": [
+        "test_gray_code_unit_power_and_adjacent_bit_distance",
+        "test_known_channel_inverse_recovers_noiseless_symbols",
+        "test_signal_context_respects_block_boundaries_and_ber",
+        "test_neural_contracts_and_gradients",
+        "test_vision_augmentation_and_positive_pair_objective"
+      ]
+    },
+    {
+      "path": "tests/test_generative.py",
+      "sha256": "2990080494cb0a0b7fc7838fa7f2a5ba8224b4d2928592c544118196c9f1c4c7",
+      "lines": 104,
+      "module_docstring": null,
+      "public_definitions": [
+        "test_lab_conversion_has_finite_gradients_outside_gamut",
+        "test_observation_reconstruction_and_color_lightness",
+        "test_conditional_gaussian_kl_matches_torch_distribution",
+        "test_vae_prior_inference_does_not_require_target_and_samples_latent",
+        "test_diffusion_velocity_identity_and_seeded_sampling",
+        "test_ddim_oracle_recovers_sr_targets_outside_chroma_support",
+        "test_frozen_vae_semantic_decoder_reloads_without_initialization_files"
+      ]
+    },
+    {
+      "path": "tests/test_inference.py",
+      "sha256": "cb808c9d0c3857f1ccdff78feba6963ad441738149e5e78081d85bf3bb9b58fa",
+      "lines": 42,
+      "module_docstring": null,
+      "public_definitions": [
+        "test_inference_schema_unknown_categories_and_calibrated_probabilities"
+      ]
+    },
+    {
+      "path": "tests/test_inverse.py",
+      "sha256": "1154ad4773f1e673713acd89ab3b1a343d380b255336e062712d411183628054",
+      "lines": 87,
+      "module_docstring": null,
+      "public_definitions": [
+        "test_linear_conditioning_rectangular_operator_and_correlated_noise",
+        "test_component_weights_use_observation_evidence_and_total_covariance",
+        "test_patch_roundtrip_including_single_pixel_edges_and_full_image",
+        "test_singular_prior_and_extreme_observation_remain_finite",
+        "test_invalid_prior_and_nonsymmetric_noise_are_rejected"
+      ]
+    },
+    {
+      "path": "tests/test_mathematics.py",
+      "sha256": "642532311e3214955ecfb951f66f7a65086c50b95d624ade49ef252ab529d3bb",
+      "lines": 96,
+      "module_docstring": null,
+      "public_definitions": [
+        "test_posterior_mean_equals_matching_ridge_and_variance_contracts",
+        "test_em_density_responsibilities_and_monotonicity",
+        "test_conformal_finite_sample_rank_not_interpolated_quantile",
+        "test_conformal_empirical_marginal_coverage",
+        "test_cqr_repair_crossing_and_class_sets",
+        "test_probability_calibration_does_not_increase_objective",
+        "test_selection_and_calibration_partitions_are_disjoint",
+        "test_probabilistic_interfaces_reject_invalid_shapes_and_nonfinite_parameters"
+      ]
+    },
+    {
+      "path": "tests/test_modern_inference.py",
+      "sha256": "3eaced5fa747abff5d3b39ac3ae514eed2107bfc76f2d161ad916206f8f8cd1b",
+      "lines": 151,
+      "module_docstring": null,
+      "public_definitions": [
+        "test_native_model_reload_handles_missing_and_unseen_categories",
+        "test_saved_housing_uncertainty_preserves_units_and_empty_cqr",
+        "test_vision_inference_rejects_wrong_shape_before_loading_checkpoint",
+        "test_cifar_metadata_retains_empty_sets_and_binds_device_and_checkpoint"
+      ]
+    },
+    {
+      "path": "tests/test_receiver_inference.py",
+      "sha256": "77d22862724b5cc7bfbd214962aa1b04e80d592e62268fb4a0c9fefe79431b71",
+      "lines": 45,
+      "module_docstring": null,
+      "public_definitions": [
+        "test_receiver_schema_is_checked_before_checkpoint_access",
+        "test_saved_receiver_gray_labels_batch_contract_and_invalid_logits"
+      ]
+    },
+    {
+      "path": "tests/test_restoration.py",
+      "sha256": "85316b9405c6791b81b0ee9f721c65602e9ae699b8966f7cf4f577a3a7d283d8",
+      "lines": 51,
+      "module_docstring": null,
+      "public_definitions": [
+        "test_cielab_d65_reference_colors_and_roundtrip",
+        "test_restoration_models_shapes_and_backward",
+        "test_quality_metrics_identity_and_known_constant_error"
+      ]
+    }
+  ]
+}
