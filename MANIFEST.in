@@ -10,3 +10,5 @@ recursive-include results/reference *.json
 global-exclude partial_metrics.json
 include legacy/README.md legacy/manifest.json
 recursive-include .github *.yml
+
+include .nojekyll

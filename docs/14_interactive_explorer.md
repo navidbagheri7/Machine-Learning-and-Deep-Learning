@@ -76,3 +76,7 @@ Read [browser checks](explorer_browser_validation.json) and [scientific checks](
 The source archive includes templates, HTML, images and numerical evidence. Wheels
 carry the numerical package and default configs; obtain the repository/source archive
 for full walkthroughs, measured reports and the browser gallery.
+
+Preserve the root `.nojekyll` file when publishing this static explorer.
+It bypasses Jekyll so the supplied HTML, JavaScript and evidence links are served
+with their original paths. [GitHub documents this option](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
