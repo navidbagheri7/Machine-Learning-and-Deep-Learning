@@ -2,7 +2,7 @@
   "status": "passed",
   "scope": "AST inventory and release-identity checks; mathematical and empirical checks are separate in validation.json and implementation audit",
   "version": "1.3.0",
-  "authored_python_components": 103,
+  "authored_python_components": 105,
   "source_modules": 28,
   "components": [
     {
@@ -463,6 +463,17 @@
       ]
     },
     {
+      "path": "scripts/check_demo_controls.py",
+      "sha256": "eaded5da8eb568e4c76046cd4dda075b801870a80ddf6d4d7e035e51f241fbca",
+      "lines": 197,
+      "module_docstring": "Exercise every enabled selector tuple and slider boundaries over local HTTP.\n\nRequires Playwright and its Chromium browser. This complements the lab-specific\nnumerical/browser oracle: it checks actual user events, rendered tables, byte-exact\nlocal images, links, playback, and responsive layouts. Continuous sliders use\nendpoints/midpoints; short discrete sliders use every supported position.",
+      "public_definitions": [
+        "digest",
+        "QuietHandler",
+        "main"
+      ]
+    },
+    {
       "path": "scripts/check_evaluation_only.py",
       "sha256": "b51c41d6472546ec9d99e64035b02d6369589d0a5ddd8c1d2c0fade46fcca889",
       "lines": 102,
@@ -590,6 +601,18 @@
         "classical",
         "restoration",
         "main"
+      ]
+    },
+    {
+      "path": "scripts/demo_oracle.py",
+      "sha256": "a63ee69cc33a7ec16204896f18595a875d412d7ea360c769aba2b2720a24e7aa",
+      "lines": 152,
+      "module_docstring": "Source-bound numerical assertions for the currently selected demo controls.",
+      "public_definitions": [
+        "close",
+        "cards",
+        "image_sources",
+        "check"
       ]
     },
     {

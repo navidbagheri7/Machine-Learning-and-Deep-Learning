@@ -80,3 +80,6 @@ for full walkthroughs, measured reports and the browser gallery.
 Preserve the root `.nojekyll` file when publishing this static explorer.
 It bypasses Jekyll so the supplied HTML, JavaScript and evidence links are served
 with their original paths. [GitHub documents this option](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+
+See the [user interaction audit](demo_review.md) for the HTTP selector, slider,
+asset and numerical verification commands and their precise scope.

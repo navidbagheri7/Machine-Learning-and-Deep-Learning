@@ -41,6 +41,9 @@ The [modern report](docs/modern_results.md) includes every stochastic draw, pair
 image intervals and comparisons against a trained direct predictor. It also explains
 why a grayscale baseline's mean PSNR can misrepresent typical color recovery.
 
+The [user interaction audit](docs/demo_review.md) documents exhaustive enabled
+dropdown checks, representative joint slider settings and source-bound asset checks.
+
 ## What is inside
 
 | Study | Substantial question | Implementations and evidence |
