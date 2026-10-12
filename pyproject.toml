@@ -24,6 +24,12 @@ dev = ["pytest>=7", "ruff>=0.6", "build>=1"]
 [project.scripts]
 learning-lab = "learning_lab.cli:main"
 
+[project.urls]
+Repository = "https://github.com/navidbagheri7/learning-generalization-lab"
+Documentation = "https://github.com/navidbagheri7/learning-generalization-lab#readme"
+Demo = "https://navidbagheri7.github.io/learning-generalization-lab/"
+Issues = "https://github.com/navidbagheri7/learning-generalization-lab/issues"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 

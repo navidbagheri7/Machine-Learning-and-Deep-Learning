@@ -12,3 +12,5 @@ include legacy/README.md legacy/manifest.json
 recursive-include .github *.yml
 
 include .nojekyll
+
+include index.html

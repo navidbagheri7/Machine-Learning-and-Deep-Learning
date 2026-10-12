@@ -8,3 +8,5 @@ authors:
   - family-names: "Bagheri-Shouraki"
     given-names: "Navid"
 license: MIT
+repository-code: "https://github.com/navidbagheri7/learning-generalization-lab"
+url: "https://navidbagheri7.github.io/learning-generalization-lab/"
