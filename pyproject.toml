@@ -25,10 +25,10 @@ dev = ["pytest>=7", "ruff>=0.6", "build>=1"]
 learning-lab = "learning_lab.cli:main"
 
 [project.urls]
-Repository = "https://github.com/navidbagheri7/learning-generalization-lab"
-Documentation = "https://github.com/navidbagheri7/learning-generalization-lab#readme"
-Demo = "https://navidbagheri7.github.io/learning-generalization-lab/"
-Issues = "https://github.com/navidbagheri7/learning-generalization-lab/issues"
+Repository = "https://github.com/navidbagheri7/Machine-Learning-and-Deep-Learning"
+Documentation = "https://github.com/navidbagheri7/Machine-Learning-and-Deep-Learning#readme"
+Demo = "https://navidbagheri7.github.io/Machine-Learning-and-Deep-Learning/"
+Issues = "https://github.com/navidbagheri7/Machine-Learning-and-Deep-Learning/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

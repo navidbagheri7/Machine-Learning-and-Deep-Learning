@@ -33,7 +33,7 @@ Local checks do not claim that hosted GitHub Actions has run.
 
 ## Publish locally prepared version 1.3
 
-Create an empty `learning-generalization-lab` repository:
+Create an empty `Machine-Learning-and-Deep-Learning` repository:
 
 ```bash
 git remote add origin YOUR_REPOSITORY_URL
@@ -84,7 +84,7 @@ that every method wins or reconstructs every detail.
 
 ## Publish from this directory
 
-Suggested repository name: `learning-generalization-lab`.
+Repository name: `Machine-Learning-and-Deep-Learning`.
 
 Create an empty repository, then set its URL and publish the local history:
 

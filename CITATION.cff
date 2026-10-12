@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this laboratory, please cite this software and the relevant original methods."
-title: "Learning and Generalization Lab"
+title: "Machine Learning and Deep Learning"
 type: software
 version: 1.3.0
 date-released: "2026-10-07"
@@ -8,5 +8,5 @@ authors:
   - family-names: "Bagheri-Shouraki"
     given-names: "Navid"
 license: MIT
-repository-code: "https://github.com/navidbagheri7/learning-generalization-lab"
-url: "https://navidbagheri7.github.io/learning-generalization-lab/"
+repository-code: "https://github.com/navidbagheri7/Machine-Learning-and-Deep-Learning"
+url: "https://navidbagheri7.github.io/Machine-Learning-and-Deep-Learning/"

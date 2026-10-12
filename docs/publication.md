@@ -1,6 +1,6 @@
 # GitHub publication and interactive demo
 
-Repository: [navidbagheri7/learning-generalization-lab](https://github.com/navidbagheri7/learning-generalization-lab). Interactive explorer: [https://navidbagheri7.github.io/learning-generalization-lab/](https://navidbagheri7.github.io/learning-generalization-lab/).
+Repository: [navidbagheri7/learning-generalization-lab](https://github.com/navidbagheri7/Machine-Learning-and-Deep-Learning). Interactive explorer: [https://navidbagheri7.github.io/Machine-Learning-and-Deep-Learning/](https://navidbagheri7.github.io/Machine-Learning-and-Deep-Learning/).
 
 The repository contains authored English code, executed notebooks and measured evidence. The numerical comparisons and documented limitations remain unchanged by publication. Private course originals, local environments, cached datasets and large training checkpoints remain outside Git history.
 

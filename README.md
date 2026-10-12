@@ -1,6 +1,6 @@
-# Learning & Generalization Lab
+# Machine Learning and Deep Learning
 
-[Interactive demo](https://navidbagheri7.github.io/learning-generalization-lab/) · [GitHub repository](https://github.com/navidbagheri7/learning-generalization-lab) · [CI checks](https://github.com/navidbagheri7/learning-generalization-lab/actions)
+[Interactive demo](https://navidbagheri7.github.io/Machine-Learning-and-Deep-Learning/) · [GitHub repository](https://github.com/navidbagheri7/Machine-Learning-and-Deep-Learning) · [CI checks](https://github.com/navidbagheri7/Machine-Learning-and-Deep-Learning/actions)
 
 A reproducible laboratory for probabilistic inference, modern prediction systems,
 conditional image generation and distribution shift. Implementations connect equations
