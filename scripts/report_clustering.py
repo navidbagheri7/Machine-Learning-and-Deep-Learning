@@ -54,16 +54,23 @@ def validate():
             raw, truth = data.data, data.target
         with threadpool_limits(1):
             x = StandardScaler().fit_transform(raw)
-            if x.shape[1] > 30:
+            reduced = x.shape[1] > 30
+            if reduced:
                 x = PCA(30, svd_solver="full").fit_transform(x)
-            projection = PCA(2, svd_solver="full").fit_transform(x)
         representation = Path("assets/source_data/clustering_representations") / (case + ".npz")
         with np.load(representation, allow_pickle=False) as stored:
             assert stored["x"].shape == x.shape
+            if reduced:
+                # Singular vectors may flip signs across valid LAPACK builds.
+                # Align orientation only; the coordinate checks stay strict.
+                x *= np.where((x * stored["x"]).sum(axis=0) < 0, -1, 1)
             np.testing.assert_allclose(x, stored["x"], atol=1e-8, rtol=1e-8)
             x = stored["x"]
+        with threadpool_limits(1):
+            projection = PCA(2, svd_solver="full").fit_transform(x)
         with np.load(path, allow_pickle=False) as arrays:
             np.testing.assert_array_equal(truth, arrays["true_labels"])
+            projection *= np.where((projection * arrays["projection"]).sum(axis=0) < 0, -1, 1)
             np.testing.assert_allclose(projection, arrays["projection"], atol=1e-8, rtol=1e-8)
             for row in (r for r in metrics["rows"] if r["case"] == case):
                 labels = arrays[f"{row['method']}_{row['seed']}"]
